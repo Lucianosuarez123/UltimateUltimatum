@@ -1,0 +1,64 @@
+political_decisions = {
+
+	embrace_old_norse = {
+		picture = paganpic
+		potential = {
+			is_culture_group = scandinavian
+			NOT = {
+			has_country_flag = old_faith_done
+				}
+				}
+		allow = {
+			THIS={all_core={owned_by=THIS}}
+			tag = SCA
+			war = no
+			}
+		effect = {
+		set_country_flag = old_faith_done
+		FIN = { all_core = { add_core = THIS } }
+				}
+		ai_will_do = {
+			factor = 1
+		}
+			}
+	form_rome = {
+		picture = form_romepic
+			potential = {
+			is_culture_group = italian
+			NOT = {
+			exists = RME
+			has_country_flag=rome_restored
+				}
+			}
+		allow = {
+			is_greater_power = yes
+			749 = {
+			owned_by = THIS
+				}
+			834 = {
+			owned_by = THIS
+				}
+			465 = {
+			owned_by = THIS
+				}
+			472 = {
+			owned_by = THIS
+				}
+			ITA = { all_core = { owned_by = THIS } }
+			KNI = { all_core = { owned_by = THIS } }	
+			war = no
+			}
+		effect = {
+		set_country_flag=rome_restored
+		capital = 749
+		change_tag = RME
+		GRE={all_core={add_core=RME}}
+		ALB={all_core={add_core=RME}}
+		YUG={all_core={add_core=RME}}
+				}
+		ai_will_do = {
+			factor = 1
+		}
+			}
+	
+}

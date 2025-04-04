@@ -1,0 +1,517 @@
+political_decisions = {
+	establish_la_guardia_civil = {
+		potential = {
+			OR = {
+				tag = SPA
+				tag = IBU
+			}
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+			NOT = {
+				has_country_flag = guardia_civil_established
+			}
+		}
+		allow = {
+			NOT = {
+				num_of_revolts = 1
+			}
+			OR = {
+				average_militancy = 3
+				average_consciousness = 4
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = la_guardia_civil
+				duration = -1
+			}
+			set_country_flag = guardia_civil_established
+		}
+	}
+
+	confiscations_of_mendizabal = {
+		potential = {
+			OR = {
+				tag = SPA
+				tag = IBU
+			}
+			NOT = {
+				has_country_flag = mendizabal_confiscated
+			}
+		}
+
+		allow = {
+			ideological_thought = 1
+		}
+
+		effect = {
+			treasury = 25000
+			prestige = 10
+			relation = {
+				who = PAP
+				value = -50
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = conservative
+					factor = 4
+				}
+				dominant_issue = {
+					value = pro_atheism
+					factor = 0.15
+				}
+			}
+			set_country_flag = mendizabal_confiscated
+		}
+	}
+	offer_to_buy_gribaltar={
+		potential = {
+			NOT={has_country_flag=buy_gribaltar}
+			OR={
+				tag=SPA
+				tag=POR
+				tag=IBU
+			}
+		POR = {OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {OR = {owned_by = THIS
+									owner = { in_sphere = THIS }
+									}
+							   }
+				    }
+			  }
+		SPA = {OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {OR = {owned_by = THIS
+									owner = { in_sphere = THIS }
+									}
+							   }
+				    }
+			  }
+		517={owned_by=ENG}
+		}
+		allow = {
+			ENG={relation={who= THIS value=120}}
+			business_regulations=1
+			money=500000
+		}
+		effect={
+			set_country_flag=buy_gribaltar
+			money=-500000
+			ENG={country_event=999992}
+		}
+		ai_will_do = {
+		factor = 1
+		}
+	}
+	organize_iberia={
+		picture=claim_kingdom_of_leon
+		potential={
+			tag=IBU
+			NOT={has_country_flag=organized_iberia}
+		}
+		allow={
+			nationalism_n_imperialism=1
+		}
+		effect={
+			set_country_flag=organized_iberia
+			prestige=10
+			POR={all_core={add_core=IBU}}
+			SPA={all_core={add_core=IBU}}
+			CAT={all_core={add_core=IBU}}
+			464={remove_core=IBU}
+			BSQ={all_core={add_core=IBU}}
+			IBU={all_core={remove_core=SPA}}
+			IBU={all_core={remove_core=CAT}}
+			IBU={all_core={remove_core=POR}}
+			IBU={all_core={remove_core=BSQ}}
+		}
+		ai_will_do = {
+		factor = 1
+		}
+	}
+	virreinato_de_la_plata={
+		picture=argentina_chile_border_treaty
+		potential={
+			OR={
+				tag=IBU
+				tag=SPA
+			}
+			NOT={has_country_flag=formed_virreinato_rio_de_la_plata}
+		}
+		allow={
+			war=no
+			CHL_2322={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			CHL_2327={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			CHL_2332={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			ARG_2355={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			ARG_2363={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			ARG_2360={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			ARG_2368={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			ARG_2374={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			ARG_2377={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			ARG_2384={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			ARG_2387={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			ARG_2391={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			ARG_2393={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			ARG_2398={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			BRZ_2467={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			BOL_2305={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			BOL_2309={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			BOL_2317={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			BOL_2321={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			PRG_2338={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			PRG_2343={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+		}
+		effect={
+			prestige=50
+			set_country_flag=formed_virreinato_rio_de_la_plata
+			CHL_2322={add_core=VRP}
+			CHL_2327={add_core=VRP}
+			CHL_2332={add_core=VRP}
+			ARG_2355={add_core=VRP}
+			ARG_2363={add_core=VRP}
+			ARG_2360={add_core=VRP}
+			ARG_2368={add_core=VRP}
+			ARG_2374={add_core=VRP}
+			ARG_2377={add_core=VRP}
+			ARG_2384={add_core=VRP}
+			ARG_2387={add_core=VRP}
+			ARG_2391={add_core=VRP}
+			ARG_2393={add_core=VRP}
+			ARG_2398={add_core=VRP}
+			BRZ_2467={add_core=VRP}
+			BOL_2305={add_core=VRP}
+			BOL_2309={add_core=VRP}
+			BOL_2317={add_core=VRP}
+			BOL_2321={add_core=VRP}
+			PRG_2338={add_core=VRP}
+			PRG_2343={add_core=VRP}
+			2346={add_core=VRP}
+			2345={add_core=VRP}
+			2347={add_core=VRP}
+			2344={add_core=VRP}
+			CHL_2322={secede_province=THIS}
+			CHL_2327={secede_province=THIS}
+			CHL_2332={secede_province=THIS}
+			ARG_2355={secede_province=THIS}
+			ARG_2363={secede_province=THIS}
+			ARG_2360={secede_province=THIS}
+			ARG_2368={secede_province=THIS}
+			ARG_2374={secede_province=THIS}
+			ARG_2377={secede_province=THIS}
+			ARG_2384={secede_province=THIS}
+			ARG_2387={secede_province=THIS}
+			ARG_2391={secede_province=THIS}
+			ARG_2393={secede_province=THIS}
+			ARG_2398={secede_province=THIS}
+			BRZ_2467={secede_province=THIS}
+			2346={secede_province=THIS}
+			2345={secede_province=THIS}
+			2347={secede_province=THIS}
+			2344={secede_province=THIS}
+			BOL_2305={secede_province=THIS}
+			BOL_2309={secede_province=THIS}
+			BOL_2317={secede_province=THIS}
+			BOL_2321={secede_province=THIS}
+			PRG_2338={secede_province=THIS}
+			PRG_2343={secede_province=THIS}
+			THIS={release_vassal=VRP}
+		}
+	}
+	Virreinato_de_peru={
+		picture=reunite_peru
+		potential={
+			OR={
+				tag=IBU
+				tag=SPA
+			}
+			NOT={has_country_flag=formed_virreinato_de_peru}
+		}
+		allow={
+			war=no
+			PEU_2289={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			PEU_2291={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			PEU_2297={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			PEU_2300={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			PEU_2303={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			2549={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			2407={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			2321={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			2310={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			2307={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			2308={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+		}
+		effect={
+			prestige=50
+			set_country_flag=formed_virreinato_de_peru
+			PEU_2289={add_core=VPU}
+			PEU_2291={add_core=VPU}
+			PEU_2297={add_core=VPU}
+			PEU_2300={add_core=VPU}
+			PEU_2303={add_core=VPU}
+			2549={add_core=VPU}
+			2407={add_core=VPU}
+			2321={add_core=VPU}
+			2310={add_core=VPU}
+			2307={add_core=VPU}
+			2308={add_core=VPU}
+			PEU_2289={secede_province=THIS}
+			PEU_2291={secede_province=THIS}
+			PEU_2297={secede_province=THIS}
+			PEU_2300={secede_province=THIS}
+			PEU_2303={secede_province=THIS}
+			2549={secede_province=THIS}
+			2407={secede_province=THIS}
+			2321={secede_province=THIS}
+			2310={secede_province=THIS}
+			2307={secede_province=THIS}
+			2308={secede_province=THIS}
+			THIS={release_vassal=VPU}
+		}
+	}
+	Virreinato_de_brazil={
+		picture=guyanas
+		potential={
+			OR={
+				tag=IBU
+				tag=POR
+			}
+			NOT={has_country_flag=formed_virreinato_de_brazil}
+		}
+		allow={
+			war=no
+			BRZ_2306={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			BRZ_2401={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			BRZ_2408={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			BRZ_2410={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			BRZ_2416={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			BRZ_2421={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			BRZ_2428={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			BRZ_2439={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			BRZ_2446={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			BRZ_2447={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			BRZ_2461={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			BRZ_2462={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+		}
+		effect={
+			prestige=50
+			set_country_flag=formed_virreinato_de_brazil
+			BRZ_2306={add_core=VBZ}
+			BRZ_2401={add_core=VBZ}
+			BRZ_2408={add_core=VBZ}
+			BRZ_2410={add_core=VBZ}
+			BRZ_2416={add_core=VBZ}
+			BRZ_2421={add_core=VBZ}
+			BRZ_2428={add_core=VBZ}
+			BRZ_2439={add_core=VBZ}
+			BRZ_2446={add_core=VBZ}
+			BRZ_2447={add_core=VBZ}
+			BRZ_2461={add_core=VBZ}
+			BRZ_2462={add_core=VBZ}
+
+			BRZ_2306={secede_province=THIS}
+			BRZ_2401={secede_province=THIS}
+			BRZ_2408={secede_province=THIS}
+			BRZ_2410={secede_province=THIS}
+			BRZ_2416={secede_province=THIS}
+			BRZ_2421={secede_province=THIS}
+			BRZ_2428={secede_province=THIS}
+			BRZ_2439={secede_province=THIS}
+			BRZ_2446={secede_province=THIS}
+			BRZ_2447={secede_province=THIS}
+			BRZ_2461={secede_province=THIS}
+			BRZ_2462={secede_province=THIS}
+			THIS={release_vassal=VBZ}
+		}
+	}
+		Virreinato_de_nueva_granada={
+		picture=Granada_map
+		potential={
+			OR={
+				tag=IBU
+				tag=SPA
+			}
+			NOT={has_country_flag=formed_virreinato_de_nueva_granada}
+		}
+		allow={
+			war=no
+			ENG_1979={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			VNZ_2234={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			VNZ_2265={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			VNZ_2278={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			CLM_2251={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			CLM_2262={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			CLM_2247={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			CLM_2259={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			ECU_2279={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+		}
+		effect={
+			prestige=50
+			set_country_flag=formed_virreinato_de_nueva_granada
+			ENG_1979={add_core=VNG}
+			VNZ_2234={add_core=VNG}
+			VNZ_2265={add_core=VNG}
+			VNZ_2278={add_core=VNG}
+			CLM_2251={add_core=VNG}
+			CLM_2262={add_core=VNG}
+			CLM_2247={add_core=VNG}
+			CLM_2259={add_core=VNG}
+			ECU_2279={add_core=VNG}
+
+			ENG_1979={secede_province=THIS}
+			VNZ_2234={secede_province=THIS}
+			VNZ_2265={secede_province=THIS}
+			VNZ_2278={secede_province=THIS}
+			CLM_2251={secede_province=THIS}
+			CLM_2262={secede_province=THIS}
+			CLM_2247={secede_province=THIS}
+			CLM_2259={secede_province=THIS}
+			ECU_2279={secede_province=THIS}
+			THIS={release_vassal=VNG}
+		}
+	}
+	Virreinato_de_nueva_espania={
+		picture=center_america
+		potential={
+			OR={
+				tag=IBU
+				tag=SPA
+			}
+			NOT={has_country_flag=formed_virreinato_de_nueva_espania}
+		}
+		allow={
+			war=no
+			SPA_2209={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			HAI_2213={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			UCA_2186={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			UCA_2191={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			UCA_2193={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			UCA_2197={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			UCA_2201={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			CLM_1723={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			MEX_2138={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			MEX_2142={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			MEX_2146={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			MEX_2151={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			MEX_2181={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			MEX_2183={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			MEX_2162={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			MEX_2170={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			MEX_2161={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+			MEX_2173={OR={owned_by=THIS owner ={in_sphere=THIS}}}
+		}
+		effect={
+			prestige=50
+			set_country_flag=formed_virreinato_de_nueva_espania
+			SPA_2209={add_core=VNE}
+			HAI_2213={add_core=VNE}
+			UCA_2186={add_core=VNE}
+			UCA_2191={add_core=VNE}
+			UCA_2193={add_core=VNE}
+			UCA_2197={add_core=VNE}
+			UCA_2201={add_core=VNE}
+			CLM_1723={add_core=VNE}
+			MEX_2138={add_core=VNE}
+			MEX_2142={add_core=VNE}
+			MEX_2146={add_core=VNE}
+			MEX_2151={add_core=VNE}
+			MEX_2181={add_core=VNE}
+			MEX_2183={add_core=VNE}
+			MEX_2162={add_core=VNE}
+			MEX_2170={add_core=VNE}
+			MEX_2161={add_core=VNE}
+			MEX_2173={add_core=VNE}
+
+			2190={add_core=VNE}
+			MEX_85={add_core=VNE}
+			MEX_94={add_core=VNE}
+			MEX_103={add_core=VNE}
+			USA_106={add_core=VNE}
+			USA_129={add_core=VNE}
+			TEX_132={add_core=VNE}
+			MEX_97={add_core=VNE}
+			MEX_100={add_core=VNE}
+
+			MEX_85={secede_province=THIS}
+			MEX_94={secede_province=THIS}
+			MEX_103={secede_province=THIS}
+			USA_106={secede_province=THIS}
+			USA_129={secede_province=THIS}
+			TEX_132={secede_province=THIS}
+			MEX_97={secede_province=THIS}
+			MEX_100={secede_province=THIS}
+			SPA_2209={secede_province=THIS}
+			HAI_2213={secede_province=THIS}
+			UCA_2186={secede_province=THIS}
+			UCA_2191={secede_province=THIS}
+			UCA_2193={secede_province=THIS}
+			UCA_2197={secede_province=THIS}
+			UCA_2201={secede_province=THIS}
+			CLM_1723={secede_province=THIS}
+			MEX_2138={secede_province=THIS}
+			MEX_2142={secede_province=THIS}
+			MEX_2146={secede_province=THIS}
+			MEX_2151={secede_province=THIS}
+			MEX_2181={secede_province=THIS}
+			MEX_2183={secede_province=THIS}
+			MEX_2162={secede_province=THIS}
+			MEX_2170={secede_province=THIS}
+			MEX_2161={secede_province=THIS}
+			MEX_2173={secede_province=THIS}
+			THIS={release_vassal=VNE}
+		}
+	}
+		The_new_empire={
+		picture=spanish_commonwealth
+		potential={
+			tag=IBU
+			NOT={has_country_flag=formed_the_new_empire}
+			NOT={has_country_flag=post_colonial_country }
+			has_country_flag=formed_virreinato_de_brazil
+			has_country_flag=formed_virreinato_de_nueva_espania
+			has_country_flag=formed_virreinato_de_nueva_granada
+			has_country_flag=formed_virreinato_de_peru
+			has_country_flag=formed_virreinato_rio_de_la_plata
+		}
+		allow={
+			prestige=500
+			VNE={all_core={OR={owned_by=THIS owner ={in_sphere=THIS}}}}
+			VNG={all_core={OR={owned_by=THIS owner ={in_sphere=THIS}}}}
+			VBZ={all_core={OR={owned_by=THIS owner ={in_sphere=THIS}}}}
+			VRP={all_core={OR={owned_by=THIS owner ={in_sphere=THIS}}}}
+			VPU={all_core={OR={owned_by=THIS owner ={in_sphere=THIS}}}}
+		}
+		effect={
+			country_event = { id=976749 days=0 }
+			set_country_flag=formed_the_new_empire
+			change_tag=HSP
+			inherit=VNE
+			inherit=VNG
+			inherit=VBZ
+			inherit=VRP
+			inherit=VPU
+			VNE={all_core={add_core=HSP}}
+			VNG={all_core={add_core=HSP}}
+			VBZ={all_core={add_core=HSP}}
+			VRP={all_core={add_core=HSP}}
+			VPU={all_core={add_core=HSP}}
+			add_accepted_culture=mexican
+			add_accepted_culture=central_american
+			add_accepted_culture=south_andean
+			add_accepted_culture=north_andean
+			add_accepted_culture=brazilian
+			add_accepted_culture=platinean
+			add_accepted_culture=afro_american 
+			add_accepted_culture=afro_caribbean
+			add_accepted_culture=afro_caribeno
+			add_accepted_culture=afro_antillean
+			add_accepted_culture=caribeno
+		}
+	}
+}

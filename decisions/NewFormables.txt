@@ -1,0 +1,598 @@
+political_decisions ={
+	form_african_union = {
+		picture = african_continent
+		potential = {
+			OR = {
+				is_culture_group = west_african
+				is_culture_group = east_african
+				is_culture_group = southern_african
+				is_culture_group = central_african
+				is_culture_group = arab
+			}
+			NOT = {
+				has_country_flag=African_formed
+			}
+		}	
+		allow = {
+			is_greater_power = yes
+			prestige=500
+			war = no
+		}
+		effect = {
+			country_event = { id=976749 days=0 }
+			prestige = 15
+			change_tag = AFU
+			capital = 1852
+			add_accepted_culture = union
+			GEL = {
+				all_core = { add_core = AFU }
+			}                        
+                        MAJ = {
+				all_core = { add_core = AFU }
+			}                        
+                        ETH = {
+				all_core = { add_core = AFU }
+			}                        
+                        ALD = {
+				all_core = { add_core = AFU }
+			}                        
+                        ARO = {
+				all_core = { add_core = AFU }
+			}                        
+                        OYO = {
+				all_core = { add_core = AFU }
+			}                        
+                        SOK = {
+				all_core = { add_core = AFU }
+			}                        
+                        ASH = {
+				all_core = { add_core = AFU }
+			}                        
+                        BEN = {
+				all_core = { add_core = AFU }
+			}                        
+                        CLA = {
+				all_core = { add_core = AFU }
+			}                        
+                        CYR = {
+				all_core = { add_core = AFU }
+			}                        
+                        DAH = {
+				all_core = { add_core = AFU }
+			}                        
+                        DND = {
+				all_core = { add_core = AFU }
+			}  
+                        JAL = {
+				all_core = { add_core = AFU }
+			}                        
+                        TOO = {
+				all_core = { add_core = AFU }
+			}                        
+                        GBU = {
+				all_core = { add_core = AFU }
+			}                        
+                        KON = {
+				all_core = { add_core = AFU }
+			}                        
+                        LIB = {
+				all_core = { add_core = AFU }
+			}                        
+                        LOA = {
+				all_core = { add_core = AFU }
+			}                        
+                        MAD = {
+				all_core = { add_core = AFU }
+			}                        
+                        MOR = {
+				all_core = { add_core = AFU }
+			}                        
+                        MAS = {
+				all_core = { add_core = AFU }
+			}                        
+                        TRI = {
+				all_core = { add_core = AFU }
+			}                        
+                        TUN = {
+				all_core = { add_core = AFU }
+			}  
+                        MOS = {
+				all_core = { add_core = AFU }
+			}                        
+                        SUA = {
+				all_core = { add_core = AFU }
+			}                        
+                        WRI = {
+				all_core = { add_core = AFU }
+			}                        
+                        SAF = {
+				all_core = { add_core = AFU }
+			}                        
+                        WOL = {
+				all_core = { add_core = AFU }
+			}                        
+                        XHO = {
+				all_core = { add_core = AFU }
+			}                        
+                        ZUL = {
+				all_core = { add_core = AFU }
+			}   
+                        ZAN = {
+				all_core = { add_core = AFU }
+			}  
+                        ENG_1848 = { 
+                                 add_core = AFU
+			}  
+                        SOM_1868 = { 
+         			 add_core = AFU 
+			}  
+			SOM_1872 = { 
+                                 add_core = AFU 
+			}  
+			ENG_2024 = { 
+                                 add_core = AFU 
+			}  
+			ENG_2026 = { 
+                                 add_core = AFU 
+			}  
+			ENG_2036 = { 
+                                 add_core = AFU 
+			}  
+			ENG_2039 = { 
+                                 add_core = AFU 
+			}  
+			ENG_2044 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1775 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1780 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1783 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1788 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1798 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1801 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1803 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1883 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1884 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1878 = { 
+                                 add_core = AFU 
+			}  			
+			ENG_1887 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1892 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1893 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1901 = { 
+                                 add_core = AFU 
+			}   
+			ASH_1909 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1907 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1914 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1919 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1923 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1927 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1930 = { 
+                                 add_core = AFU 
+			}  
+			SPA_1955 = { 
+                                 add_core = AFU 
+			}  
+			ENG_1956 = { 
+                                 add_core = AFU 
+			}  
+			SOK_1963 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1965 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1970 = { 
+                                 add_core = AFU
+			}  
+			FRA_1972 = { 
+                                 add_core = AFU 
+			}  
+			BEL_1977 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1978 = { 
+                                 add_core = AFU 
+			}  
+			BEL_1984 = { 
+                                 add_core = AFU 
+			}  
+			BEL_1987 = { 
+                                 add_core = AFU
+			}  
+			BEL_1992 = { 
+                                 add_core = AFU 
+			}  
+			BEL_1996 = { 
+                                 add_core = AFU 
+			}  
+			BEL_1990 = { 
+                                 add_core = AFU 
+			}  
+			ENG_2014 = { 
+                                 add_core = AFU 
+			}  
+			ENG_2016 = { 
+                                 add_core = AFU 
+			}  
+			ENG_2019 = { 
+                                 add_core = AFU 
+			}  
+			BEL_2034 = { 
+                                 add_core = AFU 
+			}  
+			POR_1999 = { 
+                                 add_core = AFU 
+			}  
+			POR_2003 = { 
+                                 add_core = AFU 
+			}  
+			POR_2006 = { 
+                                 add_core = AFU
+			}  
+			POR_2049 = { 
+                                 add_core = AFU 
+			}  
+			POR_2053 = { 
+                                 add_core = AFU
+			}  
+			POR_2054 = { 
+                                 add_core = AFU 
+			}  
+			POR_2060 = { 
+                                 add_core = AFU 
+			}  
+			ENG_2067 = { 
+                                 add_core = AFU
+			}  
+			ENG_2068 = { 
+                                 add_core = AFU
+			}  
+			ENG_2071 = { 
+                                 add_core = AFU 
+			}   
+			ENG_2074 = { 
+                                 add_core = AFU
+			}  
+			ENG_2078 = { 
+                                 add_core = AFU 
+			}  
+			ENG_2083 = { 
+                                 add_core = AFU 
+			}  
+			ENG_2087 = { 
+                                 add_core = AFU
+			}  
+			ENG_2092 = { 
+                                 add_core = AFU 
+			}  
+			ENG_2094 = { 
+                                 add_core = AFU
+			}  
+			ENG_2096 = { 
+                                 add_core = AFU
+			}  
+			ORA_2103 = { 
+                                 add_core = AFU
+			}  
+			TRN_2108 = { 
+                                 add_core = AFU
+			}  
+			ZUL_2113 = { 
+                                 add_core = AFU 
+			}  
+			MAD_2117 = { 
+                                 add_core = AFU
+			}  
+			MAD_2121 = { 
+                                 add_core = AFU 
+			}  
+			FRA_1700 = { 
+                                 add_core = AFU
+			}  			
+			ALD_1704 = { 
+                                 add_core = AFU 
+			}  
+			ALD_1708 = {
+                                 add_core = AFU 
+			}  
+			ALD_1713 = { 
+                                 add_core = AFU
+			}  
+			ALD_1714 = { 
+                                 add_core = AFU
+			}  
+			ALD_1718 = { 
+                                 add_core = AFU 
+			}  
+			TUN_1726 = { 
+                                 add_core = AFU
+			}  
+			TRI_1731 = { 
+                                 add_core = AFU
+			}  
+			TRI_1735 = { 
+                                 add_core = AFU 
+			}  
+			TRI_1740 = { 
+                                 add_core = AFU
+			}  
+			EGY_1745 = { 
+                                 add_core = AFU
+			}  
+			EGY_1751 = { 
+                                 add_core = AFU 
+			}  
+			EGY_1753 = { 
+                                 add_core = AFU 
+			}  
+			EGY_1755 = { 
+                                 add_core = AFU
+			}  
+			EGY_1758 = { 
+                                 add_core = AFU 
+			}  
+			EGY_1762 = { 
+                                 add_core = AFU
+			}  
+			EGY_1771 = { 
+                                 add_core = AFU
+			}  
+			FRA_1808 = { 
+                                 add_core = AFU
+			}  
+			FRA_1813 = { 
+                                 add_core = AFU 
+			}  
+			ENG_1818 = { 
+                                 add_core = AFU
+			}  
+			ENG_1825 = { 
+                                 add_core = AFU 
+			}  
+			EGY_1827 = { 
+                                 add_core = AFU 
+			}  
+			EGY_1834 = { 
+                                 add_core = AFU 
+			}  
+			EGY_1838 = { 
+                                 add_core = AFU
+			}  
+			EGY_1842 = { 
+                                 add_core = AFU 
+			}  
+			ENG_1844 = { 
+                                 add_core = AFU
+			}  
+            MOR_1696 = {
+                                 add_core = AFU
+			} 
+			1953={add_core=AFU} 
+			1952={add_core=AFU} 
+			1951={add_core=AFU} 
+			1933={add_core=AFU} 
+			1935={add_core=AFU} 
+			1867={add_core=AFU} 
+			1866={add_core=AFU} 
+			1864={add_core=AFU} 
+			set_country_flag=African_formed
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	africanidea = {
+                picture = united_africa
+		potential = {
+			tag = AFU
+			NOT = {
+				has_country_flag = integratedafrica
+			}
+		}
+		allow = {
+			AFU={all_core={owned_by=THIS}}
+		}
+		effect = {
+			add_accepted_culture = lomwe
+			add_accepted_culture = akan
+			add_accepted_culture = bambara
+			add_accepted_culture = dyula
+			add_accepted_culture = edo
+			add_accepted_culture = african minor
+			add_accepted_culture = bakongo
+			add_accepted_culture = malagasy
+			add_accepted_culture = ewe
+			add_accepted_culture = fon
+			add_accepted_culture = fulbe
+			add_accepted_culture = hausa
+			add_accepted_culture = ibibio
+			add_accepted_culture = itsekari
+			add_accepted_culture = ibo
+			add_accepted_culture = kru
+			add_accepted_culture = mande
+			add_accepted_culture = mossi
+			add_accepted_culture = senufo
+			add_accepted_culture = songhai
+			add_accepted_culture = tiv
+			add_accepted_culture = tuareg
+			add_accepted_culture = wolof
+			add_accepted_culture = yoruba
+			add_accepted_culture = baguirmi
+			add_accepted_culture = lunda
+			add_accepted_culture = fang
+			add_accepted_culture = kanuri
+			add_accepted_culture = kuba
+			add_accepted_culture = luba
+			add_accepted_culture = mongo
+			add_accepted_culture = sara
+			add_accepted_culture = teda
+			add_accepted_culture = afar
+			add_accepted_culture = amhara
+			add_accepted_culture = tigray
+			add_accepted_culture = yoruba
+			add_accepted_culture = beja
+			add_accepted_culture = dinka
+			add_accepted_culture = baganda
+			add_accepted_culture = azande
+			add_accepted_culture = kikuyu
+			add_accepted_culture = luo
+			add_accepted_culture = fur
+			add_accepted_culture = khmer
+			add_accepted_culture = lao
+			add_accepted_culture = korean
+			add_accepted_culture = maasai
+			add_accepted_culture = kru
+			add_accepted_culture = nguni
+			add_accepted_culture = makua
+			add_accepted_culture = iomwe
+			add_accepted_culture = tigray
+			add_accepted_culture = khoisan
+			add_accepted_culture = herero
+			add_accepted_culture = chewa
+			add_accepted_culture = unyamwezi
+			add_accepted_culture = swahili
+			add_accepted_culture = sukuma
+			add_accepted_culture = somali
+			add_accepted_culture = sidama
+			add_accepted_culture = rundi
+			add_accepted_culture = ruanda
+			add_accepted_culture = nuer
+			add_accepted_culture = nuba
+			add_accepted_culture = oromo
+			add_accepted_culture = ovimbundu
+			add_accepted_culture = sena
+			add_accepted_culture = shona
+			add_accepted_culture = sotho
+			add_accepted_culture = tonga
+			add_accepted_culture = tswana
+			add_accepted_culture = xhosa
+			add_accepted_culture = yao
+			add_accepted_culture = zulu
+			add_accepted_culture = maghrebi
+			add_accepted_culture = misri
+			add_accepted_culture = mashriqi
+			add_accepted_culture = bedouin
+			add_accepted_culture = berber
+			add_accepted_culture = maurea
+			add_accepted_culture = sudanese
+			set_country_flag = integratedafrica
+			country_event = { id=976749 days=0 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	become_mongolian_empire = {
+		potential = {
+			tag = MGL
+			}
+		allow = {
+			war = no
+			is_vassal = no
+			prestige = 50
+			is_greater_power=yes
+			nationalism_n_imperialism = 1
+		}
+
+		effect = 
+		{
+                       
+			CHI = {
+				all_core = { add_core = MGL }
+			}
+			HND = {
+				all_core = { add_core = MGL }
+			}
+			KOR = {
+				all_core = { add_core = MGL }
+			}
+			JAP = {
+				all_core = { add_core = MGL }
+			}
+			RUS = {
+				all_core = { add_core = MGL }
+			}
+			AFG = {
+				all_core = { add_core = MGL }
+			}
+			PER = {
+				all_core = { add_core = MGL }
+			}
+			TUR = {
+				all_core = { add_core = MGL }
+			}
+			ROM = {
+				all_core = { add_core = MGL }
+			}
+			BUL = {
+				all_core = { add_core = MGL }
+			}
+			DAI = {
+				all_core = { add_core = MGL }
+			}
+			CAM = {
+				all_core = { add_core = MGL }
+			}
+			SIA = {
+				all_core = { add_core = MGL }
+			}
+			BUR = {
+				all_core = { add_core = MGL }
+			}
+			JOH = {
+				all_core = { add_core = MGL }
+			}
+			LUA = {
+				all_core = { add_core = MGL }
+			}
+			TIB = {
+				all_core = { add_core = MGL }
+			}
+			NEP = {
+				all_core = { add_core = MGL }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

@@ -1,0 +1,2029 @@
+country_event={
+    id=100008
+    title="Que necesitamos producir?"
+    desc="despues de organizar este continente del ojete, ahora podemos  hablar de lo que debemos producir para lograr un futuro sostenible."
+    is_triggered_only = yes
+	fire_only_once = yes
+    option={
+        name="toda industria pesada papa"
+        FRA_1923={
+            railroad=3
+            trade_goods = coal
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        FRA_1930={
+            railroad=3
+            trade_goods = iron
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        SOK_1934={
+            railroad=3
+            trade_goods = sulphur
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        SOK_1945={
+            railroad=3
+            trade_goods = coal
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        SOK_1937={
+            railroad=3
+            trade_goods = rubber
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        FRA_1927={
+            railroad=3
+            trade_goods = oil
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+            random_owned={
+            limit={
+                is_core=NGA
+            }
+            trade_goods=precious_metal
+        }
+        random_owned={
+            limit={
+                is_core=NGA
+            }
+            trade_goods=precious_metal
+        }
+        random_owned={
+            limit={
+                is_core=NGA
+            }
+            trade_goods=precious_metal
+        }
+    }
+        option={
+        name="toda industria agropecuaria"
+        FRA_1923={
+            railroad=3
+            trade_goods = fish
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        FRA_1930={
+            railroad=3
+            trade_goods = cattle
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        SOK_1934={
+            railroad=3
+            trade_goods = fruit
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        SOK_1945={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        SOK_1937={
+            railroad=3
+            trade_goods = cotton
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        FRA_1927={
+            railroad=3
+            trade_goods = grain
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=NGA
+            }
+            trade_goods=silk
+        }
+        random_owned={
+            limit={
+                is_core=NGA
+            }
+            trade_goods=opium
+        }
+        random_owned={
+            limit={
+                is_core=NGA
+            }
+            trade_goods=tea
+        }
+         }
+        option={
+        name="Surtido como las galletitas"
+        FRA_1923={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        FRA_1930={
+            railroad=3
+            trade_goods = iron
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        SOK_1934={
+            railroad=3
+            trade_goods = cattle
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        SOK_1945={
+            railroad=3
+            trade_goods = coal
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        SOK_1937={
+            railroad=3
+            trade_goods = rubber
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        FRA_1927={
+            railroad=3
+            trade_goods = grain
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+    }
+    option={
+        name="Dejemos todo como esta"
+    }
+}
+country_event={
+    id=100009
+    title="Que necesitamos producir?"
+    desc="despues de organizar este continente del ojete, ahora podemos  hablar de lo que debemos producir para lograr un futuro sostenible."
+    is_triggered_only = yes
+	fire_only_once = yes
+    option={
+        name="toda industria pesada papa"
+        ENG_1956={
+            railroad=3
+            trade_goods = coal
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        SOK_1963={
+            railroad=3
+            trade_goods = iron
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=CMR
+            }
+            trade_goods=sulphur
+        }
+    }
+        option={
+        name="toda industria agropecuaria"
+        SOK_1963={
+            railroad=3
+            trade_goods = cotton
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_1956={
+            railroad=3
+            trade_goods = grain
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=CMR
+            }
+            trade_goods=silk
+        }
+        random_owned={
+            limit={
+                is_core=CMR
+            }
+            trade_goods=grain
+        }
+        random_owned={
+            limit={
+                is_core=cattle
+            }
+            trade_goods=tea
+        }
+         }
+        option={
+        name="Surtido como las galletitas"
+        ENG_1956={
+            railroad=3
+            trade_goods = grain
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        SOK_1963={
+            railroad=3
+            trade_goods = timber
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+    }
+    option={
+        name="dejemos todo como esta"
+    }
+}
+
+country_event={
+    id=100010
+    title="Que necesitamos producir?"
+    desc="despues de organizar este continente del ojete, ahora podemos  hablar de lo que debemos producir para lograr un futuro sostenible."
+    is_triggered_only = yes
+	fire_only_once = yes
+    option={
+        name="toda industria pesada papa"
+        FRA_1978={
+            railroad=3
+            trade_goods = coal
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        BEL_1977={
+            railroad=3
+            trade_goods = iron
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        BEL_1984={
+            railroad=3
+            trade_goods = sulphur
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        BEL_1987={
+            railroad=3
+            trade_goods = timber
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        BEL_1992={
+            railroad=3
+            trade_goods = oil
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        BEL_1990={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=CNG
+            }
+            trade_goods=precious_metal
+        }
+        random_owned={
+            limit={
+                is_core=CNG
+            }
+            trade_goods=precious_metal
+        }
+        random_owned={
+            limit={
+                is_core=CNG
+            }
+            trade_goods=precious_metal
+        }
+    }
+        option={
+        name="toda industria agropecuaria"
+               FRA_1978={
+            railroad=3
+            trade_goods = cattle
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        BEL_1977={
+            railroad=3
+            trade_goods = grain
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        BEL_1984={
+            railroad=3
+            trade_goods = fish
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        BEL_1987={
+            railroad=3
+            trade_goods = tobacco
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        BEL_1992={
+            railroad=3
+            trade_goods = cotton
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        BEL_1990={
+            railroad=3
+            trade_goods = fruit
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=CNG
+            }
+            trade_goods=silk
+        }
+        random_owned={
+            limit={
+                is_core=CNG
+            }
+            trade_goods=tea
+        }
+        random_owned={
+            limit={
+                is_core=CNG
+            }
+            trade_goods=opium
+        }
+        random_owned={
+            limit={
+                is_core=CNG
+            }
+            trade_goods=coffee
+        }
+         }
+        option={
+        name="Surtido como las galletitas"
+                       FRA_1978={
+            railroad=3
+            trade_goods = cattle
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        BEL_1977={
+            railroad=3
+            trade_goods = grain
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        BEL_1984={
+            railroad=3
+            trade_goods = iron
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        BEL_1987={
+            railroad=3
+            trade_goods = wool
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        BEL_1992={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        BEL_1990={
+            railroad=3
+            trade_goods = timber
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=CNG
+            }
+            trade_goods=silk
+        }
+        random_owned={
+            limit={
+                is_core=CNG
+            }
+            trade_goods=sulphur
+        }
+        random_owned={
+            limit={
+                is_core=CNG
+            }
+            trade_goods=precious_metal
+        }
+        random_owned={
+            limit={
+                is_core=CNG
+            }
+            trade_goods=coal
+        }
+    }
+    option={
+        name="dejemos todo como esta"
+    }
+}
+
+country_event={
+    id=100011
+    title="Que necesitamos producir?"
+    desc="despues de organizar este continente del ojete, ahora podemos  hablar de lo que debemos producir para lograr un futuro sostenible."
+    is_triggered_only = yes
+	fire_only_once = yes
+    option={
+        name="toda industria pesada papa"
+        POR_1999={
+            railroad=3
+            trade_goods = timber
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        POR_2003={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        POR_2006={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=AGL
+            }
+            trade_goods=precious_metal
+        }
+        random_owned={
+            limit={
+                is_core=AGL
+            }
+            trade_goods=iron
+        }
+        random_owned={
+            limit={
+                is_core=AGL
+            }
+            trade_goods=rubber
+        }
+    }
+        option={
+        name="toda industria agropecuaria"
+                      POR_1999={
+            railroad=3
+            trade_goods = grain
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        POR_2003={
+            railroad=3
+            trade_goods = tea
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        POR_2006={
+            railroad=3
+            trade_goods = coffee
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=AGL
+            }
+            trade_goods=silk
+        }
+        random_owned={
+            limit={
+                is_core=AGL
+            }
+            trade_goods=fish
+        }
+        random_owned={
+            limit={
+                is_core=AGL
+            }
+            trade_goods=cattle
+        }
+         }
+        option={
+        name="Surtido como las galletitas"
+                POR_1999={
+            railroad=3
+            trade_goods = grain
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        POR_2003={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        POR_2006={
+            railroad=3
+            trade_goods = tobacco
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=AGL
+            }
+            trade_goods=iron
+        }
+        random_owned={
+            limit={
+                is_core=AGL
+            }
+            trade_goods=iron
+        }
+        random_owned={
+            limit={
+                is_core=AGL
+            }
+            trade_goods=coal
+        }
+    }
+    option={
+        name="dejemos todo como esta"
+    }
+}
+country_event={
+    id=100012
+    title="Que necesitamos producir?"
+    desc="despues de organizar este continente del ojete, ahora podemos  hablar de lo que debemos producir para lograr un futuro sostenible."
+    is_triggered_only = yes
+	fire_only_once = yes
+    option={
+        name="toda industria pesada papa"
+        ENG_2083={
+            railroad=3
+            trade_goods = coal
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2078={
+            railroad=3
+            trade_goods = iron
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=NMB
+            }
+            trade_goods=tropical_wood
+        }
+                random_owned={
+            limit={
+                is_core=NMB
+            }
+            trade_goods=tropical_wood
+        }
+                random_owned={
+            limit={
+                is_core=NMB
+            }
+            trade_goods=tropical_wood
+        }
+                random_owned={
+            limit={
+                is_core=NMB
+            }
+            trade_goods=tropical_wood
+        }
+    }
+        option={
+        name="toda industria agropecuaria"
+              ENG_2083={
+            railroad=3
+            trade_goods = grain
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2078={
+            railroad=3
+            trade_goods = fruit
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=NMB
+            }
+            trade_goods=cotton
+        }
+         }
+        option={
+        name="Surtido como las galletitas"
+                      ENG_2083={
+            railroad=3
+            trade_goods = cotton
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2078={
+            railroad=3
+            trade_goods = rubber
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=NMB
+            }
+            trade_goods=silk
+        }
+    }
+    option={
+        name="dejemos todo como esta"
+    }
+}
+country_event={
+    id=100013
+    title="Que necesitamos producir?"
+    desc="despues de organizar este continente del ojete, ahora podemos  hablar de lo que debemos producir para lograr un futuro sostenible."
+    is_triggered_only = yes
+	fire_only_once = yes
+    option={
+        name="toda industria pesada papa"
+        ENG_2087={
+            railroad=3
+            trade_goods = coal
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2092={
+            railroad=3
+            trade_goods = iron
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2094={
+            railroad=3
+            trade_goods = sulphur
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2096={
+            railroad=3
+            trade_goods = timber
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ORA_2103={
+            railroad=3
+            trade_goods = oil
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        TRN_2108={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ZUL_2113={
+            railroad=3
+            trade_goods = rubber
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=SAF
+            }
+            trade_goods=precious_metal
+        }
+        random_owned={
+            limit={
+                is_core=SAF
+            }
+            trade_goods=precious_metal
+        }
+        random_owned={
+            limit={
+                is_core=SAF
+            }
+            trade_goods=precious_metal
+        }
+    }
+        option={
+        name="toda industria agropecuaria"
+                       ENG_2087={
+            railroad=3
+            trade_goods = fish
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2092={
+            railroad=3
+            trade_goods = coffee
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2094={
+            railroad=3
+            trade_goods = tea
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2096={
+            railroad=3
+            trade_goods = cotton
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ORA_2103={
+            railroad=3
+            trade_goods = cattle
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        TRN_2108={
+            railroad=3
+            trade_goods = grain
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ZUL_2113={
+            railroad=3
+            trade_goods = fruit
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=SAF
+            }
+            trade_goods=silk
+        }
+        random_owned={
+            limit={
+                is_core=SAF
+            }
+            trade_goods=silk
+        }
+        random_owned={
+            limit={
+                is_core=SAF
+            }
+            trade_goods=silk
+        }
+         }
+        option={
+        name="Surtido como las galletitas"
+                              ENG_2087={
+            railroad=3
+            trade_goods = iron
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2092={
+            railroad=3
+            trade_goods = timber
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2094={
+            railroad=3
+            trade_goods = grain
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2096={
+            railroad=3
+            trade_goods = fruit
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ORA_2103={
+            railroad=3
+            trade_goods = cotton
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        TRN_2108={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ZUL_2113={
+            railroad=3
+            trade_goods = rubber
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=SAF
+            }
+            trade_goods=tea
+        }
+        random_owned={
+            limit={
+                is_core=SAF
+            }
+            trade_goods=silk
+        }
+        random_owned={
+            limit={
+                is_core=SAF
+            }
+            trade_goods=precious_metal
+        }
+    }
+    option={
+        name="dejemos todo como esta"
+    }
+}
+country_event={
+    id=100014
+    title="Que necesitamos producir?"
+    desc="despues de organizar este continente del ojete, ahora podemos  hablar de lo que debemos producir para lograr un futuro sostenible."
+    is_triggered_only = yes
+	fire_only_once = yes
+    option={
+        name="toda industria pesada papa"
+        POR_2049={
+            railroad=3
+            trade_goods = coal
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        POR_2053={
+            railroad=3
+            trade_goods = iron
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        POR_2054={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        POR_2060={
+            railroad=3
+            trade_goods = timber
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=MOZ
+            }
+            trade_goods=precious_metal
+        }
+    }
+        option={
+        name="toda industria agropecuaria"
+                POR_2049={
+            railroad=3
+            trade_goods = fruit
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        POR_2053={
+            railroad=3
+            trade_goods = cotton
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        POR_2054={
+            railroad=3
+            trade_goods = grain
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        POR_2060={
+            railroad=3
+            trade_goods = cattle
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=MOZ
+            }
+            trade_goods=tea
+        }
+                random_owned={
+            limit={
+                is_core=MOZ
+            }
+            trade_goods=tea
+        }
+                random_owned={
+            limit={
+                is_core=MOZ
+            }
+            trade_goods=coffee
+        }
+                random_owned={
+            limit={
+                is_core=MOZ
+            }
+            trade_goods=coffee
+        }
+                random_owned={
+            limit={
+                is_core=MOZ
+            }
+            trade_goods=tobacco
+        }
+         }
+        option={
+        name="Surtido como las galletitas"
+        POR_2049={
+            railroad=3
+            trade_goods = coal
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        POR_2053={
+            railroad=3
+            trade_goods = cotton
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        POR_2054={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        POR_2060={
+            railroad=3
+            trade_goods = rubber
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=MOZ
+            }
+            trade_goods=silk
+        }
+                random_owned={
+            limit={
+                is_core=MOZ
+            }
+            trade_goods=tea
+        }
+                random_owned={
+            limit={
+                is_core=MOZ
+            }
+            trade_goods=tea
+        }
+    }
+    option={
+        name="dejemos todo como esta"
+    }
+}
+country_event={
+    id=100015
+    title="Que necesitamos producir?"
+    desc="despues de organizar este continente del ojete, ahora podemos  hablar de lo que debemos producir para lograr un futuro sostenible."
+    is_triggered_only = yes
+	fire_only_once = yes
+    option={
+        name="toda industria pesada papa"
+        ENG_2068={
+            railroad=3
+            trade_goods = iron
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2071={
+            railroad=3
+            trade_goods = iron
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=ZIM
+            }
+            trade_goods=tropical_wood
+        }
+                random_owned={
+            limit={
+                is_core=ZIM
+            }
+            trade_goods=tropical_wood
+        }
+                random_owned={
+            limit={
+                is_core=ZIM
+            }
+            trade_goods=tropical_wood
+        }
+    }
+        option={
+        name="toda industria agropecuaria"
+                      ENG_2068={
+            railroad=3
+            trade_goods = cotton
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2071={
+            railroad=3
+            trade_goods = tea
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=ZIM
+            }
+            trade_goods=silk
+        }
+                random_owned={
+            limit={
+                is_core=ZIM
+            }
+            trade_goods=tobacco
+        }
+                random_owned={
+            limit={
+                is_core=ZIM
+            }
+            trade_goods=fruit
+        }
+         }
+        option={
+        name="Surtido como las galletitas"
+        ENG_2068={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2071={
+            railroad=3
+            trade_goods = rubber
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=ZIM
+            }
+            trade_goods=grain
+        }
+         random_owned={
+            limit={
+                is_core=ZIM
+            }
+            trade_goods=fruit
+        }
+    }
+    option={
+        name="dejemos todo como esta"
+    }
+}
+country_event={
+    id=100016
+    title="Que necesitamos producir?"
+    desc="despues de organizar este continente del ojete, ahora podemos  hablar de lo que debemos producir para lograr un futuro sostenible."
+    is_triggered_only = yes
+	fire_only_once = yes
+    option={
+        name="toda industria pesada papa"
+        ENG_2014={
+            railroad=3
+            trade_goods = coal
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2016={
+            railroad=3
+            trade_goods = iron
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=ZAM
+            }
+            trade_goods=oil
+        }
+    }
+        option={
+        name="toda industria agropecuaria"
+                      ENG_2014={
+            railroad=3
+            trade_goods = fruit
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2016={
+            railroad=3
+            trade_goods = cotton
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=ZAM
+            }
+            trade_goods=tea
+        }
+                random_owned={
+            limit={
+                is_core=ZAM
+            }
+            trade_goods=grain
+        }
+                random_owned={
+            limit={
+                is_core=ZAM
+            }
+            trade_goods=cattle
+        }
+         }
+        option={
+        name="Surtido como las galletitas"
+                  ENG_2014={
+            railroad=3
+            trade_goods = coal
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2016={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=ZAM
+            }
+            trade_goods=sulphur
+        }
+    }
+    option={
+        name="dejemos todo como esta"
+    }
+}
+country_event={
+    id=100017
+    title="Que necesitamos producir?"
+    desc="despues de organizar este continente del ojete, ahora podemos  hablar de lo que debemos producir para lograr un futuro sostenible."
+    is_triggered_only = yes
+	fire_only_once = yes
+    option={
+        name="toda industria pesada papa"
+        ENG_2036={
+            railroad=3
+            trade_goods = timber
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2039={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2044={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=TZN
+            }
+            trade_goods=iron
+        }
+    }
+        option={
+        name="toda industria agropecuaria"
+                      ENG_2036={
+            railroad=3
+            trade_goods = fruit
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2039={
+            railroad=3
+            trade_goods = cotton
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2044={
+            railroad=3
+            trade_goods = tobacco
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=TZN
+            }
+            trade_goods=silk
+        }
+         }
+        option={
+        name="Surtido como las galletitas"
+                ENG_2036={
+            railroad=3
+            trade_goods = cattle
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2039={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2044={
+            railroad=3
+            trade_goods = grain
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=TZN
+            }
+            trade_goods=oil
+        }
+    }
+    option={
+        name="dejemos todo como esta"
+    }
+}
+country_event={
+    id=100018
+    title="Que necesitamos producir?"
+    desc="despues de organizar este continente del ojete, ahora podemos  hablar de lo que debemos producir para lograr un futuro sostenible."
+    is_triggered_only = yes
+	fire_only_once = yes
+    option={
+        name="toda industria pesada papa"
+        ENG_2024={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2026={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        2033={
+            railroad=3
+            trade_goods = sulphur
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        2029={
+            railroad=3
+            trade_goods = iron
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        2037={
+            railroad=3
+            trade_goods = coal
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=KNA
+            }
+            trade_goods=oil
+        }
+    }
+        option={
+        name="toda industria agropecuaria"
+         ENG_2024={
+            railroad=3
+            trade_goods = cotton
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2026={
+            railroad=3
+            trade_goods = fruit
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        2033={
+            railroad=3
+            trade_goods = grain
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        2029={
+            railroad=3
+            trade_goods = grain
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        2037={
+            railroad=3
+            trade_goods = tea
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=KNA
+            }
+            trade_goods=silk
+        }
+         }
+        option={
+        name="Surtido como las galletitas"
+        ENG_2024={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ENG_2026={
+            railroad=3
+            trade_goods = cotton
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        2033={
+            railroad=3
+            trade_goods = sulphur
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        2029={
+            railroad=3
+            trade_goods = timber
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        2037={
+            railroad=3
+            trade_goods = grain
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=KNA
+            }
+            trade_goods=fish
+        }
+    }
+    option={
+        name="dejemos todo como esta"
+    }
+}
+country_event={
+    id=100019
+    title="Que necesitamos producir?"
+    desc="despues de organizar este continente del ojete, ahora podemos  hablar de lo que debemos producir para lograr un futuro sostenible."
+    is_triggered_only = yes
+	fire_only_once = yes
+    option={
+        name="toda industria pesada papa"
+        FRA_1813={
+            railroad=3
+            trade_goods = coal
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        FRA_1808={
+            railroad=3
+            trade_goods = iron
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=NGR
+            }
+            trade_goods=oil
+        }
+    }
+        option={
+        name="toda industria agropecuaria"
+        FRA_1813={
+            railroad=3
+            trade_goods = fruit
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        FRA_1808={
+            railroad=3
+            trade_goods = cotton
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=NGR
+            }
+            trade_goods=silk
+        }
+         }
+        option={
+        name="Surtido como las galletitas"
+        FRA_1813={
+            railroad=3
+            trade_goods = cotton
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        FRA_1808={
+            railroad=3
+            trade_goods = iron
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=NGR
+            }
+            trade_goods=precious_metal
+        }
+    }
+    option={
+        name="dejemos todo como esta"
+    }
+}
+country_event={
+    id=100020
+    title="Que necesitamos producir?"
+    desc="despues de organizar este continente del ojete, ahora podemos  hablar de lo que debemos producir para lograr un futuro sostenible."
+    is_triggered_only = yes
+	fire_only_once = yes
+    option={
+        name="toda industria pesada papa"
+        FRA_1892={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        FRA_1893={
+            railroad=3
+            trade_goods = iron
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+
+        random_owned={
+            limit={
+                is_core=CTD
+            }
+            trade_goods=precious_metal
+        }
+    }
+        option={
+        name="toda industria agropecuaria"
+         FRA_1892={
+            railroad=3
+            trade_goods = cattle
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        FRA_1893={
+            railroad=3
+            trade_goods = cotton
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+
+        random_owned={
+            limit={
+                is_core=CTD
+            }
+            trade_goods=grain
+        }
+                random_owned={
+            limit={
+                is_core=CTD
+            }
+            trade_goods=coffee
+        }
+         }
+        option={
+        name="Surtido como las galletitas"
+         FRA_1892={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        FRA_1893={
+            railroad=3
+            trade_goods = grain
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+
+        random_owned={
+            limit={
+                is_core=CTD
+            }
+            trade_goods=oil
+        }
+    }
+    option={
+        name="dejemos todo como esta"
+    }
+}
+country_event={
+    id=100021
+    title="Que necesitamos producir?"
+    desc="despues de organizar este continente del ojete, ahora podemos  hablar de lo que debemos producir para lograr un futuro sostenible."
+    is_triggered_only = yes
+	fire_only_once = yes
+    option={
+        name="toda industria pesada papa"
+        ETH_1852={
+            railroad=3
+            trade_goods = coal
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ETH_1853={
+            railroad=3
+            trade_goods = iron
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ETH_1859={
+            railroad=3
+            trade_goods = sulphur
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ETH_1862={
+            railroad=3
+            trade_goods = tropical_wood
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ETH_1865={
+            railroad=3
+            trade_goods = rubber
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=ETH
+            }
+            trade_goods=precious_metal
+        }
+                random_owned={
+            limit={
+                is_core=ETH
+            }
+            trade_goods=oil
+        }
+                random_owned={
+            limit={
+                is_core=ETH
+            }
+            trade_goods=oil
+        }
+    }
+        option={
+        name="toda industria agropecuaria"
+         ETH_1852={
+            railroad=3
+            trade_goods = fruit
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ETH_1853={
+            railroad=3
+            trade_goods = cotton
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ETH_1859={
+            railroad=3
+            trade_goods = grain
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ETH_1862={
+            railroad=3
+            trade_goods = timber
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ETH_1865={
+            railroad=3
+            trade_goods = cattle
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=ETH
+            }
+            trade_goods=silk
+        }
+                random_owned={
+            limit={
+                is_core=ETH
+            }
+            trade_goods=tea
+        }
+                random_owned={
+            limit={
+                is_core=ETH
+            }
+            trade_goods=coffee
+        }
+         }
+        option={
+        name="Surtido como las galletitas"
+         ETH_1852={
+            railroad=3
+            trade_goods = coal
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ETH_1853={
+            railroad=3
+            trade_goods = iron
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ETH_1859={
+            railroad=3
+            trade_goods = timber
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ETH_1862={
+            railroad=3
+            trade_goods = cotton
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        ETH_1865={
+            railroad=3
+            trade_goods = fruit
+			add_province_modifier = {
+			name = organization_of_africa
+			duration = 2000
+			}
+        }
+        random_owned={
+            limit={
+                is_core=ETH
+            }
+            trade_goods=sulphur
+        }
+                random_owned={
+            limit={
+                is_core=ETH
+            }
+            trade_goods=coffee
+        }
+                random_owned={
+            limit={
+                is_core=ETH
+            }
+            trade_goods=tea
+        }
+    }
+    option={
+        name="dejemos todo como esta"
+    }
+}

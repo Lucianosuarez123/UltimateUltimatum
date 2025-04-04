@@ -1,0 +1,36 @@
+country_event={
+    id=9999999
+    title="fixed cores"
+    desc="ya esta"
+		fire_only_once = yes
+    trigger={
+        has_country_flag=fixed
+        tag= AUS
+	NOT={capital=619}
+    }
+    option={
+        name="si"
+        release=POL
+        release=SLV
+        release=SLO
+        release=CRO
+        release=SIE
+        release=HUN
+        release=LOM
+        release=BOH
+        release=RUT
+        release=TRE
+	release=KNI
+        POL={all_core={remove_core=AUS}}
+        SLV={all_core={remove_core=AUS}}
+        SLO={all_core={remove_core=AUS}}
+        CRO={all_core={remove_core=AUS}}
+        SIE={all_core={remove_core=AUS}}
+        HUN={all_core={remove_core=AUS}}
+        VEN={all_core={remove_core=AUS}}
+        LOM={all_core={remove_core=AUS}}
+        BOH={all_core={remove_core=AUS}}
+        RUT={all_core={remove_core=AUS}}
+        TRE={all_core={remove_core=AUS}}
+    }
+}

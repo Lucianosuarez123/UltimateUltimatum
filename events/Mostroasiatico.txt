@@ -1,0 +1,25 @@
+country_event = {
+	id = 976749
+	title = "EVTNAME97674" #The Line of Advantage
+	desc = "EVTDESC97674"
+	picture = "asian_administration"
+	is_triggered_only = yes
+	trigger = {
+		
+			tag = CHI
+	}		
+	option = {
+		name = "EVT97674OPTA"
+		add_country_modifier = {
+			name = mostro_asiatico
+			duration = -1
+		}
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			dominant_issue = {
+				factor = 0.1
+				value = jingoism
+			}
+		}
+	}
+}

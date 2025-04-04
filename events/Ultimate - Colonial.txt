@@ -1,0 +1,1289 @@
+
+country_event = {
+	id = 400001 #Declaration of Independence part 2
+	title = "Declaration of Independence"
+	desc = "EVTDESC400001"
+	picture = "usa_declaration"
+
+	trigger = {
+		tag = THC
+		OR = {
+			war_with = ENG
+			war_with = ANG
+			is_greater_power = yes
+		}
+	}
+
+	option = {
+		name = "Our Nation Shall Be A Democratic Republic!"
+		clr_country_flag = US_revolution_ongoing
+		change_tag = USA
+		government = democracy
+		set_global_flag = merica_independent
+		remove_country_modifier = less_immigration
+		any_owned = {
+			remove_core = THC
+		}
+	}
+	option = {
+		name = "This New American Republic Needs a Strong Ruler!"
+		clr_country_flag = US_revolution_ongoing
+		change_tag = USA
+		government = presidential_dictatorship
+		set_global_flag = merica_independent
+		remove_country_modifier = less_immigration
+		any_owned = {
+			remove_core = THC
+		}
+	}
+	option = {
+		name = "I Shall Found A Mighty American Dynasty!"
+		clr_country_flag = US_revolution_ongoing
+		change_tag = USA
+		government = absolute_monarchy
+		set_global_flag = merica_independent
+		remove_country_modifier = less_immigration
+		any_owned = {
+			remove_core = THC
+		}
+	}
+}
+
+country_event = {
+	id = 400002 #boston tea party event for UK
+	title = "The Boston Tea Party"
+	desc = "EVTDESC400002"
+	picture = "boston_tea_party"
+	is_triggered_only = yes
+
+	option = {
+		name = "We must subjugate these rebellious colonials"
+		any_pop = {
+			consciousness = 1
+		}
+		THC = {
+			any_pop = {
+				consciousness = 2
+				militancy = 4
+			}
+		}
+		ENG = {
+			set_country_flag = tea_party
+		}
+	}
+	
+	option = {
+		name = "Let us make some concessions"
+		remove_country_modifier = tea_act_mod
+		remove_country_modifier = townshend_act_mod
+		any_pop = {
+			consciousness = 2
+		}
+		THC = {
+			any_pop = {
+				consciousness = 2
+			}
+			remove_country_modifier = townshend_act_mod_thc
+			remove_country_modifier = tea_act_mod_thc
+		}
+		ENG = {
+			set_country_flag = tea_party
+		}
+	}
+}
+	
+province_event = {
+	id = 400003 #slavery province
+	title = "Slavery Expansion"
+	desc = "$COUNTRY_ADJ$ landowners have found some use for slaves in $STATENAME$, therefore expanding the institution to these lands."
+	trigger = {
+		state_scope = {
+			is_slave = no
+			is_colonial = yes
+		}
+		owner = {
+			slavery = yes_slavery
+		}
+	}
+
+	option = {
+		name = "Very Well"
+		state_scope = {
+			is_slave = yes
+		}
+	}
+}
+
+country_event = {
+	id = 400004 #Declaration of Independence part 3
+	title = "Our Capital"
+	desc = "Now that we have a nation we shall need a capital. We can choose from four locations, all of which are excellent."
+	picture = "usacapitolpic"
+
+	trigger = {
+		tag = USA
+		has_global_flag = merica_independent
+		NOT = {
+			has_global_flag = merica_capital
+		}
+	}
+	option = {
+		name = "Let us stay in Philadelphia"
+		set_global_flag = merica_capital
+	}
+	option = {
+		name = "Let us build a new city along the Potomac in honour of General Washington"
+		capital = 220
+		220 = {
+			change_province_name = "Washington"
+		}
+		set_global_flag = merica_capital
+	}
+	option = {
+		name = "New York"
+		capital = 232
+		set_global_flag = merica_capital
+	}
+
+	option = {
+		name = "Boston"
+		capital = 243
+		set_global_flag = merica_capital
+	}
+}
+country_event = {
+	id = 400005 #Colonial Dispute
+	title = "Colonial Dispute"
+	desc = "EVTDESC400005"
+	picture = "colonydisputepic"
+	
+	trigger = {
+		NOT = {
+			year = 1820
+		}
+		colonial_nation = yes
+		any_neighbor_country = {
+			colonial_nation = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 150
+		modifier = {
+			factor = 0.9
+			prestige = 20
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.9
+			jingoism = 5
+		}
+		modifier = {
+			factor = 0.9
+			jingoism = 10
+		}
+		modifier = {
+			factor = 1.1
+			pacifism = 5
+		}
+		modifier = {
+			factor = 1.1
+			pacifism = 10
+		}
+		modifier = {
+			factor = 0.8
+			war_policy = jingoism
+		}
+		modifier = {
+			factor = 0.9
+			war_policy = pro_military
+		}
+		modifier = {
+			factor = 1.1
+			war_policy = anti_military
+		}
+		modifier = {
+			factor = 1.2
+			war_policy = pacifism
+		}
+		modifier = {
+			factor = 0.9
+			is_greater_power = yes
+		}
+	}
+	option = {
+		name = "$COUNTRY$ Does Not Compromise"
+		random_country = {
+			limit = {
+				colonial_nation = yes
+					NOT = {
+						tag = THIS
+					}
+			}
+			add_casus_belli = {
+				target = THIS
+				type = place_in_the_sun
+				months = 12
+			}
+			relation = {
+				who = THIS
+				value = -20
+			}
+		}
+	}
+	option = {
+		name = "Try To Calm Things Down"
+			any_pop = {
+				dominant_issue = {
+					value = jingoism
+					factor = 0.05
+				}
+				militancy = 0.5
+			}
+	}
+}
+province_event = {
+        id = 400006 #Pirates
+        title = "Pirates in $PROVINCENAME$"
+        desc = "Pirates have been spotted up and down the coast of $PROVINCENAME$. Merchants fear they may disrupt their trade."
+
+	trigger = {           
+		is_colonial = yes
+		is_overseas = yes
+		is_coastal = yes
+		NOT = {
+			year = 1800
+		}
+		crime_fighting = 0.6
+		has_province_modifier = piratesmod
+	}
+	mean_time_to_happen = {
+		months = 150
+		modifier = {
+			factor = 1.4
+			NOT = {
+				crime_fighting = 0.5
+			}
+		}
+	}
+	option = {
+		name = "Bloody Pirates!"
+		add_province_modifier = { 
+			name = piratesmod
+			duration = -1
+		}
+	}
+}
+province_event = {
+        id = 400007 #Pirates defeated
+        title = "$PROVINCENAME$ Pirates Dislodged"
+        desc = "Following an increase in crackdowns on piracy by private and government agents the pirates in $PROVINCENAME$ have taken flight."
+
+	trigger = {
+		crime_fighting = 0.75
+		has_province_modifier = piratesmod
+	}
+
+	mean_time_to_happen = {
+		months = 100
+		modifier = {
+			factor = 1.4
+			crime_fighting = 0.8
+		}
+	}
+	option = {
+		name = "Rats"
+		remove_province_modifier = piratesmod
+		remove_core = PIR
+	}
+}
+
+
+province_event = {
+        id = 400008 #Pirates Settle in
+        title = "Pirates Settle In $PROVINCENAME$"
+        desc = "Our inability to deal with piracy in $PROVINCENAME$ has incited some pirates to permanently settle there. Many of them now call $PROVINCENAME$ home and directly oppose our rule."
+
+	trigger = {
+		NOT = {
+			crime_fighting = 0.5
+		}
+		has_province_modifier = piratesmod
+	}
+	
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 1.4
+			NOT = {
+				crime_fighting = 0.4
+			}
+		}
+	}
+	option = {
+		name = "Blast!"
+		add_core = PIR
+	}
+}
+
+country_event = {
+	id = 400009
+	title = "Louisiana Purchase"
+	desc = "The French are offering us to buy Louisiana. It is up to you, our leader, to decide whether or not we accept their offer."
+	picture = administration
+	is_triggered_only = yes
+
+	option = {
+	name = "We accept their offer."
+	relation = {
+		who = FRA
+		value = 50
+	}
+	prestige = 10
+	money = -50000
+	FRA = {
+		money = 50000
+	}
+	144 = {
+		secede_province = USA
+	}
+	148 = {
+		secede_province = USA
+	}
+	151 = {
+		secede_province = USA
+	}
+	126 = {
+		secede_province = USA
+	}
+	124 = {
+		secede_province = USA
+	}
+	121 = {
+		secede_province = USA
+	}
+	139 = {
+		secede_province = USA
+	}
+	140 = {
+		secede_province = USA
+	}
+    141 = {
+        secede_province = USA                        
+    }                                    
+                        142 = {                    
+                                secede_province = USA
+                                        }
+                        143 = {
+                                secede_province = USA
+                                        }
+                        145 = {
+                                secede_province = USA
+                                        }
+                        147 = {
+                                secede_province = USA
+                                        }
+                        149 = {
+                                secede_province = USA
+                                        }
+                        146 = {
+                                secede_province = USA
+                                        }
+                        150 = {
+                                secede_province = USA
+                                        }
+                        152 = {
+                                secede_province = USA
+                                        }
+                        153 = {
+                                secede_province = USA
+                                        }
+                        154 = {
+                                secede_province = USA
+                                        }
+			156 = {
+				secede_province = USA
+					}
+			155 = {
+				secede_province = USA
+					}
+			117 = {
+				secede_province = USA
+					}
+			119 = {
+				secede_province = USA
+					}
+			115 = {
+				secede_province = USA
+					}
+			116 = {
+				secede_province = USA
+					}
+                        128 = {
+                                secede_province = USA
+                                        }
+			112 = {
+				secede_province = USA
+					}
+                        127 = {
+                                secede_province = USA
+                                        }
+                        125 = {
+                                secede_province = USA
+                                        }
+                        123 = {
+                                secede_province = USA
+                                        }
+                        122 = {
+                                secede_province = USA
+                                        }
+                        120 = {
+                                secede_province = USA
+                                        }
+			110 = {
+				secede_province = USA
+					}
+				}
+        option = {
+        name = "We decline."
+        relation = {
+                    who = FRA
+                    value = -50
+                  }
+        }
+	}
+country_event={
+	id=99999996
+	title="Expand ours Territories"
+	desc="As our colonial government, through multiple means became closer to the status of the great powers our overlords, the English Government gave some laws as limitations for us, setting us back."
+	picture= administration
+	fire_only_once=yes
+	trigger={
+		year=1685
+		owns=195
+		197={
+			empty=yes
+		}
+		is_greater_power=yes
+		NOT={has_country_flag=first_expand}
+	}
+	mean_time_to_happen={
+		months= 1
+	}
+	option={
+		name=" yes Sr."
+		set_country_flag=first_expand
+		USA_196 = {secede_province=THIS}
+	}
+}
+country_event={
+	id=99999995
+	title="Expand ours Territories"
+	desc="As our colonial government, through multiple means became closer to the status of the great powers our overlords, the English Government gave some laws as limitations for us, setting us back."
+	picture= administration
+	fire_only_once=yes
+	trigger={
+		is_greater_power=yes
+		OR={
+			owns=197
+			has_country_flag=first_expand
+		}
+		192={
+			empty=yes
+		}
+		NOT={has_country_flag=second_expand}
+	}
+	mean_time_to_happen={
+		months= 1
+	}
+	option={
+		name=" yes Sr."
+		set_country_flag=second_expand
+		USA_194 = {secede_province=THIS}
+	}
+}
+country_event={
+	id=99999994
+	title="Expand ours Territories"
+	desc="As our colonial government, through multiple means became closer to the status of the great powers our overlords, the English Government gave some laws as limitations for us, setting us back."
+	picture= administration
+	fire_only_once=yes
+	trigger={
+		is_greater_power=yes
+		OR={
+			owns=194
+			has_country_flag=second_expand
+		}
+		140={
+			empty=yes
+		}
+		NOT={has_country_flag=third_expand}
+	}
+	mean_time_to_happen={
+		months= 1
+	}
+	option={
+		name=" yes Sr."
+		set_country_flag=third_expand
+		USA_139 = {secede_province=THIS}
+	}
+}
+country_event={
+	id=99999993
+	title="Expand ours Territories"
+	desc="As our colonial government, through multiple means became closer to the status of the great powers our overlords, the English Government gave some laws as limitations for us, setting us back."
+	picture= administration
+	fire_only_once=yes
+	trigger={
+		is_greater_power=yes
+		OR={
+			owns=139
+			has_country_flag=third_expand
+		}
+		144={
+			empty=yes
+		}
+		NOT={has_country_flag=fourth_expand}
+	}
+	mean_time_to_happen={
+		months= 1
+	}
+	option={
+		name=" yes Sr."
+		set_country_flag=fourth_expand
+		USA_144 = {secede_province=THIS}
+	}
+}
+country_event={
+	id=99999992
+	title="Expand ours Territories"
+	desc="As our colonial government, through multiple means became closer to the status of the great powers our overlords, the English Government gave some laws as limitations for us, setting us back."
+	picture= administration
+	fire_only_once=yes
+	trigger={
+		is_greater_power=yes
+		OR={
+			owns=144
+			has_country_flag=fourth_expand
+		}
+		149={
+			empty=yes
+		}
+		NOT={has_country_flag=fifth_expand}
+	}
+	mean_time_to_happen={
+		months= 1
+	}
+	option={
+		name=" yes Sr."
+		set_country_flag=fifth_expand
+		USA_148 = {secede_province=THIS}
+	}
+}
+country_event={
+	id=99999991
+	title="Expand ours Territories"
+	desc="As our colonial government, through multiple means became closer to the status of the great powers our overlords, the English Government gave some laws as limitations for us, setting us back."
+	picture= administration
+	fire_only_once=yes
+	trigger={
+		is_greater_power=yes
+		OR={
+			owns=146
+			has_country_flag=fifth_expand
+		}
+		128={
+			empty=yes
+		}
+		NOT={has_country_flag=sixth_expand}
+	}
+	mean_time_to_happen={
+		months= 1
+	}
+	option={
+		name=" yes Sr."
+		set_country_flag=sixth_expand
+		USA_124 = {secede_province=THIS}
+	}
+}
+country_event={
+	id=99999990
+	title="Expand ours Territories"
+	desc="As our colonial government, through multiple means became closer to the status of the great powers our overlords, the English Government gave some laws as limitations for us, setting us back."
+	picture= administration
+	fire_only_once=yes
+	trigger={
+		is_greater_power=yes
+		OR={
+			owns=123
+			has_country_flag=sixth_expand
+		}
+		125={
+			empty=yes
+		}
+		NOT={has_country_flag=seventh_expand}
+	}
+	mean_time_to_happen={
+		months= 1
+	}
+	option={
+		name=" yes Sr."
+		set_country_flag=seventh_expand
+		USA_111 = {secede_province=THIS}
+	}
+}
+country_event={
+	id=99999989
+	title="Expand ours Territories"
+	desc="As our colonial government, through multiple means became closer to the status of the great powers our overlords, the English Government gave some laws as limitations for us, setting us back."
+	picture= administration
+	fire_only_once=yes
+	trigger={
+		is_greater_power=yes
+		OR={
+			owns=113
+			has_country_flag=seventh_expand
+		}
+		93={
+			empty=yes
+		}
+		NOT={has_country_flag=eighth_expand}
+	}
+	mean_time_to_happen={
+		months= 1
+	}
+	option={
+		name=" yes Sr."
+		set_country_flag=eighth_expand
+		USA_91 = {secede_province=THIS}
+	}
+}
+country_event={
+	id=99999988
+	title="Expand ours Territories"
+	desc="As our colonial government, through multiple means became closer to the status of the great powers our overlords, the English Government gave some laws as limitations for us, setting us back."
+	picture= administration
+	fire_only_once=yes
+	trigger={
+		is_greater_power=yes
+		OR={
+			owns=91
+			has_country_flag=eighth_expand
+		}
+		82={
+			empty=yes
+		}
+		NOT={has_country_flag=nineth_expand}
+	}
+	mean_time_to_happen={
+		months= 1
+	}
+	option={
+		name=" yes Sr."
+		set_country_flag=nineth_expand
+		USA_81 = {secede_province=THIS}
+	}
+}
+country_event={
+	id=99999987
+	title="Expand ours Territories"
+	desc="As our colonial government, through multiple means became closer to the status of the great powers our overlords, the English Government gave some laws as limitations for us, setting us back."
+	picture= administration
+	fire_only_once=yes
+	trigger={
+		is_greater_power=yes
+		OR={
+			owns=83
+			has_country_flag=nineth_expand
+		}
+		79={
+			empty=yes
+		}
+		NOT={has_country_flag=tenth_expand}
+	}
+	mean_time_to_happen={
+		months= 1
+	}
+	option={
+		name=" yes Sr."
+		set_country_flag=tenth_expand
+		USA_78 = {secede_province=THIS}
+	}
+}
+country_event = {
+	id = 3000000
+	title = "Colonial Restrictions"
+	desc = "As our colonial government, through multiple means became closer to the status of the great powers our overlords, the English Government gave some laws as limitations for us, setting us back."
+	picture = administration
+	trigger = {
+		tag = COA
+		rank = 9
+		is_vassal = yes
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "So be it."
+		prestige_factor = -0.75
+	}
+}
+
+country_event = {
+	id = 30000006
+	title = "Unite the nation!"
+	desc = "The England question"
+	picture = administration
+	fire_only_once=yes
+	trigger = {
+		exists=ENG
+		tag=ANG
+		ANG={
+		OR={
+		capital=300
+		owns=300
+		}
+		}
+	}
+	mean_time_to_happen = {
+		months=1
+	}
+	option = {
+		name = "send a message inviting the union"
+		set_country_flag=messageSend
+		random_country={
+			limit={
+				NOT={has_country_flag=messageSend}
+				primary_culture=english
+			}
+			country_event=30000007
+		}
+	}
+	option={
+		name = "war"
+		war={
+			target=ENG
+			attacker_goal = {
+			casus_belli= conquest
+				}
+			defender_goal={
+				casus_belli= status_quo
+			}
+		}
+	}
+}
+country_event = {
+	id = 30000007
+	title = "England message"
+	desc = "They are inviting us to join the union"
+	picture = administration
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days=1
+	}
+	option = {
+		name = "we accept"
+		random_country={
+			limit={
+				has_country_flag=messageSend
+			}
+			inherit=THIS
+			country_event=30000008
+		}
+	}
+		option = {
+		name = "we not accept"
+		set_country_flag=refusedunion
+		war={
+			target=ANG
+			attacker_goal = {
+			casus_belli= humiliate
+				}
+			defender_goal={
+				casus_belli= conquest
+			}
+		}
+	}
+}
+country_event = {
+	id = 30000008
+	title = "Welcome to the union"
+	desc = "They accepted the proposal"
+	picture = administration
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days=1
+	}
+	option = {
+		name = "Nice"
+		prestige=10
+	}
+	}
+
+country_event = {
+	id = 3000009
+	title = "Unite the nation!"
+	desc = "The United kingdom question"
+	picture = administration
+	fire_only_once=yes
+	trigger = {
+		exists=ANG
+		tag=ENG
+		ENG={
+		OR={
+		capital=300
+		owns=300
+		}
+		}
+	}
+	mean_time_to_happen = {
+		months=1
+	}
+	option = {
+		name = "send a message inviting the union"
+		set_country_flag=messageSendENG
+		random_country={
+			limit={
+				NOT={has_country_flag=messageSendENG}
+				primary_culture=english
+			}
+			country_event=30000010
+		}
+	}
+	option={
+		name = "war"
+		war={
+			target=ANG
+			attacker_goal = {
+			casus_belli= conquest
+				}
+			defender_goal={
+				casus_belli= status_quo
+			}
+		}
+	}
+}
+country_event = {
+	id = 30000010
+	title = "England message"
+	desc = "They are inviting us to join the union"
+	picture = administration
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days=1
+	}
+	option = {
+		name = "we accept"
+		random_country={
+			limit={
+				has_country_flag=messageSendENG
+			}
+			inherit=THIS
+			country_event=30000008
+		}
+	}
+		option = {
+		name = "we not accept"
+		set_country_flag=refusedunion
+		war={
+			target=ENG
+			attacker_goal = {
+			casus_belli= humiliate
+				}
+			defender_goal={
+				casus_belli= conquest
+			}
+		}
+	}
+}
+country_event = {
+	id = 30000011
+	title = "Spanish conference"
+	desc = "A few days ago the Portuguese decided to leave the union. now we must make a decision"
+	picture = administration
+	fire_only_once=yes
+	mean_time_to_happen = {
+		months=1
+	}
+		trigger = {
+		exists=POR
+		NOT={is_our_vassal=POR}
+		tag=IBU
+	}
+	option = {
+		name = "Let it be"
+		THIS={change_tag=SPA}
+		prestige=-10
+		POR={all_core={remove_core=SPA}}
+	}
+		option = {
+		name = "unacceptable"
+		set_country_flag=war_unificationspa
+		war={
+			target=POR
+			attacker_goal = {
+			casus_belli= civil_war
+				}
+			defender_goal={
+				casus_belli= status_quo
+			}
+		}
+		IBU={change_tag=SPA}
+	}
+}
+country_event = {
+	id = 30000014
+	title = "Portuguese conference"
+	desc = "A few days ago the Spanish decided to leave the union. now we must make a decision"
+	picture = administration
+	fire_only_once=yes
+	mean_time_to_happen = {
+		months=1
+	}
+		trigger = {
+		exists=SPA
+		tag=IBU
+		NOT={is_our_vassal=SPA}
+	}
+	option = {
+		name = "Let it be"
+		THIS={change_tag=POR}
+		prestige=-10
+		SPA={all_core={remove_core=POR}}
+	}
+		option = {
+		name = "unacceptable"
+		set_country_flag=war_unificationPOR
+		war={
+			target=SPA
+			attacker_goal = {
+			casus_belli= civil_war
+				}
+			defender_goal={
+				casus_belli= status_quo
+			}
+		}
+		THIS={change_tag=POR}
+	}
+}
+country_event = {
+	id = 30000015
+	title = "Portuguese Surrender"
+	desc = "we couldn't against them. The dream is over."
+	picture = administration
+	fire_only_once=yes
+	mean_time_to_happen = {
+		days=1
+	}
+		trigger = {
+		tag=POR
+		war=no
+		POR={has_country_flag=war_unificationPOR}
+		SPA={NOT={has_country_flag=defeatedwar}}
+	}
+	option = {
+		name = "Dismantle the empire"
+		prestige=-15
+		SPA={all_core={remove_core=POR}}
+		SPA_1955={secede_province=SPA}
+		SPA_1455={secede_province=SPA}
+		SPA_1459={secede_province=SPA}
+		SPA_1463={secede_province=SPA}
+		SPA_2209={secede_province=SPA}
+		HAI_2213={secede_province=SPA}
+		SPA_610={secede_province=SPA}
+		SPA_2517={secede_province=SPA}
+	}
+}
+country_event = {
+	id = 30000016
+	title = "Portuguese win"
+	desc = "In an extraordinary display of strength and strategy, Portugal has triumphed over Spain. The once-dominant Spanish Empire has been humbled, and Portugal stands ready to reshape the future of the Iberian Peninsula."
+	picture = administration
+	fire_only_once=yes
+	mean_time_to_happen = {
+		days=1
+	}
+		trigger = {
+		tag=POR
+		war=no
+		POR={has_country_flag=war_unificationPOR}
+		SPA={has_country_flag=defeatedwar}
+	}
+	option = {
+		name = "Unite the empire"
+		prestige=20
+		SPA={clr_country_flag=defeatedwar}
+		POR={change_tag=IBU}
+		SPA={all_core={add_core=IBU}}
+		IBU={all_core={remove_core=SPA}}
+		IBU={all_core={remove_core=POR}}
+		inherit=POR
+		inherit=SPA
+	}
+}
+country_event = {
+	id = 30000012
+	title = "Spanish Surrender"
+	desc = "we couldn't against them. The dream is over."
+	picture = administration
+	fire_only_once=yes
+	mean_time_to_happen = {
+		days=1
+	}
+		trigger = {
+		war=no
+		tag=SPA
+		SPA={has_country_flag=war_unificationspa}
+		POR={NOT={has_country_flag=defeatedwar}}
+	}
+	option = {
+		name = "Dismantle the empire"
+		prestige=-15
+		POR={all_core={remove_core=SPA}}
+		POR_1999={secede_province=POR}
+		POR_2003={secede_province=POR}
+		POR_2006={secede_province=POR}
+		POR_2049={secede_province=POR}
+		POR_2053={secede_province=POR}
+		POR_2054={secede_province=POR}
+		POR_2060={secede_province=POR}
+		SPA={liberate_country=PHI}
+		SPA={liberate_country=CAT}
+		SPA={liberate_country=BSQ}
+	}
+}
+country_event = {
+	id = 30000013
+	title = "Spanish wins"
+	desc = "In a stunning display of military prowess, Spain has emerged victorious over Portugal. The once-great empire is now poised to reclaim its former glory and reassert its dominance on the Iberian Peninsula."
+	picture = administration
+	fire_only_once=yes
+	mean_time_to_happen = {
+		days=1
+	}
+		trigger = {
+		war=no
+		tag=SPA
+		SPA={has_country_flag=war_unificationspa}
+		POR={has_country_flag=defeatedwar}
+	}
+	option = {
+		name = "Unite the Empire"
+		POR={clr_country_flag=defeatedwar}
+		thiS={change_tag=IBU}
+		POR={all_core={add_core=IBU}}
+		prestige=20
+		IBU={all_core={remove_core=POR}}
+		IBU={all_core={remove_core=SPA}}
+		inherit=POR
+		inherit=SPA
+	}
+}
+country_event = {
+	id = 30000017
+	title = "Colony"
+	desc = "A simple colony"
+	picture = administration
+	fire_only_once=yes
+	mean_time_to_happen = {
+		days=1
+	}
+		trigger = {
+		war=no
+		tag=VNE
+		has_global_flag=setup_test1_done
+	}
+	option = {
+	name "OK"
+	any_owned = { limit = {  continent = north_america } add_province_modifier = { name = new_world_colonies duration = 500000 } }
+	any_owned = { limit = {  continent = south_america } add_province_modifier = { name = new_world_colonies duration = 500000 } }
+	}
+}
+country_event = {
+	id = 30000018
+	title = "Colony"
+	desc = "A simple colony"
+	picture = administration
+	fire_only_once=yes
+	mean_time_to_happen = {
+		days=1
+	}
+		trigger = {
+		war=no
+		tag=VNG
+		has_global_flag=setup_test1_done
+	}
+	option = {
+	name "OK"
+	any_owned = { limit = {  continent = north_america } add_province_modifier = { name = new_world_colonies duration = 500000 } }
+	any_owned = { limit = {  continent = south_america } add_province_modifier = { name = new_world_colonies duration = 500000 } }
+	}
+}
+country_event = {
+	id = 30000019
+	title = "Colony"
+	desc = "A simple colony"
+	picture = administration
+	fire_only_once=yes
+	mean_time_to_happen = {
+		days=1
+	}
+		trigger = {
+		war=no
+		tag=VRP
+		has_global_flag=setup_test1_done
+	}
+	option = {
+	name "OK"
+	any_owned = { limit = {  continent = north_america } add_province_modifier = { name = new_world_colonies duration = 500000 } }
+	any_owned = { limit = {  continent = south_america } add_province_modifier = { name = new_world_colonies duration = 500000 } }
+	}
+}
+country_event = {
+	id = 30000020
+	title = "Colony"
+	desc = "A simple colony"
+	picture = administration
+	fire_only_once=yes
+	mean_time_to_happen = {
+		days=1
+	}
+		trigger = {
+		war=no
+		tag=VBZ
+		has_global_flag=setup_test1_done
+	}
+	option = {
+	name "OK"
+	any_owned = { limit = {  continent = north_america } add_province_modifier = { name = new_world_colonies duration = 500000 } }
+	any_owned = { limit = {  continent = south_america } add_province_modifier = { name = new_world_colonies duration = 500000 } }
+	}
+}
+country_event = {
+	id = 30000021
+	title = "Colony"
+	desc = "A simple colony"
+	picture = administration
+	fire_only_once=yes
+	mean_time_to_happen = {
+		days=1
+	}
+		trigger = {
+		war=no
+		tag=VPU
+		has_global_flag=setup_test1_done
+	}
+	option = {
+	name "OK"
+	any_owned = { limit = {  continent = north_america } add_province_modifier = { name = new_world_colonies duration = 500000 } }
+	any_owned = { limit = {  continent = south_america } add_province_modifier = { name = new_world_colonies duration = 500000 } }
+	}
+}
+country_event = {
+	id = 30000022
+	title = "Florida sell"
+	desc = "United state of america wants purchase florida"
+	picture = administration
+	fire_only_once=yes
+	is_triggered_only=yes
+	mean_time_to_happen = {
+		days=1
+	}
+	option = {
+	name "We accept the offer"
+	money=100000
+	prestige=50
+	USA_200={secede_province=USA}
+	USA_200={add_core=USA}
+	USA_200={remove_core=THIS}
+	USA={country_event=30000023}
+	}
+	option = {
+	name "We refuse the offer"
+	USA={relation={who= THIS value=-120}}
+	USA={
+	money=100000
+	country_event=30000024
+	}
+	prestige=-30
+	}
+}
+country_event = {
+	id = 30000023
+	title = "Negotiations"
+	desc = "They accepted the offer, Florida is ours."
+	picture = administration
+	fire_only_once=yes
+	is_triggered_only=yes
+	mean_time_to_happen = {
+		days=15
+	}
+	option = {
+	name "NICE!"
+	prestige=10
+	}
+}
+country_event = {
+	id = 30000024
+	title = "Negotiations"
+	desc = "They refused the offer, What are we going to do now? "
+	picture = administration
+	fire_only_once=yes
+	is_triggered_only=yes
+	mean_time_to_happen = {
+		days=15
+	}
+	option = {
+	name "We tried it"
+	prestige=-15
+
+	}
+	option = {
+	name "we're going to have to take it by force"
+	random_country={
+		limit={
+			has_global_flag=buy_florida
+		}
+		country_event=30000025
+	}
+	}
+}
+country_event = {
+	id = 30000025
+	title = "Florida ultimate tension"
+	desc = "they really want Florida, They are preparing for war."
+	picture = administration
+	fire_only_once=yes
+	is_triggered_only=yes
+	mean_time_to_happen = {
+		days=15
+	}
+	option = {
+	name "We better secede him and that's it"
+	USA_200={secede_province=USA}
+	USA_200={add_core=USA}
+	USA_200={remove_core=THIS}
+	USA={country_event=30000023}
+	prestige=-50
+
+	}
+	option = {
+	name "If They want war, They will have war"
+			war={
+			target=USA
+			attacker_goal = {
+			casus_belli= status_quo
+				}
+			defender_goal={
+				casus_belli=acquire_state
+				   state_province_id = 200
+				   casus_belli=place_in_the_sun
+				   state_province_id = 200
+			}
+		}
+	}
+}

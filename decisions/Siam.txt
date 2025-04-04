@@ -1,0 +1,109 @@
+political_decisions = {
+form_khmer_empire = {
+        picture=restore_khmer_empire
+        potential = {
+            is_culture_group=southeast_asian
+            OR={
+            tag=SIA
+            tag=LUA
+            tag=CAM
+            tag=DAI
+            tag=BUR
+            }
+            NOT={has_country_flag=united_khmer}
+		}
+		allow = {
+        war=no
+        LUA = {
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+						}
+					}
+				}
+			}
+         CAM = {
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+						}
+					}
+				}
+			}
+        DAI = {
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+						}
+					}
+				}
+			}
+        SIA = {
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+						}
+					}
+				}
+			}
+		BUR = {
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+						}
+					}
+				}
+			}
+        THIS= {all_core = {owned_by = THIS}}
+		}
+
+		effect = {
+            prestige = 50
+            research_points=50000
+			inherit=SIA
+			inherit=CAM
+			inherit=LUA
+			inherit=DAI
+			inherit=BUR
+			change_tag=KHM
+			add_accepted_culture=thai
+			add_accepted_culture=burmese
+			add_accepted_culture=lao
+			add_accepted_culture=vietnamese
+			add_accepted_culture=shan
+			add_accepted_culture=asian_minor
+			add_accepted_culture=kachin
+			add_accepted_culture=karen
+            SIA={all_core={add_core=THIS}}
+            DAI={all_core={add_core=THIS}}
+            CAM={all_core=[add_core=THIS]}
+            LUA={all_core={add_core=THIS}}
+			BUR={all_core={add_core=THIS}}
+            set_country_flag=united_khmer
+			set_global_flag=KHM_formed
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

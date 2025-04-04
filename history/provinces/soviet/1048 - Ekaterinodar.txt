@@ -1,0 +1,10 @@
+add_core = TCA
+owner = TUR
+controller = TUR
+1700.1.1 = {
+owner = RUS
+controller = RUS
+add_core = RUS
+		}
+trade_goods = cattle
+life_rating = 35

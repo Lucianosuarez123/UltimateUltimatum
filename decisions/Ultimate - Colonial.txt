@@ -1,0 +1,1215 @@
+political_decisions = {
+
+virginia_company = {
+	picture = virginiacompanypic
+		potential = {
+year = 1540
+		214 = {
+			empty = yes
+			}
+		tag = ANG
+		NOT = {
+		has_global_flag = virginiacompanychartered
+			}
+				}
+		allow = {
+			money = 10000
+			}
+
+
+		effect = {
+		set_global_flag = virginiacompanychartered
+		prestige = 5
+		money = -10000
+		214 = {
+		secede_province = ANG
+			}
+				204 = {
+		secede_province = ANG
+			}
+					205 = {
+		secede_province = ANG
+			}
+					210 = {
+		secede_province = ANG
+			}
+					207 = {
+		secede_province = ANG
+			}
+					208 = {
+		secede_province = ANG
+			}
+					209 = {
+		secede_province = ANG
+			}
+				}
+			}
+
+found_quebec = {
+	picture = champlain
+		potential = {
+year = 1540
+		65 = {
+			empty = yes
+			}
+		tag = FRA
+		NOT = {
+		has_global_flag = quebecity_founded
+			}
+				}
+		allow = {
+			money = 10000
+			}
+
+
+		effect = {
+		set_global_flag = quebecity_founded
+		prestige = 5
+		money = -10000
+		65 = {
+		secede_province = FRA
+			}
+		65 = {
+		secede_province = FRA
+			}
+				61 = {
+		secede_province = FRA
+			}
+					62 = {
+		secede_province = FRA
+			}
+					63 = {
+		secede_province = FRA
+			}
+					64 = {
+		secede_province = FRA
+			}
+				66 = {
+		secede_province = FRA
+			}
+					58 = {
+		secede_province = FRA
+			}
+				}
+			}
+organize_Louisiana={
+	potential={
+		owns=139
+		NOT={has_global_flag=organized_louisiana}
+	}
+	allow={
+		year=1700
+	}
+	effect={
+		set_global_flag=organized_louisiana
+		USA_139 ={
+			life_rating=45
+		}
+	}
+}
+organize_Alabama={
+	potential={
+		owns=194
+		NOT={has_global_flag=organized_Alabama}
+	}
+	allow={
+		year=1700
+	}
+	effect={
+		set_global_flag=organized_Alabama
+		USA_194 ={
+			life_rating=45
+		}
+	}
+}
+organize_Arkansas={
+	potential={
+		owns=144
+		NOT={has_global_flag=organized_arkansas}
+	}
+	allow={
+		year=1700
+	}
+	effect={
+		set_global_flag=organized_arkansas
+		USA_144={
+			life_rating=45
+		}
+	}
+}
+organize_Kansas={
+	potential={
+		owns=126
+		NOT={has_global_flag=organized_kansas}
+	}
+	allow={
+		year=1700
+	}
+	effect={
+		set_global_flag=organized_kansas
+		USA_126 ={
+			life_rating=45
+		}
+	}
+}
+organize_Missouri={
+	potential={
+		owns=148
+		NOT={has_global_flag=organized_missorui}
+	}
+	allow={
+		year=1700
+	}
+	effect={
+		set_global_flag=organized_missorui
+		USA_148={
+			life_rating=45
+		}
+	}
+}
+organize_Nebraska={
+	potential={
+		owns=124
+		NOT={has_global_flag=organized_Nebraska}
+	}
+	allow={
+		year=1700
+	}
+	effect={
+		set_global_flag=organized_Nebraska
+		USA_124={
+			life_rating=45
+		}
+	}
+}
+organize_Wyoming={
+	potential={
+		owns=111
+		NOT={has_global_flag=organized_wyoming}
+	}
+	allow={
+		year=1700
+	}
+	effect={
+		set_global_flag=organized_wyoming
+		USA_111={
+			life_rating=45
+		}
+	}
+}
+organize_Idahao={
+	potential={
+		owns=91
+		NOT={has_global_flag=organized_Idahao}
+	}
+	allow={
+		year=1700
+	}
+	effect={
+		set_global_flag=organized_Idahao
+		USA_91={
+			life_rating=45
+		}
+	}
+}
+organize_Washington={
+	potential={
+		owns=78
+		NOT={has_global_flag=organized_Washington}
+	}
+	allow={
+		year=1700
+	}
+	effect={
+		set_global_flag=organized_Washington
+		USA_78={
+			life_rating=45
+		}
+	}
+}
+organize_Oregon={
+	potential={
+		owns=82
+		NOT={has_global_flag=organized_Oregon}
+	}
+	allow={
+		year=1700
+	}
+	effect={
+		set_global_flag=organized_Oregon
+		USA_81={
+			life_rating=45
+		}
+	}
+}
+
+organize_Columbia={
+	potential={
+		owns=20
+		NOT={has_global_flag=organized_columbia}
+	}
+	allow={
+		year=1700
+	}
+	effect={
+		set_global_flag=organized_columbia
+		CAN_13={
+			life_rating=45
+		}
+	}
+}
+organize_Alberta={
+	potential={
+		owns=28
+		NOT={has_global_flag=organized_Alberta}
+	}
+	allow={
+		year=1700
+	}
+	effect={
+		set_global_flag=organized_Alberta
+		ENG_22={
+			life_rating=45
+		}
+	}
+}
+organize_New_Caledonia={
+	potential={
+		owns=16
+		NOT={has_global_flag=organized_caledonia}
+	}
+	allow={
+		year=1700
+	}
+	effect={
+		set_global_flag=organized_caledonia
+		CAN_19={
+			life_rating=45
+		}
+	}
+}
+organize_Saskatchewan={
+	potential={
+		owns=30
+		NOT={has_global_flag=organized_Saska}
+	}
+	allow={
+		year=1700
+	}
+	effect={
+		set_global_flag=organized_Saska
+		ENG_30={
+			life_rating=45
+		}
+	}
+}
+organize_Manitoba={
+	potential={
+		owns=40
+		NOT={has_global_flag=organized_manitoba}
+	}
+	allow={
+		year=1700
+	}
+	effect={
+		set_global_flag=organized_manitoba
+		ENG_36={
+			life_rating=45
+		}
+	}
+}
+organize_Ontario={
+	potential={
+		owns=50
+		NOT={has_global_flag=organized_ontario}
+	}
+	allow={
+		year=1700
+	}
+	effect={
+		set_global_flag=organized_ontario
+		CAN_50={
+			life_rating=45
+		}
+	}
+}
+create_canada={
+	picture=champlain
+	potential={
+		OR={
+		has_global_flag=quebecity_founded
+		has_global_flag=virginiacompanychartered
+		}
+		owns=57
+		NOT={
+			exists=CAN
+			has_country_flag=created_canada
+		}
+	}
+	allow={
+		year=1800
+		money=100000
+	}
+	effect={
+		prestige=50
+		set_country_flag=created_canada
+		ENG_74={add_core=CAN}
+		ENG_68={add_core=CAN}
+		CAN_60={add_core=CAN}
+		CAN_58={add_core=CAN}
+		CAN_50={add_core=CAN}
+		CAN_46={add_core=CAN}
+		money=-100000
+	}
+}
+expand_canada={
+	picture=vive_le_quebec
+	potential={
+		has_country_flag=created_canada
+		NOT={has_country_flag=expanded_canada}
+	}
+	allow={
+		is_greater_power=yes
+		owns=57
+		money=100000
+	}
+	effect={
+		prestige=50
+		set_country_flag=expanded_canada
+		money=-100000
+		ENG_36={add_core=CAN}
+		ENG_30={add_core=CAN}
+		ENG_22={add_core=CAN}
+		CAN_19={add_core=CAN}
+		CAN_13={add_core=CAN}
+		ENG_9={add_core=CAN}
+		ENG_6={add_core=CAN}
+	}
+}
+O_CANADA={
+	Picture=actofunionpic
+	potential={
+		has_country_flag=created_canada
+		tag=WYA
+		NOT={has_country_flag=o_canada}
+	}
+	allow={
+		is_greater_power=yes
+		CAN={all_core={owned_by=THIS}}
+	}
+	effect={
+		add_accepted_culture=anglo_canadian
+		add_accepted_culture=french_canadian
+		add_accepted_culture=inuit
+		prestige=50
+		change_tag=CAN
+		set_country_flag=o_canada
+	}
+}
+
+louisiana_purchasepart1 = {
+	picture = louisianapurchasepic
+		potential = {
+		exists = USA
+		tag = FRA
+		USA_139 = { #Louisiana
+			owned_by = THIS
+				}
+		year = 1800
+		NOT = {
+		has_global_flag = louisiana_sold
+			}
+				}
+		allow = {
+			NOT = {
+			war_with = USA
+				}
+
+		USA_144 = { #Arkansas
+			owned_by = THIS
+				}
+		USA_148 = { #Missouri
+			owned_by = THIS
+				}
+		USA_151 = { #Iowa
+			owned_by = THIS
+				}
+		USA_126 = { #Kansas
+			owned_by = THIS
+				}
+		USA_124 = { #Nebraska
+			owned_by = THIS
+				}
+		USA_121 = { #South Dakota
+			owned_by = THIS
+				}
+		USA_139 = { #Louisiana
+			owned_by = THIS
+				}
+		156 = {
+			owned_by = THIS
+				}
+		155 = {
+			owned_by = THIS
+				}
+		117 = {
+			owned_by = THIS
+				}
+		119 = {
+			owned_by = THIS
+				}
+		115 = {
+			owned_by = THIS
+				}
+		116 = {
+			owned_by = THIS
+				}
+		112 = {
+			owned_by = THIS
+				}
+		110 = {
+			owned_by = THIS
+				}
+
+			}
+
+
+		effect = {
+		set_global_flag = louisiana_sold
+                USA = {
+                         country_event = 400009 
+                      }
+				}
+			}
+	forming_thirteen_colonies_1 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ANG
+				tag = ENG
+			}
+			NOT={
+				exists=THC
+				exists=USA
+				exists=COA
+				has_country_flag=forming_thirteen_colonies_1
+			}
+			has_global_flag=setup_test1_done
+		}
+		allow = {
+			war = no
+			214 = {
+			owned_by = THIS
+				}
+			213 = {
+			owned_by = THIS
+				}
+			215 = {
+			owned_by = THIS
+				}
+			212 = {
+			owned_by = THIS
+				}
+			216 = {
+			owned_by = THIS
+				}
+		}
+		effect = {
+			prestige=50
+			set_country_flag=forming_thirteen_colonies_1
+			213 = {
+				add_core = COA
+				}
+			215 = {
+				add_core = COA
+				}
+			212 = {
+				add_core = COA
+				}
+			211 = {
+				add_core = COA
+				}
+			216 = {
+				add_core = COA
+				}	
+			214 = {
+				add_core = COA
+				}
+			release = COA
+			create_vassal = COA
+			diplomatic_influence = {
+				who = COA
+				value = 400
+			}
+			create_alliance = COA
+			COA = {
+				prestige_factor = -1
+				add_county_modifier = {
+					name = less_immigration
+					duration = -1
+				}
+			}
+		}
+	}
+	#Giving new states from here
+	#Georgia
+	forming_thirteen_colonies_2 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+			NOT={
+				exists=USA
+				exists=THC
+				has_country_flag=forming_thirteen_colonies_2
+			}
+			has_country_flag=forming_thirteen_colonies_1
+			exists = COA
+			OR={
+				is_our_vassal = COA
+				is_sphere_leader_of=COA
+			}
+		}
+		allow = {
+			war = no
+			205 = {
+			owned_by = THIS
+				}
+			204 = {
+			owned_by = THIS
+				}
+		}
+		effect = {
+			prestige=50
+			set_country_flag=forming_thirteen_colonies_2
+			205 = {
+				add_core = COA
+				secede_province = COA
+			}
+			204 = {
+				add_core = COA
+				secede_province = COA
+			}
+		}
+	}
+#North Carolina
+	forming_thirteen_colonies_3 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+			NOT={
+				exists=USA
+				exists=THC
+				has_country_flag=forming_thirteen_colonies_3
+			}
+			has_country_flag=forming_thirteen_colonies_2
+			exists = COA
+				OR={
+				is_our_vassal = COA
+				is_sphere_leader_of=COA
+			}
+		}
+		allow = {
+			war = no
+			209 = {
+			owned_by = THIS
+				}
+			208 = {
+			owned_by = THIS
+				}
+			210 = {
+			owned_by = THIS
+				}
+			207 = {
+			owned_by = THIS
+				}
+		}
+		effect = {
+			prestige=50
+			set_country_flag=forming_thirteen_colonies_3
+			209 = {
+				add_core = COA
+				secede_province = COA
+			}
+			208 = {
+				add_core = COA
+				secede_province = COA
+			}
+			210 = {
+				add_core = COA
+				secede_province = COA
+			}
+			207 = {
+				add_core = COA
+				secede_province = COA
+			}
+		}
+	}
+#West Virginia
+	forming_thirteen_colonies_4 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+			exists = COA
+				OR={
+				is_our_vassal = COA
+				is_sphere_leader_of=COA
+			}
+			NOT={
+				exists=USA
+				exists=THC
+				has_country_flag=forming_thirteen_colonies_4
+			}
+			has_country_flag=forming_thirteen_colonies_3
+		}
+		allow = {
+			war = no
+				217 = {
+			owned_by = THIS
+				}
+			218 = {
+			owned_by = THIS
+				}
+		}
+		effect = {
+			prestige=50
+			set_country_flag=forming_thirteen_colonies_4
+			217 = {
+				add_core = COA
+				secede_province = COA
+			}
+			218 = {
+				add_core = COA
+				secede_province = COA
+			}
+			set_global_flag = virginia_colonized
+		}
+	}
+#Maryland
+	forming_thirteen_colonies_5 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+			exists = COA
+				NOT={
+				exists=USA
+				exists=THC
+				has_country_flag=forming_thirteen_colonies_5
+			}
+			has_country_flag=forming_thirteen_colonies_4
+			has_global_flag = virginia_colonized
+		}
+		allow = {
+			war = no
+			219 = {
+			owned_by = THIS
+				}
+			220 = {
+			owned_by = THIS
+				}
+			221 = {
+			owned_by = THIS
+				}
+			222 = {
+			owned_by = THIS
+				}
+		}
+		effect = {
+			prestige=50
+			set_country_flag=forming_thirteen_colonies_5
+			219 = {
+				add_core = COA
+				secede_province = COA
+			}
+			220 = {
+				add_core = COA
+				secede_province = COA
+			}
+			221 = {
+				add_core = COA
+				secede_province = COA
+			}
+			222 = {
+				add_core = COA
+				secede_province = COA
+			}
+		}
+	}
+#Pennsylvania
+	forming_thirteen_colonies_6 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+				NOT={
+				exists=USA
+				exists=THC
+				has_country_flag=forming_thirteen_colonies_6
+			}
+			has_country_flag=forming_thirteen_colonies_5
+			exists = COA
+
+		}
+		allow = {
+			war = no
+			223 = {
+			owned_by = THIS
+				}
+			224 = {
+			owned_by = THIS
+				}
+			225 = {
+			owned_by = THIS
+				}
+			226 = {
+			owned_by = THIS
+				}
+			227 = {
+			owned_by = THIS
+				}
+			228 = {
+			owned_by = THIS
+				}
+		}
+		effect = {
+			set_country_flag=forming_thirteen_colonies_6
+			prestige=50
+			223 = {
+				add_core = COA
+				secede_province = COA
+			}
+			224 = {
+				add_core = COA
+				secede_province = COA
+			}
+			225 = {
+				add_core = COA
+				secede_province = COA
+			}
+			226 = {
+				add_core = COA
+				secede_province = COA
+			}
+			227 = {
+				add_core = COA
+				secede_province = COA
+			}
+			228 = {
+				add_core = COA
+				secede_province = COA
+			}
+		}
+	}
+#New Jersey
+	forming_thirteen_colonies_7 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+			NOT={
+				exists=USA
+				exists=THC
+				has_country_flag=forming_thirteen_colonies_7
+			}
+			has_country_flag=forming_thirteen_colonies_6
+			exists = COA
+		}
+		allow = {
+			war = no
+			229 = {
+			owned_by = THIS
+				}
+			230 = {
+			owned_by = THIS
+				}
+			231 = {
+			owned_by = THIS
+				}
+		}
+		effect = {
+			prestige=50
+			set_country_flag=forming_thirteen_colonies_7
+			229 = {
+				add_core = COA
+				secede_province = COA
+			}
+			230 = {
+				add_core = COA
+				secede_province = COA
+			}
+			231 = {
+				add_core = COA
+				secede_province = COA
+			}
+		}
+	}
+#New York
+	forming_thirteen_colonies_8 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+			NOT={
+				exists=USA
+				exists=THC
+				has_country_flag=forming_thirteen_colonies_8
+			}
+			has_country_flag=forming_thirteen_colonies_7
+			exists = COA
+		}
+		allow = {
+			war = no
+			232 = {
+			owned_by = THIS
+				}
+			233 = {
+			owned_by = THIS
+				}
+			234 = {
+			owned_by = THIS
+				}
+			235 = {
+			owned_by = THIS
+				}
+			240 = {
+			owned_by = THIS
+				}
+		}
+		effect = {
+			prestige=50
+			set_country_flag=forming_thirteen_colonies_8
+			232 = {
+				add_core = COA
+				secede_province = COA
+			}
+			233 = {
+				add_core = COA
+				secede_province = COA
+			}
+			234 = {
+				add_core = COA
+				secede_province = COA
+			}
+			235 = {
+				add_core = COA
+				secede_province = COA
+			}
+			240 = {
+				add_core = COA
+				secede_province = COA
+			}
+			set_global_flag = new_york_colonized
+		}
+	}
+# Massachusetts
+	forming_thirteen_colonies_9 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+			NOT={
+				exists=USA
+				exists=THC
+				has_country_flag=forming_thirteen_colonies_9
+			}
+			has_country_flag=forming_thirteen_colonies_8
+			exists = COA
+		}
+		allow = {
+			war = no
+			241 = {
+			owned_by = THIS
+				}
+			242 = {
+			owned_by = THIS
+				}
+			243 = {
+			owned_by = THIS
+				}
+			244 = {
+			owned_by = THIS
+				}
+			245 = {
+			owned_by = THIS
+				}
+		}
+		effect = {
+			prestige=50
+			set_country_flag=forming_thirteen_colonies_9
+			241 = {
+				add_core = COA
+				secede_province = COA
+			}
+			242 = {
+				add_core = COA
+				secede_province = COA
+			}
+			243 = {
+				add_core = COA
+				secede_province = COA
+			}
+			244 = {
+				add_core = COA
+				secede_province = COA
+			}
+			245 = {
+				add_core = COA
+				secede_province = COA
+			}
+		}
+	}
+# New England
+	forming_thirteen_colonies_10 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+			NOT={
+				exists=USA
+				exists=THC
+				has_country_flag=forming_thirteen_colonies_10
+			}
+			has_country_flag=forming_thirteen_colonies_9
+			exists = COA
+		}
+		allow = {
+			war = no
+			246 = {
+			owned_by = THIS
+				}
+			247 = {
+			owned_by = THIS
+				}
+			248 = {
+			owned_by = THIS
+				}
+			249 = {
+			owned_by = THIS
+				}
+		}
+		effect = {
+			prestige=50
+			set_country_flag=forming_thirteen_colonies_10
+			246 = {
+				add_core = COA
+				secede_province = COA
+			}
+			247 = {
+				add_core = COA
+				secede_province = COA
+			}
+			248 = {
+				add_core = COA
+				secede_province = COA
+			}
+			249 = {
+				add_core = COA
+				secede_province = COA
+			}
+			set_global_flag = new_england_colonized
+		}
+	}
+#Forming the Thirteen Colonies
+	forming_thirteen_colonies_main = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+			exists = COA
+			NOT={has_country_flag=formed_thirteen_colonies}
+			has_country_flag=forming_thirteen_colonies_10
+		}
+		allow = {
+			war = no
+			205 = {
+				empty = no
+			}
+			204 = {
+				empty = no
+			}
+			209 = {
+				empty = no
+			}
+			208 = {
+				empty = no
+			}
+			210 = {
+				empty = no
+			}
+			207 = {
+				empty = no
+			}
+			217 = {
+				empty = no
+			}
+			218 = {
+				empty = no
+			}
+			221 = {
+				empty = no
+			}
+			220 = {
+				empty = no
+			}
+			222 = {
+				empty = no
+			}
+			219 = {
+				empty = no
+			}
+			227 = {
+				empty = no
+			}
+			226 = {
+				empty = no
+			}
+			225 = {
+				empty = no
+			}
+			223 = {
+				empty = no
+			}
+			224 = {
+				empty = no
+			}
+			231 = {
+				empty = no
+			}
+			230 = {
+				empty = no
+			}
+			229 = {
+				empty = no
+			}
+			240 = {
+				empty = no
+			}
+			234 = {
+				empty = no
+			}
+			232 = {
+				empty = no
+			}
+			235 = {
+				empty = no
+			}
+			233 = {
+				empty = no
+			}
+			241 = {
+				empty = no
+			}
+			245 = {
+				empty = no
+			}
+			243 = {
+				empty = no
+			}
+			242 = {
+				empty = no
+			}
+			244 = {
+				empty = no
+			}
+			246 = {
+				empty = no
+			}
+			247 = {
+				empty = no
+			}
+			248 = {
+				empty = no
+			}
+			249 = {
+				empty = no
+			}
+			228 = {
+				empty = no
+			}
+		}
+		effect = {
+			set_country_flag=formed_thirteen_colonies
+			prestige_factor = 0.1
+			COA = {
+				change_tag = THC
+			}
+			214 = {
+				secede_province = THC
+				add_core = THC
+			}
+			206 = {
+				add_core = THC
+			}
+			2555 = {
+				add_core = THC
+			}
+			THC = {
+				any_owned = {
+					remove_core = COA
+					add_core = THC
+				}
+				prestige_factor = -0.9
+			}
+			prestige_factor = 0.1
+			diplomatic_influence = {
+				who = THC
+				value = 400
+			}
+			release_vassal = THC
+		}
+	}
+	Buy_florida = {
+	picture = virginiacompanypic
+		potential = {
+			has_global_flag=setup_test1_done
+			tag=USA
+			NOT={has_country_flag=buy_florida}
+			OR={
+				USA_200={owned_by=SPA}
+				USA_200={owned_by=IBU}
+			}
+			}
+		allow = {
+			money = 100000
+			prestige=50
+		}
+		effect = {
+			set_global_flag=buy_florida
+			money=-100000
+			random_country={
+				limit={
+					exists=yes
+					has_global_flag=setup_test1_done
+					owns=200
+				}
+				country_event= 30000022
+			}
+				}
+	ai_will_do = {
+		factor = 1
+		}
+			}
+	}

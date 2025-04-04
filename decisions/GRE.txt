@@ -1,0 +1,330 @@
+political_decisions = {
+	hellenic_parliament = {
+		potential = {
+			tag = GRE
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = voule_ton_ellinon
+			}
+		}
+	
+		allow = {
+			plurality = 3
+			prestige = 1
+		}
+		
+		effect = {
+			set_country_flag = voule_ton_ellinon
+			political_reform = wealth_weighted_voting
+			government = hms_government
+			any_pop = {
+				militancy = -2
+			}
+		}
+	}
+	
+	megali_idea = {
+		potential = {
+			tag = GRE
+			NOT = {
+				has_country_flag = greece_has_got_a_brand_new_bag
+			}
+		}
+		
+		allow = {
+			nationalism_n_imperialism=1
+			OR={
+				is_secondary_power=yes
+				is_greater_power=yes
+			}
+			
+			GRE={all_core={owned_by=THIS}}
+		}
+		
+		effect = {
+			prestige = 20
+			badboy = -5
+			TUR_860 = {
+				add_core = GRE
+			}
+			TUR_863 = {
+				add_core = GRE
+			}
+			TUR_869 = {
+				add_core = GRE
+			}
+			set_country_flag = greece_has_got_a_brand_new_bag
+		}
+	}
+	form_hellenic_empire={
+		picture=alexander
+		potential={
+			tag=GRE
+			has_country_flag=greece_has_got_a_brand_new_bag
+			NOT={has_country_flag=formed_hellenic}
+			NOT={has_country_flag=formed_byzantine}
+		}
+		allow={
+			is_greater_power=yes
+			GRE={all_core={owned_by=THIS}}
+		}
+		effect={
+			set_country_flag=formed_hellenic
+			change_tag=HEL
+			add_accepted_culture=turkish
+			TUR={all_core={add_core=HEL}}
+			BUL={all_core={add_core=HEL}}
+			ALB={all_core={add_core=HEL}}
+			MAC={all_core={add_core=HEL}}
+			MOL={all_core={add_core=HEL}}
+			WAL={all_core={add_core=HEL}}
+			BOS={all_core={add_core=HEL}}
+			MON={all_core={add_core=HEL}}
+			TUR_882={add_core=HEL}
+			TUR_885={add_core=HEL}
+			TUR_880={add_core=HEL}
+			TUR_876 ={add_core=HEL}
+			TUR_873={add_core=HEL}
+			TUR_869={add_core=HEL}
+			TUR_863={add_core=HEL}
+			TUR_885={add_core=HEL}
+			TUR_890={add_core=HEL}
+			TUR_893={add_core=HEL}
+			TUR_894={add_core=HEL}
+			EGY_897={add_core=HEL}
+			EGY_903={add_core=HEL}
+			EGY_910={add_core=HEL}
+			EGY_915={add_core=HEL}
+			EGY_921={add_core=HEL}
+			TUR_923={add_core=HEL}
+			TUR_931={add_core=HEL}
+			TUR_935={add_core=HEL}
+			IRQ = {all_core = { add_core = HEL }}
+			SYR = {all_core = { add_core = HEL }}
+			LEB = {all_core = { add_core = HEL }}
+			PAL = {all_core = { add_core = HEL }}
+			ARM = { all_core = { add_core = HEL}}
+			AZB ={ all_core = { add_core = HEL }}
+			KUR ={ all_core = { add_core = HEL }}
+			1755= { add_core = HEL }
+			1756= { add_core = HEL }
+			1757= { add_core = HEL }
+			1746= { add_core = HEL }
+			1748= { add_core = HEL }
+			1749= { add_core = HEL }
+			1745= { add_core = HEL }
+			1750= { add_core = HEL }
+			1747= { add_core = HEL }
+			1751= { add_core = HEL }
+			1759= { add_core = HEL }
+			1752= { add_core = HEL }
+			1753= { add_core = HEL }
+			1754= { add_core = HEL }
+			prestige = 40
+			badboy = -10
+		}
+	}
+	dream_of_alejandro_magno={
+			picture=persianempire
+			potential={
+			tag=HEL
+			has_country_flag=formed_hellenic
+			NOT={has_country_flag=dreamed}
+		}
+		allow={
+			is_greater_power=yes
+			HEL={all_core={owned_by=THIS}}
+		}
+		effect={
+			set_country_flag=dreamed
+			PER={all_core={add_core=HEL}}
+			HND={all_core={add_core=HEL}}
+			AFG={all_core={add_core=HEL}}
+		}
+	}
+	integrationhellenic={
+		potential={
+			tag=HEL
+			HEL={all_core={owned_by=THIS}}
+			NOT={has_country_flag=integrationhellenic}
+		}
+		allow={
+			revolution_n_counterrevolution=1
+		}
+		effect={
+			set_country_flag=integrationhellenic
+			add_accepted_culture=maghrebi
+			add_accepted_culture=macedonian
+			add_accepted_culture=spartan
+			add_accepted_culture=sephardic
+			add_accepted_culture=azerbaijani
+			add_accepted_culture=bedouin
+			add_accepted_culture=misri
+			add_accepted_culture=mashriqi
+			add_accepted_culture=kurdish
+			add_accepted_culture=armenian
+			add_accepted_culture=persian
+			add_accepted_culture=north_caucasian
+			add_accepted_culture=georgian
+			add_accepted_culture=turkmen
+			add_accepted_culture=baluchi
+			add_accepted_culture=pashtun
+			add_accepted_culture=tajik
+			add_accepted_culture= asian_minor
+			add_accepted_culture= assamese
+			add_accepted_culture= bengali
+			add_accepted_culture= bihari
+			add_accepted_culture= manipuri
+			add_accepted_culture= nepali
+			add_accepted_culture= oriya
+			add_accepted_culture= sinhala
+			add_accepted_culture= avadhi
+			add_accepted_culture= kenauji
+			add_accepted_culture= panjabi
+			add_accepted_culture= kashmiri
+			add_accepted_culture= gujarati
+			add_accepted_culture= marathi
+			add_accepted_culture= sindi
+			add_accepted_culture= rajput
+			add_accepted_culture= kannada
+			add_accepted_culture= malayalam
+			add_accepted_culture= tamil
+			add_accepted_culture= telegu
+		}
+	}
+	form_byzantine_empire = {
+		potential = {
+			tag = GRE
+			has_country_flag=greece_has_got_a_brand_new_bag
+			NOT={has_country_flag=formed_byzantine}	
+			NOT={has_country_flag=formed_hellenic}
+		}
+		
+		allow = {
+			is_greater_power = yes	
+			GRE={all_core={owned_by=THIS}}
+		}
+		
+		effect = {
+			set_country_flag=formed_byzantine
+			change_tag = BYZ
+			TUR={all_core={add_core=BYZ}}
+			BUL={all_core={add_core=BYZ}}
+			ALB={all_core={add_core=BYZ}}
+			MAC={all_core={add_core=BYZ}}
+			MOL={all_core={add_core=BYZ}}
+			MON={all_core={add_core=BYZ}}
+			WAL={all_core={add_core=BYZ}}
+			BOS={all_core={add_core=BYZ}}
+			CRO={all_core={add_core=BYZ}}
+			HUN={all_core={add_core=BYZ}}
+			JOR={all_core={add_core=BYZ}}
+			HDJ={all_core={add_core=BYZ}}
+			YEM={all_core={add_core=BYZ}}
+			EGY={all_core={add_core=BYZ}}
+			LYB={all_core={add_core=BYZ}}
+			NEJ={all_core={add_core=BYZ}}
+			SER={all_core={add_core=BYZ}}
+			SLO={all_core={add_core=BYZ}}
+			TRE={all_core={add_core=BYZ}}
+			VEN={all_core={add_core=BYZ}}
+			ABU={all_core={add_core=BYZ}}
+			ITA={all_core={add_core=BYZ}}
+			IRQ = {all_core = { add_core = BYZ }}
+			SYR = {all_core = { add_core = BYZ }}
+			LEB = {all_core = { add_core = BYZ }}
+			PAL = {all_core = { add_core = BYZ }}
+			1174={ add_core = BYZ }
+			1172={ add_core = BYZ }
+			1171={ add_core = BYZ }
+			1170={ add_core = BYZ }
+			1166={ add_core = BYZ }
+			1169={ add_core = BYZ }
+			prestige = 40
+			badboy = -10
+		}
+	}
+	form_eastern_roman_empire={
+		picture=Roma
+		potential={
+			tag=BYZ
+			has_country_flag=formed_byzantine
+			NOT={has_country_flag=form_Eastern_roman_empire}
+		}
+		allow={
+			BYZ={all_core={owned_by=THIS}}
+		}
+		effect={
+			set_country_flag=form_Eastern_roman_empire
+			prestige=40
+			AUS={all_core={add_core=THIS}}
+			change_tag=ERE
+		}
+	}
+	form_western_roman_empire={
+		picture=Roma
+		potential={
+			tag=ERE
+			has_country_flag=form_Eastern_roman_empire
+			NOT={has_country_flag=form_Western_roman_empire}
+		}
+		allow={
+			ERE={all_core={owned_by=THIS}}
+		}
+		effect={
+			set_country_flag=form_Western_roman_empire
+			FRA={all_core={add_core=WRE}}
+			SPA={all_core={add_core=WRE}}
+			POR={all_core={add_core=WRE}}
+			IBU={all_core={add_core=WRE}}
+			BNX={all_core={add_core=WRE}}
+			DUA={all_core={add_core=WRE}}
+			IRE={all_core={add_core=WRE}}
+			SCO={all_core={add_core=WRE}}
+			ANG={all_core={add_core=WRE}}
+			WLS={all_core={add_core=WRE}}
+			ITA={all_core={add_core=WRE}}
+			MOR={all_core={add_core=WRE}}
+			TUN={all_core={add_core=WRE}}
+			ALD={all_core={add_core=WRE}}
+			TRI={all_core={add_core=WRE}}
+		}
+	}
+	integration={
+		potential={
+			tag=BYZ
+			has_country_flag=form_Eastern_roman_empire
+			NOT={has_country_flag=integration_done}
+		}
+		allow={
+			is_greater_power=yes
+			revolution_n_counterrevolution=1
+			BYZ={all_core={owned_by=THIS}}
+		}
+		effect={
+			set_country_flag=integration_done
+			add_accepted_culture=turkish
+			add_accepted_culture=maghrebi
+			add_accepted_culture=bulgarian
+			add_accepted_culture=hungarian
+			add_accepted_culture=albanian
+			add_accepted_culture=croat
+			add_accepted_culture=bosniak
+			add_accepted_culture=romanian
+			add_accepted_culture=armenian
+			add_accepted_culture=serb
+			add_accepted_culture=slovene
+			add_accepted_culture=macedonian
+			add_accepted_culture=spartan
+			add_accepted_culture=sephardic
+			add_accepted_culture=azerbaijani
+			add_accepted_culture=bedouin
+			add_accepted_culture=misri
+			add_accepted_culture=mashriqi
+			add_accepted_culture=kurdish
+			add_accepted_culture=south_german
+			add_accepted_culture=north_italian
+			add_accepted_culture=south_italian
+		}
+	}
+}

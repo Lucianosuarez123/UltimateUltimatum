@@ -1,0 +1,236 @@
+political_decisions = {
+
+#Cheat Pack mod
+
+	LaunchCheatPacks = {
+		picture = "cheat_pack"
+		potential = {
+			ai = no
+			has_country_flag = shown_decisions
+			NOT = {
+				has_country_flag = dontshowcheats
+				has_country_flag = Cheats_on
+				has_country_flag = cheat_disable_forever
+			}
+		}
+		effect = {
+		set_country_flag = Cheats_on
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	DisableCheats = {
+		picture = "disable_cheats"
+		potential = {
+			ai = no
+			has_country_flag = shown_decisions
+			has_country_flag = Cheats_on
+		}
+		effect = {
+			clr_country_flag = Cheats_on
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	DisableCheatsForever = {
+		picture = "crisis"
+		potential = {
+			ai = no
+			has_country_flag = shown_decisions
+			has_country_flag = Cheats_on
+		}
+		effect = {
+			clr_country_flag = shown_decisions
+			clr_country_flag = Cheats_on
+			country_event = 1010101
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	IncreaseLiteracy = {
+		picture = "increase_literacy"
+		potential = {
+		ai = false
+		has_country_flag = Cheats_on
+		has_country_flag = shown_decisions
+		}
+		allow = {
+		ai = false
+		}
+		effect = {
+		 any_pop = { literacy = 0.1 }
+		 any_pop = { consciousness = 1 }
+		 any_pop = { militancy = 1 }
+		}
+		effect = {
+			money = -30000
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	RemoveInfamy = 
+	{
+		picture = "infamy_removed"
+		potential = {
+			has_country_flag = shown_decisions
+			has_country_flag = Cheats_on
+		}
+		effect = {
+			badboy = -50
+		}
+		effect = {
+			prestige = -0.5
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	addInfamy = 
+	{
+		picture = "infamy_removed"
+		potential = {
+			has_country_flag = shown_decisions
+			has_country_flag = Cheats_on
+		}
+		effect = {
+			badboy = 50
+		}
+		effect = {
+			prestige = -0.5
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	GivesMoney = 
+	{
+		picture = "give_money"
+		potential = {
+			has_country_flag = Cheats_on
+			has_country_flag = shown_decisions
+		}
+		effect = {
+			treasury = 10000
+		}
+		effect = {
+			prestige = -0.1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	GiveMeJingoismo = 
+	{
+		picture = "give_money"
+		potential = {
+			has_country_flag = Cheats_on
+			has_country_flag = shown_decisions
+		}
+		effect = 
+		{
+			any_pop = 
+			{
+				dominant_issue = 
+				{
+				value = jingoism
+				factor = 1.05
+				}
+			 }
+		}
+		effect = {
+			prestige = -0.1
+		}
+		ai_will_do = 
+		{
+			factor = 0
+		}
+	}
+	fountain_of_youth = 
+	{
+       picture = "give_money"
+       potential = 
+	   {
+			has_country_flag = Cheats_on
+			has_country_flag = shown_decisions
+		}
+      
+        effect = 
+		{
+        	any_country = { any_pop = {reduce_pop = 0.5}}
+    		any_owned = { any_pop = { reduce_pop = 0.5}}
+    		set_country_flag = Bomba
+		}
+        ai_will_do = { factor = 0 
+		}
+    } 
+	kill_soldiers_all= {
+       picture = "give_money"
+       potential = 
+	   {
+			has_country_flag = Cheats_on
+			has_country_flag = shown_decisions
+		}
+      
+        effect = 
+		{
+        	any_country = {soldiers={reduce_pop = 0.5}}
+    		any_owned = { soldiers={ reduce_pop = 0.5}}
+    		set_country_flag = Bombasoldiers
+		}
+        ai_will_do = { factor = 0 
+		}
+    } 
+		kill_soldiers_only_you= {
+       picture = "give_money"
+       potential = 
+	   {
+			has_country_flag = Cheats_on
+			has_country_flag = shown_decisions
+		}
+      
+        effect = 
+		{
+    		any_owned = { soldiers={ reduce_pop = 0.5}}
+    		set_country_flag = Bombasoldiers
+		}
+        ai_will_do = { factor = 0 
+		}
+    } 
+		kill_officers_all= {
+       picture = "give_money"
+       potential = 
+	   {
+			has_country_flag = Cheats_on
+			has_country_flag = shown_decisions
+		}
+      
+        effect = 
+		{
+        	any_country = {officers={reduce_pop = 0.5}}
+    		any_owned = { officers={ reduce_pop = 0.5}}
+    		set_country_flag = Bombasoldiers
+		}
+        ai_will_do = { factor = 0 
+		}
+    } 
+		kill_officers_only_you= {
+       picture = "give_money"
+       potential = 
+	   {
+			has_country_flag = Cheats_on
+			has_country_flag = shown_decisions
+		}
+      
+        effect = 
+		{
+    		any_owned = { officers={ reduce_pop = 0.5}}
+    		set_country_flag = Bombasoldiers
+		}
+        ai_will_do = { factor = 0 
+		}
+    } 
+}

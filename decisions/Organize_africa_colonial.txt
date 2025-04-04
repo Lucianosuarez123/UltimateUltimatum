@@ -1,0 +1,808 @@
+political_decisions={
+Organize_Nigeria={
+    potential={
+        civilized=yes
+        OR={
+        owns=1928
+        owns=1931
+        owns=1932
+        owns=1934
+        owns=1923
+        }
+        NOT={has_global_flag=Organized_Nigeria}
+    }
+    allow={
+        is_greater_power=yes
+        FRA_1923={owned_by=THIS}
+        FRA_1930={owned_by=THIS}
+        SOK_1934={owned_by=THIS}
+        SOK_1945={owned_by=THIS}
+        SOK_1937={owned_by=THIS}
+        FRA_1927={owned_by=THIS}
+    }
+    effect={
+        prestige=50
+        FRA_1923={add_core=NGA}
+        FRA_1930={add_core=NGA}
+        SOK_1934={add_core=NGA}
+        SOK_1945={add_core=NGA}
+        SOK_1937={add_core=NGA}
+        FRA_1927={add_core=NGA}
+        set_global_flag=Organized_Nigeria
+        country_event = { id=100008 days=0 }
+    }
+}
+Organize_Cameroon={
+    potential={
+        civilized=yes
+        OR={
+        owns=1957
+        owns=1956
+        owns=1958
+        }
+        NOT={has_global_flag=Organized_Cameroon}
+    }
+    allow={
+        is_greater_power=yes
+        ENG_1956={owned_by=THIS}
+        SOK_1963={owned_by=THIS}
+    }
+    effect={
+        prestige=50
+        ENG_1956={add_core=CMR}
+        SOK_1963={add_core=CMR}
+        set_global_flag=Organized_Cameroon
+        country_event = { id=100009 days=0 }
+    }
+}
+Organize_ecuatorial_guinea={
+        potential={
+        civilized=yes
+        OR={
+        owns=1973
+        }
+        NOT={has_global_flag=Organized_ecuatorial}
+    }
+    allow={
+        is_greater_power=yes
+        1973={owned_by=THIS}
+    }
+    effect={
+        prestige=5
+        SPA_1955={add_core=EQG}
+        set_global_flag=Organized_ecuatorial
+    }
+}
+Organize_Gabon={
+        potential={
+        civilized=yes
+        OR={
+        owns=1972
+        owns=1974
+        owns=1973
+        }
+        NOT={has_global_flag=Organized_Gabon}
+    }
+    allow={
+        is_greater_power=yes
+        FRA_1972={owned_by=THIS}
+        1974={owned_by=THIS}
+    }
+    effect={
+        prestige=10
+        FRA_1972={add_core=GAB}
+        set_global_flag=Organized_Gabon
+    }
+}
+Organize_Congo={
+        potential={
+        civilized=yes
+        OR={
+        owns=2624
+        owns=1983
+        owns=1994
+        owns=1993
+        owns=1990
+        owns=1988
+        }
+        NOT={has_global_flag=Organized_Congo}
+    }
+    allow={
+        is_greater_power=yes
+        FRA_1978={owned_by=THIS}
+        BEL_1977={owned_by=THIS}
+        BEL_1984={owned_by=THIS}
+        BEL_1987={owned_by=THIS}
+        BEL_1992={owned_by=THIS}
+        BEL_1990={owned_by=THIS}
+    }
+    effect={
+        prestige=60
+        FRA_1978={add_core=CNG}
+        BEL_1977={add_core=CNG}
+        BEL_1984={add_core=CNG}
+        BEL_1987={add_core=CNG}
+        BEL_1992={add_core=CNG}
+        BEL_1990={add_core=CNG}
+        set_global_flag=Organized_Congo
+        country_event = { id=100010 days=0 }
+    }
+}
+Organize_Angola={
+        potential={
+        civilized=yes
+        OR={
+        owns=2011
+        owns=1999
+        owns=2006
+        }
+        NOT={has_global_flag=Organized_Angola}
+    }
+    allow={
+        is_greater_power=yes
+        POR_1999={owned_by=THIS}
+        POR_2003={owned_by=THIS}
+        POR_2006={owned_by=THIS}
+    }
+    effect={
+        prestige=30
+        POR_1999={add_core=AGL}
+        POR_2003={add_core=AGL}
+        POR_2006={add_core=AGL}
+        set_global_flag=Organized_Angola
+        country_event = { id=100011 days=0 }
+    }
+}
+Organize_Namibia={
+        potential={
+        civilized=yes
+        OR={
+        owns=2083
+        owns=2084
+        owns=2079
+        }
+        NOT={has_global_flag=Organized_Namibia}
+    }
+    allow={
+        is_greater_power=yes
+        ENG_2078={owned_by=THIS}
+        ENG_2083={owned_by=THIS}
+    }
+    effect={
+        prestige=30
+        ENG_2078={add_core=NMB}
+        ENG_2083={add_core=NMB}
+        set_global_flag=Organized_Namibia
+        country_event = { id=100012 days=0 }
+    }
+}
+Organize_south_africa={
+        potential={
+        civilized=yes
+        OR={
+        owns=2087
+        owns=2093
+        owns=2096
+        owns=2105
+        owns=2101
+        owns=2111
+        }
+        NOT={has_global_flag=Organized_SouthAfrica}
+    }
+    allow={
+        is_greater_power=yes
+        ENG_2087={owned_by=THIS}
+        ENG_2092={owned_by=THIS}
+        ENG_2094={owned_by=THIS}
+        ENG_2096={owned_by=THIS}
+        ORA_2103={owned_by=THIS}
+        TRN_2108={owned_by=THIS}
+        ZUL_2113={owned_by=THIS}
+    }
+    effect={
+        prestige=60
+        ENG_2087={add_core=SAF}
+        ENG_2092={add_core=SAF}
+        ENG_2094={add_core=SAF}
+        ENG_2096={add_core=SAF}
+        ORA_2103={add_core=SAF}
+        TRN_2108={add_core=SAF}
+        ZUL_2113={add_core=SAF}
+        2104={add_core=LES}
+        2114={add_core=SWZ}
+        set_global_flag=Organized_southAfrica
+        country_event = { id=100013 days=0 }
+    }
+}
+Organize_botswana={
+        potential={
+        civilized=yes
+        owns=2074
+        NOT={has_global_flag=Organized_Botswana}
+    }
+    allow={
+        is_greater_power=yes
+        ENG_2074={owned_by=THIS}
+    }
+    effect={
+        prestige=15
+        ENG_2074={add_core=BTS}
+        set_global_flag=Organized_Botswana
+    }
+}
+Organize_Mozambique={
+        potential={
+        civilized=yes
+        OR={
+            owns=2053
+            owns=2054
+            owns=2060
+        }
+        NOT={has_global_flag=Organized_Mozambique}
+    }
+    allow={
+        is_greater_power=yes
+        POR_2049={owned_by=THIS}
+        POR_2053={owned_by=THIS}
+        POR_2054={owned_by=THIS}
+        POR_2060={owned_by=THIS}
+    }
+    effect={
+        prestige=30
+            POR_2049={add_core=MOZ}
+            POR_2053={add_core=MOZ}
+            POR_2054={add_core=MOZ}
+            POR_2060={add_core=MOZ}
+        set_global_flag=Organized_Mozambique
+        country_event = { id=100014 days=0 }
+    }
+
+}
+Organize_Zimbabwe={
+            potential={
+        civilized=yes
+        OR={
+            owns=2068
+            owns=2071
+        }
+        NOT={has_global_flag=Organized_Zimbabwe}
+    }
+    allow={
+        is_greater_power=yes
+        ENG_2068={owned_by=THIS}
+        ENG_2071={owned_by=THIS}
+    }
+    effect={
+        prestige=15
+        ENG_2068={add_core=ZIM}
+        ENG_2071={add_core=ZIM}
+        set_global_flag=Organized_Zimbabwe
+        country_event = { id=100015 days=0 }
+    }
+}
+Organize_Zambia={
+        potential={
+        civilized=yes
+        OR={
+            owns=2013
+            owns=2016
+        }
+        NOT={has_global_flag=Organized_Zambia}
+    }
+    allow={
+        is_greater_power=yes
+        ENG_2014={owned_by=THIS}
+        ENG_2016={owned_by=THIS}
+    }
+    effect={
+        prestige=15
+        ENG_2014={add_core=ZAM}
+        ENG_2016={add_core=ZAM}
+        set_global_flag=Organized_Zambia
+        country_event = { id=100016 days=0 }
+    }
+}
+Organize_malawi={
+        potential={
+        civilized=yes
+        owns=2067
+        NOT={has_global_flag=Organized_Malawi}
+    }
+    allow={
+        is_greater_power=yes
+        ENG_2067={owned_by=THIS}
+    }
+    effect={
+        prestige=5
+        ENG_2067={add_core=MWI}
+        set_global_flag=Organized_Malawi
+    }
+}
+Organize_Tanzania={
+            potential={
+        civilized=yes
+        OR={
+            owns=2036
+            owns=2039
+            owns=2044
+        }
+        NOT={has_global_flag=Organized_Tanzania}
+    }
+    allow={
+        is_greater_power=yes
+        ENG_2036={owned_by=THIS}
+        ENG_2039={owned_by=THIS}
+        ENG_2044={owned_by=THIS}
+    }
+    effect={
+        prestige=30
+        ENG_2036={add_core=TZN}
+        ENG_2039={add_core=TZN}
+        ENG_2044={add_core=TZN}
+        2034={add_core=RWA}
+        2035={add_core=BRD}
+        set_global_flag=Organized_Tanzania
+        country_event = { id=100017 days=0 }
+    }
+}
+Organize_Kenya={
+    potential={
+        civilized=yes
+        OR={
+            owns=2024
+            owns=2026
+            owns=2037
+        }
+        NOT={has_global_flag=Organized_Kenya}
+    }
+    allow={
+        is_greater_power=yes
+        ENG_2024={owned_by=THIS}
+        ENG_2026={owned_by=THIS}
+        2033={owned_by=THIS}
+        2029={owned_by=THIS}
+        2037={owned_by=THIS}
+    }
+    effect={
+        prestige=30
+        ENG_2024={add_core=KNA}
+        ENG_2026={add_core=KNA}
+        2033={add_core=KNA}
+        2029={add_core=KNA}
+        2037={add_core=KNA}
+        set_global_flag=Organized_Kenya
+        country_event = { id=100018 days=0 }
+    }
+}
+Organize_Uganda={
+        potential={
+        civilized=yes
+        owns=2021
+        NOT={has_global_flag=Organized_Uganda}
+    }
+    allow={
+        is_greater_power=yes
+        ENG_2019={owned_by=THIS}
+    }
+    effect={
+        prestige=10
+        ENG_2019={add_core=UGA}
+        set_global_flag=Organized_Uganda
+    }
+}
+Organize_somaliland={
+          potential={
+        civilized=yes
+        OR={
+            owns=1871
+            owns=1868
+        }
+        NOT={has_global_flag=Organized_somaliland}
+    }
+    allow={
+        is_greater_power=yes
+        SOM_1868={owned_by=THIS}
+        SOM_1872={owned_by=THIS}
+    }
+    effect={
+        prestige=15
+        SOM_1868={add_core=SOM}
+        SOM_1872={add_core=SOM}
+        set_global_flag=Organized_somaliland
+    }  
+}
+Organize_centralafrica={
+        potential={
+        civilized=yes
+        OR={
+            owns=1965
+            owns=1970
+        }
+        NOT={has_global_flag=Organized_CentralAfrica}
+    }
+    allow={
+        is_greater_power=yes
+        FRA_1965={owned_by=THIS}
+        FRA_1970={owned_by=THIS}
+    }
+    effect={
+        prestige=15
+        FRA_1965={add_core=CAR}
+        FRA_1970={add_core=CAR}
+        set_global_flag=Organized_centralAfrica
+    }  
+}
+Organize_chad={
+        potential={
+        civilized=yes
+        OR={
+            owns=1818
+            owns=1825
+        }
+        NOT={has_global_flag=Organized_Chad}
+    }
+    allow={
+        is_greater_power=yes
+        ENG_1818={owned_by=THIS}
+        ENG_1825={owned_by=THIS}
+    }
+    effect={
+        prestige=15
+        ENG_1818={add_core=CHD}
+        ENG_1825={add_core=CHD}
+        set_global_flag=Organized_Chad
+    }  
+}
+Organize_niger={
+        potential={
+        civilized=yes
+        OR={
+            owns=1813
+            owns=1808
+        }
+        NOT={has_global_flag=Organized_Niger}
+    }
+    allow={
+        is_greater_power=yes
+        FRA_1813={owned_by=THIS}
+        FRA_1808={owned_by=THIS}
+    }
+    effect={
+        prestige=15
+        FRA_1813={add_core=NGR}
+        FRA_1808={add_core=NGR}
+        set_global_flag=Organized_Niger
+        country_event = { id=100019 days=0 }
+    }  
+}
+Organize_Benin={
+        potential={
+        civilized=yes
+            owns=1919
+        NOT={has_global_flag=Organized_Benin}
+    }
+    allow={
+        is_greater_power=yes
+        FRA_1919={owned_by=THIS}
+    }
+    effect={
+        prestige=10
+        FRA_1919={add_core=BEN}
+        set_global_flag=Organized_Benin
+    }  
+}
+Organize_Togo={
+        potential={
+        civilized=yes
+            owns=1914
+        NOT={has_global_flag=Organized_Togo}
+    }
+    allow={
+        is_greater_power=yes
+        FRA_1914={owned_by=THIS}
+    }
+    effect={
+        prestige=10
+        FRA_1914={add_core=TOG}
+        set_global_flag=Organized_Togo
+    }  
+}
+Organize_Ghana={
+        potential={
+        civilized=yes
+            OR={
+                owns=1907
+                owns=1809
+            }
+        NOT={has_global_flag=Organized_Ghana}
+    }
+    allow={
+        is_greater_power=yes
+        FRA_1907={owned_by=THIS}
+        ASH_1909={owned_by=THIS}
+    }
+    effect={
+        prestige=10
+        FRA_1907={add_core=GHA}
+        ASH_1909={add_core=GHA}
+        set_global_flag=Organized_Ghana
+    }  
+}
+Organize_ivory_coast={
+        potential={
+        civilized=yes
+        OR={
+            owns=1892
+            owns=1893
+        }
+        NOT={has_global_flag=Organized_Ivory_coast}
+    }
+    allow={
+        is_greater_power=yes
+        FRA_1892={owned_by=THIS}
+        FRA_1893={owned_by=THIS}
+    }
+    effect={
+        prestige=20
+        FRA_1892={add_core=CTD}
+        FRA_1893={add_core=CTD}
+        set_global_flag=Organized_Ivory_coast
+        country_event = { id=100020 days=0 }
+    }  
+}
+Organize_BurkinaFaso={
+        potential={
+        civilized=yes
+            owns=1901
+        NOT={has_global_flag=Organized_Burkina}
+    }
+    allow={
+        is_greater_power=yes
+        FRA_1901={owned_by=THIS}
+    }
+    effect={
+        prestige=20
+        FRA_1901={add_core=FAT}
+        set_global_flag=Organized_Burkina
+    }  
+}
+Organize_Sierra_leona={
+            potential={
+        civilized=yes
+            owns=1884
+        NOT={has_global_flag=Organized_Sierra}
+    }
+    allow={
+        is_greater_power=yes
+        FRA_1884={owned_by=THIS}
+    }
+    effect={
+        prestige=10
+        FRA_1884={add_core=SRL}
+        set_global_flag=Organized_Sierra
+    }  
+}
+Organize_Guinea={
+ potential={
+        civilized=yes
+        OR={
+            owns=1878
+            owns=1883
+            owns=1785
+        }
+        NOT={has_global_flag=Organized_Guinea}
+    }
+    allow={
+        is_greater_power=yes
+        FRA_1878={owned_by=THIS}
+        FRA_1883={owned_by=THIS}
+    }
+    effect={
+        prestige=20
+        FRA_1878={add_core=GUI}
+        FRA_1883={add_core=GUI}
+        1785={add_core=GAM}
+        1878={add_core=GUB}
+        1877={add_core=GUB}
+        1792={add_core=GUB}
+        1793={add_core=GUB}
+        set_global_flag=Organized_Guinea
+    } 
+}
+Organize_Senegal={
+ potential={
+        civilized=yes
+        OR={
+            owns=1783
+        }
+        NOT={has_global_flag=Organized_Senegal}
+    }
+    allow={
+        is_greater_power=yes
+        FRA_1783={owned_by=THIS}
+    }
+    effect={
+        prestige=10
+        FRA_1783={add_core=SNL}
+        set_global_flag=Organized_Senegal
+    } 
+}
+Organize_Mali={
+     potential={
+        civilized=yes
+        OR={
+            owns=1798
+            owns=1801
+            owns=1803
+        }
+        NOT={has_global_flag=Organized_Mali}
+    }
+    allow={
+        is_greater_power=yes
+        FRA_1798={owned_by=THIS}
+        FRA_1801={owned_by=THIS}
+        FRA_1803={owned_by=THIS}
+    }
+    effect={
+        prestige=20
+        FRA_1798={add_core=MLI}
+        FRA_1801={add_core=MLI}
+        FRA_1803={add_core=MLI}
+        set_global_flag=Organized_Mali
+    } 
+}
+Organize_Mauritania={
+     potential={
+        civilized=yes
+        OR={
+            owns=1775
+            owns=1780
+        }
+        NOT={has_global_flag=Organized_Mauri}
+    }
+    allow={
+        is_greater_power=yes
+        FRA_1775={owned_by=THIS}
+        FRA_1780={owned_by=THIS}
+    }
+    effect={
+        prestige=20
+        FRA_1775={add_core=MAU}
+        FRA_1780={add_core=MAU}
+        set_global_flag=Organized_Mauri
+    }     
+}
+Organize_algeria={
+     potential={
+        civilized=yes
+        OR={
+            owns=1714
+            owns=1718
+        }
+        NOT={has_global_flag=Organized_algeria}
+    }
+    allow={
+        is_greater_power=yes
+        ALD={all_core={owned_by=THIS}}
+    }
+    effect={
+        prestige=20
+        ALD_1714={add_core=ALD}
+        ALD_1718={add_core=ALD}
+        set_global_flag=Organized_algeria
+    }     
+}
+Organize_south_sudan={
+      potential={
+        civilized=yes
+        OR={
+            owns=1842
+            owns=1844
+        }
+        NOT={has_global_flag=Organized_SouthSudan}
+    }
+    allow={
+        is_greater_power=yes
+        EGY_1842={owned_by=THIS}
+        ENG_1844={owned_by=THIS}
+    }
+    effect={
+        prestige=20
+        EGY_1842={add_core=SSD}
+        ENG_1844={add_core=SSD}
+        set_global_flag=Organized_SouthSudan
+    }    
+}
+Organize_Sudan={
+       potential={
+        civilized=yes
+        OR={
+            owns=1827
+            owns=1834
+        }
+        NOT={has_global_flag=Organized_Sudan}
+    }
+    allow={
+        is_greater_power=yes
+        EGY_1827={owned_by=THIS}
+        EGY_1834={owned_by=THIS}
+    }
+    effect={
+        prestige=20
+        EGY_1827={add_core=SUD}
+        ENG_1834={add_core=SUD}
+        set_global_flag=Organized_Sudan
+    }     
+}
+Organize_Eritrea={
+           potential={
+        civilized=yes
+        OR={
+            owns=1848
+        }
+        NOT={has_global_flag=Organized_Eritrea}
+    }
+    allow={
+        is_greater_power=yes
+        ENG_1848={owned_by=THIS}
+    }
+    effect={
+        prestige=20
+        ENG_1848={add_core=ERI}
+        set_global_flag=Organized_Eritrea
+    }   
+    
+}
+Organize_Ethiopia={
+        potential={
+        civilized=yes
+        OR={
+            owns=1852
+            owns=1853
+            owns=1859
+            owns=1862
+            owns=1865
+        }
+        NOT={has_global_flag=Organized_Ethiopia}
+    }
+    allow={
+        is_greater_power=yes
+        ETH_1852={owned_by=THIS}
+        ETH_1853={owned_by=THIS}
+        ETH_1859={owned_by=THIS}
+        ETH_1862={owned_by=THIS}
+        ETH_1865={owned_by=THIS}
+    }
+    effect={
+        prestige=40
+        ETH_1852={add_core=ETH}
+        ETH_1853={add_core=ETH}
+        ETH_1859={add_core=ETH}
+        ETH_1862={add_core=ETH}
+        ETH_1865={add_core=ETH}
+        set_global_flag=Organized_Ethiopia
+        country_event = { id=100021 days=0 }
+    }  
+}
+Organize_Morrocco={
+            potential={
+        civilized=yes
+        OR={
+            owns=1696
+        }
+        NOT={has_global_flag=Organized_Morrocco}
+    }
+    allow={
+        is_greater_power=yes
+        MOR={all_core={owned_by=THIS}}
+        MOR_1696={owned_by=THIS}
+    }
+    effect={
+        prestige=40
+        MOR_1696={add_core=MOR}
+        set_global_flag=Organized_Morrocco
+    } 
+    
+}
+
+}

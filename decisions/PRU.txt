@@ -1,0 +1,351 @@
+political_decisions = {
+form_north_german_confederation = {
+		potential = {
+			is_greater_power = yes
+			primary_culture = north_german
+			NOT = {
+				exists = GER
+				exists = NGF
+			}
+		}	
+		allow = {
+			war = no
+			GER = {
+				all_core = {
+					OR = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+						NOT = {
+							culture = north_german
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 15
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = north_german
+						tag = SCH 
+					}
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				limit = {
+					is_core = GER
+				}
+				add_core = NGF
+			}			
+			change_tag = NGF
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+form_north_german_confederation_ia={
+				potential = {
+			is_greater_power = yes
+			ai=yes
+			primary_culture = north_german
+			NOT = {
+				exists = GER
+				exists = NGF
+				has_country_flag = formed_north_german
+			}
+		}	
+		allow = {
+			war = no
+			year= 1867 
+		}
+		effect = {
+		THIS={change_tag=NGF}
+		prestige=15
+		ANH={all_core={add_core=NGF}}
+		BRA={all_core={add_core=NGF}}
+		BRE={all_core={add_core=NGF}}
+		COB={all_core={add_core=NGF}}
+		DZG={all_core={add_core=NGF}}
+		FRM={all_core={add_core=NGF}}
+		HAM={all_core={add_core=NGF}}
+		HAN={all_core={add_core=NGF}}
+		HES={all_core={add_core=NGF}}
+		HEK={all_core={add_core=NGF}}
+		HOL={all_core={add_core=NGF}}
+		LIP={all_core={add_core=NGF}}
+		LUB={all_core={add_core=NGF}}
+		MEC={all_core={add_core=NGF}}
+		MEI={all_core={add_core=NGF}}
+		NAS={all_core={add_core=NGF}}
+		OLD={all_core={add_core=NGF}}
+		SCH={all_core={add_core=NGF}}
+		WEI={all_core={add_core=NGF}}
+		SXL={all_core={add_core=NGF}}
+		SAX={all_core={add_core=NGF}}
+		WLD={all_core={add_core=NGF}}
+		NGF={inherit= SAX}
+		NGF={inherit= HOL}
+		NGF={inherit= HAN}
+		NGF={inherit= ANH}
+		NGF={inherit= BRA}
+		NGF={inherit= BRE}
+		NGF={inherit= COB}
+		NGF={inherit= DZG}
+		NGF={inherit= FRM}
+		NGF={inherit= HAM}
+		NGF={inherit= HAN}
+		NGF={inherit= HES}
+		NGF={inherit= HEK}
+		NGF={inherit= HOL}
+		NGF={inherit= LIP}
+		NGF={inherit= LUB}
+		NGF={inherit= MEC}
+		NGF={inherit= MEI}
+		NGF={inherit= NAS}
+		NGF={inherit= OLD}
+		NGF={inherit= SCH}
+		NGF={inherit= WEI}
+		NGF={inherit= SXL}
+		NGF={inherit= SXL}
+		NGF={inherit= WLD}
+		412={ add_core = NGF }
+		410={ add_core = NGF }
+		409={ add_core = NGF }
+		set_country_flag= formed_north_german
+	}
+			ai_will_do = {
+			factor = 1
+		}
+}
+South_German_confederation_form={
+				picture=form_south_german_confederation
+				potential = {
+			is_greater_power = yes
+			primary_culture = south_german
+			NOT = {
+				exists = GER
+				exists = NGS
+				has_country_flag = south_german_formed
+			}
+		}	
+			allow = {
+			war = no
+			romanticism=1
+			BAV= {
+				all_core = {
+					OR = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+						NOT = {
+							culture = south_german
+						}
+					}
+				}
+			}
+			BAD = {
+				all_core = {
+					OR = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+						NOT = {
+							culture = south_german
+						}
+					}
+				}
+			}	
+			WUR= {
+				all_core = {
+					OR = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+						NOT = {
+							culture = south_german
+						}
+					}
+				}
+			}	
+				SGM= {
+				all_core = {
+					OR = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+						NOT = {
+							culture = south_german
+						}
+					}
+				}
+			}	
+		}
+			effect = {
+		BAV= {change_tag= SGF} 
+		SGF=  {inherit= WUR} 
+		SGF= {inherit= BAD} 
+		SGF= {inherit= SGM} 
+		BAD={all_core= {add_core = SGF }}
+		WUR={all_core= {add_core = SGF }}
+		SGM={all_core= {add_core = SGF }}
+		412 = { add_core = SGF }
+		410 = { add_core = SGF }
+		409 = { add_core = SGF }
+		set_country_flag= south_german_formed
+	}
+			ai_will_do = {
+			factor = 1
+		}
+}
+form_germany_ai={
+	potential = {
+			is_greater_power = yes
+			ai=yes
+			primary_culture = north_german
+			NOT = {
+				exists = GER
+				has_country_flag = formed_germany
+			}
+		}	
+		allow = {
+			war = no
+			year= 1871
+		}
+		effect = {
+		change_tag=GER
+		prestige=15
+		GER={all_core={remove_core=ANH}}
+		GER={all_core={remove_core=BRA}}
+		GER={all_core={remove_core=BRE}}
+		GER={all_core={remove_core=COB}}
+		GER={all_core={remove_core=DZG}}
+		GER={all_core={remove_core=FRM}}
+		GER={all_core={remove_core=HAM}}
+		GER={all_core={remove_core=HAN}}
+		GER={all_core={remove_core=HES}}
+		GER={all_core={remove_core=HEK}}
+		GER={all_core={remove_core=HOL}}
+		GER={all_core={remove_core=LIP}}
+		GER={all_core={remove_core=LUB}}
+		GER={all_core={remove_core=MEC}}
+		GER={all_core={remove_core=MEI}}
+		GER={all_core={remove_core=NAS}}
+		GER={all_core={remove_core=OLD}}
+		GER={all_core={remove_core=SCH}}
+		GER={all_core={remove_core=WEI}}
+		GER={all_core={remove_core=SXL}}
+		GER={all_core={remove_core=SAX}}
+		GER={all_core={remove_core=WLD}}
+		inherit=BAV
+		inherit=WUR
+		inherit=BAD
+		inherit=SGF
+		inherit=SGM
+		BAV={all_core={add_core=GER}}
+		WUR={all_core={add_core=GER}}
+		BAD={all_core={add_core=GER}}
+		GER={all_core={remove_core=BAV}}
+		GER={all_core={remove_core=WUR}}
+		GER={all_core={remove_core=BAD}}
+		GER={all_core={remove_core=SGM}}
+		set_country_flag= formed_germany
+	}
+}
+greater_germany={
+			picture=establish_west_germany
+	potential = {
+			is_greater_power = yes
+			primary_culture = north_german
+			THIS={tag=GER}
+			NOT={has_country_flag=greater_germany}
+			exists=AUS
+		}	
+		allow = {
+		GER = {
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+						}
+					}
+				}
+			}
+		}
+		effect = {
+		prestige=15
+		SWI={all_core={add_core=GER}}
+		BNX={all_core={add_core=GER}}
+		set_country_flag= greater_germany
+		614={add_core=GER}
+		612={add_core=GER}
+		613={add_core=GER}
+		618={add_core=GER}
+		616={add_core=GER}
+		617={add_core=GER}
+		619={add_core=GER}
+		624={add_core=GER}
+		620={add_core=GER}
+		621={add_core=GER}
+		622={add_core=GER}
+		AUS= {set_country_flag=fixed}
+}
+}
+
+Form_Holy_roman_empire={
+	picture=form_hrepic
+		potential = {
+			is_greater_power = yes
+			tag=GER
+			has_country_flag=greater_germany
+			NOT={has_country_flag=HolyRomanEmpire_formed}
+			}	
+		allow = {
+		revolution_n_counterrevolution=1
+		GER = {
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+						}
+					}
+				}
+			}
+		}
+		effect = {
+		set_country_flag=HolyRomanEmpire_formed
+		KNI={all_core={add_core=GER}}	
+		prestige=15
+		change_tag=REH
+		add_accepted_culture=north_italian
+	}
+}
+}

@@ -1,0 +1,48 @@
+political_decisions = {
+    release_vassalon={
+        alert = no
+        potential={
+            NOT={has_country_flag=release_vassal_on}
+            num_of_vassals_no_substates = 1
+        }
+        allow={
+            ai=no
+        }
+        effect={
+            clr_country_flag=release_vassal_off
+            set_country_flag=release_vassal_on
+        }
+    }
+    release_vassal={
+        alert=no
+        potential={
+            has_country_flag=release_vassal_on
+            NOT={has_country_flag=release_vassal_off}
+        }
+        allow={
+            ai=no
+        }
+        effect={
+            random_country={
+                limit={
+                    vassal_of=THIS
+                }
+                country_event=9999
+            }
+        }
+    }
+    release_vassal_off={
+        alert=no
+        potential={
+            has_country_flag=release_vassal_on
+            NOT={has_country_flag=release_vassal_off}
+        }
+        allow={
+            ai=no
+        }
+        effect={
+            clr_country_flag=release_vassal_on
+            set_country_flag=release_vassal_off
+        }
+    }
+}

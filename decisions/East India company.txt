@@ -1,0 +1,162 @@
+political_decisions = {
+    form_India={
+			picture=form_india
+			potential={
+                OR={
+                    is_culture_group=south_asian
+                    has_country_flag=empress_of_india_end
+                }
+				NOT={has_country_flag=form_india}
+			}
+			allow={
+				war=no
+				HND = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			}
+			effect={
+			prestige=50
+            change_tag=HND
+			set_country_flag=form_india
+			AWA = {all_core={add_core=HND}}
+			BAS = {all_core={add_core=HND}}
+			BER = {all_core={add_core=HND}}
+			BHO = {all_core={add_core=HND}}
+			BHP = {all_core={add_core=HND}}
+			BIK = {all_core={add_core=HND}}
+			BUN = {all_core={add_core=HND}}
+			GWA = {all_core={add_core=HND}}
+			HYD = {all_core={add_core=HND}}
+			IND = {all_core={add_core=HND}}
+			JAI = {all_core={add_core=HND}}
+			JAS = {all_core={add_core=HND}}
+			JOD = {all_core={add_core=HND}}
+			KAL = {all_core={add_core=HND}}
+			KAS = {all_core={add_core=HND}}
+			KUT = {all_core={add_core=HND}}
+			LAD = {all_core={add_core=HND}}
+			MAK = {all_core={add_core=HND}}
+			MEW = {all_core={add_core=HND}}
+			MYS = {all_core={add_core=HND}}
+			NAG = {all_core={add_core=HND}}
+			NEP = {all_core={add_core=HND}}
+			ORI = {all_core={add_core=HND}}
+			PAN = {all_core={add_core=HND}}
+			RGH = {all_core={add_core=HND}}
+			SHI = {all_core={add_core=HND}}
+			SIK = {all_core={add_core=HND}}
+			EIC = {all_core={add_core=HND}}
+			TRA = {all_core={add_core=HND}}
+			MLD = {all_core={add_core=HND}}
+			MDR = {all_core={add_core=HND}}
+			MRT = {all_core={add_core=HND}}
+			GOL = {all_core={add_core=HND}}
+			GWD = {all_core={add_core=HND}}
+			BIJ = {all_core={add_core=HND}}
+			SIN = {all_core={add_core=HND}}
+			ASS = {all_core={add_core=HND}}
+			BIH = {all_core={add_core=HND}}
+			BHU = {all_core={add_core=HND}}
+			inherit= AWA
+			inherit= BAS
+			inherit= BER
+			inherit= BHO
+			inherit= BHP
+			inherit= BIK
+			inherit= BUN
+			inherit= GWA
+			inherit= HYD
+			inherit= IND
+			inherit= JAI
+			inherit= JAS
+			inherit= JOD
+			inherit= KAL
+			inherit= KAS
+			inherit= KUT
+			inherit= LAD
+			inherit= MAK
+			inherit= MEW
+			inherit= MYS
+			inherit= NAG
+			inherit= NEP
+			inherit= ORI
+			inherit= PAN
+			inherit= RGH
+			inherit= SHI
+			inherit= SIK
+			inherit= EIC
+			inherit= TRA
+			HND= {all_core={remove_core=AWA}}
+			HND= {all_core={remove_core=BAS}}
+			HND= {all_core={remove_core=BER}}
+			HND= {all_core={remove_core=BHO}}
+			HND= {all_core={remove_core=BHP}}
+			HND= {all_core={remove_core=BIK}}
+			HND= {all_core={remove_core=BUN}}
+			HND= {all_core={remove_core=GWA}}
+			HND= {all_core={remove_core=HYD}}
+			HND= {all_core={remove_core=IND}}
+			HND= {all_core={remove_core=JAI}}
+			HND= {all_core={remove_core=JAS}}
+			HND= {all_core={remove_core=JOD}}
+			HND= {all_core={remove_core=KAL}}
+			HND= {all_core={remove_core=KAS}}
+			HND= {all_core={remove_core=KUT}}
+			HND= {all_core={remove_core=LAD}}
+			HND= {all_core={remove_core=MAK}}
+			HND= {all_core={remove_core=MEW}}
+			HND= {all_core={remove_core=MYS}}
+			HND= {all_core={remove_core=NAG}}
+			HND= {all_core={remove_core=NEP}}
+			HND= {all_core={remove_core=ORI}}
+			HND= {all_core={remove_core=PAN}}
+			HND= {all_core={remove_core=RGH}}
+			HND= {all_core={remove_core=SHI}}
+			HND= {all_core={remove_core=SIK}}
+			HND= {all_core={remove_core=EIC}}
+			HND= {all_core={remove_core=TRA}}
+			HND= {all_core={remove_core=BGL}}
+			HND= {all_core={remove_core=THA}}
+			HND= {all_core={remove_core=MLD}}
+			HND= {all_core={remove_core=MDR}}
+			HND= {all_core={remove_core=MRT}}
+			HND= {all_core={remove_core=GOL}}
+			HND= {all_core={remove_core=GWD}}
+			HND= {all_core={remove_core=BIJ}}
+			HND= {all_core={remove_core=SIN}}
+			HND= {all_core={remove_core=ASS}}
+			HND= {all_core={remove_core=BIH}}
+			HND= {all_core={remove_core=BHU}}
+    add_accepted_culture= assamese
+	add_accepted_culture= bengali
+	add_accepted_culture= bihari
+	add_accepted_culture= manipuri
+	add_accepted_culture= nepali
+	add_accepted_culture= oriya
+	add_accepted_culture= sinhala
+	add_accepted_culture= avadhi
+	add_accepted_culture= kanauji
+	add_accepted_culture= panjabi
+	add_accepted_culture= kashmiri
+	add_accepted_culture= gujarati
+	add_accepted_culture= marathi
+	add_accepted_culture= sindi
+	add_accepted_culture= rajput
+	add_accepted_culture= kannada
+    add_accepted_culture= malayalam
+	add_accepted_culture= tamil
+	add_accepted_culture= telegu
+	
+	ai_will_do = {
+			factor = 1
+		}
+	}
+}
+}

@@ -1,0 +1,126 @@
+political_decisions = {
+	american_compromise={
+	picture=americamap
+		potential={
+		OR={
+			tag=UNA
+			tag=ULA
+			tag=UDC
+		}
+		NOT={has_country_flag=american_compromised}
+	}
+	allow={
+		revolution_n_counterrevolution=1
+		prestige=1000
+		THIS={all_core={owned_by=THIS}}
+	}
+	effect={
+			set_country_flag=american_compromised
+			PNM={all_core={add_core=THIS}}
+			BRZ={all_core={add_core=THIS}}
+			CLM={all_core={add_core=THIS}}
+			ARG={all_core={add_core=THIS}}
+			PEU={all_core={add_core=THIS}}
+			VNZ={all_core={add_core=THIS}}
+			CHL={all_core={add_core=THIS}}
+			PNM={all_core={add_core=THIS}}
+			BOL={all_core={add_core=THIS}}
+			PRG={all_core={add_core=THIS}}
+			URU={all_core={add_core=THIS}}
+			ULA={all_core={add_core=THIS}}
+			UNA={all_core={add_core=THIS}}
+			MEX={all_core={add_core=THIS}}
+			USA={all_core={add_core=THIS}}
+			CAN={all_core={add_core=THIS}}
+			ECU={all_core={add_core=THIS}}
+			ENG_1979={add_core=THIS}
+	}
+}
+	form_american_republics = {
+		picture = panamerica
+		potential = {
+				or={
+					tag=UNA
+					tag=ULA
+					tag=UDC
+				}
+			NOT = {
+				has_country_flag = form_american_republics_done
+			}
+			has_country_flag=american_compromised
+		}
+		allow = {
+				THIS={all_core={owned_by=THIS}}
+				post_modernism=1
+				is_greater_power = yes
+				war = no
+				prestige = 450
+				}
+		effect = {
+			prestige = 100
+			change_tag = UCS
+			set_country_flags = form_american_republics_done
+			add_accepted_culture = anglo_canadian
+			add_accepted_culture = mexican
+			add_accepted_culture = yankee
+			add_accepted_culture = dixie
+			add_accepted_culture = texan
+			add_accepted_culture = south_andean
+			add_accepted_culture = platinean
+			add_accepted_culture = brazilian
+			add_accepted_culture = north_andean
+			add_accepted_culture = central_american
+			add_accepted_culture = caribeno
+			add_accepted_culture = afro_antillean 
+			add_accepted_culture = afro_brazilian
+			add_accepted_culture = afro_caribeno
+			add_accepted_culture = afro_caribbean
+			add_accepted_culture = afro_american
+			add_accepted_culture = mayan
+			add_accepted_culture = native_american_minor
+			country_event = { id=99999999 days=0 }
+			capital = 78
+			78 = {
+				change_province_name = "Americana Maxima"
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	Organize_america={
+		potential={
+			tag=UCS
+			NOT={has_country_flag=organize_america}
+		}
+		allow={
+			THIS={all_core={owned_by=THIS}}
+		}
+		effect={
+			prestige=50
+			set_country_flag=organize_america
+			UCS={all_core={remove_core=CAN}}
+			UCS={all_core={remove_core=USA}}
+			UCS={all_core={remove_core=UNA}}
+			UCS={all_core={remove_core=ULA}}
+			UCS={all_core={remove_core=GUA}}
+			UCS={all_core={remove_core=MEX}}
+			UCS={all_core={remove_core=BRZ}}
+			UCS={all_core={remove_core=ARG}}
+			UCS={all_core={remove_core=COL}}
+			UCS={all_core={remove_core=CLM}}
+			UCS={all_core={remove_core=ECU}}
+			UCS={all_core={remove_core=VNZ}}
+			UCS={all_core={remove_core=BOL}}
+			UCS={all_core={remove_core=PEU}}
+			UCS={all_core={remove_core=CHL}}
+			UCS={all_core={remove_core=URU}}
+			UCS={all_core={remove_core=UCA}}
+			UCS={all_core={remove_core=PNM}}
+			UCS={all_core={remove_core=COS}}
+			UCS={all_core={remove_core=NIC}}
+			UCS={all_core={remove_core=ELS}}
+			UCS={all_core={remove_core=HON}}
+		}
+	}
+}

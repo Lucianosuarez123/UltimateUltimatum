@@ -1,0 +1,965 @@
+political_decisions = {
+	cavours_diplomacy = {
+		potential = {
+			OR = {
+				AND = { 
+					tag = ITA
+					NOT = { exists = SAR }
+				}
+				AND = { 
+					tag = SAR
+					NOT = { exists = ITA }
+				}
+			}
+			NOT = {
+				has_country_flag = cavour_has_done_his
+			}
+			owns = 465
+			owns = 466
+			owns = 472
+			FRA = {
+				exists = yes
+				is_greater_power = yes
+			}
+		}
+		allow = {
+			relation = {
+				who = FRA
+				value = 150
+			}
+		}
+		
+		effect = {
+			prestige = 20
+			badboy = -10
+			relation = {
+				who = FRA
+				value = 50
+			}
+			diplomatic_influence = {
+			who = FRA
+			value = 200
+						}
+			726 = {
+				add_core = SAR
+			}
+			727 = {
+				add_core = SAR
+			}
+			728 = {
+				add_core = SAR
+			}
+			465 = {
+				remove_core = ITA
+				remove_core = SAR
+				add_core = FRA
+				secede_province = FRA
+			}
+			466 = {
+				remove_core = ITA
+				remove_core = SAR
+				add_core = FRA
+				secede_province = FRA
+			}
+			472 = {
+				remove_core = ITA
+				remove_core = SAR
+				add_core = FRA
+				secede_province = FRA
+			}
+			set_country_flag = cavour_has_done_his
+		}
+	}
+	
+	award_order_of_st_francis = {
+		potential = {
+			tag = SIC
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = order_awarded
+			}
+		}
+		
+		allow = {
+			prestige = 25
+		}
+		
+		effect = {
+			years_of_research = 0.02
+			prestige = 2
+			set_country_flag = order_awarded
+		}
+	}
+	
+	statuto_albertino = {
+		potential = {
+			tag = SAR
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = get_your_statuto_albertino_here
+			}
+		}
+		
+		allow = {
+			average_militancy = 3
+		}
+		
+		effect = {
+			any_pop = {
+				militancy = -2
+			}
+			prestige = 5
+			set_country_flag = get_your_statuto_albertino_here
+		}
+	}
+	build_vittoriano = {
+		potential = {
+			tag = ITA
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = vittoriano_built
+			}
+		}
+		
+		allow = {
+			realism = 1
+		}
+		
+		effect = {
+			prestige = 5
+			any_pop = {
+				militancy = -1
+			}
+			set_country_flag = vittoriano_built
+		}
+	}
+	the_case_of_edgardo_mortara = {
+		potential = {
+			tag = PAP
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = edgardo_mortara
+			}
+			year = 1858
+			owns = 741
+		}
+		allow = {
+			idealism = 1
+		}
+		effect = {
+			prestige = 15
+			badboy = 1
+			any_greater_power = {
+				relation = {
+					value = -20
+					who = THIS
+				}
+			}
+			set_country_flag = edgardo_mortara
+		}
+	}
+	
+	the_first_vatican_council = {
+		potential = {
+			tag = PAP
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = first_vatican_council_held
+			}
+		}
+		
+		allow = {
+			empiricism = 1
+		}
+		
+		effect = {
+			prestige = 10
+			badboy = 1
+			any_country = {
+				limit = {
+					religion = catholic
+				}
+				relation = {
+					who = THIS
+					value = 10
+				}
+			}
+			set_country_flag = first_vatican_council_held
+		}
+	}
+	
+	law_of_guarantees = {
+		potential = {
+			tag = ITA
+			NOT = {
+				capital = 749
+			}
+		}
+		
+		allow = {
+			owns = 749
+		}
+		
+		effect = {
+			capital = 749
+			prestige = 5
+			badboy = -2
+		}
+	}
+	
+	italia_irredenta = {
+		potential = {
+			tag = ITA
+			NOT = {
+				has_country_flag = italia_ulterior
+			}
+		}
+		
+		allow = {
+			OR = {
+				invention = national_fraternity
+				is_greater_power = yes
+			}
+		}
+		
+		effect = {
+			set_country_flag = italia_ulterior
+			set_country_flag = italian_irredentism
+			729 = { add_core = ITA }
+			730 = { add_core = ITA }
+			731 = { add_core = ITA }
+			732 = { add_core = ITA }
+			733 = { add_core = ITA }
+			734 = { add_core = ITA }
+			735 = { add_core = ITA }
+			736 = { add_core = ITA }
+			737 = { add_core = ITA }
+			769 = { add_core = ITA }
+			770 = { add_core = ITA }
+			778 = { add_core = ITA }
+			780 = { add_core = ITA }
+			781 = { add_core = ITA }
+			782 = { add_core = ITA }
+			2582 = { add_core = ITA }
+			465={ add_core = ITA }
+			466={ add_core = ITA }
+			472={ add_core = ITA }
+		}
+	}
+	invasion_of_albania = {
+		potential = {
+			tag = ITA
+			exists = ALB
+			NOT = {
+				has_global_flag = italian_invasion_of_albania
+				year = 1950
+			}
+			year = 1938
+		}
+
+		allow = { government = fascist_dictatorship }
+
+		effect = {
+			set_global_flag = italian_invasion_of_albania
+			ITA = {
+				war = {
+        			target = ALB
+        			attacker_goal = { casus_belli = lebensraum_cb }
+        			defender_goal = { casus_belli = status_quo }
+        		}
+			}
+		}
+
+	}
+	european_empire1 = {
+		picture=empire_europa_pic
+		potential = {
+			OR={
+				tag = RME
+				tag = IBU
+				tag = DUA
+				tag = REH
+				tag = DNB
+				tag = ERE
+				tag = WRE
+				tag = BNX
+				tag = INT
+			}
+			NOT = { has_country_flag = post_colonial_country }
+		}
+		
+		allow = {
+			is_greater_power = yes
+			prestige=800
+			THIS={all_core = { owned_by = THIS }}
+		}
+		
+		effect = {
+			prestige = 50
+			badboy = -5
+			add_accepted_culture = breton
+			add_accepted_culture = south_italian
+			add_accepted_culture = north_italian
+			add_accepted_culture = south_german
+			add_accepted_culture = french
+			add_accepted_culture = spanish
+			add_accepted_culture = english
+			add_accepted_culture = british
+			add_accepted_culture = irish
+			add_accepted_culture = greek
+			add_accepted_culture = turkish
+			add_accepted_culture = hungarian
+			add_accepted_culture = albanian
+			add_accepted_culture = slovak
+			add_accepted_culture = slovene
+			add_accepted_culture = serb
+			add_accepted_culture = croat
+			add_accepted_culture = bulgarian
+			add_accepted_culture = bosniak
+			add_accepted_culture = romanian
+			add_accepted_culture = portuguese
+			add_accepted_culture = bedouin
+			add_accepted_culture = misri
+			add_accepted_culture = maghrebi
+			add_accepted_culture = berber
+			add_accepted_culture = swiss
+			add_accepted_culture = wallonian
+			add_accepted_culture = flemish
+			HUN = {all_core = { add_core = THIS }}
+			FRA = {all_core = { add_core = THIS }}
+			KUK = {all_core = { add_core = THIS }}
+			AUS = {all_core = { add_core = THIS }}
+			SPA = {all_core = { add_core = THIS }}
+			IBU = {all_core = { add_core = THIS }}
+			POR = {all_core = { add_core = THIS }}
+			BEL = {all_core = { add_core = THIS }}
+			SWI = {all_core = { add_core = THIS }}
+			GRE = {all_core = { add_core = THIS }}
+			BUL = {all_core = { add_core = THIS }}
+			ROM = {all_core = { add_core = THIS }}
+			MOR = {all_core = { add_core = THIS }}
+			ALD = {all_core = { add_core = THIS }}
+			TUN = {all_core = { add_core = THIS }}
+			TRI = {all_core = { add_core = THIS }}
+			ALB = {all_core = { add_core = THIS }}
+			TUR = {all_core = { add_core = THIS }}
+			JOR = {all_core = { add_core = THIS }}
+			PAL = {all_core = { add_core = THIS }}
+			SYR = {all_core = { add_core = THIS }}
+			EGY = {all_core = { add_core = THIS }}
+			IRQ = {all_core = { add_core = THIS }}
+			LEB = {all_core = { add_core = THIS }}
+			ANG = {all_core = { add_core = THIS }}
+			LYB = {all_core = { add_core = THIS }}
+			LUX=  {all_core = { add_core = THIS }}
+			ITA=  {all_core = { add_core = THIS }}
+			KNI=  {all_core = { add_core = THIS }}
+			VEN=  {all_core = { add_core = THIS }}
+			DUA=  {all_core = { add_core = THIS }}
+			BNX=  {all_core = { add_core = THIS }}
+			WLS=  {all_core = { add_core = THIS }}
+			BOS=  {all_core = { add_core = THIS }}
+			YUG=  {all_core = { add_core = THIS }}
+			1733= {add_core = THIS}
+			1734= {add_core = THIS}
+			1735= {add_core = THIS}
+			1736= {add_core = THIS}
+			1737= {add_core = THIS}
+			517= {add_core = THIS}
+            set_country_flag = post_colonial_country 
+		}
+	} 
+		european_empire2 = {
+		picture=empire_europa_pic
+		potential = {
+			THIS={all_core = { owned_by = THIS }}
+			NOT={has_country_flag=post_colonial_country2}
+			has_country_flag=post_colonial_country
+		}
+		allow = {
+			is_greater_power = yes
+		}
+		
+		effect = {
+			change_tag=EUR
+			country_event = { id=976749 days=0 }
+			prestige = 100
+			badboy = -10
+			add_accepted_culture = north_german
+			add_accepted_culture = danish
+			add_accepted_culture = polish
+			add_accepted_culture = czech
+			add_accepted_culture = welsh
+			add_accepted_culture = scottish
+			add_accepted_culture = dutch
+			add_accepted_culture = swedish
+			add_accepted_culture = norwegian
+			add_accepted_culture = finnish
+			add_accepted_culture = byelorussian
+			add_accepted_culture = ashkenazi
+			add_accepted_culture = lithuanian
+			add_accepted_culture = estonian
+			add_accepted_culture =  latvian
+			add_accepted_culture = ukrainian
+			add_accepted_culture = inuit
+			add_accepted_culture = icelandic
+			add_accepted_culture = catalan
+			add_accepted_culture = basque
+			add_accepted_culture = breton
+			add_accepted_culture = russian
+			add_accepted_culture = tatar
+			GER= {all_core = { add_core = EUR }}
+			POL= {all_core = { add_core = EUR }}
+			PLC= {all_core = { add_core = EUR }}
+			NET= {all_core = { add_core = EUR }}
+			BNX= {all_core = { add_core = EUR }}
+			DEN= {all_core = { add_core = EUR }}
+			SCA= {all_core = { add_core = EUR }}
+			NOR= {all_core = { add_core = EUR }}
+			SWE= {all_core = { add_core = EUR }}
+			FIN= {all_core = { add_core = EUR }}
+			LIT= {all_core = { add_core = EUR }}
+			EST= {all_core = { add_core = EUR }}
+			LAT= {all_core = { add_core = EUR }}
+			CZH= {all_core = { add_core = EUR }}
+			UKR= {all_core = { add_core = EUR }}
+			BYE= {all_core = { add_core = EUR }}
+			CZH= {all_core = { add_core = EUR }}
+			TAR= {all_core = { add_core = EUR }}
+			TCA= {all_core = { add_core = EUR }}
+			MSC= {all_core = { add_core = EUR }}
+			UBD= {all_core = { add_core = EUR }}
+			CZH= {all_core = { add_core = EUR }}
+			IRE= {all_core = { add_core = EUR }}
+			SCO= {all_core = { add_core = EUR }}
+            set_country_flag = post_colonial_country2 
+		}
+	} 
+			organize_europe = {
+        picture=empire_europa_pic
+		potential = {
+			tag = EUR
+			NOT={has_country_flag=post_colonial_country3}
+			has_country_flag=post_colonial_country2
+		}
+		allow = {
+			all_core = { owned_by = THIS }
+			is_greater_power = yes
+			prestige=3000
+		}
+		
+		effect = {
+			prestige = 100
+			badboy = -10
+			MOR={all_core = { add_core = ARA }}
+			ALD={all_core = { add_core = ARA }}
+			TUN={all_core = { add_core = ARA }}
+			TRI={all_core = { add_core = ARA }}
+			LYB={all_core = { add_core = ARA }}
+			EGY={all_core = { add_core = ARA }}
+			SAU={all_core = { add_core = ARA }}
+			YEM={all_core = { add_core = ARA }}
+			ABU={all_core = { add_core = ARA }}
+			HDJ={all_core = { add_core = ARA }}
+			ARA = {all_core = { remove_core = MOR }}
+			ARA = {all_core = { remove_core = ALD }}
+			ARA = {all_core = { remove_core = TUN }}
+			ARA = {all_core = { remove_core = TRI }}
+			ARA = {all_core = { remove_core = LYB }}
+			ARA = {all_core = { remove_core = SAU }}
+			1174={ add_core = ARA }
+			1172={ add_core = ARA }
+			1171={ add_core = ARA }
+			1170={ add_core = ARA }
+			1166={ add_core = ARA }
+			1169={ add_core = ARA }
+			TUR = {all_core = { add_core = BYZ }}
+			HDJ = {all_core = { add_core = BYZ }}
+			GRE = {all_core = { add_core = BYZ }}
+			BUL = {all_core = { add_core = BYZ }}
+			ALB = {all_core = { add_core = BYZ }}
+			EGY = {all_core = { add_core = BYZ }}
+			PAL = {all_core = { add_core = BYZ }}
+			JOR = {all_core = { add_core = BYZ }}
+			YEM = {all_core = { add_core = BYZ }}
+			ABU = {all_core = { add_core = BYZ }}
+			NEJ = {all_core = { add_core = BYZ }}
+			MOL = {all_core = { add_core = BYZ }}
+			WAL = {all_core = { add_core = BYZ }}
+			IRQ = {all_core = { add_core = BYZ }}
+			SYR = {all_core = { add_core = BYZ }}
+			LEB = {all_core = { add_core = BYZ }}
+			MON = {all_core = { add_core = BYZ }}
+			BOS = {all_core = { add_core = BYZ }}
+			782 = {add_core=BYZ}
+			780 = {add_core=BYZ}
+			781 = {add_core=BYZ}
+			774 = {add_core=BYZ}
+			797 = {add_core=BYZ}
+			794 = {add_core=BYZ}
+			795 = {add_core=BYZ}
+			796 = {add_core=BYZ}
+			799 = {add_core=BYZ}
+			798 = {add_core=BYZ}
+			803 = {add_core=BYZ}
+			802 = {add_core=BYZ}
+			804 = {add_core=BYZ}
+			BYZ = {all_core = { remove_core = BOS }}
+			BYZ = {all_core = { remove_core = CRO }}
+			BYZ = {all_core = { remove_core = SER }}
+			BYZ = {all_core = { remove_core = TUR }}
+			BYZ = {all_core = { remove_core = HDJ }}
+			BYZ = {all_core = { remove_core = GRE }}
+			BYZ = {all_core = { remove_core = BUL }}
+			BYZ = {all_core = { remove_core = ALB }}
+			BYZ = {all_core = { remove_core = EGY }}
+			BYZ = {all_core = { remove_core = PAL }}
+			BYZ = {all_core = { remove_core = JOR }}
+			BYZ = {all_core = { remove_core = YEM }}
+			BYZ = {all_core = { remove_core = ABU }}
+			BYZ = {all_core = { remove_core = NEJ }}
+			BYZ = {all_core = { remove_core = MOL }}
+			BYZ = {all_core = { remove_core = IRQ }}
+			BYZ = {all_core = { remove_core = SYR }}
+			BYZ = {all_core = { remove_core = LEB }}
+			BYZ = {all_core = { remove_core = WAL }}
+			BYZ = {all_core = { remove_core = RUS }}
+			BYZ = {all_core = { remove_core = MON }}
+			BYZ = {all_core = { remove_core = CYP }}
+			BYZ = {all_core = { remove_core = MON }}
+			BYZ = {all_core = { remove_core = CRE }}
+			BYZ = {all_core = { remove_core = KUR }}
+			BYZ = {all_core = { remove_core = ARM }}
+			BYZ = {all_core = { remove_core = GEO }}
+			BYZ = {all_core = { remove_core = MAC }}
+			BYZ = {all_core = { remove_core = ROM }}
+			1689={remove_core=SPA}
+			SPA={all_core = { add_core = IBU }}
+			POR={all_core = { add_core = IBU }}
+			517={add_core=IBU}
+			IBU={all_core = { remove_core = SPA }}
+			IBU={all_core = { remove_core = POR }}
+			IBU={all_core = { remove_core = CAT }}
+			IBU={all_core = { remove_core = BSQ }}
+			517={remove_core=ENG}
+
+			NET={all_core = { add_core = BNX }}
+			BEL={all_core = { add_core = BNX }}
+			LUX={all_core = { add_core = BNX }}
+			BNX={all_core = { remove_core = RME }}
+			BNX={all_core = { remove_core = FLA }}
+			BNX={all_core = { remove_core = WLL }}
+			FRA={all_core = { add_core = DUA }}
+			ENG={all_core = { add_core = DUA }}
+			SCO={all_core = { add_core = DUA }}
+			IRE={all_core = { add_core = DUA }}
+			WLS={all_core = { add_core = DUA }}
+			NRI={all_core = { add_core = DUA }}
+			DUA={all_core = { remove_core = FRA }}
+			DUA={all_core = { remove_core = ENG }}
+			DUA={all_core = { remove_core = SCO }}
+			DUA={all_core = { remove_core = IRE }}
+			DUA={all_core = { remove_core = WLS }}
+			DUA={all_core = { remove_core = BRY }}
+			DUA={all_core = { remove_core = ANG }}
+			DUA={all_core = { remove_core = WSX }}
+			DUA={all_core = { remove_core = MER }}
+			DUA={all_core = { remove_core = NRT }}
+			DUA={all_core = { remove_core = ESX }}
+			DUA={all_core = { remove_core = NRI }}
+			DUA={all_core = { remove_core = SAV }}
+			DUA={all_core = { remove_core = NRI }}
+			DUA={all_core = { remove_core = PIE }}
+			DUA={all_core = { remove_core = COR }}
+			DUA= {all_core = { remove_core = CRN }}
+			GER= {all_core = { add_core = REH }}
+			AUS= {all_core = { add_core = REH }}
+			LOM= {all_core = { add_core = REH }}
+			SAR= {all_core = { add_core = REH }}
+			SWI= {all_core = { add_core = REH }}
+			NET= {all_core = { add_core = REH }}
+			CZH= {all_core = { add_core = REH }}
+			BEL= {all_core = { add_core = REH }}
+			VEN= {all_core = { add_core = REH }}
+			LUC= {all_core = { add_core = REH }}
+			PAR= {all_core = { add_core = REH }}
+			TUS= {all_core = { add_core = REH }}
+			PAP= {all_core = { add_core = REH }}
+			MOD= {all_core = { add_core = REH }}
+			CZH= {all_core = { add_core = REH }}
+			HUN= {all_core = { add_core = REH }}
+			TRE= {all_core = { add_core = REH }}
+			SLO= {all_core = { add_core = REH }}
+			734= { add_core = REH }
+			735= { add_core = REH }
+			REH= {all_core = { remove_core = CZH }}
+			REH= {all_core = { remove_core = NCT }}
+			REH= {all_core = { remove_core = GEN }}
+			REH= {all_core = { remove_core = SAV }}
+			REH= {all_core = { remove_core = CRO }}
+			REH= {all_core = { remove_core = SLO }}
+			REH= {all_core = { remove_core = HUN }}
+			REH= {all_core = { remove_core = PLT }}
+			REH= {all_core = { remove_core = WLD }}
+			REH= {all_core = { remove_core = SLS }}
+			REH= {all_core = { remove_core = SLV }}
+			REH= {all_core = { remove_core = SLO }}
+			REH= {all_core = { remove_core = ITA }}
+			REH= {all_core = { remove_core = KNI }}
+			REH= {all_core = { remove_core = TRE }}
+			REH= {all_core = { remove_core = PIE }}
+			REH= {all_core = { remove_core = SER }}
+			REH= {all_core = { remove_core = GER }}
+			REH= {all_core = { remove_core = AUS }}
+			REH= {all_core = { remove_core = LOM }}
+			REH= {all_core = { remove_core = SAR }}
+			REH= {all_core = { remove_core = SWI }}
+			REH= {all_core = { remove_core = NET }}
+			REH= {all_core = { remove_core = BEL }}
+			REH= {all_core = { remove_core = VEN }}
+			REH= {all_core = { remove_core = LUC }}
+			REH= {all_core = { remove_core = PAR }}
+			REH= {all_core = { remove_core = TUS }}
+			REH= {all_core = { remove_core = PAP }}
+			REH= {all_core = { remove_core = MOD }}
+			REH= {all_core = { remove_core = PRU }}
+			REH= {all_core = { remove_core = ANH }}
+			REH= {all_core = { remove_core = BAD }}
+			REH= {all_core = { remove_core = BAV }}
+			REH= {all_core = { remove_core = BRA }}
+			REH= {all_core = { remove_core = BRE }}
+			REH= {all_core = { remove_core = COB }}
+			REH= {all_core = { remove_core = DZG }}
+			REH= {all_core = { remove_core = DDR }}
+			REH= {all_core = { remove_core = FRM }}
+			REH= {all_core = { remove_core = HAM }}
+			REH= {all_core = { remove_core = HAN }}
+			REH= {all_core = { remove_core = HES }}
+			REH= {all_core = { remove_core = HEK }}
+			REH= {all_core = { remove_core = HOL }}
+			REH= {all_core = { remove_core = LIP }}
+			REH= {all_core = { remove_core = LUB }}
+			REH= {all_core = { remove_core = LUX }}
+			REH= {all_core = { remove_core = MEC }}
+			REH= {all_core = { remove_core = MEI }}
+			REH= {all_core = { remove_core = NAS }}
+			REH= {all_core = { remove_core = NGF }}
+			REH= {all_core = { remove_core = OLD }}
+			REH= {all_core = { remove_core = SAX }}
+			REH= {all_core = { remove_core = SCH }}
+			REH= {all_core = { remove_core = SGF }}
+			REH= {all_core = { remove_core = WEI }}
+			REH= {all_core = { remove_core = WUR }}
+			REH= {all_core = { remove_core = ROM }}
+			REH= {all_core = { remove_core = SDA }}
+			REH= {all_core = { remove_core = SIE }}
+			REH={all_core = { remove_core =  PMR }}
+			REH={all_core = { remove_core =  PML }}
+			REH={all_core = { remove_core =  LOR }}
+			REH={all_core = { remove_core =  ALS }}
+			REH={all_core = { remove_core =  WES }}
+			REH={all_core = { remove_core =  PZN }}
+			REH={all_core = { remove_core =  SXL }}
+			DEN={all_core = { add_core = SCA }}
+			SWE={all_core = { add_core = SCA }}
+			NOR={all_core = { add_core = SCA }}
+			FIN={all_core = { add_core = SCA }}
+			SCA={all_core = { remove_core = DEN }}
+			SCA={all_core = { remove_core = SWE }}
+			SCA={all_core = { remove_core = NOR }}
+			SCA={all_core = { remove_core = FIN }}
+			SCA={all_core = { remove_core = ICL }}
+			SCA={all_core = { remove_core = GRL }}
+
+			POL={all_core = { add_core = PLC }}
+			UKR={all_core = { add_core = PLC }}
+			BYE={all_core = { add_core = PLC }}
+			LIT={all_core = { add_core = PLC }}
+			EST={all_core = { add_core = PLC }}
+			LAT={all_core = { add_core = PLC }}
+			MSC={all_core = { add_core = PLC }}
+
+			PLC={all_core = { remove_core = POL }}
+			PLC={all_core = { remove_core = UKR }}
+			PLC={all_core = { remove_core = BYE }}
+			PLC={all_core = { remove_core = LIT }}
+			PLC={all_core = { remove_core = EST }}
+			PLC={all_core = { remove_core = LAT }}
+			PLC={all_core = { remove_core = MSC }}
+			PLC={all_core = { remove_core = RUS }}
+            set_country_flag = post_colonial_country3
+		}
+	} 
+		kingdomofnorthitaly_form_ia = {
+               
+		potential = {
+			primary_culture=north_italian
+			ai=yes
+			year=1861
+			NOT={has_country_flag=KGitaly_formedbyia}
+			NOT={exists=ITA}
+		}
+		
+		allow = {
+			owns=720
+		}
+		
+		effect = {
+			change_tag=KNI
+			set_country_flag=KGitaly_formedbyia
+			random_country = {
+				limit = {
+					tag = PAR
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = PAR }
+			}
+			random_country = {
+				limit = {
+					tag = PAR
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = LUC
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = LUC }
+			}
+			random_country = {
+				limit = {
+					tag = LUC
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = MOD
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = MOD }
+			}
+			random_country = {
+				limit = {
+					tag = MOD
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = TUS
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = TUS }
+			}
+			random_country = {
+				limit = {
+					tag = TUS
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = SAR
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = SAR }
+			}
+			random_country = {
+				limit = {
+					tag = SAR
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = SDA
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = SDA }
+			}
+			random_country = {
+				limit = {
+					tag = SDA
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = SAV
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = SAV }
+			}
+			random_country = {
+				limit = {
+					tag = SAV
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = LOM
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = LOM }
+			}
+			random_country = {
+				limit = {
+					tag = LOM
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+		}
+	} 
+		form_italy_ia = {
+               
+		potential = {
+			primary_culture=north_italian
+			ai=yes
+			year=1871
+			NOT={has_country_flag=italy_formedbyia}
+			has_country_flag=KGitaly_formedbyia
+		}
+		
+		allow = {
+			owns=720
+		}
+		
+		effect = {
+			set_country_flag=italy_formedbyia
+			random_country = {
+				limit = {
+					tag = PAP
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = PAP }
+			}
+			random_country = {
+				limit = {
+					tag = PAP
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = SIC
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = SIC }
+			}
+			random_country = {
+				limit = {
+					tag = SIC
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = SCL
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = SCL }
+			}
+			random_country = {
+				limit = {
+					tag = SCL
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = VEN
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = VEN }
+			}
+			random_country = {
+				limit = {
+					tag = VEN
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = NAP
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = NAP }
+			}
+			random_country = {
+				limit = {
+					tag = NAP
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			prestige=45
+			465={remove_core=PIE}
+			466={remove_core=PIE}
+			472={remove_core=PIE}
+			465={remove_core=KNI}
+			466={remove_core=KNI}
+			472={remove_core=KNI}
+			add_accepted_culture=maltese
+			854={add_core=ITA}
+			854={secede_province=THIS}
+			726={secede_province=THIS}
+			727={secede_province=THIS}
+			728={secede_province=THIS}
+			KNI={all_core={remove_core=PAR}}
+			KNI={all_core={remove_core=TUS}}
+			KNI={all_core={remove_core=LUC}}
+			KNI={all_core={remove_core=MOD}}
+			KNI={all_core={remove_core=SIC}}
+			KNI={all_core={remove_core=NAP}}
+			KNI={all_core={remove_core=SCL}}
+			KNI={all_core={remove_core=SAV}}
+			KNI={all_core={remove_core=SDA}}
+			KNI={all_core={remove_core=SAR}}
+			KNI={all_core={remove_core=LOM}}
+			KNI={all_core={remove_core=PIE}}
+			KNI={all_core={remove_core=PAP}}
+			change_tag=ITA
+		}
+	} 
+}

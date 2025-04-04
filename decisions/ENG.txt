@@ -1,0 +1,1249 @@
+political_decisions = {
+	repeal_the_corn_laws = {
+		potential = {
+			tag = ENG
+			NOT = { year = 1850 } 
+			NOT = {
+				has_country_flag = corn_laws_repealed_flag
+			}
+		}
+		allow = {
+			average_militancy = 2
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = corn_laws_repealed
+				duration = 3650
+			}
+			any_pop = {
+				militancy = -1
+				consciousness = 1
+			}
+			set_country_flag = corn_laws_repealed_flag
+		}
+	}
+
+
+	found_the_bbc = {
+		potential = {
+			tag = ENG
+			year = 1900
+			NOT = {
+				has_country_flag = we_are_live_from_london
+			}
+		}
+
+		allow = {
+			invention = national_radio_networks
+		}
+
+		effect = {
+			any_country = {
+				relation = {
+					who = THIS
+					value = 5
+				}
+			}
+			any_pop = {
+				militancy = -0.5
+			}
+			prestige = 10
+			set_country_flag = we_are_live_from_london
+		}
+	}
+	the_scotland_yard = {
+		potential = {
+			tag = ENG
+			NOT = {
+				has_country_flag = elementary_my_dear_watson # I know, he never says it in the books, yadiyadi.
+			}
+		}
+
+		allow = {
+			realism = 1
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = the_yard
+				duration = -1
+			}
+			set_country_flag = elementary_my_dear_watson
+		}
+	}
+
+	ionian_islands_question = {
+		potential = {
+			tag = ENG
+			ION = {
+				vassal_of = ENG
+			}
+			ION = { ai = yes }
+			NOT = {
+				truce_with = GRE
+			}			
+		}
+
+		allow = {
+			nationalism_n_imperialism = 1
+			war = no
+		}
+
+		effect = {
+			relation = {
+				who = GRE
+				value = 50
+			}
+			diplomatic_influence = {
+				who = GRE
+				value = 50
+			}
+			prestige = 10
+			badboy = -4
+			GRE = {
+				inherit = ION
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					AND = {
+						year = 1864 
+						month = 4
+					}
+				}
+			}
+			modifier = {
+				factor = 1			
+				relation = {
+					who = GRE
+					value = 0
+				}
+			}
+		}
+	}
+
+	rhodesia_charter = {
+		potential = {
+			tag = ENG
+			owns = 2068
+			owns = 2069
+			owns = 2070
+			owns = 2071
+			owns = 2072
+			owns = 2073
+			owns = 2635
+			NOT = {
+				has_country_flag = ian_would_be_proud
+			}
+		}
+
+		allow = {
+			invention = mission_to_civilize
+		}
+
+		effect = {
+			prestige = 10
+			2068 = {
+				change_province_name = "Salisbury"
+				state_scope = {
+					change_region_name = "Southern Rhodesia"
+					any_owned = {
+						add_core = RHO
+					}
+				}
+			}
+			set_country_flag = ian_would_be_proud
+		}
+	}
+Expectacula ={
+	        picture=actofunionpic
+		potential={
+			tag= ENG
+			NOT={ has_country_flag = claim_india001}
+			}
+		allow= {
+			ideological_thought=1
+			}
+		effect= {
+			HND={all_core= {add_core = ENG }}
+			BUR={all_core= {add_core = ENG }}
+			set_country_flag = claim_india001	
+			}
+			ai_will_do = {
+			factor = 1
+		}
+}
+form_company_of_indians= {
+		picture = india_pic
+			potential = {
+				has_country_flag=claim_india001
+				tag = ENG
+				NOT = {
+				has_country_flag = east_indian_company
+				}
+			}
+		allow = {
+			state_n_government= 1
+			prestige = 500
+			HND = {
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+						      }
+					            }	
+				       }
+			        }
+			BUR = {
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+						}
+					}	
+				}
+			}
+		}
+		effect={
+			prestige = 25
+			BHU = {all_core={add_core = HND}}
+			NEP = {all_core={add_core = HND}}
+            inherit = HND
+            release = BUR
+            release_vassal = SRI
+			release_vassal = HND
+			random_country = {
+				limit = {
+					tag = BIK
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = BIK }
+			}
+			random_country = {
+				limit = {
+					tag = BIK
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = SRI
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = SRI }
+			}
+		random_country = {
+				limit = {
+					tag = PAN
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+		random_country = {
+				limit = {
+					tag = PAN
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = PAN }
+			}
+			random_country = {
+				limit = {
+					tag = SRI
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = PNJ
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = PNJ }
+			}
+			random_country = {
+				limit = {
+					tag = PNJ
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = SIN
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = SIN }
+			}
+			random_country = {
+				limit = {
+					tag = SIN
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = AWA
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = AWA }
+			}
+			random_country = {
+				limit = {
+					tag = AWA
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = NAG
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = NAG }
+			}
+			random_country = {
+				limit = {
+					tag = NAG
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = ORI
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = ORI }
+			}
+			random_country = {
+				limit = {
+					tag = ORI
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = BUN
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = BUN }
+			}
+			random_country = {
+				limit = {
+					tag = BUN
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = KUT
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = KUT }
+			}
+			random_country = {
+				limit = {
+					tag = KUT
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = BER
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = BER }
+			}
+			random_country = {
+				limit = {
+					tag = BER
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = GWA
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = GWA }
+			}
+			random_country = {
+				limit = {
+					tag = GWA
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = BHO
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = BHO }
+			}
+			random_country = {
+				limit = {
+					tag = BHO
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = IND
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = IND }
+			}
+			random_country = {
+				limit = {
+					tag = IND
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = BUR
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = BUR }
+			}
+			random_country = {
+				limit = {
+					tag = BUR
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = KAL
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = KAL }
+			}
+			random_country = {
+				limit = {
+					tag = KAL
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = MAK
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = MAK }
+			}
+			random_country = {
+				limit = {
+					tag = MAK
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = KAS
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = KAS }
+			}
+			random_country = {
+				limit = {
+					tag = KAS
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = MYS
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = MYS }
+			}
+			random_country = {
+				limit = {
+					tag = MYS
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = TRA
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = TRA }
+			}
+			random_country = {
+				limit = {
+					tag = TRA
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = HYD
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = HYD }
+			}
+			random_country = {
+				limit = {
+					tag = HYD
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = BAS
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = BAS }
+			}
+			random_country = {
+				limit = {
+					tag = BAS
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = JAS
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = JAS }
+			}
+			random_country = {
+				limit = {
+					tag = JAS
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = JOD
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = JOD }
+			}
+			random_country = {
+				limit = {
+					tag = JOD
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = JAI
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = JAI }
+			}
+			random_country = {
+				limit = {
+					tag = JAI
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = MEW
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = MEW }
+			}
+			random_country = {
+				limit = {
+					tag = MEW
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = BHU
+					exists = yes
+					ai = yes
+				}
+				HND = { inherit = BHU }
+			}
+			random_country = {
+				limit = {
+					tag = BHU
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			1593={secede_province=TIB}
+			relation = { who = HND value = 100 }
+			diplomatic_influence = { who = HND value = 200 }
+			HND = { civilized = yes 
+					change_tag= EIC
+					add_accepted_culture= english
+			}
+			set_country_flag = empress_of_india
+			set_country_flag = east_indian_company
+			EIC={all_core={remove_core=ENG} 
+				set_country_flag=is_coronation_time
+			} 
+			BUR={all_core={ remove_core=ENG }
+		}
+
+	}	
+			ai_will_do = {
+			factor = 1
+		}
+	}
+offer_to_buy_bombay={
+	potential={
+		tag=ENG
+		1303={owned_by=POR}
+		has_country_flag=claim_india001
+		NOT={has_country_flag=buy_bombay}
+	}
+	allow={
+	money=100000
+	POR={relation={who= THIS value=120}}
+	business_regulations=1
+	}
+	effect={
+		set_country_flag=buy_bombay
+		money=-100000
+		POR={country_event=999990}
+	}
+}
+offer_to_buy_cars={
+	potential={
+		tag=ENG
+		1312={owned_by=FRA}
+		has_country_flag=claim_india001
+		NOT={has_country_flag=buy_cars}
+	}
+	allow={
+	money=500000
+	FRA={relation={who= THIS value=150}}
+	business_banks=1
+	}
+	effect={
+		set_country_flag=buy_cars
+		money=-500000
+		FRA={country_event=999991}
+	}
+}
+unir_India_ai={
+	picture = india_pic
+			potential = {
+				tag = ENG
+				THIS={ai=yes}
+				NOT = {has_country_flag = pelotudo1}
+			}
+		allow = {
+			year=1870
+		}
+		effect={
+			 BHU= { add_core = HND }
+			random_country = {
+				limit = {
+					tag = BIK
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = BIK }
+			}
+			random_country = {
+				limit = {
+					tag = BIK
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = SRI
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = SRI }
+			}
+		random_country = {
+				limit = {
+					tag = PAN
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+		random_country = {
+				limit = {
+					tag = PAN
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = PAN }
+			}
+			random_country = {
+				limit = {
+					tag = SRI
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = PNJ
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = PNJ }
+			}
+			random_country = {
+				limit = {
+					tag = PNJ
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = SIN
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = SIN }
+			}
+			random_country = {
+				limit = {
+					tag = SIN
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = AWA
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = AWA }
+			}
+			random_country = {
+				limit = {
+					tag = AWA
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = NAG
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = NAG }
+			}
+			random_country = {
+				limit = {
+					tag = NAG
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = ORI
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = ORI }
+			}
+			random_country = {
+				limit = {
+					tag = ORI
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = BUN
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = BUN }
+			}
+			random_country = {
+				limit = {
+					tag = BUN
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = KUT
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = KUT }
+			}
+			random_country = {
+				limit = {
+					tag = KUT
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = BER
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = BER }
+			}
+			random_country = {
+				limit = {
+					tag = BER
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = GWA
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = GWA }
+			}
+			random_country = {
+				limit = {
+					tag = GWA
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = BHO
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = BHO }
+			}
+			random_country = {
+				limit = {
+					tag = BHO
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = IND
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = IND }
+			}
+			random_country = {
+				limit = {
+					tag = IND
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = BUR
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = BUR }
+			}
+			random_country = {
+				limit = {
+					tag = BUR
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = KAL
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = KAL }
+			}
+			random_country = {
+				limit = {
+					tag = KAL
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = MAK
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = MAK }
+			}
+			random_country = {
+				limit = {
+					tag = MAK
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = KAS
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = KAS }
+			}
+			random_country = {
+				limit = {
+					tag = KAS
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = MYS
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = MYS }
+			}
+			random_country = {
+				limit = {
+					tag = MYS
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = TRA
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = TRA }
+			}
+			random_country = {
+				limit = {
+					tag = TRA
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = HYD
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = HYD }
+			}
+			random_country = {
+				limit = {
+					tag = HYD
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = BAS
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = BAS }
+			}
+			random_country = {
+				limit = {
+					tag = BAS
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = JAS
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = JAS }
+			}
+			random_country = {
+				limit = {
+					tag = JAS
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = JOD
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = JOD }
+			}
+			random_country = {
+				limit = {
+					tag = JOD
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = JAI
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = JAI }
+			}
+			random_country = {
+				limit = {
+					tag = JAI
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = MEW
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = MEW }
+			}
+			random_country = {
+				limit = {
+					tag = MEW
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = BHU
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = BHU
+					exists = yes
+					ai = yes
+				}
+				ENG = { inherit = BHU }
+			}
+			1593={secede_province=TIB}
+			inherit=MLD
+			inherit=BUR
+			inherit=SIK
+			inherit=SIN
+			inherit=BHU
+			1312={secede_province=THIS}
+			1303={secede_province=THIS}
+			set_country_flag=pelotudo1
+			}
+
+}
+
+	Claim_french={
+		picture=francia1_pic
+		potential = {
+			tag=ENG
+			has_country_flag=east_indian_company
+			NOT={has_country_flag=dual_monarchy_proclamation}
+			ENG={all_core={owned_by=THIS}}
+			}
+		allow={
+			prestige=800
+			state_n_government=1
+		}
+		effect={
+			set_country_flag=dual_monarchy_proclamation
+			FRA={all_core={add_core=THIS}}
+			BRY={all_core={add_core=THIS}}
+		}
+		ai_will_do = {
+		factor = 1
+		}
+	}
+Form_dual_monarchy={
+	picture=hbe_pic
+	potential={
+		OR={
+			tag=ENG
+			tag=FRA
+		}
+		OR={
+			has_country_flag=east_indian_company
+			has_country_flag=an_empire_reborn
+		}
+		NOT={has_country_flag=dual_monarchy01}
+	}
+	allow={
+		FRA={all_core={OR={owned_by=THIS owner ={in_sphere=THIS}}}}
+		ANG={all_core={OR={owned_by=THIS owner ={in_sphere=THIS}}}}
+		SCO={all_core={OR={owned_by=THIS owner ={in_sphere=THIS}}}}
+		IRE={all_core={OR={owned_by=THIS owner ={in_sphere=THIS}}}}
+		NRI={all_core={OR={owned_by=THIS owner ={in_sphere=THIS}}}}
+		WLS={all_core={OR={owned_by=THIS owner ={in_sphere=THIS}}}}
+		THIS={all_core={OR={owned_by=THIS owner ={in_sphere=THIS}}}}
+	}
+	effect={
+		change_tag=DUA
+		set_country_flag=dual_monarchy01
+		add_accepted_culture=french
+		add_accepted_culture=english
+		add_accepted_culture=scottish
+		add_accepted_culture=irish
+		add_accepted_culture=british
+		add_accepted_culture = breton
+		ANG={all_core={add_core=DUA}}
+		SCO={all_core={add_core=DUA}}
+		FRA={all_core={add_core=DUA}}
+		IRE={all_core={add_core=DUA}}
+		WLS={all_core={add_core=DUA}}
+		NRI={all_core={add_core=DUA}}
+		DUA={all_core = { remove_core = FRA }}
+		DUA={all_core = { remove_core = SCO }}
+		DUA={all_core = { remove_core = ANG }}
+		DUA={all_core = { remove_core = IRE }}
+		DUA={all_core = { remove_core = WLS }}
+		DUA={all_core = { remove_core = ENG }}
+		DUA={all_core = { remove_core = NRI }}
+		DUA={
+			inherit=FRA
+			inherit=ENG
+			inherit=ANG
+			inherit=IRE
+			inherit=SCO
+			inherit=NRI
+			inherit=WLS
+		}
+	}
+ai_will_do = {
+		factor = 1
+		}
+}
+}

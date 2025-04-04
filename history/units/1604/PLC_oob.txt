@@ -1,0 +1,124 @@
+BDB = { 
+	value = 125 
+	level = 5 
+	influence_value = 25 
+}
+SLS = { 
+	value = 125 
+	level = 5 
+	influence_value = 25 
+}
+PMR= { 
+	value = 125 
+	level = 5 
+	influence_value = 25 
+}
+army = {
+	name = "1st Army"
+	location = 703
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+}
+
+
+army = {
+	name = "2nd Army"
+	location = 690
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+}
+
+
+

@@ -1,0 +1,66 @@
+political_decisions = {
+	move_capital_to_Constantinople = {
+    		potential = {
+        		OR={
+					tag=BYZ
+					tag=ERE
+					tag=RME
+				}
+				owns = 860
+				NOT={has_country_flag=movedtoconstantinople}
+			}	
+	
+	allow = {
+		controls = 860
+	}
+	
+	effect = {
+			capital = 860
+			860 = {
+				change_province_name = "Constantinople"
+					state_scope = {
+					change_region_name = "Bizancio"
+				}
+			}
+			set_country_flag=movedtoconstantinople
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+	rename_istanbul = {
+		potential = {
+			tag = TUR
+			owns = 860
+			OR={
+				BYZ={has_country_flag=movedtoconstantinople}
+				ERE={has_country_flag=movedtoconstantinople}
+				RME={has_country_flag=movedtoconstantinople}
+			}
+			
+	}
+	
+	allow = {
+		money = 10000
+	}
+	
+	effect = {
+	    BYZ={clr_country_flag=movedtoconstantinople}
+		ERE={clr_country_flag=movedtoconstantinople}
+		RME={clr_country_flag=movedtoconstantinople}
+		860 = {
+			change_province_name = "Istanbul"
+			state_scope = {
+			change_region_name = "Thrace"
+				}
+			}
+		prestige = 5
+		money -10000
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	}
+}

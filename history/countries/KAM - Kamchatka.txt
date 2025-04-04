@@ -1,0 +1,134 @@
+﻿capital = 1074
+primary_culture = inuit
+culture = siberian
+culture = yakut
+religion = orthodox
+government = absolute_monarchy
+plurality = 0
+nationalvalue = nv_order
+literacy = 0.02
+civilized = no
+
+
+# Political reforms
+slavery = no_slavery
+upper_house_composition = appointed
+vote_franschise = none_voting
+public_meetings = yes_meeting
+press_rights = state_press
+trade_unions = no_trade_unions
+voting_system = first_past_the_post
+political_parties = underground_parties
+
+
+# Social Reforms
+wage_reform = no_minimum_wage
+work_hours = no_work_hour_limit
+safety_regulations = no_safety
+health_care = no_health_care
+unemployment_subsidies = no_subsidies
+pensions = no_pensions 
+school_reforms = no_schools
+
+
+ruling_party = KAM_conservative
+upper_house = {
+        fascist = 0
+        liberal = 19
+        conservative = 60
+        reactionary = 21
+        anarcho_liberal = 0
+        socialist = 0
+        communist = 0
+}
+
+
+
+1700.1.1 = {
+standing_army = 1
+late_medieval_warfare = 1
+early_muskets = 1
+strict_military_doctrine = 1
+field_artillery = 1
+flintlock_muskets = 1
+early_military_revolution = 1
+bayonets = 1
+army_direct_command = 1	
+30_years_war_era = 1
+military_revolution = 1
+early_century_plans = 1
+enfilading_tactics = 1
+late_muskets = 1
+officer_corps = 1
+prussian_doctrine = 1 #until this for 1700
+
+galleon_design = 1
+15th_century_cannons = 1
+colombus_voyage = 1
+carrack_design = 1
+magelan_voyage = 1
+16th_century_cannons = 1
+pirate_ships_design = 1
+sir_francis_drake_doctrine = 1
+elisabetan_naval_leadership = 1
+spanish_armada = 1
+early_command_principle = 1
+naval_flag_signaling = 1
+17th_century_cannons = 1
+robert_blake_doctrine = 1
+ship_of_the_line_design = 1
+early_naval_plans = 1 #until this for 1700
+
+
+no_standard = 1
+coin_minting = 1
+private_banks = 1
+post_renaissance_tech = 1
+guild_based_production = 1
+early_business_banks = 1
+private_bank_coin_minting = 1
+protectionist_policies = 1
+pure_artisan_production = 1
+stock_exchange = 1
+mercantilist_thought = 1
+business_regulations = 1
+heavy_market_regulations = 1
+monopolistic_economics = 1
+early_agricultural_reforms_tech = 1
+early_free_trade_theory = 1 #until this for 1700
+
+feudalism = 1
+scholasticism = 1
+divine_right = 1
+late_renaissance = 1
+late_renaissance_philosophies = 1
+late_reformation = 1
+counter_reformation = 1
+mannerism = 1
+age_of_rationalism = 1
+early_baroque = 1
+inquisitions_tech = 1
+high_baroque = 1
+jesuit_movements_tech = 1
+early_18th_absolutism = 1
+cartesianism = 1
+early_modern_philosphies = 1 #until this for 1700
+
+
+early_water_wheel = 1
+calculus = 1
+basic_chemistry = 1
+modern_water_wheel = 1
+artisan_guilds = 1
+early_medicine = 1
+early_manufactures = 1
+birth_of_science_tech = 1
+scientific_revolution_tech = 1
+late_manufactures = 1
+inorganic_chemistry = 1
+cast_iron = 1
+early_steam_engines = 1
+early_water_pump = 1
+cementation_steel = 1
+wooden_mine_railways = 1 #until this for 1700
+}

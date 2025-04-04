@@ -1,0 +1,1505 @@
+political_decisions = {
+        form_iberia = {
+	picture = "iberian_union"
+	fire_only_once = yes
+                potential = {
+			OR = {
+			tag = SPA
+			tag = POR
+			}
+			NOT = { has_country_flag = ibe_formed
+					exist=IBU
+			 }
+
+		}
+
+        allow = {	
+		owns = 517
+		POR = {OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {OR = {owned_by = THIS
+									owner = { in_sphere = THIS }
+									}
+							   }
+				    }
+			  }
+		SPA = {OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {OR = {owned_by = THIS
+									owner = { in_sphere = THIS }
+									}
+							   }
+				    }
+			  }		
+        }
+	
+          effect = {
+		prestige = 50
+		change_tag = IBU
+		inherit = SPA
+		inherit = POR
+		set_country_flag = ibe_formed
+		add_accepted_culture = portuguese
+		add_accepted_culture = basque
+		add_accepted_culture = catalan
+		add_accepted_culture = spanish
+
+		}
+
+	   ai_will_do = {
+		factor = 1
+		}
+	}
+	form_durrani_empire = {
+		potential = {
+			tag = AFG
+			NOT={has_country_flag=durrani_formed}
+			NOT = {
+				exists = DUR
+			}
+		}
+		
+		allow = {			
+			war = no
+			owns = 1141
+			owns = 1148
+			owns = 1218
+			owns = 1221
+			owns = 1222			
+		}
+		
+		effect = {		    
+			prestige = 20
+			change_tag = DUR
+			capital = 1209
+			PER_1141 = {
+				add_core = DUR
+			}		
+			PER_1148 = {
+				add_core = DUR
+			}
+			AFG_1214 = {
+				add_core = DUR
+			}
+			AFG_1217 = {
+				add_core = DUR		
+			}			
+			KAL_1221 = {
+				add_core = DUR
+			}
+			PAN_1224 = {
+				add_core = DUR
+			}
+			PAN_1227 = {
+				add_core = DUR
+			}
+			set_country_flag=durrani_formed
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	form_babylonia = {
+		potential = {
+			tag = IRQ			
+			NOT = {
+				has_country_flag=Formed_bab				
+			}
+		}
+		
+		allow = {
+			is_greater_power = yes			
+			war = no			
+			PER_1122 = {		
+				owned_by = THIS			
+				}
+			PER_1136 = {		
+				owned_by = THIS					
+				}			
+			NEJ_1156 = {		
+				owned_by = THIS					
+			}			
+		}
+		
+		effect = {
+			IRQ = {
+				all_core = {
+				add_core = BAB
+			    }
+		    }
+			prestige = 20
+			change_tag = BAB			
+			PER_1135 = {
+				add_core = BAB
+			}
+			PER_1135 = {
+				add_core = BAB
+			}
+			NEJ_1156 = {
+				add_core = BAB
+			}
+			NEJ_1157 = {
+				add_core = BAB
+			}
+			ABU_1162 = {
+				add_core = BAB
+			}
+			EGY_897 = {
+				add_core = BAB
+			}
+			EGY_903 = {
+				add_core = BAB		
+			}			
+			EGY_908 = {
+				add_core = BAB
+			}
+			EGY_921 = {
+				add_core = BAB
+			}
+			EGY_915 = {
+				add_core = BAB
+			}
+			EGY_910 = {
+				add_core = BAB
+			}
+			TUR_931 = {
+				add_core = BAB
+			}
+			EGY_908 = {
+				add_core = BAB
+			}
+			OMA_1166= {
+				add_core = BAB
+			}
+			YEM_1412= {
+				add_core = BAB
+			}
+			YEM_1178= {
+				add_core = BAB
+			}
+			set_country_flag=Formed_bab
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_france = {
+		potential = {
+			is_culture_group = french
+			
+			NOT = {
+				exists = FRA
+				tag = FEP
+				tag = DUA
+			}
+		}
+		
+		allow = {
+			prestige = 30
+			war = no
+			FRA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 20
+			change_tag = FRA
+			capital = 425
+			add_accepted_culture = breton
+			add_accepted_culture = burgund
+			add_accepted_culture = corsican
+			add_accepted_culture = french
+			add_accepted_culture = norman
+			add_accepted_culture = occitan
+			add_accepted_culture = picardian
+						
+			any_country = {
+				limit = {
+					NOT = {
+						is_greater_power = yes
+					}
+					is_culture_group = gaulois
+					in_sphere = THIS
+				}
+				country_event = { id=11101 days=0 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_maghreb = {
+		potential = {
+			primary_culture = maghrebi
+			
+			NOT = {
+				exists = MGR
+			}
+		}
+		
+		allow = {
+			prestige = 10
+			war = no			
+			owns = 1680
+			owns = 1708
+			owns = 1725
+			owns = 1731   
+		}	
+		
+		effect = {
+			prestige = 20
+			change_tag = MGR
+			add_accepted_culture = maghrebi		
+			add_accepted_culture = berber
+	
+			MOR_1693 = {
+				add_core = MGR
+			}		
+			MOR_1683 = {
+				add_core = MGR	
+			}
+			FRA_1700  = {
+				add_core = MGR
+			}
+			MOR_1696 = {
+				add_core = MGR			
+			}			
+			ALD_1704 = {
+				add_core = MGR
+			}
+			ALD_1708 = {
+				add_core = MGR
+			}
+			TRI_1739 = {
+				add_core = MGR			
+			}			
+			FRA_1780 = {
+				add_core = MGR
+			}
+			FRA_1775 = {
+				add_core = MGR
+			}
+			SPA_513 = {
+				add_core = MGR
+			}
+			SPA_512 = {
+				add_core = MGR
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_indonesia = {
+		picture = establishindonesia
+		potential = {
+			is_culture_group = southeast_asian
+			OR={
+			tag=ATJ
+			tag=BRU
+			tag=SLW
+			tag=JAV
+			tag=PHI
+			tag=PTK
+			tag=KTA
+			tag=BNJ
+			tag=ETM
+			tag=PNG
+			tag=MLK
+			tag=JOH
+			tag=KHM
+			}
+			NOT = {
+				exists = IDO
+			}
+			NOT={has_country_flag=indoneisaform1}
+		}
+		
+		allow = {
+			is_greater_power = yes
+			prestige = 45
+			war = no
+			PTK = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			BRU = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			KTA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			ATJ = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 13
+			change_tag = IDO
+			capital = 1413
+			add_accepted_culture = javan
+			add_accepted_culture = malay
+			add_accepted_culture = moluccan		
+			add_accepted_culture = caribeno	
+			add_accepted_culture = georgian
+			add_accepted_culture = osetian
+			add_accepted_culture = avarian
+	
+			any_country = {
+				limit = {
+					NOT = {
+						is_greater_power = yes
+					}
+					is_culture_group = indonesian
+					in_sphere = THIS
+				}
+				country_event = { id=11101 days=0 }
+			}
+			
+			any_owned = {
+				limit = {
+					is_culture_group = indonesian
+				}
+				add_core = IDO
+			}
+			ATJ={all_core={add_core=IDO}}
+			KTA={all_core={add_core=IDO}}
+			BRU={all_core={add_core=IDO}}
+			PTK={all_core={add_core=IDO}}
+			ETM={all_core={add_core=IDO}}
+			PNG={all_core={add_core=IDO}}
+			JAV={all_core={add_core=IDO}}
+			JOH={all_core={add_core=IDO}}
+			BNJ={all_core={add_core=IDO}}
+			SLW={all_core={add_core=IDO}}
+			PHI={all_core={add_core=IDO}}
+			BAL={all_core={add_core=IDO}}
+			MLK={all_core={add_core=IDO}}
+			IDO={all_core={remove_core=MLK}}
+			IDO={all_core={remove_core=ATJ}}
+			IDO={all_core={remove_core=KTA}}
+			IDO={all_core={remove_core=BRU}}
+			IDO={all_core={remove_core=PTK}}
+			IDO={all_core={remove_core=ETM}}
+			IDO={all_core={remove_core=PNG}}
+			IDO={all_core={remove_core=JAV}}
+			IDO={all_core={remove_core=JOH}}
+			IDO={all_core={remove_core=BNJ}}
+			IDO={all_core={remove_core=PHI}}
+			IDO={all_core={remove_core=BAL}}
+			IDO={all_core={remove_core=SLW}}
+			1456 = { add_core = IDO }
+			1455 = { add_core = IDO }
+			1457 = { add_core = IDO }
+			1458 = { add_core = IDO }
+			1459 = { add_core = IDO }
+			1461 = { add_core = IDO }
+			1460 = { add_core = IDO }
+			2565 = { add_core = IDO }
+			1462 = { add_core = IDO }
+			1463 = { add_core = IDO }
+			2518 = { add_core = IDO }
+			1464 = { add_core = IDO }
+			1456 = { remove_core = PHI }
+			1455 = { remove_core = PHI }
+			1457 = { remove_core = PHI }
+			1458 = { remove_core = PHI }
+			1459 = { remove_core = PHI }
+			1461 = { remove_core = PHI }
+			1460 = { remove_core = PHI }
+			2565 = { remove_core = PHI }
+			1462 = { remove_core = PHI }
+			1463 = { remove_core = PHI }
+			2518 = { remove_core = PHI }
+			1464 = { remove_core = PHI }
+			set_country_flag=indoneisaform1
+			set_global_flag=establishindonesia
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    form_danubia = {
+		picture = "danubianfederation"
+		potential = {				
+			OR = {
+				tag = KUK
+				tag = YUG
+				tag = ROM
+				tag = HUN
+				}						
+			NOT = {
+				exists = DNB				
+			}
+			NOT={has_country_flag=proposed_intermarium}
+		}	
+		allow = {
+		    is_greater_power = yes
+			war = no
+			owns = 623
+			owns = 641
+			owns = 647
+			owns = 664
+			owns = 670
+			owns = 771
+			owns = 783
+			owns = 794			
+		}	
+
+			
+		effect = {
+		    all_core = {
+				add_core = DNB
+			}
+			change_tag = DNB
+			add_accepted_culture = hungarian
+			add_accepted_culture = croat
+			add_accepted_culture = slovene
+			add_accepted_culture = serb		
+			add_accepted_culture = bosniak
+			add_accepted_culture = romanian
+			add_accepted_culture = bulgarian
+			AUS_613 = {
+				add_core = DNB
+			}		
+			AUS_623 = {
+				add_core = DNB
+			}		
+			AUS_641 = {
+				add_core = DNB
+			}		
+			AUS_647 = {
+				add_core = DNB
+			}		
+			AUS_654 = {
+				add_core = DNB
+			}		
+			AUS_657 = {
+				add_core = DNB
+			}		
+			MOL_673 = {
+				add_core = DNB
+			}		
+			RUS_676 = {
+				add_core = DNB
+			}		
+			TUR_674 = {
+				add_core = DNB
+			}		
+			AUS_729 = {
+				add_core = DNB
+			}		
+			AUS_736 = {
+				add_core = DNB
+			}			
+			AUS_771 = {
+				add_core = DNB
+			}			
+			AUS_780 = {
+				add_core = DNB
+			}			
+			AUS_777 = {
+				add_core = DNB
+			}			
+			AUS_768 = {
+				add_core = DNB
+			}			
+			WAL_665 = {
+				add_core = DNB
+			}			
+			TUR_788 = {
+				add_core = DNB
+			}			
+			SER_794 = {
+				add_core = DNB
+			}			
+			TUR_798 = {
+				add_core = DNB
+			}					
+			TUR_802 = {
+				add_core = DNB
+			}				
+			MON_2582 = {
+				add_core = DNB
+			}				
+			TUR_810 = {
+				add_core = DNB
+			}				
+			TUR_809 = {
+				add_core = DNB
+			}				
+			TUR_805 = {
+				add_core = DNB
+			}	
+			TUR_785 = {
+				add_core = DNB
+			}	
+			AUS_772 = {
+				add_core = DNB
+			}	
+			AUS_648 = {
+				add_core = DNB
+			}	
+			TUR_806 = {
+				add_core = DNB
+			}	
+			TUR_823 = {
+				add_core = DNB
+			}
+		}
+	}
+				
+    restore_pbc = {
+		potential = {
+			primary_culture = south_andean
+			NOT = {
+				exists = PBC
+				tag = CHL
+			}
+		}
+		
+
+		allow = {
+			is_greater_power = yes
+			prestige = 45
+			war = no
+			PBC = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					primary_culture = south_andean
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			change_tag = PBC
+			capital = 2578
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_la_plata = {
+		potential = {			
+			primary_culture = platinean
+			NOT = {
+				exists = LAP
+				exists = UCS
+				exists = ULA	
+				has_country_flag="restored_la_plata"
+			}
+		}
+		
+		allow = {
+		    is_greater_power = yes
+			war = no
+			2348 = {				
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			2324 = {				
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			2339 = {				
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			2344 = {				
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 25
+			any_country = {
+				limit = {
+					primary_culture = platinean
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			any_country = {
+				limit = {
+					primary_culture = south_andean
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			change_tag = LAP
+			add_accepted_culture = south_andean
+			ARG_2369 = {
+				add_core = LAP
+			}		
+			ARG_2387 = {
+				add_core = LAP	
+			}
+			ARG_2393 = {
+				add_core = LAP
+			}
+			ARG_2364 = {
+				add_core = LAP
+			}
+			ARG_2379 = {
+				add_core = LAP
+			}
+			ARG_2357 = {
+				add_core = LAP
+			}
+            ARG_2363 = {
+				add_core = LAP	
+			}
+			ARG_2355 = {
+				add_core = LAP
+			}
+			ARG_2391 = {
+				add_core = LAP
+			}
+			ARG_2398 = {
+				add_core = LAP
+			}
+			ARG_2360 = {
+				add_core = LAP
+			}	
+			ARG_2366 = {
+				add_core = LAP
+			}
+			ARG_2376 = {
+				add_core = LAP
+			}	
+			ARG_2348 = {
+				add_core = LAP
+			}
+			ARG_2372 = {
+				add_core = LAP
+			}
+			ARG_2374 = {
+				add_core = LAP
+			}
+			ARG_2385 = {
+				add_core = LAP
+			}
+			ARG_2383 = {
+				add_core = LAP
+			}
+			ARG_2389 = {
+				add_core = LAP
+			}
+			ARG_2396 = {
+				add_core = LAP
+			}	
+			ARG_2400 = {
+				add_core = LAP
+			}		
+			PRG_2338 = {
+				add_core = LAP	
+			}
+			PRG_2343 = {
+				add_core = LAP
+			}
+			URU_2344 = {
+				add_core = LAP
+			}
+			CHL_2332 = {
+				add_core = LAP
+			}
+			CHL_2324 = {
+				add_core = LAP
+			}
+            CHL_2328 = {
+				add_core = LAP	
+			}
+			CHL_2323 = {
+				add_core = LAP
+			}
+			CHL_2325 = {
+				add_core = LAP
+			}
+			CHL_2330 = {
+				add_core = LAP
+			}
+			CHL_2333 = {
+				add_core = LAP
+			}	
+			BOL_2321 = {
+				add_core = LAP
+			}
+			BOL_2317 = {
+				add_core = LAP
+			}	
+			BOL_2314 = {
+				add_core = LAP
+			}
+			BOL_2309 = {
+				add_core = LAP
+			}
+			BRZ_2467 = {
+				add_core = LAP
+			}
+			2550 = {
+				add_core = LAP
+			}
+			2549 = {
+				add_core = LAP
+			}
+			2420 = {
+				add_core = LAP
+			}
+			set_country_flag="restored_la_plata"
+		}
+
+		ai_will_do = {
+			factor = 1
+		} 	
+	}
+	
+	form_union_latinoamericana = {
+		picture=south_americapic
+		potential = {
+			is_culture_group=latin_american_cultures
+			NOT={has_country_flag=formed_latinoamericanunion}
+		}
+		
+		allow = {
+			is_greater_power = yes
+			war = no
+			CLM = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			
+
+			CHL = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			ARG = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			VNZ = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			PEU = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			BOL = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			ECU = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			PRG = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			PNM = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			BRZ = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+				URU = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+
+		}
+		
+		effect = {
+			set_country_flag=formed_latinoamericanunion
+			prestige = 200
+			change_tag = ULA
+			capital = 2204
+			ULA={country_event = { id=976749 days=0 }}
+			add_accepted_culture = mexican
+			add_accepted_culture = south_andean
+			add_accepted_culture = platinean
+			add_accepted_culture = brazilian
+			add_accepted_culture = north_andean
+			add_accepted_culture = central_american
+			add_accepted_culture = caribeno
+			add_accepted_culture = afro_antillean 
+			add_accepted_culture = afro_brazilian
+			add_accepted_culture = afro_caribeno
+			add_accepted_culture = afro_caribbean
+			add_accepted_culture = afro_american
+			add_accepted_culture = mayan
+			add_accepted_culture = native_american_minor
+			any_country = {
+				limit = {
+					NOT = {
+						is_greater_power = yes
+					}
+					is_culture_group = latin_american_cultures
+					in_sphere = THIS
+				}
+				country_event = { id=11101 days=0 }
+			add_core = ULA
+			}
+			PNM={all_core={add_core=ULA}}
+			BRZ={all_core={add_core=ULA}}
+			CLM={all_core={add_core=ULA}}
+			ARG={all_core={add_core=ULA}}
+			PEU={all_core={add_core=ULA}}
+			VNZ={all_core={add_core=ULA}}
+			CHL={all_core={add_core=ULA}}
+			BOL={all_core={add_core=ULA}}
+			PRG={all_core={add_core=ULA}}
+			URU={all_core={add_core=ULA}}
+			ECU={all_core={add_core=ULA}}
+			ENG_1979={add_core=ULA}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+	
+	form_caucas = {
+		potential = {
+OR = {
+AND = {
+
+			tag = GEO }
+AND  = {
+tag = NKR }
+AND = {
+tag = ABK }
+AND = {
+tag = ARM }
+AND = {
+tag = RSO
+}
+AND = {
+tag = AZB 
+} 
+ }                       
+			NOT = {
+				tag = TUR
+			}
+			NOT = {
+				exists = CAU
+			}
+		}
+		
+		allow = {			
+			is_greater_power = yes
+			war = no
+			1090 = {				
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			1098 = {				
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			1101 = {				
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			1102 = {				
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}	
+			
+		effect = {
+			prestige = 20
+			change_tag = CAU
+			capital = 1090
+			add_accepted_culture = georgian
+			add_accepted_culture = armenian
+			add_accepted_culture = azerbaijani
+			add_accepted_culture = osetian
+			add_accepted_culture = abkhazian
+			add_accepted_culture = circassian
+			add_accepted_culture = north_caucasian
+			add_accepted_culture = avarian
+	
+			any_country = {
+				limit = {
+					NOT = {
+						is_greater_power = yes
+					}
+					is_culture_group = caucasian
+					in_sphere = THIS
+				}
+				country_event = { id=11101 days=0 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_turkestan = {
+		potential = {
+			is_culture_group = iranian_turanian
+			NOT={has_country_flag=turkestan_formed}
+			NOT = {
+				exists = TRK
+			}
+		}
+		
+		allow = {					
+			war = no
+			1191 = {				
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			1198 = {				
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			1202 = {				
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			1204 = {				
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			
+		
+		}
+		
+		effect = {
+			prestige = 20
+			change_tag = TRK
+			capital = 1204
+			add_accepted_culture = turkmen
+			add_accepted_culture = tajik
+			add_accepted_culture = uzbek
+			add_accepted_culture = kirgiz
+			add_accepted_culture = kazak
+			add_accepted_culture = uighur
+	
+			any_country = {
+				limit = {
+					NOT = {
+						is_greater_power = yes
+					}
+					is_culture_group = iranian_arian
+					in_sphere = THIS
+				}
+				country_event = { id=11101 days=0 }
+			}
+			set_country_flag=turkestan_formed
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		propose_intermarium = {
+		picture=intermarium
+		potential = {
+			OR={
+				tag=PLC
+				tag=UBD
+				tag=UKR
+				tag=SCA
+				tag=BYE
+				tag=CZH
+				tag=YUG
+				tag=ROM
+				tag=KUK
+			}
+			NOT={has_country_flag=proposed_intermarium}
+		}
+		allow = {					
+			war = no			
+			THIS={all_core={owned_by=THIS}}
+			prestige=500
+			is_greater_power=yes
+
+		}
+		effect = {
+			prestige = 100
+			PLC={all_core={add_core=THIS}}
+			POL={all_core={add_core=THIS}}
+			SCA={all_core={add_core=THIS}}
+			FIN={all_core={add_core=THIS}}
+			BYE={all_core={add_core=THIS}}
+			BUL={all_core={add_core=THIS}}
+			ROM={all_core={add_core=THIS}}
+			CRO={all_core={add_core=THIS}}
+			ALB={all_core={add_core=THIS}}
+			BOS={all_core={add_core=THIS}}
+			HUN={all_core={add_core=THIS}}
+			AUS={all_core={add_core=THIS}}
+			KUK={all_core={add_core=THIS}}
+			CZH={all_core={add_core=THIS}}
+			UKR={all_core={add_core=THIS}}
+			UBD={all_core={add_core=THIS}}
+			SER={all_core={add_core=THIS}}
+			YUG={all_core={add_core=THIS}}
+			MOL={all_core={add_core=THIS}}
+			SLS={all_core={add_core=THIS}}
+			PRU_684={add_core=THIS}
+			PRU_695={add_core=THIS}
+			PRU_690={add_core=THIS}
+			PRU_701={add_core=THIS}
+			RUS_361={add_core=THIS}
+			add_accepted_culture=lithuanian
+			add_accepted_culture=polish
+			add_accepted_culture=ukrainian
+			add_accepted_culture=byelorussian
+			set_country_flag=proposed_intermarium
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	The_intermarium_reborn = {
+		picture=intermarium
+		potential = {
+			has_country_flag=proposed_intermarium
+			NOT={has_country_flag=reborn_intermarium}
+		}
+		allow = {					
+			war = no			
+			THIS={all_core={owned_by=THIS}}
+			prestige=700
+			is_greater_power=yes
+
+		}
+		effect = {
+			change_tag=INT
+			prestige = 300
+			INT={all_core={remove_core=POL}}
+			INT={all_core={remove_core=SWE}}
+			INT={all_core={remove_core=NOR}}
+			INT={all_core={remove_core=DEN}}
+			INT={all_core={remove_core=FIN}}
+			INT={all_core={remove_core=BYE}}
+			INT={all_core={remove_core=BUL}}
+			INT={all_core={remove_core=ROM}}
+			INT={all_core={remove_core=CRO}}
+			INT={all_core={remove_core=ALB}}
+			INT={all_core={remove_core=BOS}}
+			INT={all_core={remove_core=HUN}}
+			INT={all_core={remove_core=AUS}}
+			INT={all_core={remove_core=CZH}}
+			INT={all_core={remove_core=UKR}}
+			INT={all_core={remove_core=SER}}
+			INT={all_core={remove_core=MOL}}
+			INT={all_core={remove_core=TUR}}
+			add_accepted_culture=romanian
+			add_accepted_culture=estonian
+			add_accepted_culture=latvian
+			add_accepted_culture=finnish
+			add_accepted_culture=norwegian
+			add_accepted_culture=danish
+			add_accepted_culture=swedish
+			add_accepted_culture=south_german
+			add_accepted_culture=serb
+			add_accepted_culture=croat
+			add_accepted_culture=bosniak
+			add_accepted_culture=greek
+			add_accepted_culture=russian
+			add_accepted_culture=macedonian
+			add_accepted_culture=spartan
+			add_accepted_culture=turkish
+			add_accepted_culture=bulgarian
+			add_accepted_culture=albanian
+			add_accepted_culture=slovak
+			add_accepted_culture=slovene
+			add_accepted_culture=czech
+			add_accepted_culture=hungarian
+			set_country_flag=reborn_intermarium
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_boer_federation = {
+		potential = {				
+			tag = NAT
+			tag = ORA
+			NOT = {
+				exists = BOE
+			}
+		}
+		
+		allow = {		    
+			war = no
+			ORA_2103 = {				
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			TRN_2108 = {				
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			ZUL_2113 = {				
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}			
+		}
+			
+		effect = {
+			prestige = 30
+            any_country = {
+				limit = {
+					is_culture_group = neo_european_cultures
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			change_tag = BOE	
+			ENG_2087 = {
+				add_core = BOE
+			}
+			ENG_2092 = {
+				add_core = BOE
+			}
+			ENG_2096 = {
+				add_core = BOE
+			}
+			ORA_2103 = {
+				add_core = BOE
+			}
+			TRN_2108 = {
+				add_core = BOE
+			}
+			ZUL_2113 = {
+				add_core = BOE
+			}
+		}	
+	}
+
+form_the_kingdom_of_northern_italy = {
+ picture = "form_the_kingdom_of_northern_italy"
+title = "form_kingdom_of_northern_italy_title"
+desc = "form_kingdom_of_northern_italy_NEWS_LONG"
+news = yes
+news_desc_long = "form_kingdom_of_northern_italy_NEWS_LONG"
+news_desc_medium = "form_kingdom_of_northern_italy_NEWS_MEDIUM"
+news_desc_short = "form_kingdom_of_northern_italy_NEWS_SHORT"
+		potential = {
+			primary_culture = north_italian			
+			NOT = {
+				exists = KNI
+				exists = ITA
+				has_country_flag=rome_restored
+			}
+		}
+		
+		allow = {
+			is_greater_power = yes
+			war = no
+			KNI = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 20
+			change_tag = KNI
+			capital = 729
+			add_accepted_culture = north_italian
+	
+			any_country = {
+				limit = {
+					NOT = {
+						is_greater_power = yes
+					}
+					is_culture_group = north_italian
+					in_sphere = THIS
+				}
+				KNI = { anex_to = THIS }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_benelux = {
+					potential = {
+					OR = {
+					tag = BEL
+					tag = FLA
+					tag = LUX 		
+					tag = NET
+					tag = WLL
+					}
+					NOT = { has_global_flag = benelux_formed }
+					}
+					
+					allow = {
+					is_greater_power = yes
+					BEL={all_core={OR={owned_by=THIS owner={in_sphere=THIS}}}}
+					NET={all_core={OR={owned_by=THIS owner={in_sphere=THIS}}}}
+					WLL={all_core={OR={owned_by=THIS owner={in_sphere=THIS}}}}
+					LUX={all_core={OR={owned_by=THIS owner={in_sphere=THIS}}}}
+					FLA={all_core={OR={owned_by=THIS owner={in_sphere=THIS}}}}
+			         }
+					effect = {
+					change_tag = BNX
+					BNX={all_core={remove_core=BEL}}
+					BNX={all_core={remove_core=NET}}
+					BNX={all_core={remove_core=WLL}}
+					BNX={all_core={remove_core=LUX}}
+					BNX={all_core={remove_core=FLA}}
+					prestige = 20
+					add_accepted_culture=wallonian
+					add_accepted_culture=flemish
+					add_accepted_culture=dutch
+					add_global_flag = benelux_formed	
+					inherit=LUX
+			}
+	ai_will_do = {
+		factor = 1
+		}
+	    }
+		form_united_caribe = {
+					picture=map_caribbean
+					potential = {
+						is_culture_group=african_diaspora_cultures
+					NOT = { has_country_flag=united_caribe }
+					}
+					
+					allow = {
+						OR={
+							is_secondary_power=yes
+							is_greater_power=yes
+						}
+						owns=2209
+						owns=2222
+						owns=2217
+			         }
+					effect = {
+						set_country_flag=united_caribe
+						change_tag=UDC
+						SPA_2209={add_core=THIS}
+						HAI_2213={add_core=THIS}
+						ENG_203 ={add_core=THIS}
+						ENG_2224={add_core=THIS}
+						ENG_2228={add_core=THIS}
+						NET_2235={add_core=THIS}
+						add_accepted_culture=afro_american 
+						add_accepted_culture=afro_caribbean
+						add_accepted_culture=afro_caribeno
+						add_accepted_culture=afro_antillean
+						add_accepted_culture=afro_brazilian
+					}
+	ai_will_do = {
+		factor = 1
+		}
+	    }
+}
