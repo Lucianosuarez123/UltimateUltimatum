@@ -1114,7 +1114,7 @@ political_decisions = {
 				tag=IDO
 				tag=HND
 				tag=EIC
-				tag=TRK
+				tag=PSE
 				}
 			THIS={
 				OR={

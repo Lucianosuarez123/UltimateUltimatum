@@ -1154,31 +1154,191 @@ tag = AZB
 		}
 		
 		effect = {
-			prestige = 20
-			change_tag = TRK
-			capital = 1204
+			prestige = 80
+			change_tag=TRK
 			add_accepted_culture = turkmen
 			add_accepted_culture = tajik
 			add_accepted_culture = uzbek
 			add_accepted_culture = kirgiz
 			add_accepted_culture = kazak
 			add_accepted_culture = uighur
-	
+			1207={add_core=THIS}
+			RUS_1185={add_core=THIS}
+			1208={add_core=THIS}
+			KHI_1191={add_core=THIS}
+			KOK_1190={add_core=THIS}
+			RUS_1182={add_core=THIS}
+			RUS_1184={add_core=THIS}
+			RUS_1196={add_core=THIS}
+			CHI_1594={add_core=THIS}
+			CHI_1600={add_core=THIS}
 			any_country = {
 				limit = {
-					NOT = {
-						is_greater_power = yes
-					}
-					is_culture_group = iranian_arian
+					is_culture_group = iranian_turanian
 					in_sphere = THIS
 				}
-				country_event = { id=11101 days=0 }
+				country_event = { id=11101 days=1 }
 			}
 			set_country_flag=turkestan_formed
 		}
 		
 		ai_will_do = {
 			factor = 1
+		}
+	}
+		form_Persian_empire = {
+		potential = {
+			is_culture_group = iranian_turanian
+			has_country_flag=turkestan_formed
+			NOT = {
+				exists = PSE
+				has_country_flag=Persianempire_formed
+			}
+			
+		}
+		
+		allow = {	
+			war=no				
+			THIS={ all_core={
+								OR={
+					owned_by=THIS
+					owner={
+						in_sphere=THIS
+					}
+				}
+			}
+
+		}
+			RUS_1102= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			RUS_1090= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			RUS_1098= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			TUR_923= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			TUR_935= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			TUR_931= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			EGY_903= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			EGY_910= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			EGY_903= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			EGY_897= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			TUR_894= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			TUR_893= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			TUR_863= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			TUR_869= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			TUR_873= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			TUR_876= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			TUR_880= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			TUR_882= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			TUR_885= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			TUR_890= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			TUR_855= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			TUR_860= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			EGY_915= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+			EGY_921= {	OR = {owned_by = THIS owner = { in_sphere = THIS}}}
+		}
+		effect = {
+			prestige = 150
+			change_tag = PSE
+			RUS_1102= {add_core=THIS}
+			RUS_1090= {add_core=THIS}
+			RUS_1098= {add_core=THIS}
+			TUR_923= {add_core=THIS}
+			TUR_935= {add_core=THIS}
+			TUR_931= {add_core=THIS}
+			EGY_903= {add_core=THIS}
+			EGY_910= {add_core=THIS}
+			EGY_903= {add_core=THIS}
+			EGY_897= {add_core=THIS}
+			TUR_894= {add_core=THIS}
+			TUR_893= {add_core=THIS}
+			TUR_863= {add_core=THIS}
+			TUR_869= {add_core=THIS}
+			TUR_873= {add_core=THIS}
+			TUR_876= {add_core=THIS}
+			TUR_880= {add_core=THIS}
+			TUR_882= {add_core=THIS}
+			TUR_885= {add_core=THIS}
+			TUR_890= {add_core=THIS}
+			TUR_855= {add_core=THIS}
+			EGY_915= {add_core=THIS}
+			EGY_921= {add_core=THIS}
+			any_country = {
+				limit = {
+					NOT = {
+						is_greater_power = yes
+					}
+					is_culture_group = iranian_turanian
+					is_culture_group= arab
+					is_culture_group= turkish
+					in_sphere = THIS
+				}
+				country_event = { id=11101 days=0 }
+			}
+			set_country_flag=Persianempire_formed
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Unification={
+		potential={
+			has_country_flag=Persianempire_formed
+			NOT={has_country_flag=Unificated}
+		}
+		allow={
+			war=no
+			THIS={all_core={
+				OR={
+					owned_by=THIS
+				owner={
+					in_sphere=THIS
+				}
+			}
+		}
+	}
+}
+		effect={
+			add_accepted_culture=tatar
+			add_accepted_culture=armenian
+			add_accepted_culture=georgian
+			add_accepted_culture=azerbaijani
+			add_accepted_culture=north_caucasian
+			add_accepted_culture=turkish
+			add_accepted_culture=maghrebi
+			add_accepted_culture=misri
+			add_accepted_culture=mashriqi
+			add_accepted_culture=bedouin
+			add_accepted_culture=berber
+			add_accepted_culture=ashkenazi
+			add_accepted_culture=kurdish
+			set_country_flag=Unificated
+		}
+	}
+	Expansionism={
+		potential={
+			has_country_flag=Unificated
+			NOT={has_country_flag=Expansionist}
+			THIS={all_core={owned_by=THIS}}
+		}
+		allow={
+			prestige=700
+			war=no
+		}
+		effect={
+			NEJ_1156= {add_core=THIS}
+			HDJ_1151= {add_core=THIS}
+			NEJ_1157= {add_core=THIS}
+			ABU_1162= {add_core=THIS}
+			OMA_1166= {add_core=THIS}
+			YEM_1412= {add_core=THIS}
+			YEM_1178= {add_core=THIS}
+			EGY_1755= {add_core=THIS}
+			EGY_1745= {add_core=THIS}
+			EGY_1751= {add_core=THIS}
+			EGY_1753= {add_core=THIS}
+			EGY_1762= {add_core=THIS}
+			RUS_1052= {add_core=THIS}
+			RUS_1048= {add_core=THIS}
+			set_country_flag=Expansionist
 		}
 	}
 		propose_intermarium = {
