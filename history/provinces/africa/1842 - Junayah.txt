@@ -9,6 +9,7 @@ life_rating = 10
 	add_core = SUD
 		}
 1830.1.1 = {
+	remove_core=TUR
 	owner = EGY
 	controller = EGY
 	add_core = EGY

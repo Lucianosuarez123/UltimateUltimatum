@@ -529,3 +529,324 @@ country_event={
 		BAD_586={add_core=BAD}
 	}
 }
+country_event={
+	id = 7000000
+	title = "Faction leader of Middle east agreement " 
+	desc = "The agreement of five stans"
+	picture = "Celebration"
+	is_triggered_only=yes
+	fire_only_once=yes
+	mean_time_to_happen =  {
+		days=1
+	}
+	option = {
+		name = "Agreement of five stans"
+	add_country_modifier={
+			name=faction_leader_five_stans
+			duration=-1
+		}
+		money=500000
+		create_alliance= TAJ
+		create_alliance= UZB
+		create_alliance= KAZ
+		create_alliance= TAJ
+		create_alliance= KYR
+		relation={who=TAJ value=200}
+		relation={who=UZB value=200}
+		relation={who=KAZ value=200}
+		relation={who=KYR value=200}
+		relation={who=TAJ value=200}
+		prestige=100
+		
+	}
+}
+country_event={
+	id = 7000001
+	title = "middle east agreement " 
+	desc = "The agreement of five stans"
+	picture = "Celebration"
+	is_triggered_only=yes
+	fire_only_once=yes
+	mean_time_to_happen =  {
+		days=10
+	}
+	option = {
+		name = "Agreement of five stans"
+		prestige=20
+		add_country_modifier={
+			name=five_stans
+			duration=-1
+		}
+		money=-1000000
+		create_alliance= TAJ
+		create_alliance= UZB
+		create_alliance= KAZ
+		create_alliance= TAJ
+		create_alliance= KYR
+		1208={add_core=TAJ}
+		1207={add_core=TAJ}
+		1208={remove_core=UZB}
+		1207={remove_core=UZB}
+		1197={remove_core=UZB}
+		1208={secede_province=TAJ}
+		1207={secede_province=TAJ}
+		1197={secede_province=KAZ}
+	}
+}
+country_event={
+	id = 7000002
+	title = "middle east agreement " 
+	desc = "The agreement of five stans"
+	picture = "Celebration"
+	is_triggered_only=yes
+	fire_only_once=yes
+	mean_time_to_happen =  {
+		days=10
+	}
+	option = {
+		name = "Agreement!"
+		prestige=100
+		money=100000
+	add_country_modifier={
+			name=five_stans
+			duration=-1
+		}
+		1201={add_core=TAJ}
+		1201={remove_core=KYR}
+		1201={secede_province=TAJ}
+		1193={secede_province=KAZ}
+		1193={add_core=KAZ}
+		1193={remove_core=KYR}
+		1185={secede_province=KAZ}
+		1185={add_core=KAZ}
+		1185={remove_core=KYR}
+		TAJ={capital=1201}
+		1195={add_core=UZB}
+		1195={remove_core=KYR}
+		1195={secede_province=UZB}
+		1202={add_core=UZB}
+		1202={remove_core=KYR}
+		1202={secede_province=UZB}
+		THIS={capital=1189}
+		UZB={capital=1202}
+		TAJ={civilized=yes}
+		create_alliance= TAJ
+		create_alliance= UZB
+		create_alliance= KAZ
+		create_alliance= TAJ
+		create_alliance= KYR
+	}
+}
+country_event={
+	id = 7000003
+	title = "middle east agreement " 
+	desc = "The agreement of five stans"
+	picture = "Celebration"
+	is_triggered_only=yes
+	fire_only_once=yes
+	mean_time_to_happen =  {
+		days=10
+	}
+	option = {
+		name = "Agreement!"
+		prestige=100
+		money=100000
+	add_country_modifier={
+			name=five_stans
+			duration=-1
+		}
+		1191={add_core=UZB}
+		1192={add_core=UZB}
+		1191={remove_core=TRM}
+		1192={remove_core=TRM}
+		1191={secede_province=UZB}
+		1192={secede_province=UZB}
+		1196={add_core=TRM}
+		create_alliance= TAJ
+		create_alliance= UZB
+		create_alliance= KAZ
+		create_alliance= TAJ
+		create_alliance= KYR
+	}
+}
+country_event={
+	id = 7000004
+	title = "middle east agreement " 
+	desc = "The agreement of five stans"
+	picture = "Celebration"
+	is_triggered_only=yes
+	fire_only_once=yes
+	mean_time_to_happen =  {
+		days=10
+	}
+	option = {
+		name = "Agreement!"
+		prestige=20
+		money=12000
+	add_country_modifier={
+			name=five_stans
+			duration=-1
+		}
+		create_alliance= TAJ
+		create_alliance= UZB
+		create_alliance= KAZ
+		create_alliance= TAJ
+		create_alliance= KYR
+	}
+}
+country_event={
+	id = 7000005
+	title = "offer to buy semireche" 
+	desc = "Kazakhstan offer ours to buy semireche region"
+	picture = "Celebration"
+	is_triggered_only=yes
+	fire_only_once=yes
+	mean_time_to_happen =  {
+		days=10
+	}
+	option = {
+		name = "Yes of course"
+		prestige=50
+		money=10000
+		1188={secede_province=KAZ}
+		1186={secede_province=KAZ}
+		1188={remove_core=THIS}
+		1186={remove_core=THIS}
+		KAZ={money=-10000}
+	ai_chance = {
+			factor = 100
+	}
+}
+option={
+	name="ummm... noo"
+	prestige=-10
+	relation={who=KAZ value=-150}
+}
+}
+country_event={
+	id = 7000006
+	title = "offer to buy semireche" 
+	desc = "Kazakhstan offer ours to buy semireche region"
+	picture = "Celebration"
+	is_triggered_only=yes
+	fire_only_once=yes
+	mean_time_to_happen =  {
+		days=10
+	}
+	option = {
+		name = "Yes of course"
+		prestige=50
+		money=5000
+		1190={secede_province=KYR}
+		1190={remove_core=THIS}
+		KYR={money=-5000}
+	ai_chance = {
+			factor = 100
+	}
+}
+option={
+	name="ummm... noo"
+	prestige=-10
+	relation={who=KYR value=-150}
+}
+}
+country_event={
+	id = 7000007
+	title = "Kazakhstan asks for mercy" 
+	desc = "Kazakhstan offers us to be its puppet in exchange for living"
+	picture = "Celebration"
+	is_triggered_only=yes
+	fire_only_once=yes
+	mean_time_to_happen =  {
+		days=10
+	}
+	option = {
+		name = "Yes of course"
+		prestige=20
+		badboy=-10
+		create_vassal=KAZ
+		KAZ={set_country_flag=russian_mercy}
+		1194={secede_province=RUS}
+		RUS={
+			any_owned={
+				limit={
+					is_core=KAZ
+				}
+				add_province_modifier={
+					name=kaz_prov
+					duration=-1
+				}
+			}
+		}
+	ai_chance = {
+			factor = 85
+	}
+}
+option={
+	name="ummm... noo"
+	prestige=-10
+	badboy=10
+	relation={who=KAZ value=-150}
+}
+}
+country_event={
+	id = 7000008
+	title = "offer to buy Oblask" 
+	desc = "Turkmenistan offers ours to buy the Oblask"
+	picture = "Celebration"
+	is_triggered_only=yes
+	fire_only_once=yes
+	mean_time_to_happen =  {
+		days=10
+	}
+	option = {
+		name = "Yes of course"
+		prestige=20
+		badboy=-10
+		1205={secede_province=TRM}
+		1204={secede_province=TRM}
+		money=10000
+	ai_chance = {
+			factor = 85
+	}
+}
+option={
+	name="ummm... noo"
+	prestige=-10
+	badboy=10
+	relation={who=KAZ value=-150}
+}
+}
+country_event={
+	id = 7000009
+	title = "kazakhstan independence" 
+	desc = "Kazakhstan wants to become independent from us"
+	picture = "Celebration"
+	is_triggered_only=yes
+	fire_only_once=yes
+	mean_time_to_happen =  {
+		days=10
+	}
+	option = {
+		name = "Never"
+		release_vassal=KAZ
+		relation={who=KAZ value=-150}
+		war={
+			target=KAZ
+			attacker_goal={
+				casus_belli=make_puppet
+			}
+			defender_goal={
+				casus_belli=become_independent
+			}
+		}
+	ai_chance = {
+			factor = 50
+	}
+}
+option={
+	name="We have no choice"
+	prestige=-10
+	release_vassal=KAZ
+}
+}

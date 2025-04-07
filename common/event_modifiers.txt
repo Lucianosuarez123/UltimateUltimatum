@@ -1976,3 +1976,24 @@ Very_easy_player={
 	population_growth = 0.7
 	icon = 18
 }
+faction_leader_five_stans={
+	badboy = -0.3
+	prestige=0.5
+	land_organisation = 0.02
+	naval_organisation = 0.02
+	icon = 26
+}
+five_stans={
+	research_points_modifier = 0.05
+	prestige=0.1
+	leadership_modifier = 0.03
+	global_pop_militancy_modifier = -0.01
+	factory_cost = -0.02
+	tax_efficiency = 0.02
+	population_growth = 0.005
+	icon = 3
+}
+kaz_prov={
+	pop_consciousness_modifier = 0.01
+	icon=1
+}

@@ -1,6 +1,7 @@
 owner = KOK
 controller = KOK
 add_core = KOK
+add_core=KAZ
 1880.1.1 = {
 owner = RUS
 controller = RUS

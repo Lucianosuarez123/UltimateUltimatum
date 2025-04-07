@@ -159,7 +159,6 @@ great_power = {
 	diplomatic_points_modifier = 1.0
 	leadership = 2.0
 }
-
 second_power = {
 	prestige = 0.025
 	research_points = 3.5

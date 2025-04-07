@@ -267,7 +267,7 @@ soviet_afghani = {
 				
 		ai_will_do = { factor = 1 }
 	}
-		expand_russian_culture= {
+		The_Great_Game= {
 		picture = "rus_claim_lodernia"
 		potential = {
 			tag = RUS

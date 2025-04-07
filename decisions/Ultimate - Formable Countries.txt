@@ -1105,7 +1105,164 @@ tag = AZB
 			factor = 1
 		}
 	}
-	
+	form_Uzbekistan = {
+		potential={
+			tag=BUK
+			NOT={exists=UZB}
+			NOT={has_country_flag=Uzbekistan_appears}
+		}
+		allow={
+			civilized=yes
+		}
+		effect={
+			THIS={all_core={
+				add_core=UZB
+				infrastructure= 2
+				life_rating=15
+				remove_core=THIS
+			   }
+			}
+			change_tag=UZB
+			prestige = 20
+			money= 500000
+			activate_technology=biologism
+			activate_technology=breech_loaded_rifles
+			set_country_flag=Uzbekistan_appears
+			militancy=-10
+			literacy=50
+			any_pop={reduce_pop=5}
+		}
+	ai_will_do = {
+			factor = 1
+		}
+	}
+	form_Turkmenistan = {
+		potential={
+			tag=KHI
+			NOT={exists=TRM}
+			NOT={has_country_flag=Turkmenistan_appears}
+		}
+		allow={
+			civilized=yes
+		}
+		effect={
+			THIS={all_core={
+				add_core=TRM
+				infrastructure= 2
+				life_rating=15
+				remove_core=THIS
+			   }
+			}
+			change_tag=TRM
+			prestige = 20
+			money= 500000
+			activate_technology=biologism
+			activate_technology=breech_loaded_rifles
+			set_country_flag=Turkmenistan_appears
+			militancy=-10
+			literacy=50
+			any_pop={reduce_pop=5}
+		}
+	ai_will_do = {
+			factor = 1
+		}
+	}
+	form_Kyrgistan = {
+		potential={
+			tag=KOK
+			NOT={exists=KYR}
+			NOT={has_country_flag=Kyrgistan_appears}
+		}
+		allow={
+			civilized=yes
+		}
+		effect={
+			THIS={all_core={
+				add_core=KYR
+				infrastructure= 2
+				life_rating=15
+				remove_core=THIS
+			   }
+			}
+			change_tag=KYR
+			prestige = 20
+			money= 500000
+			activate_technology=biologism
+			activate_technology=breech_loaded_rifles
+			set_country_flag=Kyrgistan_appears
+			militancy=-10
+			literacy=50
+			any_pop={reduce_pop=5}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		civilized_nation = {
+		potential={
+			tag=KAZ
+			is_vassal=no
+			civilized=yes
+		}
+		allow={
+			war=no
+			THIS={all_core={owned_by=THIS}}
+		}
+		effect={
+			THIS={all_core={
+				add_core=KYR
+				infrastructure= 2
+				life_rating=15
+				remove_core=RUS
+			   }
+			}
+			government=democracy
+			prestige = 1000
+			money= 500000
+			activate_technology=biologism
+			activate_technology=breech_loaded_rifles
+			militancy=-10
+			literacy=50
+			any_pop={reduce_pop=5}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_agreement = {
+		potential={
+			is_culture_group = iranian_turanian
+			civilized=yes
+			OR={
+				tag=KYR
+				tag=TRM
+				tag=UZB
+				tag=KAZ
+			}
+			AND={
+				exists = KYR
+				exists = TRM
+				exists = UZB
+			}
+			NOT={has_global_flag=The_agreement}
+		}
+		allow={
+			war=no
+			prestige=30
+			is_secondary_power=yes
+		}
+		effect={
+			country_event= 7000000
+			UZB={country_event= 7000001}
+			KYR={country_event= 7000002}
+			TRM={country_event= 7000003}
+			KAZ={country_event= 7000004}
+			set_global_flag=The_agreement
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	form_turkestan = {
 		potential = {
 			is_culture_group = iranian_turanian

@@ -244,4 +244,104 @@ political_decisions = {
 			prestige = 20
 		}
 	}
+	offer_to_buy_semireche={
+		potential={
+			tag=KAZ
+			NOT={has_country_flag=Offered_semireche}
+		}
+		allow={
+			money=10000
+		}
+		effect={
+			1188={owner={country_event=7000005}}
+			set_country_flag=Offered_semireche
+		}
+	}
+		offer_to_buy_semireche2={
+		potential={
+			tag=KYR
+			NOT={has_country_flag=Offered_semireche2}
+		}
+		allow={
+			money=5000
+		}
+		effect={
+			set_country_flag=Offered_semireche2
+			1190={owner={country_event=7000006}}
+		}
+	}
+	beg_for_mercy={
+		potential = {
+			tag = KAZ
+			year=1836
+			war=yes
+			civilized=no
+		}
+		allow={
+			war_with=RUS
+		}
+		effect={
+			RUS={country_event=7000007}
+		}
+	}
+	im_good_boy={
+		potential={
+			tag=KAZ
+			has_country_flag=russian_mercy
+			civilized=no
+			RUS={
+				any_core={
+					has_province_modifier=kaz_prov
+				}
+			}
+			}
+		allow={
+			money=1000
+
+		}
+		effect={  
+			money=-1000
+			RUS={
+				money=1000
+				random_owned={
+					limit={
+						is_core=KAZ
+					}
+					remove_province_modifier=kaz_prov
+					secede_province=KAZ	
+				}
+			}
+		}
+	}
+	independence={
+		potential={
+			tag=KAZ
+			THIS={all_core={owned_by=THIS}}
+			is_vassal=yes
+		}
+		allow={
+			civilized=yes
+			prestige=100
+		}
+		effect={
+			RUS={country_event=7000009}
+		}
+	}
+	offer_to_buy_Balkanskaya_oblask={
+		potential={
+			tag=TRM
+			1205={owned_by=RUS}
+			1204={owned_by=RUS}
+			NOT={has_country_flag=offered_oblask_purchase}
+			}
+		allow={
+			money=1000
+
+		}
+		effect={
+			RUS={country_event=7000008}
+			set_country_flag=offered_oblask_purchase
+		}
+	}
+
 }

@@ -16,6 +16,7 @@ add_core = HDJ
 	controller = TUR
 		}
 1919.1.1 = {
+	remove_core=TUR
 	controller = SAU 
 	owner = SAU
 	add_core = SAU

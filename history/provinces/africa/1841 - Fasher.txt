@@ -4,6 +4,7 @@ add_core=TUR
 controller=TUR
 life_rating = 30
 1830.1.1 = {
+	remove_core=TUR
 	owner = EGY
 	controller = EGY
 	add_core = EGY

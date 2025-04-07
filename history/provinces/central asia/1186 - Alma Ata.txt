@@ -1,6 +1,7 @@
 owner = XIN
 controller = XIN
 add_core = XIN
+add_core = KAZ
 1750.1.1 = {
 owner = QNG
 controller = QNG
