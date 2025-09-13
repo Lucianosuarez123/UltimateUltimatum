@@ -760,7 +760,7 @@ naval_base = {
 	onmap = yes
 	port = yes
 	visibility = yes
-	max_level = 15
+	max_level = 30
 	colonial_points = { 50 60 70 90 110 130 } #points at levels 1-6
 	province = yes
 	one_per_state = yes
@@ -781,7 +781,7 @@ railroad = {
 	time = 140
 	visibility = yes
 	onmap = yes
-	max_level = 15
+	max_level = 30
 	province = yes
 	
 	infrastructure = 0.15
