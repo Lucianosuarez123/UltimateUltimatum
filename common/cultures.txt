@@ -2086,22 +2086,6 @@ latin_american_cultures = {
 		}
 		radicalism = 15
 	}
-	caribeno = {
-		color = {122 11 74}
-		first_names = { Alberto Alejandro Alfredo Ambrosio Anselmo Antonio Arturo Benigno Buenaventura Calixto
-		Carlos Ceferino Ces�reo Demetrio Desiderio Dionisio Domingo Eugenio Federico Felipe
-		Fernando Fidel Fulgencio Gerardo Gregorio Guillermo Horacio Ignacio Jacinto Jacobo
-		Jes�s Joaqu�n Jos� "Jos� Miguel" Juan "Juan Bautista" Manuel Mariano Mario M�ximo
-		Osvaldo Pablo Pedro Rafael Ram�n Ra�l Salvador Rom�s Ulises Wenceslao
-		}
-
-		last_names = { Acosta Alfau B�ez Batista Bayo Cabral Carmona Castillo Castro Cisneros
-		"de C�spedes" "de la Rosa" "de Meri�o" "de Rojas" Espaillat Estrada Estrella Fern�ndez Figuereo Garc�a
-		Gil G�mez Gonz�les Gonz�lez Grau Guillermo Henr�quez Herrera Hevia Laredo
-		Luper�n Maceo Machado M�rquez Mella M�ndez Mendieta Moncada Morales Mota
-		Pelletier Pimentel Puello Santana Sosa Trujillo Valverde V�squez V�zquez Zayas
-		}
-	}
 	north_andean = {
 		color = {146 156 116}
 		first_names = { Antonio Camilo Carlos Cipriano Demetrio Diego Domingo Eloy Eusebio Eustorgio
@@ -2201,6 +2185,22 @@ african_diaspora_cultures = {
 		last_names = { Abbott Best Blaize Brathwaite Carmichael Chambers Clark Douglas Dymally Findley
 		Goddard Hall Henson Holder James Jones Julian Kilgour Lassalle Lovelace
 		McIntosh Nurse Perry Roberts Robinson Shadd Stollmeyer Sylvester Williams Young }
+	}
+		caribeno = {
+		color = {122 11 74}
+		first_names = { Alberto Alejandro Alfredo Ambrosio Anselmo Antonio Arturo Benigno Buenaventura Calixto
+		Carlos Ceferino Ces�reo Demetrio Desiderio Dionisio Domingo Eugenio Federico Felipe
+		Fernando Fidel Fulgencio Gerardo Gregorio Guillermo Horacio Ignacio Jacinto Jacobo
+		Jes�s Joaqu�n Jos� "Jos� Miguel" Juan "Juan Bautista" Manuel Mariano Mario M�ximo
+		Osvaldo Pablo Pedro Rafael Ram�n Ra�l Salvador Rom�s Ulises Wenceslao
+		}
+
+		last_names = { Acosta Alfau B�ez Batista Bayo Cabral Carmona Castillo Castro Cisneros
+		"de C�spedes" "de la Rosa" "de Meri�o" "de Rojas" Espaillat Estrada Estrella Fern�ndez Figuereo Garc�a
+		Gil G�mez Gonz�les Gonz�lez Grau Guillermo Henr�quez Herrera Hevia Laredo
+		Luper�n Maceo Machado M�rquez Mella M�ndez Mendieta Moncada Morales Mota
+		Pelletier Pimentel Puello Santana Sosa Trujillo Valverde V�squez V�zquez Zayas
+		}
 	}
 	afro_caribeno = { 
 		color = {12 83 12}

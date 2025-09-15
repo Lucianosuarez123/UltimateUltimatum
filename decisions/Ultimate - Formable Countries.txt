@@ -840,7 +840,10 @@ political_decisions = {
 	form_union_latinoamericana = {
 		picture=south_americapic
 		potential = {
-			is_culture_group=latin_american_cultures
+			OR={
+				is_culture_group=latin_american_cultures
+				has_country_flag=united_caribe
+			}
 			NOT={has_country_flag=formed_latinoamericanunion}
 		}
 		
