@@ -2,8 +2,10 @@ owner = TUR
 controller = TUR
 add_core = AUS
 add_core = KNI
-
-
+add_core = REH
+1806.8.6 = {
+remove_core = REH
+}
 1700.1.1 = {
 	controller = AUS
 	owner = AUS

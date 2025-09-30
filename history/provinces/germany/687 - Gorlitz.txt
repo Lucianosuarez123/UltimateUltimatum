@@ -1,18 +1,10 @@
-owner = BDB
-controller = BDB
-add_core = GER
-trade_goods = coal
-
-
-1635.5.30  = { 
 owner = SAX
 controller = SAX
 add_core = REH
 add_core = SAX
-remove_core = AUS
-remove_core = BOH
-remove_core = CZH
-}
+add_core = GER
+trade_goods = coal
+
 1806.8.6 = { remove_core = REH }
 1815.6.9 = {
 owner = PRU

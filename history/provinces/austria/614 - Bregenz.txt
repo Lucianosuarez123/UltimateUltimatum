@@ -1,8 +1,13 @@
 owner = AUS
 controller = AUS
 add_core = AUS
+add_core = REH
+
 trade_goods = timber
 life_rating = 35
+1806.8.6 = {
+remove_core = REH
+}
 1867.3.30 = {
 owner = KUK
 controller = KUK 

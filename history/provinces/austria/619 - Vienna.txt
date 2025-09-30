@@ -1,6 +1,7 @@
 owner = AUS
 controller = AUS
 add_core = AUS
+add_core = REH
 trade_goods = grain
 life_rating = 35
 fort = 1
@@ -14,6 +15,9 @@ fort = 1
 #	building = small_arms_factory
 #	upgrade = yes
 #}
+1806.8.6 = {
+remove_core = REH
+}
 1861.1.1 = { railroad = 2 }
 1861.1.1 = {
 	state_building = {

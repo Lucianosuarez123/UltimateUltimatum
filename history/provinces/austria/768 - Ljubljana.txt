@@ -3,6 +3,10 @@ controller = AUS
 add_core = AUS
 add_core = SLO
 add_core = YUG
+add_core = REH
+1806.8.6 = {
+remove_core = REH
+}
 1809.10.14 = {
 owner = FRA
 controller = FRA

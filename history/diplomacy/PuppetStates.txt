@@ -1,7 +1,439 @@
 
 
 ##1604 Puppets
-
+# Holy-Roman-Empire
+vassal = {
+	first = REH
+	second = AUS
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = BYR
+	start_date = 1604.1.1
+	end_date = 1714.8.6
+}
+vassal = {
+	first = REH
+	second = CLR
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = DRT
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = MND
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = DRT
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = MGG
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = LNG
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = HNB
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = HBR
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = GHB
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = FDA
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = EMD
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = EFT
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = VER
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = WES
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = ULM
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = STG
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = SLS
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = SGM
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = RGN
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = PML
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = OSN
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = NRM
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = MNZ
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = TRR
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = WLS
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = PLT
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = CLV
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = CLG
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = MUN
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = PMR
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = BDB
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = WLD
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = WUZ
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = ANS
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = LUN
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = SXL
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = LIE
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = AAC
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = NCT
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = SAV
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = GEN
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = LOR
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = ALS
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = AUG
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = HOL
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = HEK
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = HES
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = HAM
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = COB
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = FRM
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = BRE
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = BRA
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = BAV
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = BAD
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = ANH
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = WUR
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = WEI
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = SCH
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = SAX
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = OLD
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = NAS
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = MEI
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = MEC
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = LUB
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = LIP
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = SWI
+	start_date = 1604.1.1
+	end_date = 1648.1.1
+}
+vassal = {
+	first = REH
+	second = LUC
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = PAR
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = MOD
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
+vassal = {
+	first = REH
+	second = TUS
+	start_date = 1604.1.1
+	end_date = 1714.1.1
+}
 # Ottoman Empire-Egypt
 vassal = {
 	first = TUR
@@ -15,7 +447,7 @@ vassal = {
 	first = TUR
 	second = CRI
 	start_date = 1604.1.1
-	end_date = 1764.1.1
+	end_date = 1763.1.1
 		}
 #RUS-Crimea
 vassal = {

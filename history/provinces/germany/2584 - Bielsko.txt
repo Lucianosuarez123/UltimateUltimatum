@@ -3,9 +3,12 @@ controller = SLS
 add_core = AUS
 add_core = BOH
 add_core = CZH
+add_core = REH
 trade_goods = coal
 life_rating = 40
-
+1806.8.6 = { 
+	remove_core = REH 
+	}
 1620.11.8 = { 
 owner = AUS
 controller = AUS
