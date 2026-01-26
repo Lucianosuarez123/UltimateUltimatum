@@ -20,55 +20,8 @@ country_event = {
 		government = french_second_empire
 	}
 }
-country_event = {
-
-	id = 2000051
-	title = texas_settled_title
-	desc = texas_settled_desc
-	picture = emigration
-
-	fire_only_once = yes
-
-	trigger = {
-		year = 1820
-		owns = 132
-		146 = {
-			owned_by = USA 
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 1
-	}
-
-	option = {
-		name = event_option_alright
-		any_pop = {
-			limit = { 
-				has_pop_religion = protestant 
-			}
-			dominant_issue = {
-				value = moralism
-				factor = 0.5
-			}
-			consciousness = 5
-			move_pop = 132
-		}
-		132 = {
-			add_province_modifier = {
-				name = home_of_american_texas
-				duration = 10950
-			}
-			any_pop = {
-				limit = { 
-					has_pop_culture = native_american_minor 
-				}
-				reduce_pop = 0.25
-			}
-			add_core = TEX 
-		}
-	}
-}
+	# EVENTO ELIMINADO - CAUSABA QUE TODOS LOS POPS DE USA SE MOVIERAN A TEXAS
+	# id = 2000051 was removed because it was causing all protestant pops to migrate to Texas
 country_event = {
 	id = 2000052
 	title = french_third_republic_title
