@@ -13,13 +13,13 @@ country_event = {
 		random_list = {
 			11 = {
 				country_event = {
-					id = 19950229
+					id = 19950249
 					days = 7
 				}
 			}
 			9 = {
 				country_event = {
-					id = 19950230
+					id = 19950260
 					days = 7
 				}
 			}
@@ -28,13 +28,13 @@ country_event = {
 	option = {
 		name = demo_trans_ev01_opt2
 		country_event = {
-			id = 19950233
+			id = 19950263
 			days = 7
 		}
 	}		
 }
 country_event = {
-	id = 19950229
+	id = 19950263
 	title = demo_trans_ev02a
 	desc = demo_trans_ev02a_desc
 	picture = monarchy
@@ -49,7 +49,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = 19950230
+	id = 19950260
 	title = demo_trans_ev02b
 	desc = demo_trans_ev02b_desc
 	picture = monarchy

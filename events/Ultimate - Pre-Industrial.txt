@@ -833,7 +833,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = 20000008 #First Newspaper
+	id = 20000018 #First Newspaper
 	title = ev_20000008
 	desc = desc_ev_20000008
 	picture = news
@@ -11156,7 +11156,7 @@ fire_only_once = yes
 
 #Napoleon loses
 country_event = {
-        id = 402000
+        id = 402001
         title = "Defeat!"
         desc = "Despite our most valiant efforts we have been defeated by the coalition led by the British."
         picture = "deadnapoleon"

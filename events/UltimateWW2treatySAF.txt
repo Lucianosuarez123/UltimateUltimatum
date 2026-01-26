@@ -1,6 +1,6 @@
 #Axis forces occupy South Africa
 country_event = {
-	id = 2000030
+	id = 2000031
 	title = "South Africa surrenders"
 	desc = "South Africa has been occupied , now we will annex them"
 	picture = "BULGARIA"

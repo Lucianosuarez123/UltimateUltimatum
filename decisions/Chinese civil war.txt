@@ -74,7 +74,7 @@ country_event = {
 			move_pop = 1485 # Taibei
 		}
 		end_war = CHI
-		CHI = { country_event = 90904 }
+		CHI = { country_event = 90914 }
 		country_event = 8200101
 	}
 	

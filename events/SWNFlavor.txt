@@ -1,6 +1,6 @@
 country_event = {
 
-	id = 36600
+	id = 36800
 	news = yes
 	news_desc_long = "EVTDESC36600_NEWS_LONG"
 	news_desc_medium = "EVTDESC36600_NEWS_MEDIUM"
@@ -44,7 +44,7 @@ country_event = {
 
 country_event = {
 
-	id = 36601
+	id = 36931
 
 	trigger = {
 		tag = SWN
@@ -83,7 +83,7 @@ country_event = {
 
 country_event = {
 
-	id = 36602
+	id = 36832
 
 	trigger = {
 		tag = SWN
@@ -127,7 +127,7 @@ country_event = {
 
 province_event = {
 
-	id = 36603
+	id = 36833
 
 	trigger = {
 		province_id = 322 #stockholm
@@ -172,7 +172,7 @@ province_event = {
 
 country_event = {
 
-	id = 36604
+	id = 36934
 
 	trigger = {
 		tag = SWN
@@ -211,7 +211,7 @@ country_event = {
 
 country_event = {
 
-	id = 36608
+	id = 36838
 
 	trigger = {
 		tag = SWN
@@ -258,7 +258,7 @@ country_event = {
 
 country_event = {
 
-	id = 36610
+	id = 36840
 
 	trigger = {
 		tag = SWN
@@ -307,7 +307,7 @@ country_event = {
 
 country_event = {
 
-	id = 36611
+	id = 36841
 	news = yes
 	news_desc_long = "EVTDESC36611_NEWS_LONG"
 	news_desc_medium = "EVTDESC36611_NEWS_MEDIUM"
@@ -352,7 +352,7 @@ country_event = {
 #Boden Fortress
 country_event = {
 
-	id = 36612
+	id = 36942
 
 	trigger = {
 		tag = SWN
@@ -379,7 +379,7 @@ country_event = {
 
 country_event = {
 
-	id = 36614
+	id = 36944
 
 	trigger = {
 		tag = SWN
@@ -424,7 +424,7 @@ country_event = {
 
 country_event = {
 
-	id = 36615
+	id = 36945
 
 	trigger = {
 		tag = SWN
@@ -479,7 +479,7 @@ country_event = {
 
 country_event = {
 
-	id = 36617
+	id = 36947
 
 	trigger = {
 		tag = SWN
@@ -536,7 +536,7 @@ country_event = {
 
 country_event = {
 
-	id = 36618 #parallel to NOR36400
+	id = 36948 #parallel to NOR36400
 
 	trigger = {
 		tag = SWN
@@ -588,7 +588,7 @@ country_event = {
 
 country_event = {
 
-	id = 36619 #parallel to NOR36401
+	id = 36949 #parallel to NOR36401
 
 	trigger = {
 		tag = SWN
@@ -635,7 +635,7 @@ country_event = {
 
 country_event = {
 
-	id = 36620 #parallel to NOR36402
+	id = 36920 #parallel to NOR36402
 
 	trigger = {
 		tag = SWN
@@ -683,7 +683,7 @@ country_event = {
 
 country_event = {
 
-	id = 36621 #parallel to NOR36405
+	id = 36951 #parallel to NOR36405
 
 	trigger = {
 		tag = SWN
@@ -749,7 +749,7 @@ country_event = {
 
 country_event = {
 
-	id = 36622 #see DAN36223 for parallel event
+	id = 36952 #see DAN36223 for parallel event
 
 	trigger = {
 		tag = SWN

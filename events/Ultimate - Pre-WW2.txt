@@ -37,7 +37,7 @@ country_event = {
 		}
 		ETH = {
         	country_event = {
-        		id = 36001
+        		id = 36031
         		days = 0
         	}
         }
@@ -48,7 +48,7 @@ country_event = {
 
 country_event = {
 
-	id = 36001
+	id = 36031
 	title = "Ethiopia - Ethiopian Crisis"
 	desc = "Italy demands that we surrender to their imperialist ambitions... Should we?"
 	picture = "crisis"
@@ -79,7 +79,7 @@ country_event = {
 		}
 		ITA = {
 			country_event = {
-            	id = 36002
+            	id = 36032
        			days = 0
       	 	}
 		}
@@ -106,7 +106,7 @@ country_event = {
         }
 		ITA = {
 			country_event = {
-            	id = 36003
+            	id = 36033
        			days = 0
       	 	}
 		}
@@ -116,7 +116,7 @@ country_event = {
 
 country_event = {
 
-	id = 36002
+	id = 36032
 	title = "Italy - Ethiopian Reply"
 	desc = "Ethiopia brings us news that they have accepted our ultimatum!"
 	picture = "crisis"
@@ -140,7 +140,7 @@ country_event = {
 
 country_event = {
 
-	id = 36003
+	id = 36033
 	title = "Italy - Ethiopian Reply"
 	desc = "Ethiopia brings us news that they have rejected our ultimatum!"
 	picture = "crisis"

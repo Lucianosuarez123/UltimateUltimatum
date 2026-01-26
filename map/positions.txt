@@ -2505,7 +2505,7 @@
         naval_base = 4.625122
     }
 
-} # Sept-�les
+} # Sept-Îles
 
 62 = {
     unit = {
@@ -2593,7 +2593,7 @@
         y = 1794.000000
     }
 
-} # Trois-Rivi�res
+} # Trois-Rivières
 
 64 = {
     unit = {
@@ -14289,7 +14289,7 @@
         naval_base = 5.061456
     }
 
-} # G�vle
+} # Gävle
 
 317 = {
     unit = {
@@ -14382,7 +14382,7 @@
         naval_base = 3.926992
     }
 
-} # �stersund
+} # Östersund
 
 319 = {
     unit = {
@@ -14442,7 +14442,7 @@
 
     }
 
-} # Ume�
+} # Umeå
 
 320 = {
     unit = {
@@ -14512,7 +14512,7 @@
         naval_base = 3.752459
     }
 
-} # Lule�
+} # Luleå
 
 321 = {
     unit = {
@@ -14724,7 +14724,7 @@
         naval_base = 2.530728
     }
 
-} # Norrk�ping
+} # Norrköping
 
 325 = {
     unit = {
@@ -14765,7 +14765,7 @@
         naval_base = 2.879794
     }
 
-} # V�ster�s
+} # Västerås
 
 326 = {
     unit = {
@@ -14845,7 +14845,7 @@
         naval_base = 4.188792
     }
 
-} # �rebro
+} # Örebro
 
 327 = {
     unit = {
@@ -14962,7 +14962,7 @@
 
     }
 
-} # G�teborg
+} # Göteborg
 
 329 = {
     unit = {
@@ -15018,7 +15018,7 @@
 
     }
 
-} # Bor�s
+} # Borås
 
 330 = {
     unit = {
@@ -15162,7 +15162,7 @@
         naval_base = 2.792527
     }
 
-} # V�xj�
+} # Växjö
 
 333 = {
     unit = {
@@ -15199,7 +15199,7 @@
 
     }
 
-} # Malm�
+} # Malmö
 
 334 = {
     unit = {
@@ -15706,7 +15706,7 @@
         naval_base = 4.363324
     }
 
-} # H�meenlinna
+} # Hämeenlinna
 
 344 = {
     unit = {
@@ -15943,7 +15943,7 @@
 
     }
 
-} # �land Islands
+} # Åland Islands
 
 348 = {
     text_position = {
@@ -16072,7 +16072,7 @@
         naval_base = 1.919863
     }
 
-} # P�rnu
+} # Pärnu
 
 351 = {
     unit = {
@@ -16155,7 +16155,7 @@
 
     }
 
-} # �sel
+} # Ösel
 
 353 = {
     unit = {
@@ -17920,7 +17920,7 @@
 
     }
 
-} # Li�ge
+} # Liège
 
 395 = {
     text_position = {
@@ -18576,7 +18576,7 @@
         y = 1612.250000
     }
 
-} # �pinal
+} # Épinal
 
 414 = {
     unit = {
@@ -18655,7 +18655,7 @@
         naval_base = 0.523598
     }
 
-} # �vreux
+} # Évreux
 
 416 = {
     text_position = {
@@ -18692,7 +18692,7 @@
 
     }
 
-} # Alen�on
+} # Alençon
 
 417 = {
     unit = {
@@ -19431,7 +19431,7 @@
 
     }
 
-} # Besan�on
+} # Besançon
 
 432 = {
     text_position = {
@@ -19636,7 +19636,7 @@
         naval_base = 5.672319
     }
 
-} # Orl�ans
+} # Orléans
 
 438 = {
     text_position = {
@@ -19876,7 +19876,7 @@
         y = 1557.900024
     }
 
-} # Angoul�me
+} # Angoulême
 
 444 = {
     unit = {
@@ -19932,7 +19932,7 @@
         y = 1549.699951
     }
 
-} # Ch�teauroux
+} # Châteauroux
 
 446 = {
     unit = {
@@ -20168,7 +20168,7 @@
         y = 1552.199951
     }
 
-} # St �tienne
+} # St Étienne
 
 452 = {
     unit = {
@@ -20669,7 +20669,7 @@
 
     }
 
-} # Chamb�ry
+} # Chambéry
 
 466 = {
     unit = {
@@ -21022,7 +21022,7 @@
         naval_base = 3.490659
     }
 
-} # La Coru�a
+} # La Coruña
 
 474 = {
     unit = {
@@ -21171,7 +21171,7 @@
         naval_base = 0.349066
     }
 
-} # Le�n
+} # León
 
 477 = {
     unit = {
@@ -21404,7 +21404,7 @@
 
     }
 
-} # �vila
+} # Ávila
 
 483 = {
     unit = {
@@ -21511,7 +21511,7 @@
 
     }
 
-} # C�ceres
+} # Cáceres
 
 486 = {
     unit = {
@@ -21596,7 +21596,7 @@
 
     }
 
-} # Sig�enza
+} # Sigüenza
 
 488 = {
     unit = {
@@ -21824,7 +21824,7 @@
 
     }
 
-} # Logro�o
+} # Logroño
 
 494 = {
     unit = {
@@ -22057,7 +22057,7 @@
         naval_base = 3.141593
     }
 
-} # L�rida
+} # Lérida
 
 500 = {
     text_position = {
@@ -22229,7 +22229,7 @@
         naval_base = 3.490659
     }
 
-} # Castell�n
+} # Castellón
 
 504 = {
     unit = {
@@ -22478,7 +22478,7 @@
 
     }
 
-} # C�rdoba
+} # Córdoba
 
 510 = {
     unit = {
@@ -22563,7 +22563,7 @@
         naval_base = 5.061454
     }
 
-} # C�diz
+} # Cádiz
 
 512 = {
     unit = {
@@ -22661,7 +22661,7 @@
         naval_base = 4.712389
     }
 
-} # M�laga
+} # Málaga
 
 514 = {
     unit = {
@@ -22707,7 +22707,7 @@
         naval_base = 4.625122
     }
 
-} # Almer�a
+} # Almería
 
 515 = {
     unit = {
@@ -22758,7 +22758,7 @@
         naval_base = 3.665192
     }
 
-} # Ja�n
+} # Jaén
 
 516 = {
     unit = {
@@ -22964,7 +22964,7 @@
 
     }
 
-} # Covilh�
+} # Covilhã
 
 520 = {
     unit = {
@@ -23192,7 +23192,7 @@
 
     }
 
-} # �vora
+} # Évora
 
 525 = {
     unit = {
@@ -23447,7 +23447,7 @@
 
     }
 
-} # L�beck
+} # Lübeck
 
 530 = {
     unit = {
@@ -23545,7 +23545,7 @@
         naval_base = 0.872665
     }
 
-} # L�neburg
+} # Lüneburg
 
 532 = {
     unit = {
@@ -23732,7 +23732,7 @@
 
     }
 
-} # G�ttingen
+} # Göttingen
 
 537 = {
     unit = {
@@ -23770,7 +23770,7 @@
 
     }
 
-} # Osnabr�ck
+} # Osnabrück
 
 538 = {
     text_position = {
@@ -24142,7 +24142,7 @@
         naval_base = 1.221731
     }
 
-} # Swinem�nde
+} # Swinemünde
 
 547 = {
     unit = {
@@ -25146,7 +25146,7 @@
 
     }
 
-} # Saarbr�cken
+} # Saarbrücken
 
 573 = {
     unit = {
@@ -25315,7 +25315,7 @@
 
     }
 
-} # D�sseldorf
+} # Düsseldorf
 
 578 = {
     unit = {
@@ -25413,7 +25413,7 @@
 
     }
 
-} # M�nster
+} # Münster
 
 581 = {
     text_position = {
@@ -25811,7 +25811,7 @@
 
     }
 
-} # T�bingen
+} # Tübingen
 
 591 = {
     text_position = {
@@ -26035,7 +26035,7 @@
 
     }
 
-} # W�rzburg
+} # Würzburg
 
 597 = {
     text_position = {
@@ -26478,7 +26478,7 @@
 
     }
 
-} # Neuch�tel
+} # Neuchâtel
 
 608 = {
     text_position = {
@@ -26848,7 +26848,7 @@
 
     }
 
-} # Sankt P�lten
+} # Sankt Pölten
 
 620 = {
     unit = {
@@ -27332,7 +27332,7 @@
 
     }
 
-} # Trenc�n
+} # Trenčín
 
 634 = {
     text_position = {
@@ -27398,7 +27398,7 @@
 
     }
 
-} # Bansk� Bystrica
+} # Banská Bystrica
 
 636 = {
     text_position = {
@@ -27430,7 +27430,7 @@
 
     }
 
-} # Ko�ice
+} # Košice
 
 637 = {
     text_position = {
@@ -27468,7 +27468,7 @@
 
     }
 
-} # Ro�nava
+} # Rožňava
 
 638 = {
     text_position = {
@@ -27533,7 +27533,7 @@
 
     }
 
-} # P�cs
+} # Pécs
 
 640 = {
     text_position = {
@@ -27603,7 +27603,7 @@
         y = 1581.800049
     }
 
-} # Sz�kesfeh�rv�r
+} # Székesfehérvár
 
 643 = {
     text_position = {
@@ -27623,7 +27623,7 @@
         y = 1575.699951
     }
 
-} # Kaposv�r
+} # Kaposvár
 
 644 = {
     text_position = {
@@ -27660,7 +27660,7 @@
 
     }
 
-} # Kecskem�t
+} # Kecskemét
 
 645 = {
     text_position = {
@@ -27825,7 +27825,7 @@
         y = 1561.000000
     }
 
-} # B�k�scsaba
+} # Békéscsaba
 
 650 = {
     unit = {
@@ -27863,7 +27863,7 @@
 
     }
 
-} # Szatm�r
+} # Szatmár
 
 651 = {
     unit = {
@@ -27934,7 +27934,7 @@
 
     }
 
-} # Resicab�nya
+} # Resicabánya
 
 653 = {
     unit = {
@@ -28863,7 +28863,7 @@
         naval_base = 1.308997
     }
 
-} # K�slin
+} # Köslin
 
 680 = {
     unit = {
@@ -28909,7 +28909,7 @@
         naval_base = 1.221731
     }
 
-} # K�strin
+} # Küstrin
 
 681 = {
     unit = {
@@ -29187,7 +29187,7 @@
         naval_base = 4.712389
     }
 
-} # G�rlitz
+} # Görlitz
 
 687 = {
     text_position = {
@@ -29505,7 +29505,7 @@
 
     }
 
-} # K�nigsberg
+} # Königsberg
 
 695 = {
     unit = {
@@ -32818,7 +32818,7 @@
         naval_base = 5.497786
     }
 
-} # Vara�din
+} # Varaždin
 
 775 = {
     text_position = {
@@ -32888,7 +32888,7 @@
 
     }
 
-} # Po�ega
+} # Požega
 
 777 = {
     unit = {
@@ -33637,7 +33637,7 @@
 
     }
 
-} # U�ice
+} # Užice
 
 797 = {
     text_position = {
@@ -33669,7 +33669,7 @@
 
     }
 
-} # Ni�
+} # Niš
 
 798 = {
     unit = {
@@ -36180,7 +36180,7 @@
         naval_base = 4.799655
     }
 
-} # �sk�dar
+} # Üsküdar
 
 861 = {
     text_position = {
@@ -36404,7 +36404,7 @@
 
     }
 
-} # K�tahya
+} # Kütahya
 
 867 = {
     unit = {
@@ -66225,7 +66225,7 @@
         y = 1511.000000
     }
 
-} # D�hu�
+} # Dìhuà
 
 1600 = {
     text_position = {
@@ -81002,7 +81002,7 @@
 
     }
 
-} # S�o Tom�
+} # São Tomé
 
 1954 = {
     unit = {
@@ -81034,7 +81034,7 @@
 
     }
 
-} # Fernando P�
+} # Fernando Pó
 
 1955 = {
     text_position = {
@@ -82990,7 +82990,7 @@
         naval_base = 0.610865
     }
 
-} # Mo��medes
+} # Moçâmedes
 
 2004 = {
     unit = {
@@ -85326,7 +85326,7 @@
         naval_base = 3.752459
     }
 
-} # Mo�ambique
+} # Moçambique
 
 2060 = {
     text_position = {
@@ -89423,7 +89423,7 @@
 
     }
 
-} # Santa Mar�a del Oro
+} # Santa María del Oro
 
 2154 = {
     unit = {
@@ -89465,7 +89465,7 @@
 
     }
 
-} # Torre�n
+} # Torreón
 
 2155 = {
     unit = {
@@ -89502,7 +89502,7 @@
 
     }
 
-} # Mazatl�n
+} # Mazatlán
 
 2156 = {
     text_position = {
@@ -89544,7 +89544,7 @@
         naval_base = 5.497786
     }
 
-} # Culiac�n
+} # Culiacán
 
 2157 = {
     unit = {
@@ -89650,7 +89650,7 @@
 
     }
 
-} # San Luis Potos�
+} # San Luis Potosí
 
 2159 = {
     unit = {
@@ -89859,7 +89859,7 @@
         naval_base = 2.879794
     }
 
-} # Minatitl�n
+} # Minatitlán
 
 2164 = {
     unit = {
@@ -90179,7 +90179,7 @@
 
     }
 
-} # Los Alba�iles
+} # Los Albañiles
 
 2171 = {
     unit = {
@@ -90271,7 +90271,7 @@
 
     }
 
-} # Quer�taro
+} # Querétaro
 
 2173 = {
     unit = {
@@ -90738,7 +90738,7 @@
         naval_base = 5.497786
     }
 
-} # M�rida
+} # Mérida
 
 2183 = {
     unit = {
@@ -91050,7 +91050,7 @@
         naval_base = 2.268929
     }
 
-} # Sayaxch�
+} # Sayaxché
 
 2189 = {
     unit = {
@@ -91513,7 +91513,7 @@
         naval_base = 5.585053
     }
 
-} # Le�n
+} # León
 
 2199 = {
     unit = {
@@ -91630,7 +91630,7 @@
         naval_base = 3.403393
     }
 
-} # San Jos�
+} # San José
 
 2201 = {
     unit = {
@@ -91719,7 +91719,7 @@
 
     }
 
-} # Lim�n
+} # Limón
 
 2203 = {
     unit = {
@@ -91889,7 +91889,7 @@
         naval_base = 5.759586
     }
 
-} # Penonom�
+} # Penonomé
 
 2206 = {
     unit = {
@@ -92145,7 +92145,7 @@
         naval_base = 5.148721
     }
 
-} # Camag�ey
+} # Camagüey
 
 2211 = {
     unit = {
@@ -93570,7 +93570,7 @@
 
     }
 
-} # Bogot�
+} # Bogotá
 
 2247 = {
     unit = {
@@ -93607,7 +93607,7 @@
 
     }
 
-} # Ibagu�
+} # Ibagué
 
 2248 = {
     text_position = {
@@ -93696,7 +93696,7 @@
 
     }
 
-} # C�cuta
+} # Cúcuta
 
 2251 = {
     unit = {
@@ -93733,7 +93733,7 @@
 
     }
 
-} # Medell�n
+} # Medellín
 
 2252 = {
     unit = {
@@ -93770,7 +93770,7 @@
 
     }
 
-} # Quibd�
+} # Quibdó
 
 2253 = {
     unit = {
@@ -93985,7 +93985,7 @@
 
     }
 
-} # Popay�n
+} # Popayán
 
 2257 = {
     unit = {
@@ -94111,7 +94111,7 @@
 
     }
 
-} # San Jos� del Guaviare
+} # San José del Guaviare
 
 2260 = {
     text_position = {
@@ -94354,7 +94354,7 @@
 
     }
 
-} # Cuman�
+} # Cumaná
 
 2267 = {
     text_position = {
@@ -94436,7 +94436,7 @@
         naval_base = 2.007129
     }
 
-} # G�iria
+} # Güiria
 
 2269 = {
     unit = {
@@ -95136,7 +95136,7 @@
         y = 953.700012
     }
 
-} # Gal�pagos
+} # Galápagos
 
 2285 = {
     unit = {
@@ -95410,7 +95410,7 @@
         naval_base = 5.410520
     }
 
-} # Hu�nuco
+} # Huánuco
 
 2293 = {
     unit = {
@@ -96179,7 +96179,7 @@
         y = 654.000000
     }
 
-} # Potos�
+} # Potosí
 
 2314 = {
     unit = {
@@ -96309,7 +96309,7 @@
 
     }
 
-} # Robor�
+} # Roboré
 
 2318 = {
     text_position = {
@@ -96413,7 +96413,7 @@
         y = 785.000000
     }
 
-} # Copiap�
+} # Copiapó
 
 2322 = {
     unit = {
@@ -96529,7 +96529,7 @@
 
     }
 
-} # Valpara�so
+} # Valparaíso
 
 2325 = {
     text_position = {
@@ -96567,7 +96567,7 @@
 
     }
 
-} # Vi�a del Mar
+} # Viña del Mar
 
 2326 = {
     unit = {
@@ -96821,7 +96821,7 @@
         naval_base = 0.087266
     }
 
-} # Chill�n
+} # Chillán
 
 2331 = {
     unit = {
@@ -96896,7 +96896,7 @@
         naval_base = 0.174533
     }
 
-} # Puerto Ais�n
+} # Puerto Aisén
 
 2333 = {
     unit = {
@@ -97116,7 +97116,7 @@
 
     }
 
-} # Puerto Guaran�
+} # Puerto Guaraní
 
 2338 = {
     text_position = {
@@ -97227,7 +97227,7 @@
 
     }
 
-} # Encarnaci�n
+} # Encarnación
 
 2341 = {
     text_position = {
@@ -97283,7 +97283,7 @@
         y = 569.099976
     }
 
-} # Concepci�n
+} # Concepción
 
 2343 = {
     unit = {
@@ -97381,7 +97381,7 @@
         naval_base = 4.712389
     }
 
-} # Paysand�
+} # Paysandú
 
 2345 = {
     unit = {
@@ -97435,7 +97435,7 @@
         naval_base = 4.712390
     }
 
-} # Tacuaremb�
+} # Tacuarembó
 
 2346 = {
     unit = {
@@ -97575,7 +97575,7 @@
         naval_base = 2.356195
     }
 
-} # Jun�n
+} # Junín
 
 2349 = {
     text_position = {
@@ -97776,7 +97776,7 @@
 
     }
 
-} # Bah�a Blanca
+} # Bahía Blanca
 
 2354 = {
     unit = {
@@ -97927,7 +97927,7 @@
 
     }
 
-} # Curuz� Cuati�
+} # Curuzú Cuatiá
 
 2357 = {
     unit = {
@@ -97964,7 +97964,7 @@
 
     }
 
-} # Santo Tom�s
+} # Santo Tomás
 
 2358 = {
     unit = {
@@ -98001,7 +98001,7 @@
 
     }
 
-} # Col�n
+} # Colón
 
 2359 = {
     text_position = {
@@ -98033,7 +98033,7 @@
 
     }
 
-} # Paran�
+} # Paraná
 
 2360 = {
     unit = {
@@ -98217,7 +98217,7 @@
 
     }
 
-} # Villa �ngela
+} # Villa Ángela
 
 2365 = {
     unit = {
@@ -98428,7 +98428,7 @@
         y = 587.000000
     }
 
-} # Tucum�n
+} # Tucumán
 
 2373 = {
     text_position = {
@@ -98522,7 +98522,7 @@
         y = 527.000000
     }
 
-} # A�atuya
+} # Añatuya
 
 2377 = {
     unit = {
@@ -98559,7 +98559,7 @@
 
     }
 
-} # Mail�n
+} # Mailín
 
 2378 = {
     unit = {
@@ -98596,7 +98596,7 @@
 
     }
 
-} # C�rdoba de Argentina
+} # Córdoba de Argentina
 
 2379 = {
     unit = {
@@ -98666,7 +98666,7 @@
 
     }
 
-} # R�o Cuarto
+} # Río Cuarto
 
 2381 = {
     unit = {
@@ -98703,7 +98703,7 @@
 
     }
 
-} # Renanc�
+} # Renancó
 
 2382 = {
     unit = {
@@ -99010,7 +99010,7 @@
 
     }
 
-} # Neuqu�n
+} # Neuquén
 
 2391 = {
     unit = {
@@ -99111,7 +99111,7 @@
         naval_base = 4.799655
     }
 
-} # Tel�n
+} # Telén
 
 2393 = {
     unit = {
@@ -99236,7 +99236,7 @@
 
     }
 
-} # Curac�
+} # Curacó
 
 2395 = {
     unit = {
@@ -99412,7 +99412,7 @@
         naval_base = 1.745330
     }
 
-} # R�o Gallegos
+} # Río Gallegos
 
 2399 = {
     unit = {
@@ -99458,7 +99458,7 @@
         naval_base = 3.577926
     }
 
-} # R�o Grande
+} # Río Grande
 
 2400 = {
     unit = {
@@ -99824,7 +99824,7 @@
         naval_base = 3.403393
     }
 
-} # Bel�m
+} # Belém
 
 2410 = {
     unit = {
@@ -99870,7 +99870,7 @@
         naval_base = 3.316126
     }
 
-} # Santar�m
+} # Santarém
 
 2411 = {
     unit = {
@@ -99912,7 +99912,7 @@
 
     }
 
-} # �bidos
+} # Óbidos
 
 2412 = {
     text_position = {
@@ -99944,7 +99944,7 @@
 
     }
 
-} # Marab�
+} # Marabá
 
 2413 = {
     unit = {
@@ -99981,7 +99981,7 @@
 
     }
 
-} # Amap�
+} # Amapá
 
 2414 = {
     unit = {
@@ -100027,7 +100027,7 @@
         naval_base = 2.792527
     }
 
-} # Macap�
+} # Macapá
 
 2415 = {
     unit = {
@@ -100142,7 +100142,7 @@
 
     }
 
-} # Cuiab�
+} # Cuiabá
 
 2418 = {
     text_position = {
@@ -100161,7 +100161,7 @@
         y = 745.000000
     }
 
-} # Corumb�
+} # Corumbá
 
 2419 = {
     text_position = {
@@ -100323,7 +100323,7 @@
 
     }
 
-} # S�o Lu�s
+} # São Luís
 
 2424 = {
     unit = {
@@ -100476,7 +100476,7 @@
 
     }
 
-} # Para�ba
+} # Paraíba
 
 2428 = {
     unit = {
@@ -100772,7 +100772,7 @@
 
     }
 
-} # Macei�
+} # Maceió
 
 2434 = {
     unit = {
@@ -101075,7 +101075,7 @@
         naval_base = 3.403393
     }
 
-} # Vit�ria da Conquista
+} # Vitória da Conquista
 
 2440 = {
     unit = {
@@ -101167,7 +101167,7 @@
 
     }
 
-} # Sabar�
+} # Sabará
 
 2442 = {
     text_position = {
@@ -101199,7 +101199,7 @@
 
     }
 
-} # Janu�ria
+} # Januária
 
 2443 = {
     text_position = {
@@ -101310,7 +101310,7 @@
         y = 651.000000
     }
 
-} # S�o Jo�o del Rey
+} # São João del Rey
 
 2446 = {
     unit = {
@@ -101452,7 +101452,7 @@
         naval_base = 4.188792
     }
 
-} # Vit�ria
+} # Vitória
 
 2449 = {
     unit = {
@@ -101511,7 +101511,7 @@
         naval_base = 3.839725
     }
 
-} # S�o Paulo
+} # São Paulo
 
 2450 = {
     unit = {
@@ -102011,7 +102011,7 @@
         naval_base = 3.141593
     }
 
-} # S�o Miguel
+} # São Miguel
 
 2462 = {
     unit = {
@@ -105193,7 +105193,7 @@
         naval_base = 1.570797
     }
 
-} # Forte S�o Joaquim
+} # Forte São Joaquim
 
 2532 = {
     unit = {
@@ -105876,7 +105876,7 @@
         naval_base = 3.141593
     }
 
-} # Tarauac�
+} # Tarauacá
 
 2549 = {
     unit = {
@@ -105933,7 +105933,7 @@
 
     }
 
-} # Forte do Pr�ncipe
+} # Forte do Príncipe
 
 2550 = {
     unit = {
@@ -112060,7 +112060,7 @@
 
     }
 
-} # V�nern
+} # Vänern
 
 2703 = {
     unit = {
@@ -112075,7 +112075,7 @@
 
     text_rotation = 1.134464
     text_scale = 2.200000
-} # V�ttern
+} # Vättern
 
 2704 = {
     text_position = {
@@ -112100,7 +112100,7 @@
 
     text_rotation = 0.698132
     text_scale = 3.099999
-} # �lands Hav
+} # Ålands Hav
 
 2706 = {
     unit = {
@@ -112172,7 +112172,7 @@
     }
 
     text_scale = 3.099999
-} # �resund
+} # Öresund
 
 2711 = {
     unit = {
@@ -112202,7 +112202,7 @@
 
     text_rotation = 0.523599
     text_scale = 3.099999
-} # Peipsi J�rv
+} # Peipsi Järv
 
 2713 = {
     unit = {
@@ -112657,7 +112657,7 @@
 
     text_rotation = 6.283185
     text_scale = 2.400000
-} # Gulf of Almer�a
+} # Gulf of Almería
 
 2747 = {
     unit = {
@@ -115682,7 +115682,7 @@
     }
 
     text_scale = 4.799998
-} # Coast of Amap�
+} # Coast of Amapá
 
 2981 = {
     unit = {
@@ -115770,7 +115770,7 @@
     }
 
     text_scale = 7.199996
-} # Baia Paranagu�
+} # Baia Paranaguá
 
 2988 = {
     unit = {
@@ -118928,7 +118928,7 @@
         y = 1706.600000
     }
 
-} # Iber� lake
+} # Iberá lake
 
 3255 = {
     text_position = {
@@ -119673,7 +119673,7 @@
         y = 1726.400000
     }
 
-} # Lake Hj�lmaren
+} # Lake Hjälmaren
 
 3309 = {
     text_position = {
@@ -119702,7 +119702,7 @@
         y = 1871.600000
     }
 
-} # Lake Storsj�n
+} # Lake Storsjön
 
 3311 = {
     text_position = {
@@ -119731,7 +119731,7 @@
         y = 1916.450000
     }
 
-} # Lake Ouluj�rvi
+} # Lake Oulujärvi
 
 3313 = {
     text_position = {
@@ -119746,7 +119746,7 @@
         y = 1943.200000
     }
 
-} # Lake P�ij�nne
+} # Lake Päijänne
 
 3314 = {
     text_position = {
@@ -119789,7 +119789,7 @@
         y = 1902.783333
     }
 
-} # Lake Pyh�j�rvi
+} # Lake Pyhäjärvi
 
 3317 = {
     text_position = {

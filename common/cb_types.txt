@@ -1163,7 +1163,7 @@ liberate_country = {
 							tag = SCA
 							tag = ITA
 							tag = YUG
-							#tag = ROM # TODO: shoudl we let the rest be liberated too?
+							#tag = ROM # disabled for balance
 							tag = CZH
 						}
 					}

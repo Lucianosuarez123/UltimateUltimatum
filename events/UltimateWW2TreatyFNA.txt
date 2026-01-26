@@ -1,6 +1,6 @@
 #Italian forces occupy French North Africa
 country_event = {
-	id = 20000007
+	id = 20000008
 	title = "French North Africa surrenders"
 	desc = "We have occupied French North Africa, They have surrendered, now we are one step way from reforming the Roman Empire!"
 	picture = "mussolini"

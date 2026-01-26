@@ -146,7 +146,7 @@ country_event = {
 
 country_event = {
 
-	id = 36902  
+	id = 36732  
 
 	trigger = {
 		tag = ENG 
@@ -194,7 +194,7 @@ country_event = {
 
 country_event = {
 
-	id = 36903
+	id = 36733
 	news = yes
 	news_desc_long = "EVTDESC36903_NEWS_LONG"
 	news_desc_medium = "EVTDESC36903_NEWS_MEDIUM"
@@ -771,7 +771,7 @@ country_event = {
 
 country_event = {
 
-	id = 36918  
+	id = 36738  
 
 	trigger = {
 		tag = ENG 
@@ -823,7 +823,7 @@ country_event = {
 
 country_event = {
 
-	id = 36919
+	id = 36740
 	news = yes
 	news_desc_long = "EVTDESC36919_NEWS_LONG"
 	news_desc_medium = "EVTDESC36919_NEWS_MEDIUM"
@@ -868,7 +868,7 @@ country_event = {
 
 country_event = {
 
-	id = 36921
+	id = 36741
 
 	trigger = {
 		tag = ENG 
