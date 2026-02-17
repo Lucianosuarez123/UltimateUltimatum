@@ -387,19 +387,18 @@ trigger = {
 					}
 		}
 		
-		SKA =
-		{
-		create_alliance = USA
-		create_alliance = ENG
-		create_alliance = CAN
-		create_alliance = FRA
-		create_alliance = AUS
-		create_alliance = TUR
-		create_alliance = GRE
-		create_alliance = NCN
-		create_alliance = BEL
-		create_alliance = PHL
-		create_alliance = CLM
+		SKA = {
+			create_alliance = USA
+			create_alliance = ENG
+			create_alliance = CAN
+			create_alliance = FRA
+			create_alliance = AUS
+			create_alliance = TUR
+			create_alliance = GRE
+			create_alliance = NCN
+			create_alliance = BEL
+			create_alliance = PHL
+			create_alliance = CLM
 		}
 	}
 	}

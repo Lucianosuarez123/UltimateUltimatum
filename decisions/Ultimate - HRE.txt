@@ -59,15 +59,12 @@ political_decisions = {
 				
 		} 
 }		
-form_hre = { 
-
-picture = hre_pic 
-
-potential = 
-{ 
-
-has_country_modifier = hre_member
-} 
+form_hre = {
+	picture = hre_pic
+	
+	potential = {
+		has_country_modifier = hre_member
+	} 
 
 allow = {
 

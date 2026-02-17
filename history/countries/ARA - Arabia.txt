@@ -41,13 +41,13 @@ upper_house = {
 	communist = 0
 }
 
-1914.1.1= {
-civilized = no
-
+1914.1.1 = {
+	civilized = no
+}
 
 1950.1.1 = {
 	civilized = yes
-post_napoleonic_thought = 1
+	post_napoleonic_thought = 1
 strategic_mobility = 1
 point_defense_system = 1
 deep_defense_system = 1

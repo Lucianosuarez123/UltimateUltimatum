@@ -6,42 +6,40 @@ country_event = {
 	picture = "napoleon"
          major = yes
 
-trigger = {
-    tag = FRA
-	
-	549 = {
-	controlled_by = THIS
+	trigger = {
+		tag = FRA
+		
+		549 = {
+			controlled_by = THIS
 		}
-     has_global_flag = napoleon
-	PRU = {
-	war_exhaustion = 2 } 
-}
-		
-			
+		has_global_flag = napoleon
+		PRU = {
+			war_exhaustion = 2
+		}
+	}
 	
-option = {
-name = "Give Poland some of their lands"
-	end_war = PRU
-	treasury = 200000
-	PRU = {any_owned = {
-   limit = {
-    is_core = POL
-    }
-   secede_province = POL
-  }}
+	option = {
+		name = "Give Poland some of their lands"
+		end_war = PRU
+		treasury = 200000
+		PRU = {
+			any_owned = {
+				limit = {
+					is_core = POL
+				}
+				secede_province = POL
+			}
+		}
 
-	end_war = PRU
-	military_access = PRU
+		end_war = PRU
+		military_access = PRU
 		
-FRA = {
-        
-        
-           
-	prestige = 1000
-}
-	
-	
+		FRA = {
+			prestige = 1000
+		}
+		
 		ai_chance = {
 			factor = 25
 		}
+	}
 }

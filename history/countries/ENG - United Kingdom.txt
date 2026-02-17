@@ -2243,14 +2243,14 @@ advanced_sub-surface_mining = 1
 street_road = 1
 secret_of_atom = 1 #until this for 1945
 	}
-}
+
 2000.1.1 = {
-        literacy = 0.98
-        prestige = 300
-        ruling_party = ENG_socialist
-        last_election = 1998.2.6
-        oob = "/2000/ENG_oob.txt"
-standing_army = 1
+	literacy = 0.98
+	prestige = 300
+	ruling_party = ENG_socialist
+	last_election = 1998.2.6
+	oob = "/2000/ENG_oob.txt"
+	standing_army = 1
 late_medieval_warfare = 1
 early_muskets = 1
 strict_military_doctrine = 1
@@ -2743,4 +2743,4 @@ health_care = good_health_care
 unemployment_subsidies = good_subsidies
 pensions = good_pensions
 school_reforms = good_schools
-                }
+}

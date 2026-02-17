@@ -10029,20 +10029,20 @@ trigger = {
 		}
 
 		mean_time_to_happen = {
-		days = 1 }
+		days = 1 
+	}
 		
-		option = 
-		{
+	option = {
 		name = "A great victory for Britain!"
 		
 		USA = {
-		war_exhaustion = 10
+			war_exhaustion = 10
 		}
 		
 		ENG = {
-		any_pop = {
-	dominant_issue = {
-	value = jingoism
+			any_pop = {
+				dominant_issue = {
+					value = jingoism
 	factor = 0.75
 		}
 		}

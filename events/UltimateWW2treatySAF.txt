@@ -8,17 +8,18 @@ country_event = {
         fire_only_once = yes
 
 	trigger = {
-2087 = {
-controlled_by = THIS }
+		2087 = {
+			controlled_by = THIS
+		}
 
-NOT =
-{
-tag = SAF
-tag = ENG
-tag = BRI }
-	
-	has_global_flag = WW2_inprogress
-        }
+		NOT = {
+			tag = SAF
+			tag = ENG
+			tag = BRI
+		}
+		
+		has_global_flag = WW2_inprogress
+	}
 	
 	
 	mean_time_to_happen = {

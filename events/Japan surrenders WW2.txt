@@ -52,22 +52,23 @@ mean_time_to_happen = {
 ##annex##
 option = {
 name = "Punish them!"
-any_country = {
-end_war = JAP }
-any_country = {
-leave_alliance = JAP }
+	any_country = {
+		end_war = JAP
+	}
+	any_country = {
+		leave_alliance = JAP
+	}
 
-JAP = 
-{
-release = NCN
-release = MAN 
-release = BUR
-release = PNG
-release = LAO
-release = CAM
-release = IDO	
-release = AST
-release = NZL
+	JAP = {
+		release = NCN
+		release = MAN 
+		release = BUR
+		release = PNG
+		release = LAO
+		release = CAM
+		release = IDO	
+		release = AST
+		release = NZL
 release = NCN
 release = DAI
 release = HND

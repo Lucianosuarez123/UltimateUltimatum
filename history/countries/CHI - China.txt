@@ -305,6 +305,7 @@ upper_house = {
 	socialist = 75
 	communist = 20
 		}
+}
 1994.1.1 = {
        foreign_investment = {
                 THA = 7500
@@ -356,5 +357,5 @@ upper_house = {
 	anarcho_liberal = 0
 	socialist = 10
 	communist = 0
-	}
-	}
+}
+}

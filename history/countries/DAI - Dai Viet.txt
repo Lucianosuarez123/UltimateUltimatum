@@ -67,6 +67,7 @@ upper_house = {
 	socialist = 0
 	communist = 100
 }
+}
 
 1964.1.1 = {
 oob = "/1964/DAI_oob.txt"
@@ -265,6 +266,7 @@ upper_house = {
 	socialist = 80
 	communist = 10
 }
+}
 2000.1.1 = {
 	government = socialist_republic
 		computerisation = 1
@@ -290,12 +292,13 @@ pensions = good_pensions
 school_reforms = good_schools
 	government = democracy
 	ruling_party = DAI_conservative
-upper_house = {
-	fascist = 0
-	liberal = 30
-	conservative = 60
-	reactionary = 0
-	anarcho_liberal = 0
-	socialist = 80
-	communist = 10
+	upper_house = {
+		fascist = 0
+		liberal = 30
+		conservative = 60
+		reactionary = 0
+		anarcho_liberal = 0
+		socialist = 80
+		communist = 10
 	}
+}
