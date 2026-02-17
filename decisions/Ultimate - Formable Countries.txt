@@ -1201,11 +1201,18 @@ tag = AZB
 			factor = 1
 		}
 	}
-		civilized_nation = {
+		civilized_nation_asia = {
 		potential={
+			OR={
 			tag=KAZ
+			tag=KYR
+			tag=TAJ
+			tag=UZB
+			tag=TRM
+			}
 			is_vassal=no
 			civilized=yes
+			NOT={has_country_flag=civilized_nation_asia}
 		}
 		allow={
 			war=no
@@ -1213,7 +1220,7 @@ tag = AZB
 		}
 		effect={
 			THIS={all_core={
-				add_core=KYR
+				add_core=THIS
 				infrastructure= 2
 				life_rating=15
 				remove_core=RUS
@@ -1227,6 +1234,7 @@ tag = AZB
 			militancy=-10
 			literacy=50
 			any_pop={reduce_pop=5}
+			set_country_flag=civilized_nation_asia
 		}
 		ai_will_do = {
 			factor = 1
@@ -1236,11 +1244,13 @@ tag = AZB
 		potential={
 			is_culture_group = iranian_turanian
 			civilized=yes
+			is_greater_power=yes
 			OR={
 				tag=KYR
 				tag=TRM
 				tag=UZB
 				tag=KAZ
+				tag=TAJ
 			}
 			AND={
 				exists = KYR
@@ -1260,6 +1270,7 @@ tag = AZB
 			KYR={country_event= 7000002}
 			TRM={country_event= 7000003}
 			KAZ={country_event= 7000004}
+			TAJ={country_event= 7000004}
 			set_global_flag=The_agreement
 		}
 		ai_will_do = {

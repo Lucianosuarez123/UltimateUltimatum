@@ -247,6 +247,7 @@ political_decisions = {
 	offer_to_buy_semireche={
 		potential={
 			tag=KAZ
+			1188={NOT={owner=THIS}}
 			NOT={has_country_flag=Offered_semireche}
 		}
 		allow={

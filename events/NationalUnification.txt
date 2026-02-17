@@ -546,16 +546,47 @@ country_event={
 			duration=-1
 		}
 		money=500000
-		create_alliance= TAJ
+		create_alliance= TRM
 		create_alliance= UZB
 		create_alliance= KAZ
 		create_alliance= TAJ
 		create_alliance= KYR
+		remove_from_sphere = TAJ
+		remove_from_sphere = UZB
+		remove_from_sphere = KAZ
+		remove_from_sphere = KYR
+		remove_from_sphere = TRM
+		add_to_sphere = TRM
+		add_to_sphere = UZB
+		add_to_sphere = KAZ
+		add_to_sphere = TAJ
+		add_to_sphere = KYR
+		influence = {
+            who = TAJ
+            value = 100 
+        }
+				influence = {
+            who = UZB
+            value = 100 
+        }
+				influence = {
+            who = KAZ
+            value = 100  
+        }
+				influence = {
+            who = KYR
+            value = 100  
+        }
+						influence = {
+            who = TRM
+            value = 100  
+        }
+		
 		relation={who=TAJ value=200}
 		relation={who=UZB value=200}
 		relation={who=KAZ value=200}
 		relation={who=KYR value=200}
-		relation={who=TAJ value=200}
+		relation={who=TRM value=200}
 		prestige=100
 		
 	}
@@ -581,7 +612,7 @@ country_event={
 		create_alliance= TAJ
 		create_alliance= UZB
 		create_alliance= KAZ
-		create_alliance= TAJ
+		create_alliance= TRM
 		create_alliance= KYR
 		1208={add_core=TAJ}
 		1207={add_core=TAJ}
@@ -633,7 +664,7 @@ country_event={
 		create_alliance= TAJ
 		create_alliance= UZB
 		create_alliance= KAZ
-		create_alliance= TAJ
+		create_alliance= TRM
 		create_alliance= KYR
 	}
 }
@@ -665,7 +696,7 @@ country_event={
 		create_alliance= TAJ
 		create_alliance= UZB
 		create_alliance= KAZ
-		create_alliance= TAJ
+		create_alliance= TRM
 		create_alliance= KYR
 	}
 }
@@ -690,7 +721,7 @@ country_event={
 		create_alliance= TAJ
 		create_alliance= UZB
 		create_alliance= KAZ
-		create_alliance= TAJ
+		create_alliance= TRM
 		create_alliance= KYR
 	}
 }
