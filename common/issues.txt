@@ -441,16 +441,19 @@ social_reforms = {
 			minimum_wage = 0.40
 			administrative_multiplier = 2
 			global_immigrant_attract = 0.02
+			pop_consciousness_modifier = -0.02
 		}
 		acceptable_minimum_wage = {
 			minimum_wage = 0.60
 			administrative_multiplier = 3
 			global_immigrant_attract = 0.03
+			pop_consciousness_modifier = -0.03
 		}
 		good_minimum_wage = {
 			minimum_wage = 0.80
 			administrative_multiplier = 4
 			global_immigrant_attract = 0.04
+			pop_consciousness_modifier = -0.05
 		}
 	}
 	work_hours = {
@@ -471,6 +474,7 @@ social_reforms = {
 			middle_luxury_needs = -0.10
 			administrative_multiplier = 2
 			global_immigrant_attract = 0.02
+			pop_militancy_modifier = -0.04
 		}
 		ten_hours = {
 			factory_throughput = -0.15
@@ -478,6 +482,7 @@ social_reforms = {
 			middle_luxury_needs = -0.15
 			administrative_multiplier = 3
 			global_immigrant_attract = 0.03
+			pop_militancy_modifier = -0.06
 		}
 		eight_hours = {
 			factory_throughput = -0.20
@@ -485,6 +490,7 @@ social_reforms = {
 			middle_luxury_needs = -0.20
 			administrative_multiplier = 4
 			global_immigrant_attract = 0.04
+			pop_militancy_modifier = -0.08
 		}
 	}
 	safety_regulations = {
@@ -499,6 +505,7 @@ social_reforms = {
 			poor_everyday_needs = -0.05
 			administrative_multiplier = 1
 			global_immigrant_attract = 0.01
+			pop_militancy_modifier = -0.01
 		}
 		low_safety = {
 			factory_cost = 0.50
@@ -507,6 +514,8 @@ social_reforms = {
 			poor_everyday_needs = -0.10
 			administrative_multiplier = 2
 			global_immigrant_attract = 0.02
+			pop_militancy_modifier = -0.03
+			factory_maintenance = 0.1
 		}
 		acceptable_safety = {
 			factory_cost = 0.75
@@ -515,6 +524,8 @@ social_reforms = {
 			poor_everyday_needs = -0.15
 			administrative_multiplier = 3
 			global_immigrant_attract = 0.03
+			pop_militancy_modifier = -0.05
+			factory_maintenance = 0.15
 		}
 		good_safety = {
 			factory_cost = 1.0
@@ -523,6 +534,8 @@ social_reforms = {
 			poor_everyday_needs = -0.20
 			administrative_multiplier = 4
 			global_immigrant_attract = 0.04
+			pop_militancy_modifier = -0.8
+			factory_maintenance = 0.2
 		}
 	}
 	
@@ -577,21 +590,25 @@ social_reforms = {
 			global_population_growth = 0.005
 			administrative_multiplier = 1
 			global_immigrant_attract = 0.01
+			factory_maintenance = 0.05
 		}
 		low_health_care = {
 			global_population_growth = 0.0075
 			administrative_multiplier = 2
 			global_immigrant_attract = 0.02
+			factory_maintenance = 0.1
 		}
 		acceptable_health_care = {
 			global_population_growth = 0.01
 			administrative_multiplier = 3
 			global_immigrant_attract = 0.03
+			factory_maintenance = 0.15
 		}
 		good_health_care = {
 			global_population_growth = 0.015
 			administrative_multiplier = 4
 			global_immigrant_attract = 0.04
+			factory_maintenance = 0.3
 		}
 	}
 
@@ -639,13 +656,15 @@ social_reforms = {
 		next_step_only = yes
 		administrative = yes
 		outlawed_hs = {
-
+			pop_growth=0.0001
 		}
 		accepted_hs = {
 			prestige = 0.05
+
 		}
 		law_accepted_hs = {
 			prestige = 0.1
+			pop_growth=-0.0002
 		}
 	}
 	child_reforms = {

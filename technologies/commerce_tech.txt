@@ -4,7 +4,6 @@ commercial_revolution_ends = {
 	area = financial_institutions
 	year = 1714
 	cost = 10000
-
 	RGO_throughput = 0.03
 	ai_chance = {
 		factor = 1.05
@@ -499,8 +498,6 @@ early_exchange_rates = {
 	area = monetary_system
 	year = 1800
 	cost = 16400
-
-
 	administrative_efficiency = 0.05
 	ai_chance = {
 		factor = 1.1
@@ -801,7 +798,6 @@ private_bank_money_bill_printing = {
 	area = monetary_system
 	year = 1850
 	cost = 20400
-
 	administrative_efficiency = 0.05
 	ai_chance = {
 		factor = 1.1
@@ -955,7 +951,6 @@ scientific_management = {
 	area = monetary_system
 	year = 1869
 	cost = 45200
-
 	factory_output = 0.01
 	ai_chance = {
 		factor = 1.05

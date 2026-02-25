@@ -1,0 +1,50 @@
+country_events = {
+	country_event = {
+		id = 99998
+		title = "join_brics_event_title"
+		desc = "join_brics_event_desc"
+		picture = "alliance_nato"
+		is_triggered_only = yes
+		major = yes
+
+		option = {
+			name = "Welcome to BRICS"
+			prestige = 10
+		}
+	}
+
+	country_event = {
+		id = 999003
+		title = "BRICS Alliance Reinforced"
+		desc = "Our BRICS partnerships remain strong, but we must repair broken alliances."
+		picture = "alliance_nato"
+
+		trigger = {
+			has_country_flag = brics_member
+			any_country = {
+				limit = {
+					has_country_flag = brics_member
+					NOT = { tag = THIS }
+				}
+				NOT = { alliance_with = THIS }
+			}
+		}
+
+		mean_time_to_happen = {
+			days = 5
+		}
+
+		option = {
+			name = "Restore our BRICS alliances"
+			any_country = {
+				limit = {
+					has_country_flag = brics_member
+					NOT = { tag = THIS }
+					NOT = { alliance_with = THIS }
+				}
+				create_alliance = THIS
+				relation = { who = THIS value = 150 }
+			}
+		}
+	}
+}

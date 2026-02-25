@@ -463,11 +463,11 @@ luxury_clothes_factory = {
 	template = factory_template
 	input_goods = {   
 		regular_clothes = 0.9	#5.22
-		silk = 3.9		#39	total input+maint = 54
-		dye=5
+		silk = 3.2		#39	total input+maint = 54
+		dye=4.2
 	}
 	output_goods = luxury_clothes 
-	value = 1			#65
+	value = 1.25			#65
 	bonus = {
 		trigger = { has_building = regular_clothes_factory }
 		value = 0.2

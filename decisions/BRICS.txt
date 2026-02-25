@@ -1,0 +1,126 @@
+political_decisions = {
+	establish_brics = {
+		picture = "brics"
+		title = "establish_brics_title"
+		desc = "establish_brics_desc"
+
+		potential = {
+			NOT = { has_global_flag = established_brics }
+			OR = {
+				tag = BRZ
+				tag = RUS
+				tag = HND
+				tag = CHI
+				tag = SAF
+			}
+		}
+
+		allow = {
+			year = 2006
+            prestige=100
+			war = no
+			OR = {
+				tag = BRZ
+				tag = RUS
+				tag = HND
+				tag = CHI
+				tag = SAF
+			}
+		}
+
+		effect = {
+			set_global_flag = established_brics
+			set_country_flag = brics_member
+			add_country_modifier = { name = brics_member duration = -1 }
+			country_event = 99998
+			prestige = 10
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	join_brics = {
+		picture = "brics"
+		title = "join_brics_title"
+		desc = "join_brics_desc"
+
+		potential = {
+			has_global_flag = established_brics
+			NOT = { has_country_flag = brics_member }
+			OR = {
+				tag = BRZ
+				tag = RUS
+				tag = HND
+				tag = CHI
+				tag = SAF
+			}
+		}
+
+		allow = {
+			war = no
+			OR = {
+				tag = BRZ
+				tag = RUS
+				tag = HND
+				tag = CHI
+				tag = SAF
+			}
+		}
+
+		effect = {
+			set_country_flag = brics_member
+			add_country_modifier = { name = brics_member duration = -1 }
+			country_event = 99998
+			any_country = {
+				limit = {
+					has_country_flag = brics_member
+					NOT = { tag = THIS }
+				}
+				create_alliance = THIS
+				relation = { who = THIS value = 150 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	leave_brics = {
+		picture = "brics"
+		title = "leave_brics_title"
+		desc = "leave_brics_desc"
+
+		potential = {
+			has_country_flag = brics_member
+		}
+
+		allow = {
+			has_country_flag = brics_member
+			OR = {
+				is_vassal = yes
+				relation = { who = BRZ value = -150 }
+				relation = { who = RUS value = -150 }
+				relation = { who = HND value = -150 }
+				relation = { who = CHI value = -150 }
+				relation = { who = SAF value = -150 }
+			}
+		}
+
+		effect = {
+			clr_country_flag = brics_member
+			remove_country_modifier = brics_member
+			any_country = {
+				limit = { has_country_flag = brics_member }
+				relation = { who = THIS value = -100 }
+				leave_alliance = THIS
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

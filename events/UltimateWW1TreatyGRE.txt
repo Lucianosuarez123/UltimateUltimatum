@@ -99,7 +99,10 @@ GRE = {
 GRE = {
 release = BUL
 prestige = -5000
-neutrality = yes
+add_country_modifier = {
+	name = neutrality
+	duration = 3650
+}
 
 relation = {
 	who = FRA

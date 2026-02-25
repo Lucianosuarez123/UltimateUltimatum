@@ -1996,3 +1996,23 @@ kaz_prov={
 	pop_consciousness_modifier = 0.01
 	icon=1
 }
+
+brics_member={
+	factory_output = 0.05
+	factory_input = -0.03
+	rgo_throughput = 0.03
+	tax_efficiency = 0.02
+	tariff_efficiency = 0.02
+	icon = 26
+}
+
+nato_member={
+	research_points_modifier = 0.02
+	prestige = 0.25
+	leadership_modifier = 0.02
+	diplomatic_influence = 0.1
+	land_organisation = 0.01
+	naval_organisation = 0.01
+	badboy = -0.01
+	icon = 26
+}

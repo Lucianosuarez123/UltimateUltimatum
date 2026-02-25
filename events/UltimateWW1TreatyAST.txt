@@ -70,7 +70,10 @@ AST = {
 
 AST = {
 prestige = -5000
-neutrality = yes
+add_country_modifier = {
+	name = neutrality
+	duration = 3650
+}
 
 relation = {
 	who = FRA

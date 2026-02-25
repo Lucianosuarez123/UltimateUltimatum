@@ -764,6 +764,7 @@ USA_247={add_core=USA}
 				has_country_flag = you_did_try
 			}
 			tag = USA
+			4={owned_by=RUS}
 		}
 		
 		allow = {

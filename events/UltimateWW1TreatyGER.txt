@@ -638,7 +638,10 @@ government = democracy
 		political_reform = all_trade_unions
 		political_reform = secret_ballots
        prestige = -5000
-neutrality = yes
+add_country_modifier = {
+	name = neutrality
+	duration = 3650
+}
 
 relation = {
 	who = KUK

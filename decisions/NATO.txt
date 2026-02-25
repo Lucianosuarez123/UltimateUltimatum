@@ -1,9 +1,44 @@
 political_decisions = {
+	establish_nato = {
+		picture = "alliance_nato"
+		title = "establish_nato_title"
+		desc = "establish_nato_desc"
+		
+		potential = {
+			tag = USA
+			year = 1949
+			NOT={has_country_flag=establish_nato}
+		}
+		
+		allow = {
+			tag = USA
+			year = 1949
+		}
+		
+		effect = {
+			prestige = 50
+			set_country_flag=establish_nato
+			set_global_flag=established_nato
+			news = yes
+			news_desc_long = "form_nato_NEWS_LONG"
+			news_desc_medium = "form_nato_NEWS_MEDIUM"
+			news_desc_short = "form_nato_NEWS_SHORT"
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	alliance_nato = {
 			picture = "alliance_nato"
+			title = "alliance_nato_title"
+			desc = "alliance_nato_desc"
 			potential = {
-				has_global_flag = establish_west_germany
+				NOT={has_country_flag=establish_nato}
+				has_global_flag=established_nato
 				is_vassal = no
+				uncivilized=no
 				NOT =  { in_sphere = RUS }					
 				NOT =  { tag = RUS }	
 				NOT = { has_country_flag = nato_flag_member }	
@@ -54,12 +89,12 @@ political_decisions = {
 				war = no
 				relation = { who = USA value = 15 } 
 				OR = { government = democracy government = hms_government }
+				NOT = { has_country_modifier = neutrality }
 
 			}
 
 			effect = {
-				set_country_flag = nato_flag_member
-				set_global_flag = nato_joined
+				set_country_flag = nato_flag_member			add_country_modifier = { name = nato_member duration = -1 }				country_event = 99999
 				random_country = {
 					limit = {
 						tag = THIS
@@ -74,6 +109,19 @@ political_decisions = {
 					relation = { who = THIS value = 200 }
 					create_alliance = THIS
 				}
+				
+				# Put secondary or civilized countries into USA sphere
+				if = {
+					limit = {
+						OR = {
+							is_secondary_power = yes
+							uncivilized=no
+						}
+					}
+					USA = {
+						add_country_to_sphere = THIS
+					}
+				}
 			}
 		ai_will_do = {
 			factor = 1
@@ -84,45 +132,30 @@ political_decisions = {
 			picture = "alliance_nato"
 			potential = {
 			has_country_flag = nato_flag_member
-				NOT = { 
-					OR = { 
-					tag = USA
-					alliance_with = USA
-					in_sphere = USA
-					sphere_owner = { has_country_flag = nato_flag_member }
-					}
-				}
 			}
 
 			allow = {
 			has_country_flag = nato_flag_member
-				NOT = { 
-					OR = { 
-					tag = USA
-					alliance_with = USA
-					in_sphere = USA
-					sphere_owner = { has_country_flag = nato_flag_member }
-					}
-				}
 				OR = { 
 					is_vassal = yes
-					NOT = { OR = { government = democracy government = hms_government } }
-					NOT = { relation = { who = USA value = -100 } }
+					ruling_party_ideology = communist
+					ruling_party_ideology = fascist
+					relation = { who = USA value = -150 }
 				}
 			}
 
 			effect = {
-			clr_country_flag = nato_flag_member	
-			set_country_flag = leave_alliance_nato
-				any_country = { 
-			limit = { has_country_flag = nato_flag_member }
-					relation = { who = THIS value = -50 }
-					leave_alliance = THIS
-				}
+			clr_country_flag = nato_flag_member
+			remove_country_modifier = nato_member
+			any_country = { 
+				limit = { has_country_flag = nato_flag_member }
+				relation = { who = THIS value = -100 }
+				leave_alliance = THIS
+			}
 				
 			}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}		
 	}
 }

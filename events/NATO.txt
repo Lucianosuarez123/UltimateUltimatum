@@ -1,0 +1,71 @@
+country_events = {
+	country_event = {
+		id = 99999
+		title = "join_nato_title"
+		desc = "join_nato_event_desc"
+		picture = "alliance_nato"
+		is_triggered_only = yes
+		major = yes
+		
+		option = {
+			name = "Welcome to NATO"
+			prestige = 25
+		}
+	}
+
+	country_event = {
+		id = 999001
+		title = "NATO Alliance Reinforced"
+		desc = "Our alliance with NATO members remains strong, but we must repair broken alliances."
+		picture = "alliance_nato"
+		
+		trigger = {
+			has_country_flag = nato_flag_member
+			OR = {
+				NOT = { alliance_with = USA }
+				any_country = {
+					limit = {
+						has_country_flag = nato_flag_member
+						NOT = { tag = THIS }
+					}
+					NOT = { alliance_with = THIS }
+				}
+			}
+		}
+		
+		mean_time_to_happen = {
+			days = 5
+		}
+		
+		option = {
+			name = "Restore our NATO alliances"
+			
+			# Recreate alliances with USA if broken
+			any_country = {
+				limit = {
+					tag = USA
+				}
+				create_alliance = THIS
+			}
+			
+			# Recreate alliances with other NATO members if broken
+			any_country = {
+				limit = {
+					has_country_flag = nato_flag_member
+					NOT = { tag = THIS }
+					NOT = { alliance_with = THIS }
+				}
+				create_alliance = THIS
+				relation = { who = THIS value = 200 }
+			}
+			
+			# Strengthen relations with all NATO members
+			any_country = {
+				limit = {
+					has_country_flag = nato_flag_member
+				}
+				relation = { who = THIS value = 200 }
+			}
+		}
+	}
+}

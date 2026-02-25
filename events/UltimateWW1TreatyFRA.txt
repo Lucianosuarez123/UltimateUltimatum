@@ -61,7 +61,7 @@ has_global_flag = WW1inprogress
 		any_country = {
 end_war = FRA }
 set_country_flag = entente_lost_war
-inherit = FNA
+
 
 FRA = {
 905 = {
@@ -460,7 +460,10 @@ FRA = {
 FRA = {
 prestige = -5000
 
-neutrality = yes
+add_country_modifier = {
+	name = neutrality
+	duration = 3650
+}
 
 relation = {
 	who = ENG

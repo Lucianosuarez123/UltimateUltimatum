@@ -745,7 +745,7 @@ napoleonic_wars_experience = {
 	military_tactics = 0.25
 
 	army_base = {
-		supply_consumption = 0.20
+		supply_consumption = -0.15
 	}
 	
 	ai_chance = {
@@ -883,7 +883,7 @@ post_napoleonic_cannons = {
 
 	army_base = {
 		default_organisation = 5
-		supply_consumption = 0.10
+		supply_consumption = -0.08
 	}
 	dig_in_cap = 1
 	
@@ -930,7 +930,7 @@ modern_army_professionalism = {
 	military_tactics = 0.25
 	
 	army_base = {
-		supply_consumption = 0.10
+		supply_consumption = -0.08
 		discipline = 0.25
 	}
 	ai_chance = {
@@ -1029,7 +1029,7 @@ late_century_plans = {
 	
 	army_base = {
 		default_organisation = 5
-		supply_consumption = 0.10
+		supply_consumption = -0.08
 	}
 	
 	ai_chance = {
@@ -1116,7 +1116,7 @@ strategic_mobility = {
 	
 	army_base = {
 		default_organisation = 5
-		supply_consumption = 0.15
+		supply_consumption = -0.10
 	}
 	max_fort = 1
 	dig_in_cap = 1
@@ -1175,7 +1175,7 @@ tactical_decision_making = {
 	military_tactics = 0.25
 
 	army_base = {
-	supply_consumption = 0.20
+	supply_consumption = -0.12
 	}
 	
 	ai_chance = {
@@ -1272,7 +1272,7 @@ military_statistics = {
 	
 	army_base = {
 		default_organisation = 5
-		supply_consumption = 0.20
+		supply_consumption = -0.12
 	}
 	
 	ai_chance = {
@@ -1565,7 +1565,7 @@ late_century_logistics = {
 	
 	army_base = {
 		default_organisation = 5
-		supply_consumption = 0.20
+		supply_consumption = -0.15
 	}
 	mobilisation_size = 0.1
 	
@@ -1796,7 +1796,7 @@ infiltration = {
 	unciv_military = yes
 		
 	army_base = {
-		supply_consumption = 0.20
+		supply_consumption = -0.12
 	} 
 	max_fort = 1
 	dig_in_cap = 1
@@ -1890,7 +1890,7 @@ hardened_field_fortification = {
 	
 	army_base = {
                 default_organisation = 2.5
-		        supply_consumption = 0.10
+		        supply_consumption = -0.08
 	}
     engineer = {
                 support = 0.25
@@ -1994,9 +1994,8 @@ military_academy = {
 	army_base = {
                 discipline = 0.25
                 default_organisation = 5
-		        supply_consumption = 0.10
-	}
-
+	        		supply_consumption = -0.06
+		        }
 	ai_chance = {
 		factor = 1.5
 		modifier = {
@@ -2017,7 +2016,7 @@ military_academy = {
 			year = 1860
 		}
 	}
-}
+	}
 pre_war_heavy_arms = {
 	area = heavy_armament
 	year = 1913
@@ -2259,9 +2258,9 @@ great_war_experience = {
 	military_tactics = 0.25
 
 	army_base = {
-		supply_consumption = 0.20
-	}
-	
+			supply_consumption = -0.08
+			}
+
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -2308,12 +2307,10 @@ modern_army_doctrine = {
 	unciv_military = yes
 	
 	army_base = {
-		supply_consumption = 0.20
-	} 
-	
+			supply_consumption = -0.08
+			}
 	max_fort = 1
-	dig_in_cap = 1
-	
+	dig_in_cap = 1		
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -2354,6 +2351,9 @@ modern_divisional_structure = {
 	unciv_military = yes
 
 	combat_width = -1
+	army_base = {
+		supply_consumption = 0.10
+	}
 	
 		ai_chance = {
 		factor = 1.1
@@ -2443,10 +2443,9 @@ global_communications = {
 	military_tactics = 0.25
 
 	army_base = {
-		supply_consumption = 0.20
-	}
-	
-	ai_chance = {
+			supply_consumption = -0.08
+			}
+		ai_chance = {
 		factor = 1.1
 		modifier = {
 			factor = 1.5
@@ -2483,12 +2482,11 @@ rocket_science = {
 	area = military_science
 	year = 1929
 	cost = 31200
+	unciv_military = yes
 	army_base = {
 		default_organisation = 10
-		supply_consumption = 0.20
+		supply_consumption = -0.10
 	}
-	
-	unciv_military = yes
 	
 	ai_chance = {
 		factor = 1.1
@@ -2501,6 +2499,10 @@ rocket_science = {
 			tech_school = army_tech_school
 		}
 		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
 			factor = 1.02
 			civilized = yes
 			any_neighbor_country = {
@@ -2508,10 +2510,6 @@ rocket_science = {
 				NOT = { is_greater_power = yes }
 				military_score = THIS
 			}
-		}
-		modifier = {
-			factor = 1.05
-			war = yes
 		}
 		modifier = {
 			factor = 1.5
@@ -2530,7 +2528,7 @@ border_fortification = {
 	unciv_military = yes
 	army_base = {
                 default_organisation = 2.5
-	            supply_consumption = 0.10
+	            supply_consumption = 0.2
 	}
     engineer = {
                 support = 0.25
@@ -2884,12 +2882,11 @@ main_field_operating_base = {
 		}
 	}
 }
- _weaponry = {
+ weaponry = {
 	area = military_science
 	year = 1945
 	cost = 34400
 	unciv_military = yes
-	diplomatic_points = 0.50
 	combat_width = -2
 	dig_in_cap = 3
 	morale = 0.5
@@ -3042,7 +3039,7 @@ assymetric_warfare = {
 	
 	activate_unit = specops
 	army_base = {
-		supply_consumption = 0.20
+		supply_consumption = -0.20
 	} 
 	
 	dig_in_cap = 1
@@ -3097,7 +3094,7 @@ redesigned_heavy_ordnance = {
     }
     hussar = {
             support = 0.25
-            supply_consumption = 0.10
+            supply_consumption = -0.10
     }
 	
 	ai_chance = {
@@ -3142,7 +3139,7 @@ modern_light_armament = {
 	combat_width = -2
     army_base = {
                 default_organisation = 2.5
-                supply_consumption = 0.10
+                supply_consumption = -0.10
     }
 	
 	ai_chance = {
@@ -3239,7 +3236,7 @@ modern_heavy_armament = {
     }
     hussar = {
             support = 0.25
-            supply_consumption = 0.10
+            supply_consumption = -0.10
     }
 	
 	ai_chance = {
@@ -3341,7 +3338,7 @@ cyber_integrated_training = {
     military_tactics = 0.25
 	army_base = {
                 discipline = 0.25
-		        supply_consumption = 0.10
+		        supply_consumption = -0.50
                 default_organisation = 5
 	}
 	
@@ -3430,11 +3427,11 @@ heavy_arms_cyber_integration = {
 	unciv_military = yes
     artillery = {
                 support = 0.25
-                supply_consumption = 0.10
+                supply_consumption = -0.10
     }
     hussar = {
             support = 0.25
-            supply_consumption = 0.10
+            supply_consumption = -0.10
     }
 	
 	ai_chance = {
@@ -3478,7 +3475,7 @@ battlespace_digitisation = {
     army_base = {
                 maximum_speed = 1
                 default_organisation = 5
-                supply_consumption = 0.20
+                supply_consumption = -0.20
     }
 	
 	ai_chance = {
@@ -3525,7 +3522,7 @@ modern_army_base = {
 	} 
 	army_base = {
                 default_organisation = 2.5
-		        supply_consumption = 0.10
+		        supply_consumption = -0.10
 	} 
 	max_fort = 1
 	dig_in_cap = 1
@@ -3658,7 +3655,7 @@ drone_warfare = {
 	unciv_military = yes
 	army_base = {
 		default_organisation = 10
-		supply_consumption = 0.20
+		supply_consumption = -0.20
 	}
 	
 	ai_chance = {
@@ -3747,7 +3744,7 @@ AI_ground_leadership = {
 	morale = 0.5
 	military_tactics = 0.25
 	army_base = {
-		supply_consumption = 0.15
+		supply_consumption = -0.25
 	}
 	ai_chance = {
 		factor = 1.1

@@ -6,7 +6,7 @@ standing_army = {
 	unciv_military = yes
 	army_base = {
 		default_organisation = 5
-		supply_consumption = 0.10
+		supply_consumption = 0.1
 	}
 	
 	ai_chance = {
