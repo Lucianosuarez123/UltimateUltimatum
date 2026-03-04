@@ -534,7 +534,7 @@ social_reforms = {
 			poor_everyday_needs = -0.20
 			administrative_multiplier = 4
 			global_immigrant_attract = 0.04
-			pop_militancy_modifier = -0.8
+			pop_militancy_modifier = -0.08
 			factory_maintenance = 0.2
 		}
 	}
@@ -656,7 +656,7 @@ social_reforms = {
 		next_step_only = yes
 		administrative = yes
 		outlawed_hs = {
-			pop_growth=0.0001
+			global_population_growth = 0.0075
 		}
 		accepted_hs = {
 			prestige = 0.05
@@ -664,7 +664,7 @@ social_reforms = {
 		}
 		law_accepted_hs = {
 			prestige = 0.1
-			pop_growth=-0.0002
+			global_population_growth = -0.0075
 		}
 	}
 	child_reforms = {
@@ -681,6 +681,7 @@ social_reforms = {
 		illegal_child = {
 			global_immigrant_attract = 0.01
 			prestige = 0.05
+			global_population_growth = 0.0075
 		}
 	}
 	women_reforms = {

@@ -329,3 +329,24 @@ country_event = {
 		#
 	}
 }
+
+# Force AI Great Powers to take part in active crises
+country_event = {
+	id = 20106
+	hide_window = yes
+	trigger = {
+		ai = yes
+		crisis_exist = yes
+		is_greater_power = yes
+		NOT = { involved_in_crisis = yes }
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = "EVTOPTA20000"
+		add_crisis_interest = yes
+	}
+}

@@ -345,7 +345,7 @@ political_decisions = {
 			NOT={has_country_flag=an_empire_reborn}
 		}
 		allow = {
-				prestige=500
+				prestige=100
 			}
 		effect={
 			prestige=100
@@ -390,10 +390,9 @@ political_decisions = {
 			tag=FRA
 			has_country_flag=an_empire_reborn
 			NOT={has_country_flag=dual_monarchy_proclamation}
-			FRA={all_core={owned_by=THIS}}
 			}
 		allow={
-			prestige=800
+			FRA={all_core={owned_by=THIS}}
 		}
 		effect={
 			set_country_flag=dual_monarchy_proclamation

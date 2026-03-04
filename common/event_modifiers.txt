@@ -1866,6 +1866,12 @@ number_of_voters = -1
 icon = 20
 }
 
+virreinato_anti_immigration_1604 = {
+	global_immigrant_attract = -20000
+	immigrant_push = -20000
+	icon = 17
+}
+
 ### Lucky Nation ###
 
 lucky_nation = {
@@ -1915,24 +1921,28 @@ Very_Hard_ia={
 	mine_rgo_eff = 0.15
 	farm_rgo_eff = 0.15
 	research_points_modifier = 8.5
-	land_organisation = 1.5
-	naval_organisation = 1.5
-	leadership_modifier = 1.5
+	land_organisation = 2.0
+	naval_organisation = 2.0
+	leadership_modifier = 3.0
 	global_pop_militancy_modifier = -0.5
 	factory_output = 0.25
 	factory_cost = -0.25
-	tax_efficiency = 5
+	tax_efficiency = 30
 	population_growth = 0.3
+	war_exhaustion = -2.0
+	org_regain = 2.0
 	icon = 18
 }
 Hard_ia={
-	badboy = -2.0
-	research_points_modifier = 0.75
-	land_organisation = 0.4
-	naval_organisation = 0.4
-	leadership_modifier = 1.0
-	global_pop_militancy_modifier = -0.1
-	factory_output = 0.2
+	badboy = -5.0
+	research_points_modifier = 1.0
+	tax_efficiency = 10.0
+	population_growth = 0.1
+	war_exhaustion = -0.5
+	land_organisation = 0.5
+	naval_organisation = 0.5
+	leadership_modifier = 0.5
+	org_regain = 0.5
 	icon = 18
 }
 easy_ia={
@@ -2002,7 +2012,7 @@ brics_member={
 	factory_input = -0.03
 	rgo_throughput = 0.03
 	tax_efficiency = 0.02
-	tariff_efficiency = 0.02
+	administrative_efficiency = 0.02
 	icon = 26
 }
 

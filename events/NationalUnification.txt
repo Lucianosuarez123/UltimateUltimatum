@@ -603,7 +603,7 @@ country_event={
 	}
 	option = {
 		name = "Agreement of five stans"
-		prestige=20
+		prestige=5
 		add_country_modifier={
 			name=five_stans
 			duration=-1
@@ -636,7 +636,7 @@ country_event={
 	}
 	option = {
 		name = "Agreement!"
-		prestige=100
+		prestige=20
 		money=100000
 	add_country_modifier={
 			name=five_stans
@@ -712,7 +712,7 @@ country_event={
 	}
 	option = {
 		name = "Agreement!"
-		prestige=20
+		prestige=5
 		money=12000
 	add_country_modifier={
 			name=five_stans

@@ -1176,7 +1176,7 @@ unir_India_ai={
 			ENG={all_core={owned_by=THIS}}
 			}
 		allow={
-			prestige=800
+			prestige=100
 			state_n_government=1
 		}
 		effect={

@@ -9,6 +9,7 @@ government = hms_government
 plurality = 30
 nationalvalue = nv_order
 literacy = 0.22
+is_releasable_vassal = no
 civilized = yes
 prestige = 75
 oob = "/1604/ENG_oob.txt"

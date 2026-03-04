@@ -257,7 +257,7 @@ low_conquest = {
 		THIS = { NOT = { has_country_modifier = neutrality } }
 		NOT = { has_country_modifier = neutrality }
 		# target has 1-2 states
-		number_of_states = 2
+		number_of_states = 1
 		NOT = { number_of_states = 3 }
 		OR = {
 			AND = {
@@ -369,7 +369,7 @@ big_conquest = {
 		THIS = { NOT = { has_country_modifier = neutrality } }
 		NOT = { has_country_modifier = neutrality }
 		number_of_states = 7
-		NOT = { number_of_states = 10000 }
+		NOT = { number_of_states = 10 }
 		OR = {
 			AND = {
 				civilized = yes

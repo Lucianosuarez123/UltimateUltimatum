@@ -1301,6 +1301,9 @@ cracking = {
 		activate_building = fuel_refinery 
 	}
 }
+
+
+
 #electricity
 x_rays = {
 	limit = { electricity = 1 }
@@ -1421,7 +1424,28 @@ bakelite = {
 		} 
 	}
 }
-
+synthetic_rubber_process = {
+	limit = {
+		synthetic_polymers = 1
+	}
+	chance = {
+		base = 1
+		modifier = {
+			factor = 2
+			invention = cracking
+		}
+		modifier = {
+			factor = 2
+			invention = oil_pumping_machinery
+		}
+	}
+	effect = {
+		activate_building = synthetic_rubber_factory
+		factory_goods_output = {
+			rubber  = 0.05
+		} 
+	}
+}
 vacuum_tube = {
 	limit = { 
 		electricity = 1
