@@ -137,9 +137,9 @@ promotion_focus =
 		icon = 32
 		outliner_show_as_percent = yes
 		limit = {
-			OR = {
-				has_country_modifier = moon_mission_mod
-				has_country_modifier = mars_mission_mod
+			OR={
+			has_country_modifier = mars_mission_mod
+			has_country_modifier = moon_mission_mod
 			}
 		}
 	}
