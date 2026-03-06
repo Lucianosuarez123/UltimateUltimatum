@@ -133,10 +133,15 @@ promotion_focus =
 
 	promote_spacecolonists =
 	{
-		spacecolonists = 0.20 #20% more likeley to become this type
+		spacecolonists = 0.20 # Enabled only after Moon/Mars colony is established
 		icon = 32
 		outliner_show_as_percent = yes
-		limit = { year = 2000 }
+		limit = {
+			OR = {
+				has_country_modifier = moon_mission_mod
+				has_country_modifier = mars_mission_mod
+			}
+		}
 	}
 }
 

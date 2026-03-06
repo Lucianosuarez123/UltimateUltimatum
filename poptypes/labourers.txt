@@ -1034,10 +1034,15 @@ spacecolonists = {
 		}
 		modifier = {
 			factor = -1000
-			NOT = {
-				year = 2000
-				}
+			country = {
+				NOT = {
+					OR = {
+						has_country_modifier = moon_mission_mod
+						has_country_modifier = mars_mission_mod
 					}
+				}
+			}
+		}
 		modifier = {
 			factor = -100
 			NOT = {
