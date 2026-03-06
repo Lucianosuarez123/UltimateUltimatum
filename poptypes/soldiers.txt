@@ -431,7 +431,7 @@ spacecolonists = {
 			state_scope = {
 				NOT = {
 					OR={
-					has_country_modifier=moon_mission_mod
+					has_country_modifier =  moon_mission_mod
 					has_country_modifier = mars_mission_mod
 					}
 					
