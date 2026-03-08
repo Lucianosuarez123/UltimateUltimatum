@@ -11,6 +11,7 @@ country_event = {
 tag = SER
 year = 2002
 militancy = 3
+
 NOT  = {
 exists = MON 
  }
@@ -43,10 +44,16 @@ id = 4000056
 picture = "Kosovo"
 title = "Kosovo declare independence"
 desc = "Kosovo, a region on our south with many muslims from Albania wants independence what to do?If we declare war we risk war with Albania remember that"
+fire_only_once = yes
 trigger = {
 tag = SER
 exists = MON
 year = 2005
+AND={
+802={owned_by=SER}
+803={owned_by=SER}
+804={owned_by=SER}
+}
 
 NOT = {
 
