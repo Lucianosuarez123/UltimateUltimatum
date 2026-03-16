@@ -5,11 +5,11 @@ trade_goods = fish
 life_rating = 30
 colonial = 2
 1905.1.1 = {
-	owner = USA
-	controller = USA
-	remove_core = SPA
-		}
+  owner = USA
+  controller = USA
+  remove_core = SPA
+}
 2020.1.1 = {
-	owner = KOR
-	controller = KOR
-		}
+  owner = KOR
+  controller = KOR
+}

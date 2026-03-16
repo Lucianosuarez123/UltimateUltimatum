@@ -5,20 +5,20 @@ add_core = REH
 trade_goods = cattle
 
 
-1604.1.1 = { 
-owner = BAV
-controller = BAV
+1604.1.1 = {
+  owner = BAV
+  controller = BAV
 }
 1806.8.6 = { remove_core = REH }
-1871.1.1 = { 
-owner = GER		
-controller = GER
+1871.1.1 = {
+  owner = GER
+  controller = GER
 }
-1945.12.12 = { 
-owner = USA
-controller = USA
+1945.12.12 = {
+  owner = USA
+  controller = USA
 }
-1950.1.1 = { 
-owner = GER
-controller = GER
+1950.1.1 = {
+  owner = GER
+  controller = GER
 }

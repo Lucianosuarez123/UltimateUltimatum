@@ -1,11 +1,5 @@
-    FRA = {
-            value = 25
-    }
-     
-    ENG = {
-            value = 25
-    }
-     
-    ANG = {
-            value = 25
-    }
+FRA = { value = 25 }
+
+ENG = { value = 25 }
+
+ANG = { value = 25 }

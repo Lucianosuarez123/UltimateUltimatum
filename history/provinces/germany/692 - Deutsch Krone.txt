@@ -7,23 +7,23 @@ trade_goods = grain
 life_rating = 40
 
 1772.9.22 = {
-owner = PRU
-controller = PRU
+  owner = PRU
+  controller = PRU
 }
 1861.1.1 = { railroad = 3 }
-1870.1.1 = { 
-owner = NGF	
-controller = NGF
-add_core = NGF
+1870.1.1 = {
+  owner = NGF
+  controller = NGF
+  add_core = NGF
 }
-1871.1.1 = { 
-owner = GER	
-controller = GER
-remove_core = NGF
+1871.1.1 = {
+  owner = GER
+  controller = GER
+  remove_core = NGF
 }
 #End of WW2
 1945.5.1 = {
-owner = POL
-controller = POL
-add_core = POL
+  owner = POL
+  controller = POL
+  add_core = POL
 }

@@ -19,9 +19,9 @@ remove_core = MNG
 }
 
 1910.1.1 = {
-	owner = CHI	
-	controller = CHI
-		}
+    owner = CHI
+    controller = CHI
+        }
 
 1923.1.1 = {
 owner = HUI
@@ -36,16 +36,10 @@ add_core = NCN
 
 
 1950.1.1 = {
-	owner = CHI
-	controller = CHI
-	state_building = {
-		level = 1
-		building = machine_parts_factory
-		upgrade = yes
-		}
-
-
-
-
-
-
+    owner = CHI
+    controller = CHI
+    state_building = {
+        level = 1
+        building = machine_parts_factory
+        upgrade = yes
+        }

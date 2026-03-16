@@ -7,15 +7,15 @@ add_core = REH
 trade_goods = timber
 life_rating = 35
 1809.1.1 = {
-	owner = FRA
-	controller = FRA
-		}
+  owner = FRA
+  controller = FRA
+}
 1815.1.1 = {
-	owner = MOD
-	controller = MOD
-		}
+  owner = MOD
+  controller = MOD
+}
 1861.1.1 = {
-	controller = ITA
-	owner = ITA
-	add_core = ITA
+  controller = ITA
+  owner = ITA
+  add_core = ITA
 }

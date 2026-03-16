@@ -11,11 +11,11 @@ is_releasable_vassal = no
 
 ruling_party = REH_conservative
 upper_house = {
-	fascist = 0
-	liberal = 0
-	conservative = 95
-	reactionary = 5
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+  fascist = 0
+  liberal = 0
+  conservative = 95
+  reactionary = 5
+  anarcho_liberal = 0
+  socialist = 0
+  communist = 0
 }

@@ -3,20 +3,17 @@ controller = KNR
 add_core = KNR
 
 1903.1.1 = {
-		owner = ENG
-		controller = ENG
-		colonial = 2
-		}
+  owner = ENG
+  controller = ENG
+  colonial = 2
+}
 
 
 trade_goods = fish
 life_rating = 15
-1903.2.2 = {
-	add_core = NGA
-		}
+1903.2.2 = { add_core = NGA }
 1960.1.1 = {
-	owner = NGA
-	controller = NGA
-	colonial = 0
-
-		}
+  owner = NGA
+  controller = NGA
+  colonial = 0
+}

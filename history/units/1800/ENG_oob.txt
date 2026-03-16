@@ -1,14 +1,14 @@
 ﻿}
 army = {
-	name = "British Garison"
+    name = "British Garison"
         location = 300
         leader = {
                 name = "Sir William Medows"
                 type = land
                 date="1800.1.1"
                 prestige = 0.1
-		personality = aggressive
-		background = school_of_offense
+        personality = aggressive
+        background = school_of_offense
                 picture="european_general_43"
         }
         regiment = {
@@ -52,7 +52,7 @@ army = {
                 type = land
                 date="1800.1.1"
                 prestige = 0.1
-                personality = clever 
+                personality = clever
                 background = gifted_administrator
                 picture="wellington_generalpic"
         }
@@ -93,7 +93,7 @@ army = {
                 type = land
                 date="1800.1.1"
                 prestige = 0.05
-                personality = efficient 
+                personality = efficient
                 background = drillmaster
                 picture="isaacbrock_generalpic"
         }
@@ -125,12 +125,12 @@ army = {
 navy = {
         name = "1st Fleet"
         location = 303 #Southampton
-	leader = {
+    leader = {
                 name = "Horatio Nelson"
                 type = sea
                 date="1800.1.1"
                 prestige = 0.7
-                personality = brilliant 
+                personality = brilliant
                 background = innovative_tactician
                 picture="horationelson_generalpic"
         }
@@ -369,5 +369,5 @@ navy = {
         ship = {
                 name= "Frigate"
                 type = frigate
-	}
+    }
 }

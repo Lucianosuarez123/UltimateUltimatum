@@ -4,32 +4,30 @@ add_core = AUS
 add_core = SLO
 add_core = YUG
 add_core = REH
-1806.8.6 = {
-remove_core = REH
-}
+1806.8.6 = { remove_core = REH }
 1809.10.14 = {
-owner = FRA
-controller = FRA
+  owner = FRA
+  controller = FRA
 }
 1815.6.9 = {
-owner = AUS
-controller = AUS
+  owner = AUS
+  controller = AUS
 }
 1867.3.30 = {
-owner = KUK
-controller = KUK 
-add_core = KUK}
-1920.6.28 = { 
-		controller = YUG
-		owner = YUG
-		}
+  owner = KUK
+  controller = KUK
+  add_core = KUK
+}
+1920.6.28 = {
+  controller = YUG
+  owner = YUG
+}
 trade_goods = cotton
 life_rating = 35
 1861.1.1 = { railroad = 2 }
 
 #Soviet Collapse
 1992.5.1 = {
-	owner = SLO
-	controller = SLO
-		}
-
+  owner = SLO
+  controller = SLO
+}

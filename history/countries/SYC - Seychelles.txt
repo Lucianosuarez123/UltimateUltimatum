@@ -31,26 +31,26 @@ pensions = no_pensions
 ruling_party = SYC_conservative_2
 last_election = 1979.4.1
 upper_house = {
-	fascist = 0
-	liberal = 0
-	conservative = 56
-	reactionary = 0
-	anarcho_liberal = 0
-	socialist = 44
-	communist = 0
+    fascist = 0
+    liberal = 0
+    conservative = 56
+    reactionary = 0
+    anarcho_liberal = 0
+    socialist = 44
+    communist = 0
 }}
 
 1974.4.1 {
 ruling_party = SYC_conservative_2
 last_election = 1979.4.1
 upper_house = {
-	fascist = 0
-	liberal = 0
-	conservative = 52
-	reactionary = 0
-	anarcho_liberal = 0
-	socialist = 48
-	communist = 0
+    fascist = 0
+    liberal = 0
+    conservative = 52
+    reactionary = 0
+    anarcho_liberal = 0
+    socialist = 48
+    communist = 0
 }}
 
 1979.6.26 {
@@ -58,39 +58,39 @@ government = proletarian_dictatorship
 ruling_party = SYC_socialist_3
 last_election = 1979.6.26
 upper_house = {
-	fascist = 0
-	liberal = 2
-	conservative = 0
-	reactionary = 0
-	anarcho_liberal = 0
-	socialist = 98
-	communist = 0
+    fascist = 0
+    liberal = 2
+    conservative = 0
+    reactionary = 0
+    anarcho_liberal = 0
+    socialist = 98
+    communist = 0
 }}
 
 1984.6.17 {
 ruling_party = SYC_socialist_3
 last_election = 1984.6.17
 upper_house = {
-	fascist = 0
-	liberal = 7
-	conservative = 0
-	reactionary = 0
-	anarcho_liberal = 0
-	socialist = 93
-	communist = 0
+    fascist = 0
+    liberal = 7
+    conservative = 0
+    reactionary = 0
+    anarcho_liberal = 0
+    socialist = 93
+    communist = 0
 }}
 
 1989.6.1 {
 ruling_party = SYC_socialist_3
 last_election = 1989.6.1
 upper_house = {
-	fascist = 0
-	liberal = 4
-	conservative = 0
-	reactionary = 0
-	anarcho_liberal = 0
-	socialist = 96
-	communist = 0
+    fascist = 0
+    liberal = 4
+    conservative = 0
+    reactionary = 0
+    anarcho_liberal = 0
+    socialist = 96
+    communist = 0
 }}
 
 1993.7.23 {
@@ -98,65 +98,65 @@ government = democracy
 ruling_party = SYC_socialist_3
 last_election = 1993.7.23
 upper_house = {
-	fascist = 0
-	liberal = 4
-	conservative = 37
-	reactionary = 0
-	anarcho_liberal = 0
-	socialist = 59
-	communist = 0
+    fascist = 0
+    liberal = 4
+    conservative = 37
+    reactionary = 0
+    anarcho_liberal = 0
+    socialist = 59
+    communist = 0
 }}
 
 1998.3.22 {
 ruling_party = SYC_socialist_3
 last_election = 1998.3.22
 upper_house = {
-	fascist = 0
-	liberal = 19
-	conservative = 14
-	reactionary = 0
-	anarcho_liberal = 0
-	socialist = 67
-	communist = 0
+    fascist = 0
+    liberal = 19
+    conservative = 14
+    reactionary = 0
+    anarcho_liberal = 0
+    socialist = 67
+    communist = 0
 }}
 
 2001.8.2 {
 ruling_party = SYC_socialist_3
 last_election = 2001.8.2
 upper_house = {
-	fascist = 0
-	liberal = 0
-	conservative = 46
-	reactionary = 0
-	anarcho_liberal = 0
-	socialist = 54
-	communist = 0
+    fascist = 0
+    liberal = 0
+    conservative = 46
+    reactionary = 0
+    anarcho_liberal = 0
+    socialist = 54
+    communist = 0
 }}
 
 2006.7.30 {
 ruling_party = SYC_socialist_3
 last_election = 2006.7.30
 upper_house = {
-	fascist = 0
-	liberal = 46
-	conservative = 0
-	reactionary = 0
-	anarcho_liberal = 0
-	socialist = 54
-	communist = 0
+    fascist = 0
+    liberal = 46
+    conservative = 0
+    reactionary = 0
+    anarcho_liberal = 0
+    socialist = 54
+    communist = 0
 }}
 
 2011.3.21 {
 ruling_party = SYC_socialist_4
 last_election = 2011.3.21
 upper_house = {
-	fascist = 0
-	liberal = 43
-	conservative = 2
-	reactionary = 0
-	anarcho_liberal = 0
-	socialist = 55
-	communist = 0
+    fascist = 0
+    liberal = 43
+    conservative = 2
+    reactionary = 0
+    anarcho_liberal = 0
+    socialist = 55
+    communist = 0
 }}
 
 #Technologies

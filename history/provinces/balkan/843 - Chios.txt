@@ -2,9 +2,9 @@ owner = TUR
 controller = TUR
 add_core = TUR
 add_core = GRE
-1919.6.28 = { 
-		controller = GRE
-		owner = GRE
-		}
+1919.6.28 = {
+  controller = GRE
+  owner = GRE
+}
 trade_goods = sulphur
 life_rating = 35

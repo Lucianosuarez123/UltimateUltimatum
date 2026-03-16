@@ -6,8 +6,8 @@ trade_goods = grain
 life_rating = 35
 
 1859.1.24 = {
-owner = ROM
-controller = ROM
+  owner = ROM
+  controller = ROM
 }
 #There will be blood
 1877.1.1 = { trade_goods = oil }

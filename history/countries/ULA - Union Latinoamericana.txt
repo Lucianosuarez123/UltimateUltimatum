@@ -34,17 +34,17 @@ pensions = no_pensions
 
 ruling_party = ULA_conservative
 upper_house = {
-	fascist = 0
-	liberal = 40
-	conservative = 50
-	reactionary = 10
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+  fascist = 0
+  liberal = 40
+  conservative = 50
+  reactionary = 10
+  anarcho_liberal = 0
+  socialist = 0
+  communist = 0
 }
 
 1861.1.1 = {
-# Technologies
+  # Technologies
 
-#Inventions
+  #Inventions
 }

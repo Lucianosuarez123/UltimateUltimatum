@@ -6,24 +6,47 @@ country_event = {
   picture = "nwo2_occupation_zones_in_germany"
 
   trigger = {
-    OR = { tag = USA tag = ENG tag = FRA tag = RUS }
-	year = 1946 NOT = { year = 1950 }
-	NOT = { exists = GER }
+    OR = {
+      tag = USA
+      tag = ENG
+      tag = FRA
+      tag = RUS
+    }
+    year = 1946
+    NOT = { year = 1950 }
+    NOT = { exists = GER }
     NOT = { exists = DDR }
-    OR = { owns = 579 owns = 599 owns = 574 owns = 561}
-	NOT = { has_country_flag = occupation_zones_in_germany }
+    OR = {
+      owns = 579
+      owns = 599
+      owns = 574
+      owns = 561
+    }
+    NOT = { has_country_flag = occupation_zones_in_germany }
   }
 
   option = {
     name = "They must pay for it!"
-	set_country_flag = occupation_zones_in_germany
-	prestige = 25
+    set_country_flag = occupation_zones_in_germany
+    prestige = 25
 
-remove_accepted_culture = german
-remove_accepted_culture = austrian
+    remove_accepted_culture = german
+    remove_accepted_culture = austrian
 
-any_owned = { limit = { is_core = GER } add_province_modifier = { name = occupied_province duration = -1 } }
-any_owned = { limit = { is_core = AUS } add_province_modifier = { name = occupied_province duration = -1 } }
+    any_owned = {
+      limit = { is_core = GER }
+      add_province_modifier = {
+        name = occupied_province
+        duration = -1
+      }
+    }
+    any_owned = {
+      limit = { is_core = AUS }
+      add_province_modifier = {
+        name = occupied_province
+        duration = -1
+      }
+    }
   }
 }
 #Set-up Austria
@@ -34,20 +57,34 @@ country_event = {
   picture = "nwo2_allied_occupation_of_austria"
 
   trigger = {
-    OR = { tag = USA tag = FRA tag = ENG tag = RUS }
-	year = 1950 NOT = { year = 1955 }
-	NOT = { exists = AUS }
-    OR = { owns = 617 owns = 619 owns = 613 owns = 612}
-	NOT = { has_country_flag = occupation_austria }
+    OR = {
+      tag = USA
+      tag = FRA
+      tag = ENG
+      tag = RUS
+    }
+    year = 1950
+    NOT = { year = 1955 }
+    NOT = { exists = AUS }
+    OR = {
+      owns = 617
+      owns = 619
+      owns = 613
+      owns = 612
+    }
+    NOT = { has_country_flag = occupation_austria }
   }
 
   option = {
     name = "Alrighty then"
-	set_country_flag = occupation_austria
-	AUS = { prestige = -10000 }
-	prestige = 10
+    set_country_flag = occupation_austria
+    AUS = { prestige = -10000 }
+    prestige = 10
 
-any_owned = { limit = { is_core = AUS } secede_province = AUS }
+    any_owned = {
+      limit = { is_core = AUS }
+      secede_province = AUS
+    }
   }
 }
 #Set-up Korea
@@ -58,20 +95,39 @@ country_event = {
   picture = "divided_korea"
 
   trigger = {
-    OR = { tag = USA tag = RUS }
-	year = 1946 NOT = { year = 1955 }
-	NOT = { exists = NKA }
-	NOT = { exists = SKA }
-    OR = { owns = 1624 owns = 1619}
-	NOT = { has_country_flag = occupation_korea }
+    OR = {
+      tag = USA
+      tag = RUS
+    }
+    year = 1946
+    NOT = { year = 1955 }
+    NOT = { exists = NKA }
+    NOT = { exists = SKA }
+    OR = {
+      owns = 1624
+      owns = 1619
+    }
+    NOT = { has_country_flag = occupation_korea }
   }
 
   option = {
     name = "Korea"
-	set_country_flag = occupation_korea
+    set_country_flag = occupation_korea
 
-any_owned = { limit = { is_core = NKA } add_province_modifier = { name = occupied_province duration = -1 } }
-any_owned = { limit = { is_core = SKA } add_province_modifier = { name = occupied_province duration = -1 } }
+    any_owned = {
+      limit = { is_core = NKA }
+      add_province_modifier = {
+        name = occupied_province
+        duration = -1
+      }
+    }
+    any_owned = {
+      limit = { is_core = SKA }
+      add_province_modifier = {
+        name = occupied_province
+        duration = -1
+      }
+    }
   }
 }
 country_event = {
@@ -81,38 +137,60 @@ country_event = {
   picture = "nwo2_western_allies"
 
   trigger = {
-    OR = { tag = ENG tag = USA tag = FRA }
-	NOT = { has_country_flag = western_allies }
-	NOT = { OR = {  alliance_with = USA alliance_with = ENG } }
-    year = 1946 NOT = { year = 1960 }
-	NOT = { has_global_flag = alliance_nato }
-    
+    OR = {
+      tag = ENG
+      tag = USA
+      tag = FRA
+    }
+    NOT = { has_country_flag = western_allies }
+    NOT = {
+      OR = {
+        alliance_with = USA
+        alliance_with = ENG
+      }
+    }
+    year = 1946
+    NOT = { year = 1960 }
+    NOT = { has_global_flag = alliance_nato }
+
     war = no
   }
 
-  mean_time_to_happen = { months = 3  }
+  mean_time_to_happen = { months = 3 }
 
   option = {
     name = EVT_8215000_A
     random_country = {
-        limit = { NOT = { tag = THIS } tag = USA ai = yes }
-		create_alliance = THIS
+      limit = {
+        NOT = { tag = THIS }
+        tag = USA
+        ai = yes
+      }
+      create_alliance = THIS
     }
     random_country = {
-        limit = { NOT = { tag = THIS } tag = FRA ai = yes }
-		create_alliance = THIS
+      limit = {
+        NOT = { tag = THIS }
+        tag = FRA
+        ai = yes
+      }
+      create_alliance = THIS
     }
     random_country = {
-        limit = { NOT = { tag = THIS } tag = ENG ai = yes }
-		create_alliance = THIS
+      limit = {
+        NOT = { tag = THIS }
+        tag = ENG
+        ai = yes
+      }
+      create_alliance = THIS
     }
-	set_country_flag = western_allies 
-	ai_chance = { factor = 100 }
+    set_country_flag = western_allies
+    ai_chance = { factor = 100 }
   }
-  
+
   option = {
     name = EVT_8215000_B
-	set_country_flag = western_allies 
-	ai_chance = { factor = 0 }
+    set_country_flag = western_allies
+    ai_chance = { factor = 0 }
   }
 }

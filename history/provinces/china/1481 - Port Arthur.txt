@@ -22,17 +22,16 @@ controller = MCK
 }
 
 1910.1.1 = {
-	owner = JAP	
-	controller = JAP
-	add_Core = NCN
-		}
+    owner = JAP
+    controller = JAP
+    add_Core = NCN
+        }
 1945.1.1 = {
-	owner = CHI
-	controller = CHI
-	naval_base = 4
-	state_building = {
-		level = 1
-		building = steamer_shipyard 
-		upgrade = yes
-		}
-
+    owner = CHI
+    controller = CHI
+    naval_base = 4
+    state_building = {
+        level = 1
+        building = steamer_shipyard
+        upgrade = yes
+        }

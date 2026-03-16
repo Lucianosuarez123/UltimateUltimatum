@@ -3,16 +3,14 @@ controller = KOK
 add_core = KOK
 add_core = KAZ
 1880.1.1 = {
-owner = RUS
-controller = RUS
-		}
+  owner = RUS
+  controller = RUS
+}
 trade_goods = coal
 life_rating = 35
-1917.1.1 = {
-	add_core = KAZ
-		}
+1917.1.1 = { add_core = KAZ }
 1992.1.1 = {
-	owner = KAZ
-	controller = KAZ
-	colonial = 0
-		}
+  owner = KAZ
+  controller = KAZ
+  colonial = 0
+}

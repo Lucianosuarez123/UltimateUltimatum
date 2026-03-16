@@ -5,13 +5,13 @@ add_core = CHI
 add_core = QNG
 add_core = MCK
 1620.1.1 = {
-owner = QNG
-controller = QNG
-remove_core = MYR
+  owner = QNG
+  controller = QNG
+  remove_core = MYR
 }
 1836.1.1 = {
-owner = MCK
-controller = MCK
+  owner = MCK
+  controller = MCK
 }
 1920.1.1 = { add_core = NCN }
 
@@ -19,9 +19,9 @@ add_core = MCK
 trade_goods = coal
 life_rating = 32
 1861.1.1 = {
-	owner = RUS
-	controller = RUS
-	remove_core = CHI
-	remove_core = MCK
-	colonial = 2
+  owner = RUS
+  controller = RUS
+  remove_core = CHI
+  remove_core = MCK
+  colonial = 2
 }

@@ -2,24 +2,24 @@ owner = PLC
 controller = PLC
 
 1800.1.1 = {
-	add_core = RUS
-	owner = RUS
-	controller = RUS
-		}
+  add_core = RUS
+  owner = RUS
+  controller = RUS
+}
 
 add_core = LAT
 
 #End of WW2
 1945.5.1 = {
-	owner = RUS
-	controller = RUS
-		}
+  owner = RUS
+  controller = RUS
+}
 
 
-1919.6.28 = { 
-		controller = LAT
-		owner = LAT
-		}
+1919.6.28 = {
+  controller = LAT
+  owner = LAT
+}
 
 add_core = UBD
 
@@ -33,9 +33,6 @@ life_rating = 35
 
 #Soviet Collapse
 1992.5.1 = {
-	owner = LAT
-	controller = LAT
-		}
-
-
-
+  owner = LAT
+  controller = LAT
+}

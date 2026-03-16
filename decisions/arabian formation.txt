@@ -12,16 +12,16 @@ is_culture_group = arab
 }
 
 allow = {
-AND = { 
+AND = {
 is_greater_power = yes
 any_neighbor_country = {
 in_sphere = this
 is_culture_group = arab
 }
-HDJ = { 
-all_core = { 
-owned_by = THIS 
-} 
+HDJ = {
+all_core = {
+owned_by = THIS
+}
 }
 }
 }
@@ -31,7 +31,7 @@ all_core = {
 limit = {
 owned_by = THIS
 }
-remove_core = THIS 
+remove_core = THIS
 add_core = ARA
 }
 change_tag = ARA

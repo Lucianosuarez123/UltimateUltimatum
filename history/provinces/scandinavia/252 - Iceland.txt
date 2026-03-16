@@ -8,8 +8,8 @@ life_rating = 35
 colonial = 2
 
 1930.1.1 = {
-	owner = ICL
-	controller = ICL
-	remove_core = DEN
-	colonial = 0
-		}
+  owner = ICL
+  controller = ICL
+  remove_core = DEN
+  colonial = 0
+}

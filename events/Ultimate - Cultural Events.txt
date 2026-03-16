@@ -65,7 +65,7 @@ name = EVTOPTA200600
         any_pop = {
         consciousness = 2
         militancy = -1 }
-                }        
+                }
 
 
 option = {
@@ -78,7 +78,7 @@ name = EVTOPTB200600
         consciousness = 1
         militancy = 2 }
                 }
-}        
+}
 
 
 #Elvis death
@@ -110,7 +110,7 @@ name = EVTOPTA200601
         prestige = 5
         any_pop = {
         consciousness = 0.25 }
-                }        
+                }
 }
 
 
@@ -151,7 +151,7 @@ country_event = {
 
 
 
-        
+
 
 
 #Crook Nixon
@@ -187,7 +187,7 @@ country_event = {
                 consciousness = 1.5
                 militancy = 1.5
                                 }
-                
+
                         }
 }
 
@@ -227,7 +227,7 @@ country_event = {
                 consciousness = 3
                 militancy = 3
                                 }
-                
+
                         }
         option = {
         name = EVTOPTB200605
@@ -245,7 +245,7 @@ country_event = {
                 militancy = 1.5
                                 }
                         political_reform = population_equal_weight
-                
+
                         }
 }
 
@@ -278,7 +278,7 @@ country_event = {
         name = EVTOPTA200606
                 prestige = 25
                 set_global_flag = disney_done
-                
+
                         }
 }
 
@@ -301,7 +301,7 @@ country_event = {
                         tag = USA
                         tag = CSA
                         }
-					}
+                    }
 
 
         mean_time_to_happen = {
@@ -312,7 +312,7 @@ country_event = {
         option = {
         name = EVTOPTA200607
                 prestige = 10
-                
+
                         }
 }
 
@@ -360,12 +360,12 @@ dominant_issue = {
         factor = 0.1
                                 }
                                 }
-                
+
                         }
 }
 
 
-#Winston Churchill 
+#Winston Churchill
 country_event = {
         id = 200701
         title = EVTNAME200701
@@ -380,7 +380,7 @@ trigger = {
                 tag = ENG
                 tag = ANG
                 tag = BRC
-                tag = BRI 
+                tag = BRI
                 }
                 not = {
                 has_global_flag = NewScenarioFlag }
@@ -390,7 +390,7 @@ trigger = {
 mean_time_to_happen = {
                 months = 4
                                 }
-        
+
 
 
 option = {
@@ -434,7 +434,7 @@ name = EVTOPTA200702
         any_pop = {
         consciousness = 2
         militancy = -1 }
-                }        
+                }
 
 
 option = {
@@ -447,10 +447,10 @@ name = EVTOPTB200702
         consciousness = 1
         militancy = 2 }
                 }
-}        
+}
 
 
-        
+
 #Oka Crisis
 country_event = {
         id = 200703
@@ -489,7 +489,7 @@ country_event = {
                 militancy = 6
                 reduce_pop = 0.9
                                 }
-                
+
                         }
         option = {
         name = EVTOPTB200703
@@ -505,7 +505,7 @@ country_event = {
 
 
                                 }
-                
+
                         }
 }
 
@@ -542,7 +542,7 @@ country_event = {
         who = USA
         value = -50
 }
-                
+
                         }
 }
 
@@ -601,7 +601,7 @@ trigger = {
 mean_time_to_happen = {
                 months = 4
                                 }
-        
+
 
 
 option = {
@@ -655,40 +655,40 @@ scaled_militancy = {
 #Moskau
 country_event = {
         id = 200901
-		title = "Dschinghis Khan?"
+        title = "Dschinghis Khan?"
         desc = "A new band which is rising to popularity has made a song that is about Russia and its glory. Oh well, Moskau! Moskau!"
         picture = DschinghisKhan
         fire_only_once = yes
 
 
-	trigger = {
-		year = 1979                
-		OR = {
-			tag = GER
-			tag = PRU
-			tag = NGF 
-		}
-		NOT = {
-			OR = {
-				year = 1979
-				government = democracy
-			}
-		}               
-		NOT = {
-			has_global_flag = moskau_done
-		}
-	}
+    trigger = {
+        year = 1979
+        OR = {
+            tag = GER
+            tag = PRU
+            tag = NGF
+        }
+        NOT = {
+            OR = {
+                year = 1979
+                government = democracy
+            }
+        }
+        NOT = {
+            has_global_flag = moskau_done
+        }
+    }
 
 
         option = {
-			name = EVTOPTA200901
-			prestige = 10
-			set_global_flag = moskau_done
-		}
+            name = EVTOPTA200901
+            prestige = 10
+            set_global_flag = moskau_done
+        }
 
 option = {
-	name = "Damned militants!"
-	set_global_flag = moskau_done
+    name = "Damned militants!"
+    set_global_flag = moskau_done
     }
 }
 
@@ -761,7 +761,7 @@ trigger = {
 mean_time_to_happen = {
                 months = 4
                                 }
-        
+
 
 
 option = {
@@ -800,7 +800,7 @@ trigger = {
 mean_time_to_happen = {
                 months = 4
                                 }
-        
+
 
 
 option = {
@@ -849,7 +849,7 @@ trigger = {
 mean_time_to_happen = {
                 months = 4
                                 }
-        
+
 
 
 option = {
@@ -875,14 +875,14 @@ trigger = {
         any_pop = {
                 literacy = 1
                         }
-                
+
                 }
 
 
 mean_time_to_happen = {
                 months = 4
                                 }
-        
+
 
 
 option = {
@@ -892,7 +892,7 @@ name = "just... one... more... year"
         any_pop = {
                 consciousness = 1
                         }
-        
+
                         }
 }
 
@@ -924,7 +924,7 @@ trigger = {
 mean_time_to_happen = {
                 months = 4
                                 }
-        
+
 
 
 option = {

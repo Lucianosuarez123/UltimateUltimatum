@@ -2,14 +2,14 @@ owner = ETH
 controller = ETH
 add_core = ETH
 1939.1.1 = {
-owner = ITA
-controller = ITA
-		}
+  owner = ITA
+  controller = ITA
+}
 1941.1.1 = {
-		owner = ETH
-		controller = ETH
-		colonial = 0
-		}
+  owner = ETH
+  controller = ETH
+  colonial = 0
+}
 
 
 trade_goods = cattle

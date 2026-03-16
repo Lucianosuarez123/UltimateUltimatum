@@ -2,17 +2,17 @@ owner = PLC
 controller = PLC
 
 1800.1.1 = {
-	add_core = RUS
-	owner = RUS
-	controller = RUS
-		}
+  add_core = RUS
+  owner = RUS
+  controller = RUS
+}
 add_core = UKR
 
 #Soviet Collapse
 1992.5.1 = {
-	owner = UKR
-	controller = UKR
-		}
+  owner = UKR
+  controller = UKR
+}
 
 
 

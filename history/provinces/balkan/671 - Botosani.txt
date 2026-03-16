@@ -6,6 +6,6 @@ trade_goods = fruit
 life_rating = 35
 
 1859.1.24 = {
-owner = ROM
-controller = ROM
+  owner = ROM
+  controller = ROM
 }

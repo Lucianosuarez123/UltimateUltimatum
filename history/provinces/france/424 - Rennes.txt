@@ -8,6 +8,6 @@ life_rating = 35
 
 #Breton ISA Break off from France
 2018.1.1 = {
-owner = BRY
-controller = BRY
-		}
+  owner = BRY
+  controller = BRY
+}

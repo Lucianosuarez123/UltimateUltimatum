@@ -1,10 +1,8 @@
-1600.1.1={
-	add_core = TON
-}
+1600.1.1 = { add_core = TON }
 1930.1.1 = {
-	add_core= TON
-	owner = TON
-	controller = TON
-	}
+  add_core = TON
+  owner = TON
+  controller = TON
+}
 trade_goods = fish
 life_rating = 15

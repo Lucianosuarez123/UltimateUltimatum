@@ -7,8 +7,8 @@ life_rating = 35
 colonial = 2
 
 1960.1.1 = {
-	owner = EQG
-	controller = EQG
-	colonial = 0
-	remove_core = SPA
-		}
+  owner = EQG
+  controller = EQG
+  colonial = 0
+  remove_core = SPA
+}

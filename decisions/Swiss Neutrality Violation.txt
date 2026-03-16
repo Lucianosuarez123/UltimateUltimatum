@@ -1,104 +1,94 @@
 political_decisions = {
-	violar_la_neutralidad_suiza = {
-		picture = "declare_neutrality"
-		title = "violar_la_neutralidad_suiza"
-		desc = "violar_la_neutralidad_suiza_desc"
+  violar_la_neutralidad_suiza = {
+    picture = "declare_neutrality"
+    title = "violar_la_neutralidad_suiza"
+    desc = "violar_la_neutralidad_suiza_desc"
 
-		potential = {
-			NOT = { tag = SWI }
-			any_neighbor_country = {
-				tag = SWI
-			}
-			SWI = {
-				has_country_modifier = neutrality
-			}
-		}
+    potential = {
+      NOT = { tag = SWI }
+      any_neighbor_country = { tag = SWI }
+      SWI = { has_country_modifier = neutrality }
+    }
 
-		allow = {
-			war_policy = jingoism
-			NOT = {
-				relation = {
-					who = SWI
-					value = 120
-				}
-			}
-		}
+    allow = {
+      war_policy = jingoism
+      NOT = {
+        relation = {
+          who = SWI
+          value = 120
+        }
+      }
+    }
 
-		effect = {
-			relation = {
-				who = SWI
-				value = -200
-			}
-			prestige = -20
-			badboy = 100
-			SWI = {
-				remove_country_modifier = neutrality
-				set_country_flag = swiss_neutrality_violated_flag
-			}
-			war = {
-				target = SWI
-				casus_belli = conquest
-			}
-		}
+    effect = {
+      relation = {
+        who = SWI
+        value = -200
+      }
+      prestige = -20
+      badboy = 100
+      SWI = {
+        remove_country_modifier = neutrality
+        set_country_flag = swiss_neutrality_violated_flag
+      }
+      war = {
+        target = SWI
+        casus_belli = conquest
+      }
+    }
 
-		ai_will_do = {
-			factor = 0
-		}
-	}
+    ai_will_do = { factor = 0 }
+  }
 
-	restablecer_neutralidad_suiza = {
-		picture = "declare_neutrality"
-		title = "restablecer_neutralidad_suiza"
-		desc = "restablecer_neutralidad_suiza_desc"
+  restablecer_neutralidad_suiza = {
+    picture = "declare_neutrality"
+    title = "restablecer_neutralidad_suiza"
+    desc = "restablecer_neutralidad_suiza_desc"
 
-		potential = {
-			tag = SWI
-			NOT = { has_country_modifier = neutrality }
-			has_country_flag = swiss_neutrality_violated_flag
-		}
+    potential = {
+      tag = SWI
+      NOT = { has_country_modifier = neutrality }
+      has_country_flag = swiss_neutrality_violated_flag
+    }
 
-		allow = {
-			war = no
-			NOT = { has_country_flag = swiss_neutrality_restore_cooldown }
-		}
+    allow = {
+      war = no
+      NOT = { has_country_flag = swiss_neutrality_restore_cooldown }
+    }
 
-		effect = {
-			add_country_modifier = {
-				name = neutrality
-				duration = -1
-			}
-			clr_country_flag = swiss_neutrality_violated_flag
-			set_country_flag = swiss_neutrality_restore_cooldown
-		}
+    effect = {
+      add_country_modifier = {
+        name = neutrality
+        duration = -1
+      }
+      clr_country_flag = swiss_neutrality_violated_flag
+      set_country_flag = swiss_neutrality_restore_cooldown
+    }
 
-		ai_will_do = {
-			factor = 1
-		}
-	}
+    ai_will_do = { factor = 1 }
+  }
 
-		swiss_abandon_neutrality = {
-		picture = "declare_neutrality"
-		
-		potential = {
-			tag = SWI
-			has_country_modifier = neutrality
-			NOT = { has_country_flag = swiss_abandoned_neutrality }
-		}
-		
-		allow = {
-			prestige = 40
-			military_score = 100
-			NOT = { war = yes }
-		}
-		
-		effect = {
-			prestige=-40
-			remove_country_modifier = neutrality
-			set_country_flag = swiss_abandoned_neutrality
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
+  swiss_abandon_neutrality = {
+    picture = "declare_neutrality"
+
+    potential = {
+      tag = SWI
+      has_country_modifier = neutrality
+      NOT = { has_country_flag = swiss_abandoned_neutrality }
+    }
+
+    allow = {
+      prestige = 40
+      military_score = 100
+      NOT = { war = yes }
+    }
+
+    effect = {
+      prestige = -40
+      remove_country_modifier = neutrality
+      set_country_flag = swiss_abandoned_neutrality
+    }
+
+    ai_will_do = { factor = 0 }
+  }
 }

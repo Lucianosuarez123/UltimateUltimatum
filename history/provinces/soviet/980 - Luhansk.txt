@@ -5,15 +5,15 @@ add_core = UKR
 
 #Soviet Collapse
 1992.5.1 = {
-	owner = UKR
-	controller = UKR
-		}
+  owner = UKR
+  controller = UKR
+}
 
 #Ukraine Crisis
 2014.1.1 = {
-	owner = RUS
-	controller = RUS
-		}
+  owner = RUS
+  controller = RUS
+}
 
 
 trade_goods = cattle

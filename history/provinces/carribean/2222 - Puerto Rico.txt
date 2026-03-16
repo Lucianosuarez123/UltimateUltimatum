@@ -6,7 +6,7 @@ colonial = 2
 
 add_core = PUE
 1889.1.1 = {
-	owner = PUE
-	controller = PUE
-	colonial = 0
-		}
+  owner = PUE
+  controller = PUE
+  colonial = 0
+}

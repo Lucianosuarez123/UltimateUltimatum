@@ -1,40 +1,51 @@
-absolute_monarchy;Absolute Monarchy;Monarchie absolue;Absolute Monarchie;;MonarquÌa absoluta;;;;;;;;;x;;;;,,,,,
-absolute_monarchy_ruler;King;Roi;Kˆnig;;Rey;;;;;;;;;x;;;;,,,,,
-anarcho_liberal;Anarcho-Liberal;LibÈral anarchiste;Anarcho-Liberal;;Anarcoliberal;;;;;;;;;x;;;;,,,,,
-anarcho_liberal_uh;Anarcho-Liberals want to see social reforms rolled back, and will never support further reforms of any kind.;Les anarcho-libÈraux veulent davantage de rÈformes politiques et le retrait des rÈformes sociales.;Anarcho-Liberale sind an zus‰tzlichen Politikreformen interessiert, setzen sich aber f¸r die Auﬂerkraftsetzung von Sozialreformen ein.;;Los anarcoliberales rechazan las reformas sociales, y nunca apoyar·n m·s reformas de ning˙n tipo.;;;;;;;;;x;,,
-bourgeois_dictatorship;Bourgeois Dictatorship;Dictature bourgeoise;B¸rgerliche Diktatur;;Dictadura burguesa;;;;;;;;;x;;;;,,,,,
-bourgeois_dictatorship_ruler;President;PrÈsident;Pr‰sident;;Presidente;;;;;;;;;x;;;;,,,,,
-communist;Communist;Communistes;Kommunistisch;;Comunista;;;;;;;;;x;;;;,,,,,
-communist_uh;Communists want to enact social reforms, but want to see political reforms rolled back.;Les communistes veulent davantage de rÈformes sociales et le retrait des rÈformes politiques.;Kommunisten sind an zus‰tzlichen Sozialreformen interessiert, setzen sich aber f¸r die Auﬂerkraftsetzung von Politikreformen ein.;;Los comunistas quieren promulgar reformas sociales, pero rechazan las reformas polÌticas.;;;;;;;;;x;,,
-conservative;Conservative;Conservateur;Konservativ;;Conservadora;;;;;;;;;x;;;;,,,,,
-conservative_uh;Conservatives prefer the status-quo, but may back reforms under conditions of high militancy.;Les conservateurs prÈfËrent le statu quo, mais peuvent soutenir les rÈformes en cas d'extrÍme nÈcessitÈ.;Konservative bevorzugen den Status Quo, kˆnnen aber in extremen Situationen Reformen unterst¸tzen.;;Los conservadores prefieren el statu quo, pero pueden apoyar reformas en condiciones de elevada militancia.;;;;;;;;;x;,
-democracy;Democracy;DÈmocratie;Demokratie;;Democracia;;;;;;;;;x;;;;,,,,,
-democracy_ruler;President;PrÈsident;Pr‰sident;;Presidente;;;;;;;;;x;;;;,,,,,
-fascist;Fascist;Fasciste;Faschistisch;;Fascista;;;;;;;;;x;;;;,,,,,
-fascist_dictatorship;Fascist Dictatorship;Dictature fasciste;Faschistische Diktatur;;Dictadura fascista;;;;;;;;;x;;;;,,,,,
-fascist_dictatorship_ruler;F¸hrer;F¸hrer;F¸hrer;;F¸hrer;;;;;;;;;x;;;;,,,,,
-fascist_uh;Fascists support the extension of social reform, and the removal of political reform, but will oppose any reform as long as the ruling party is not Fascist.;Les fascistes soutiennent la poursuite des rÈformes sociales et le retrait des rÈformes politiques ‡ condition que le parti dirigeant partage leur idÈologie.;Faschisten unterst¸tzen die Ausweitung von Sozialreformen und die Auﬂerkraftsetzung von Politikreformen - aber nur, wenn Ihre Regierungspartei faschistisch ist.;;Los fascistas abogan por la ampliaciÛn de la reforma social, y la eliminaciÛn de la reforma polÌtica, pero se opondr·n a cualquier reforma mientras el partido gobernante no sea fascista.;;;;;;;;;x;
-french_second_empire;Constitutional Monarchy;;;;;;x;;,,,,,
-hms_government;HM's Government;Gouvernement de Sa MajestÈ;Ihrer Majest‰t Regierung;;Gobierno de Su Majestad;;;;;;;;;x;,,,,,
-hms_government_ruler;King;Roi;Kˆnig;;Rey;;;;;;;;;x;;;;,,,,,
-islamist;Islamist;x;;;;;;;;;,,,,,
-islamist_uh;Islamists have for goal the institution of Sharia law and therefore will always back the implemention of reactionary political and social reforms.;x;;;;;;;;;,,,,,
-liberal;Liberal;Liberal;Liberal;;Liberal;;;;;;;;;x;;;;,,,,,
-liberal_uh;Liberals want to enact further political reforms, but will also support social reform under conditions of high militancy.;Les libÈraux veulent davantage de rÈformes politiques.;Liberale sind an zus‰tzlichen Politikreformen interessiert.;;Los liberales abogan por m·s reformas polÌticas, pero apoyar·n tambiÈn reformas sociales bajo condiciones de elevada militancia.;;;;;;;;;x;,,,
-napoleonic_empire;Napoleonic Absolutism;;;;;;;;;;;;;x,,,,,
-presidential_dictatorship;Presidential Dictatorship;Dictature prÈsidentielle;Pr‰sidiale Diktatur;;Dictadura presidencialista;;;;;;;;;x;;;;,,,,,
-presidential_dictatorship_ruler;President;PrÈsident;Pr‰sident;;Presidente;;;;;;;;;x;;;;,,,,,
-proletarian_dictatorship;Communist Dictatorship;Dictature Communiste;Kommunistische Diktatur;;Dictadura Comunista;;;;;;;;;x;;;;,,,,,
-proletarian_dictatorship_ruler;Chairman;PrÈsident;Vorsitzender;;Presidente del consejo;;;;;;;;;x;;;;,,,,,
-prussian_constitutionalism;Prussian Constitutionalism;Constitutionalisme prusse;Konstitutionelle Monarchie;;Constitucionalismo prusiano;;;;;;;;;x;;;;,,,,,
-prussian_constitutionalism_ruler;King;Roi;Kˆnig;;Rey;;;;;;;;;x;;;;,,,,,
-reactionary;Reactionary;RÈactionnaires;Reaktion‰r;;Reaccionaria;;;;;;;;;x;;;;,,,,,
-reactionary_uh;Reactionaries always attempt to roll back both political and social reforms.;Les rÈactionnaires sont toujours contre les rÈformes.;Reaktion‰re versuchen stets, Reformen r¸ckg‰ngig zu machen.;;Los reaccionarios siempre tratan de evitar las reformas, tanto polÌticas como sociales.;;;;;;;;;x;,,,
-revolutionary_republic;Revolutionary Republic;;;;;;;;;;;;;x,,,,,
-socialist;Socialist;Socialiste;Sozialistisch;;Socialista;;;;;;;;;x;;;;,,,,,
-socialist_republic;Socialist Republic;;;;;;x;;,,,,,
-socialist_republic_ruler;Chairman;;;;;;x;;,,,,,
-socialist_uh;Socialists want to see the enactment of further social reforms, but may back political reforms under conditions of high militancy.;Les socialistes veulent davantage de rÈformes sociales.;Sozialisten sind an zus‰tzlichen Sozialreformen interessiert.;;Los socialistas abogan por promulgar m·s reformas sociales, pero pueden apoyar reformas polÌticas en condiciones de elevada militancia.;;;;;;;;;x;,,,
-theocracy;Theocracy;;;;;;;;;;;;;x,,,,,
-theocratic_dictatorship;Theocratic Dictatorship;x;;;;;;;;;,,,,,
-theocratic_dictatorship_ruler;Your holiness;x;;;;;;;;;,,,,,
+Key;English;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;
+absolute_monarchy_ruler;King;Roi;K√∂nig;;Rey;;;;;;;;;
+anarcho_liberal_uh;Anarcho-Liberals want to see social reforms rolled back, and will never support further reforms of any kind.;Les anarcho-lib√©raux veulent davantage de r√©formes politiques et le retrait des r√©formes sociales.;Anarcho-Liberale sind an zus√§tzlichen Politikreformen interessiert, setzen sich aber f√ºr die Au√üerkraftsetzung von Sozialreformen ein.;;Los anarcoliberales rechazan las reformas sociales, y nunca apoyar√°n m√°s reformas de ning√∫n tipo.;;;;;;;;;
+bourgeois_dictatorship;Bourgeois Dictatorship;Dictature bourgeoise;B√ºrgerliche Diktatur;;Dictadura burguesa;;;;;;;;;
+bourgeois_dictatorship_ruler;President;Pr√©sident;Pr√§sident;;Presidente;;;;;;;;;
+communist_uh;Communists want to enact social reforms, but want to see political reforms rolled back.;Les communistes veulent davantage de r√©formes sociales et le retrait des r√©formes politiques.;Kommunisten sind an zus√§tzlichen Sozialreformen interessiert, setzen sich aber f√ºr die Au√üerkraftsetzung von Politikreformen ein.;;Los comunistas quieren promulgar reformas sociales, pero rechazan las reformas pol√≠ticas.;;;;;;;;;
+conservative_uh;Conservatives prefer the status-quo, but may back reforms under conditions of high militancy.;Les conservateurs pr√©f√®rent le statu quo, mais peuvent soutenir les r√©formes en cas d'extr√™me n√©cessit√©.;Konservative bevorzugen den Status Quo, k√∂nnen aber in extremen Situationen Reformen unterst√ºtzen.;;Los conservadores prefieren el statu quo, pero pueden apoyar reformas en condiciones de elevada militancia.;;;;;;;;;
+democracy;Democracy;D√©mocratie;Demokratie;;Democracia;;;;;;;;;
+democracy_ruler;President;Pr√©sident;Pr√§sident;;Presidente;;;;;;;;;
+fascist_dictatorship;Fascist Dictatorship;Dictature fasciste;Faschistische Diktatur;;Dictadura fascista;;;;;;;;;
+fascist_dictatorship_ruler;F√ºhrer;F√ºhrer;F√ºhrer;;F√ºhrer;;;;;;;;;
+fascist_uh;Fascists support the extension of social reform, and the removal of political reform, but will oppose any reform as long as the ruling party is not Fascist.;Les fascistes soutiennent la poursuite des r√©formes sociales et le retrait des r√©formes politiques √† condition que le parti dirigeant partage leur id√©ologie.;Faschisten unterst√ºtzen die Ausweitung von Sozialreformen und die Au√üerkraftsetzung von Politikreformen - aber nur, wenn Ihre Regierungspartei faschistisch ist.;;Los fascistas abogan por la ampliaci√≥n de la reforma social, y la eliminaci√≥n de la reforma pol√≠tica, pero se opondr√°n a cualquier reforma mientras el partido gobernante no sea fascista.;;;;;;;;;
+french_second_empire;Constitutional Monarchy;;;;;;;;;;;;;
+hms_government;HM's Government;Gouvernement de Sa Majest√©;Ihrer Majest√§t Regierung;;Gobierno de Su Majestad;;;;;;;;;
+hms_government_ruler;King;Roi;K√∂nig;;Rey;;;;;;;;;
+islamist;Islamist;;;;;;;;;;;;;
+islamist_uh;Islamists have for goal the institution of Sharia law and therefore will always back the implemention of reactionary political and social reforms.;;;;;;;;;;;;;
+liberal_uh;Liberals want to enact further political reforms, but will also support social reform under conditions of high militancy.;Les lib√©raux veulent davantage de r√©formes politiques.;Liberale sind an zus√§tzlichen Politikreformen interessiert.;;Los liberales abogan por m√°s reformas pol√≠ticas, pero apoyar√°n tambi√©n reformas sociales bajo condiciones de elevada militancia.;;;;;;;;;
+napoleonic_empire;Napoleonic Absolutism;;;;;;;;;;;;;
+presidential_dictatorship;Presidential Dictatorship;Dictature pr√©sidentielle;Pr√§sidiale Diktatur;;Dictadura presidencialista;;;;;;;;;
+presidential_dictatorship_ruler;President;Pr√©sident;Pr√§sident;;Presidente;;;;;;;;;
+proletarian_dictatorship;Communist Dictatorship;Dictature Communiste;Kommunistische Diktatur;;Dictadura Comunista;;;;;;;;;
+proletarian_dictatorship_ruler;Chairman;Pr√©sident;Vorsitzender;;Presidente del consejo;;;;;;;;;
+prussian_constitutionalism;Prussian Constitutionalism;Constitutionalisme prusse;Konstitutionelle Monarchie;;Constitucionalismo prusiano;;;;;;;;;
+prussian_constitutionalism_ruler;King;Roi;K√∂nig;;Rey;;;;;;;;;
+reactionary_uh;Reactionaries always attempt to roll back both political and social reforms.;Les r√©actionnaires sont toujours contre les r√©formes.;Reaktion√§re versuchen stets, Reformen r√ºckg√§ngig zu machen.;;Los reaccionarios siempre tratan de evitar las reformas, tanto pol√≠ticas como sociales.;;;;;;;;;
+revolutionary_republic;Revolutionary Republic;;;;;;;;;;;;;
+socialist_republic;Socialist Republic;;;;;;;;;;;;;
+socialist_republic_ruler;Chairman;;;;;;;;;;;;;
+socialist_uh;Socialists want to see the enactment of further social reforms, but may back political reforms under conditions of high militancy.;Les socialistes veulent davantage de r√©formes sociales.;Sozialisten sind an zus√§tzlichen Sozialreformen interessiert.;;Los socialistas abogan por promulgar m√°s reformas sociales, pero pueden apoyar reformas pol√≠ticas en condiciones de elevada militancia.;;;;;;;;;
+theocracy;Theocracy;;;;;;;;;;;;;
+theocratic_dictatorship;Theocratic Dictatorship;;;;;;;;;;;;;
+theocratic_dictatorship_ruler;Your holiness;;;;;;;;;;;;;
+survivalism;Survivalism;Survivalisme;√úberlebensideologie;;Supervivencialismo;;;;;;;;;
+survivalism_uh;Survivalists prioritize the survival of their community above all else, enforcing strict resource control and authoritarian order.;Les survivants placent la survie de leur communaut√© avant tout.;√úberlebende stellen das √úberleben ihrer Gemeinschaft √ºber alles.;;Los supervivencialistas priorizan la supervivencia de su comunidad por encima de todo.;;;;;;;;;
+state_of_emergency_absolute_monarchy;State of Emergency (Absolute Monarchy);√âtat d'urgence (Monarchie absolue);Ausnahmezustand (Absolute Monarchie);;Estado de emergencia (Monarqu√≠a absoluta);;;;;;;;;
+state_of_emergency_absolute_monarchy_ruler;King;Roi;K√∂nig;;Rey;;;;;;;;;
+state_of_emergency_bourgeois_dictatorship;State of Emergency (Bourgeois Dictatorship);√âtat d'urgence (Dictature bourgeoise);Ausnahmezustand (B√ºrgerliche Diktatur);;Estado de emergencia (Dictadura burguesa);;;;;;;;;
+state_of_emergency_bourgeois_dictatorship_ruler;President;Pr√©sident;Pr√§sident;;Presidente;;;;;;;;;
+state_of_emergency_democracy;State of Emergency (Democracy);√âtat d'urgence (D√©mocratie);Ausnahmezustand (Demokratie);;Estado de emergencia (Democracia);;;;;;;;;
+state_of_emergency_democracy_ruler;President;Pr√©sident;Pr√§sident;;Presidente;;;;;;;;;
+state_of_emergency_fascist_dictatorship;State of Emergency (Fascist Dictatorship);√âtat d'urgence (Dictature fasciste);Ausnahmezustand (Faschistische Diktatur);;Estado de emergencia (Dictadura fascista);;;;;;;;;
+state_of_emergency_fascist_dictatorship_ruler;F√ºhrer;F√ºhrer;F√ºhrer;;F√ºhrer;;;;;;;;;
+state_of_emergency_hms_government;State of Emergency (HM's Government);√âtat d'urgence (Gouvernement de Sa Majest√©);Ausnahmezustand (Ihrer Majest√§t Regierung);;Estado de emergencia (Gobierno de Su Majestad);;;;;;;;;
+state_of_emergency_hms_government_ruler;King;Roi;K√∂nig;;Rey;;;;;;;;;
+state_of_emergency_presidential_dictatorship;State of Emergency (Presidential Dictatorship);√âtat d'urgence (Dictature pr√©sidentielle);Ausnahmezustand (Pr√§sidiale Diktatur);;Estado de emergencia (Dictadura presidencialista);;;;;;;;;
+state_of_emergency_presidential_dictatorship_ruler;President;Pr√©sident;Pr√§sident;;Presidente;;;;;;;;;
+state_of_emergency_proletarian_dictatorship;State of Emergency (Communist Dictatorship);√âtat d'urgence (Dictature communiste);Ausnahmezustand (Kommunistische Diktatur);;Estado de emergencia (Dictadura comunista);;;;;;;;;
+state_of_emergency_proletarian_dictatorship_ruler;Chairman;Pr√©sident;Vorsitzender;;Presidente del consejo;;;;;;;;;
+state_of_emergency_prussian_constitutionalism;State of Emergency (Prussian Constitutionalism);√âtat d'urgence (Constitutionalisme prussien);Ausnahmezustand (Konstitutionelle Monarchie);;Estado de emergencia (Constitucionalismo prusiano);;;;;;;;;
+state_of_emergency_prussian_constitutionalism_ruler;King;Roi;K√∂nig;;Rey;;;;;;;;;

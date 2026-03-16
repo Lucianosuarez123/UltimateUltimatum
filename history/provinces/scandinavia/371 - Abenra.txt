@@ -7,16 +7,16 @@ add_core = SCA
 trade_goods = cattle
 life_rating = 35
 1870.1.1 = {
-                controller = NGF
-                owner = NGF
-                add_core = NGF
-		}
+  controller = NGF
+  owner = NGF
+  add_core = NGF
+}
 1914.1.1 = {
-	owner = GER
-	controller = GER
-		}
+  owner = GER
+  controller = GER
+}
 
 1920.1.1 = {
-	owner = DEN
-	controller = DEN
-		}
+  owner = DEN
+  controller = DEN
+}

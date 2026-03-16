@@ -1,20 +1,18 @@
-
-
 1903.1.1 = {
-		owner = FRA
-		controller = FRA
-		colonial = 2
-		}
-1914.7.28 = { 
-		controller = GER
-		owner = GER
-		colonial = 2
-		}
+  owner = FRA
+  controller = FRA
+  colonial = 2
+}
+1914.7.28 = {
+  controller = GER
+  owner = GER
+  colonial = 2
+}
 1919.6.28 = {
-		owner = FRA
-		controller = FRA
-		colonial = 2
-		}
+  owner = FRA
+  controller = FRA
+  colonial = 2
+}
 
 
 trade_goods = cattle
@@ -22,7 +20,7 @@ life_rating = 15
 
 add_core = CAR
 1960.1.1 = {
-	owner = CAR
-	controller = CAR
-	colonial = 0
-		}
+  owner = CAR
+  controller = CAR
+  colonial = 0
+}

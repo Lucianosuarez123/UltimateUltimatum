@@ -1,95 +1,77 @@
 #Montenegro independence
 country_event = {
-	id = 4000054
-	title = "Montenegro declare independence"
-	desc = "The people of  Montenegro no longer want to be part of us, what to do?"
-	picture = "Montenegro"
+  id = 4000054
+  title = "Montenegro declare independence"
+  desc = "The people of  Montenegro no longer want to be part of us, what to do?"
+  picture = "Montenegro"
 
-        fire_only_once = yes
+  fire_only_once = yes
 
-	trigger = {
-tag = SER
-year = 2002
-militancy = 3
+  trigger = {
+    tag = SER
+    year = 2002
+    militancy = 3
 
-NOT  = {
-exists = MON 
- }
-	}
-	mean_time_to_happen = {
-		months 2
-	}
-##They can't##
-	option = {
-		name = "Attack them!"
-release = MON
-		war = {
-target = MON
-attacker_goal = {
-casus_belli = conquest }
-defender_goal = {
-casus_belli = become_independent }
+    NOT = { exists = MON }
+  }
+  mean_time_to_happen = {
+    months 2
+  }
+  ##They can't##
+  option = {
+    name = "Attack them!"
+    release = MON
+    war = {
+      target = MON
+      attacker_goal = { casus_belli = conquest }
+      defender_goal = { casus_belli = become_independent }
+    }
+  }
+  #Let them go##
+  option = {
+    name = "Let them go"
+    release = MON
+  }
 }
-
-
-}
-#Let them go##
- option = {
-name = "Let them go"
-release = MON }
-	}
 #Kosovo Independence
 country_event = {
-id = 4000056
-picture = "Kosovo"
-title = "Kosovo declare independence"
-desc = "Kosovo, a region on our south with many muslims from Albania wants independence what to do?If we declare war we risk war with Albania remember that"
-fire_only_once = yes
-trigger = {
-tag = SER
-exists = MON
-year = 2005
-AND={
-802={owned_by=SER}
-803={owned_by=SER}
-804={owned_by=SER}
-}
+  id = 4000056
+  picture = "Kosovo"
+  title = "Kosovo declare independence"
+  desc = "Kosovo, a region on our south with many muslims from Albania wants independence what to do?If we declare war we risk war with Albania remember that"
+  fire_only_once = yes
+  trigger = {
+    tag = SER
+    exists = MON
+    year = 2005
+    AND = {
+      802 = { owned_by = SER }
+      803 = { owned_by = SER }
+      804 = { owned_by = SER }
+    }
 
-NOT = {
+    NOT = { exists = KOS }
+  }
+  option = {
+    name = "Kosovo is Serbia! "
+    802 = { add_core = KOS }
+    803 = { add_core = KOS }
+    804 = { add_core = KOS }
+    release = KOS
+    KOS = { create_alliance = ALB }
 
-exists = KOS 
-}
-
-}
-option = {
-name = "Kosovo is Serbia! "
-802={add_core=KOS}
-803={add_core=KOS}
-804={add_core=KOS}
-release = KOS
-KOS  = {
-create_alliance = ALB }
-
-war = {
-target = KOS
-attacker_goal = {
-
-
-
-casus_belli = conquest
- }
-call_ally = yes
-defender_goal = {
-casus_belli = become_independent
-
-}
-}
-}
-option = {
-name = "We don't care "
-802={add_core=KOS}
-803={add_core=KOS}
-804={add_core=KOS}
-release = KOS
-}
+    war = {
+      target = KOS
+      attacker_goal = { casus_belli = conquest }
+      call_ally = yes
+      defender_goal = { casus_belli = become_independent }
+    }
+  }
+  option = {
+    name = "We don't care "
+    802 = { add_core = KOS }
+    803 = { add_core = KOS }
+    804 = { add_core = KOS }
+    release = KOS
+  }
 }

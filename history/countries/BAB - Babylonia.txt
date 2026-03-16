@@ -25,19 +25,19 @@ work_hours = fourteen_hours
 safety_regulations = trinket_safety
 health_care = trinket_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions 
+pensions = no_pensions
 school_reforms = no_schools
 
 ruling_party = BAB_conservative
 last_election = 1834.1.1
 upper_house = {
-	fascist = 0
-	liberal = 35
-	conservative = 55
-	reactionary = 10
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+  fascist = 0
+  liberal = 35
+  conservative = 55
+  reactionary = 10
+  anarcho_liberal = 0
+  socialist = 0
+  communist = 0
 }
 
 post_renaissance_tech = 1
@@ -64,29 +64,26 @@ early_modern_philosphies = 1 #Until this for 1700
 # Starting Consciousness
 consciousness = 2
 nonstate_consciousness = 1
+1861.1.1 = { oob = "/1861/BAB_oob.txt" }
 1861.1.1 = {
-	oob = "/1861/BAB_oob.txt"
-}
-1861.1.1 = {
-
-post_renaissance_tech = 1
-birth_of_science_tech = 1
-scientific_revolution_tech = 1 #until this for 1700
-late_medieval_warfare = 1
-early_military_revolution = 1
-flintlock_muskets = 1 #Until this for 1700
-late_renaissance = 1
-mannerism = 1
-early_baroque = 1
-high_baroque = 1 #Until this for 1700
-late_reformation = 1
-counter_reformation = 1
-inquisitions_tech = 1
-jesuit_movements_tech = 1 #Until this for 1700
-late_renaissance_philosophies = 1
-age_of_rationalism = 1
-early_modern_philosphies = 1 #Until this for 1700
+  post_renaissance_tech = 1
+  birth_of_science_tech = 1
+  scientific_revolution_tech = 1 #until this for 1700
+  late_medieval_warfare = 1
+  early_military_revolution = 1
+  flintlock_muskets = 1 #Until this for 1700
+  late_renaissance = 1
+  mannerism = 1
+  early_baroque = 1
+  high_baroque = 1 #Until this for 1700
+  late_reformation = 1
+  counter_reformation = 1
+  inquisitions_tech = 1
+  jesuit_movements_tech = 1 #Until this for 1700
+  late_renaissance_philosophies = 1
+  age_of_rationalism = 1
+  early_modern_philosphies = 1 #Until this for 1700
 
 
-#Inventions
+  #Inventions
 }

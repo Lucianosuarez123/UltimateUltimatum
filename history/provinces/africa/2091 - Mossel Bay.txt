@@ -1,18 +1,18 @@
 1700.1.1 = {
-	owner = NET
-controller = NET
-	}
+  owner = NET
+  controller = NET
+}
 1806.1.1 = {
-owner = ENG
-controller = ENG
-add_core = SAF
-		}
+  owner = ENG
+  controller = ENG
+  add_core = SAF
+}
 
 1910.1.1 = {
-		owner = SAF
-		controller = SAF
-		colonial = 0
-		}
+  owner = SAF
+  controller = SAF
+  colonial = 0
+}
 
 
 

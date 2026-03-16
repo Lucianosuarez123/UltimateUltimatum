@@ -3,10 +3,10 @@ controller = KNG
 add_core = KNG
 
 1903.1.1 = {
-		owner = FRA
-		controller = FRA
-		colonial = 2
-		}
+  owner = FRA
+  controller = FRA
+  colonial = 2
+}
 
 
 trade_goods = coffee
@@ -14,7 +14,7 @@ life_rating = 15
 
 add_core = CTD
 1960.1.1 = {
-	owner = CTD
-	controller = CTD
-	colonial = 0
-		}
+  owner = CTD
+  controller = CTD
+  colonial = 0
+}

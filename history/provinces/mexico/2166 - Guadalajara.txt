@@ -2,17 +2,17 @@ owner = SPA
 controller = SPA
 colonial = 1
 1811.1.1 = {
-owner = MEX
+  owner = MEX
 
-colonial = 0
-controller = MEX
-add_core = MEX
-		}
+  colonial = 0
+  controller = MEX
+  add_core = MEX
+}
 trade_goods = fish
 
 life_rating = 35
 
-1920.1.1 = { 
-	railroad = 5
-	colonial = 0
+1920.1.1 = {
+  railroad = 5
+  colonial = 0
 }

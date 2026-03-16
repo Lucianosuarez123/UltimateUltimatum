@@ -1,20 +1,20 @@
 owner = TUR
 controller = TUR
 1810.1.1 = {
-owner = EGY
-controller = EGY
-		}
+  owner = EGY
+  controller = EGY
+}
 1889.1.1 = {
-	owner = ENG
-	controller = ENG
-	add_core = SUD
-	remove_core = EGY
-		}
+  owner = ENG
+  controller = ENG
+  add_core = SUD
+  remove_core = EGY
+}
 1956.1.1 = {
-	owner = SUD
-	controller = SUD
-	colonial = 0
-		}
+  owner = SUD
+  controller = SUD
+  colonial = 0
+}
 
 
 add_core = EGY

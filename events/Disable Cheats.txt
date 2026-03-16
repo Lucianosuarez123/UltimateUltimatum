@@ -8,10 +8,10 @@ country_event = {
   is_triggered_only = yes
   option = {
     name = "You sure you want to disable it?"
-	set_country_flag = cheat_disable_forever
-	}
+    set_country_flag = cheat_disable_forever
+  }
   option = {
     name = "Nevermind, i'd rather like the cheat option intact"
-	set_global_flag = Cheats_on
-	}
+    set_global_flag = Cheats_on
+  }
 }

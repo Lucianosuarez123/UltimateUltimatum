@@ -38,17 +38,17 @@ school_reforms = no_schools
 ruling_party = CAU_conservative
 last_election = 1834.1.1
 upper_house = {
-	fascist = 0
-	liberal = 20
-	conservative = 63
-	reactionary = 17
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+  fascist = 0
+  liberal = 20
+  conservative = 63
+  reactionary = 17
+  anarcho_liberal = 0
+  socialist = 0
+  communist = 0
 }
 
 1861.1.1 = {
-# Technologies
+  # Technologies
 
-#Inventions
+  #Inventions
 }

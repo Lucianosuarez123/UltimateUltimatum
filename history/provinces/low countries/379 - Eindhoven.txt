@@ -1,4 +1,4 @@
-add_core=BNX
+add_core = BNX
 owner = SPA
 controller = SPA
 add_core = REH
@@ -7,15 +7,15 @@ trade_goods = coal
 life_rating = 35
 
 1629.1.1 = {
-owner = NET
-controller = NET
+  owner = NET
+  controller = NET
 }
 1806.8.6 = { remove_core = REH }
 1810.7.9 = {
-owner = FRA
-controller = FRA
+  owner = FRA
+  controller = FRA
 }
 1813.10.19 = {
-owner = NET
-controller = NET
+  owner = NET
+  controller = NET
 }

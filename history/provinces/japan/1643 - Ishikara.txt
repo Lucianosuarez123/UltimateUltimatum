@@ -8,12 +8,12 @@ add_core = AIN
 
 
 1764.1.1 = {
-owner = TKG
-controller = TKG
+  owner = TKG
+  controller = TKG
 }
 
 1868.1.1 = {
-owner = JAP
-controller = JAP
-add_core = JAP
+  owner = JAP
+  controller = JAP
+  add_core = JAP
 }

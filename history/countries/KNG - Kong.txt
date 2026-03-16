@@ -29,13 +29,13 @@ school_reforms = no_schools
 
 ruling_party = SOK_conservative
 upper_house = {
-	fascist = 0
-	liberal = 0
-	conservative = 50
-	reactionary = 50
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+  fascist = 0
+  liberal = 0
+  conservative = 50
+  reactionary = 50
+  anarcho_liberal = 0
+  socialist = 0
+  communist = 0
 }
 
 set_country_flag = lacking_writing_system
@@ -46,12 +46,12 @@ nonstate_consciousness = 0
 
 oob = "KNG_oob.txt"
 1861.1.1 = {
-	oob = "/1861/KNG_oob.txt"
-	foreign_weapons = yes_foreign_weapons
-	early_muskets = 1
-	field_artillery = 1
-	flintlock_muskets = 1
-	bayonets = 1
-	enfilading_tactics = 1
-	late_muskets = 1
+  oob = "/1861/KNG_oob.txt"
+  foreign_weapons = yes_foreign_weapons
+  early_muskets = 1
+  field_artillery = 1
+  flintlock_muskets = 1
+  bayonets = 1
+  enfilading_tactics = 1
+  late_muskets = 1
 }

@@ -1,11 +1,11 @@
 owner = SWI
 controller = SWI
 add_core = SWI
-add_core=REH
+add_core = REH
 1700.1.1 = {
-owner = SWI
-controller = SWI
-remove_core= REH
+  owner = SWI
+  controller = SWI
+  remove_core = REH
 }
 trade_goods = wool
 life_rating = 40

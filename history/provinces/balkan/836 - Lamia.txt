@@ -2,12 +2,12 @@ owner = TUR
 controller = TUR
 add_core = GRE
 1830.1.1 = {
-	owner = GRE
-	controller = GRE
-		}
-1919.6.28 = { 
-		controller = GRE
-		owner = GRE
-		}
+  owner = GRE
+  controller = GRE
+}
+1919.6.28 = {
+  controller = GRE
+  owner = GRE
+}
 trade_goods = cotton
 life_rating = 35

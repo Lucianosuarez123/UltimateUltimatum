@@ -4,30 +4,29 @@ add_core = AUS
 add_core = REH
 trade_goods = grain
 life_rating = 35
-1806.8.6 = {
-remove_core = REH
-}
+1806.8.6 = { remove_core = REH }
 1861.1.1 = { railroad = 3 }
 1867.3.30 = {
-owner = KUK
-controller = KUK 
-add_core = KUK}
+  owner = KUK
+  controller = KUK
+  add_core = KUK
+}
 1919.11.9 = {
-owner = AUS
-controller = AUS }
+  owner = AUS
+  controller = AUS
+}
 1938.1.1 = {
-owner = GER
-controller = GER }
+  owner = GER
+  controller = GER
+}
 
 
 #End of WW2
 1945.5.1 = {
-	owner = RUS
-	controller = RUS
-		}
+  owner = RUS
+  controller = RUS
+}
 1950.1.1 = {
-	owner = AUS
-	controller = AUS
-		}
-
-
+  owner = AUS
+  controller = AUS
+}

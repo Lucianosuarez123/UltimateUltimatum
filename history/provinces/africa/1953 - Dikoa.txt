@@ -1,24 +1,19 @@
-
-
 1920.1.1 = {
-		owner = ENG
-		controller = ENG
-		colonial = 2
-		}
+  owner = ENG
+  controller = ENG
+  colonial = 2
+}
 
 
 trade_goods = fruit
 life_rating = 35
-1903.2.2 = {
-	add_core = NGA
-		}
+1903.2.2 = { add_core = NGA }
 1914.7.28 = {
-	owner = GER
-	controller = GER
-		}
+  owner = GER
+  controller = GER
+}
 1960.1.1 = {
-	owner = NGA
-	controller = NGA
-	colonial = 0
-
-		}
+  owner = NGA
+  controller = NGA
+  colonial = 0
+}

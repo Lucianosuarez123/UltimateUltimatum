@@ -9,13 +9,13 @@ civilized = no
 
 ruling_party = LEN_reactionary
 upper_house = {
-	fascist = 0
-	liberal = 0
-	conservative = 0
-	reactionary = 100
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+  fascist = 0
+  liberal = 0
+  conservative = 0
+  reactionary = 100
+  anarcho_liberal = 0
+  socialist = 0
+  communist = 0
 }
 
 slavery = yes_slavery

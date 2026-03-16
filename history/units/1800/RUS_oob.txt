@@ -1,14 +1,14 @@
 ﻿}
 army = {
-	leader = {
-		name = "Mikhaïl Koutouzov"
-		type = land
+    leader = {
+        name = "Mikhaïl Koutouzov"
+        type = land
                 prestige = 0.5
                 personality = smart_p
                 background = disgraced
                 picture="russian_general_10"
-			}
-	location = 994
+            }
+    location = 994
         regiment = {
                 name= "Infantry"
                 type = infantry

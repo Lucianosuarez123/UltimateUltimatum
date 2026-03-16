@@ -4,19 +4,18 @@ add_core = CNK
 trade_goods = timber
 life_rating = 10
 1867.1.1 = {
-	owner = USA
-	controller = USA
-		}
+  owner = USA
+  controller = USA
+}
 #add_core = USA
 1861.1.1 = {
-owner = USA
-controller = USA
-add_core = USA
-colonial = 0
+  owner = USA
+  controller = USA
+  add_core = USA
+  colonial = 0
 }
 2022.3.7 = {
-owner = DES
-controller = DES
-add_core = USA
+  owner = DES
+  controller = DES
+  add_core = USA
 }
-

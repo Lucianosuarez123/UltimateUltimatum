@@ -8,9 +8,7 @@ colonial = 2
 
 
 1956.1.1 = {
-owner = MOR
-controller = MOR
-colonial = 0
-		}
-
-
+  owner = MOR
+  controller = MOR
+  colonial = 0
+}

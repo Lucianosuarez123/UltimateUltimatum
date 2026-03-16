@@ -7,35 +7,35 @@ trade_goods = coal
 
 1806.8.6 = { remove_core = REH }
 1815.6.9 = {
-owner = PRU
-controller = PRU
-add_core = PRU
-remove_core = SAX
+  owner = PRU
+  controller = PRU
+  add_core = PRU
+  remove_core = SAX
 }
 1861.1.1 = { railroad = 3 }
 1870.1.1 = {
-owner = NGF
-controller = NGF
-add_core = NGF
+  owner = NGF
+  controller = NGF
+  add_core = NGF
 }
 1871.1.1 = {
-owner = GER
-controller = GER
-remove_core = NGF
+  owner = GER
+  controller = GER
+  remove_core = NGF
 }
 #End of WW2
 1945.7.1 = {
-owner = RUS
-controller = RUS
+  owner = RUS
+  controller = RUS
 }
 1950.1.1 = {
-owner = DDR
-controller = DDR
-add_core = DDR
+  owner = DDR
+  controller = DDR
+  add_core = DDR
 }
 #Fall of Berlin Wall - Reunification
 1990.10.3 = {
-owner = GER
-controller = GER
-remove_core = DDR
+  owner = GER
+  controller = GER
+  remove_core = DDR
 }

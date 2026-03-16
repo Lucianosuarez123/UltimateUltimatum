@@ -3,9 +3,9 @@ controller = POR
 trade_goods = grain
 life_rating = 35
 colonial = 2
-	add_core = MOZ
+add_core = MOZ
 1960.1.1 = {
-	owner = MOZ
-	controller = MOZ
-	colonial = 0
-		}
+  owner = MOZ
+  controller = MOZ
+  colonial = 0
+}

@@ -14,14 +14,14 @@ colonial = 2
 trade_goods = tea
 life_rating = 32
 1998.1.1 = {
-	owner = CHI
-	controller = CHI
+    owner = CHI
+    controller = CHI
         add_core = QNG
-	remove_core = CHI
-	state_building = {
-		level = 1
-		building = canned_food_factory
-		upgrade = yes
-	
-	colonial = 0
-		}
+    remove_core = CHI
+    state_building = {
+        level = 1
+        building = canned_food_factory
+        upgrade = yes
+
+    colonial = 0
+        }

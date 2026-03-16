@@ -1,23 +1,22 @@
-	owner = CHE
-	controller = CHE
-	add_core = CHE
+owner = CHE
+controller = CHE
+add_core = CHE
 1800.1.1 = {
-owner = USA
-controller = USA
-add_core = USA
-colonial = 0
-		}
+  owner = USA
+  controller = USA
+  add_core = USA
+  colonial = 0
+}
 trade_goods = tobacco
 life_rating = 35
 1867.1.1 = {
-	owner = USA
-	controller = USA
-		}
+  owner = USA
+  controller = USA
+}
 1861.1.1 = { railroad = 3 }
 
 2019.1.1 = {
-	owner = USA	
-	controller = USA
-	add_core = USA
-		}
-
+  owner = USA
+  controller = USA
+  add_core = USA
+}

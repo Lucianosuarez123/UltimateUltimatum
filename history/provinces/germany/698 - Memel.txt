@@ -11,37 +11,37 @@ life_rating = 40
 1762.1.5 = { controller = PRU }
 1861.1.1 = { railroad = 3 }
 1870.1.1 = {
-owner = NGF
-controller = NGF
-add_core = NGF
+  owner = NGF
+  controller = NGF
+  add_core = NGF
 }
 1871.1.1 = {
-owner = GER
-controller = GER
-remove_core = NGF
+  owner = GER
+  controller = GER
+  remove_core = NGF
 }
 1923.1.19 = {
-owner = LIT
-controller = LIT
-remove_core = GER
-remove_core = PLC
-remove_core = PRU
+  owner = LIT
+  controller = LIT
+  remove_core = GER
+  remove_core = PLC
+  remove_core = PRU
 }
-1939.3.22  = {
-owner = GER
-controller = GER
-add_core = GER
-add_core = PRU
+1939.3.22 = {
+  owner = GER
+  controller = GER
+  add_core = GER
+  add_core = PRU
 }
 #End of WW2
 1945.5.1 = {
-owner = RUS
-controller = RUS
-remove_core = GER
-remove_core = PRU
+  owner = RUS
+  controller = RUS
+  remove_core = GER
+  remove_core = PRU
 }
 #Soviet Collapse
 1990.3.11 = {
-owner = LIT
-controller = LIT
+  owner = LIT
+  controller = LIT
 }

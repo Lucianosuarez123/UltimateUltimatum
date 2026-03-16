@@ -28,13 +28,13 @@ school_reforms = no_schools
 
 ruling_party = WRI_conservative
 upper_house = {
-	fascist = 0
-	liberal = 30
-	conservative = 50
-	reactionary = 20
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+  fascist = 0
+  liberal = 30
+  conservative = 50
+  reactionary = 20
+  anarcho_liberal = 0
+  socialist = 0
+  communist = 0
 }
 
 set_country_flag = existing_country
@@ -50,8 +50,8 @@ nonstate_consciousness = 0
 
 oob = "WAR_oob.txt"
 1861.1.1 = {
-	oob = "/1861/WAR_oob.txt"
-	foreign_weapons = yes_foreign_weapons
-set_country_flag = weapons_reform
-	flintlock_rifles = 1
+  oob = "/1861/WAR_oob.txt"
+  foreign_weapons = yes_foreign_weapons
+  set_country_flag = weapons_reform
+  flintlock_rifles = 1
 }

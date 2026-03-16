@@ -4,10 +4,10 @@ controller = PER
 
 
 1800.1.1 = {
-owner = RUS
-controller = RUS
-add_core = RUS
-		}
+  owner = RUS
+  controller = RUS
+  add_core = RUS
+}
 
 trade_goods = silk
 life_rating = 35

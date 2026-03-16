@@ -1,10 +1,8 @@
-
-
 1903.1.1 = {
-		owner = POR
-		controller = POR
-		colonial = 2
-		}
+  owner = POR
+  controller = POR
+  colonial = 2
+}
 
 
 trade_goods = tobacco
@@ -12,7 +10,7 @@ life_rating = 15
 
 add_core = MWI
 1960.1.1 = {
-	owner = MWI
-	controller = MWI
-	colonial = 0
-		}
+  owner = MWI
+  controller = MWI
+  colonial = 0
+}

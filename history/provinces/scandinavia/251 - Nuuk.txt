@@ -8,7 +8,7 @@ life_rating = 35
 colonial = 2
 
 1979.1.1 = {
-	owner = GRL
-	controller = GRL
-	colonial = 0
-		}
+  owner = GRL
+  controller = GRL
+  colonial = 0
+}

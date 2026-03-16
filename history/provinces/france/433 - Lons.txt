@@ -4,5 +4,6 @@ add_core = FRA
 trade_goods = grain
 life_rating = 35
 1700.1.1 = {
-	owner = FRA
-controller = FRA		}
+  owner = FRA
+  controller = FRA
+}

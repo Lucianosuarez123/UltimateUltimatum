@@ -2,18 +2,16 @@ owner = ALD
 controller = ALD
 add_core = ALD
 1830.1.1 = {
-	owner = FRA
-	controller = FRA
-	colonial = 2
-		}
+  owner = FRA
+  controller = FRA
+  colonial = 2
+}
 trade_goods = fruit
 life_rating = 35
 
 1964.1.1 = {
-owner = ALD
-controller = ALD
-add_core = ALD
-colonial = 0
-		}
-
-
+  owner = ALD
+  controller = ALD
+  add_core = ALD
+  colonial = 0
+}

@@ -10,17 +10,17 @@ is_releasable_vassal = yes
 
 ruling_party = TIB_conservative
 upper_house = {
-	fascist = 0
-	liberal = 9
-	conservative = 75
-	reactionary = 16
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+    fascist = 0
+    liberal = 9
+    conservative = 75
+    reactionary = 16
+    anarcho_liberal = 0
+    socialist = 0
+    communist = 0
 }
 
 
-govt_flag = 
+govt_flag =
 {
         government = hms_government
         flag = bourgeois_dictatorship
@@ -48,19 +48,19 @@ safety_regulations = no_safety
 
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions 
+pensions = no_pensions
 school_reforms = no_schools
 
 1861.1.1 = {
-	oob = "/1861/TIB_oob.txt"
-	literacy = 0.04
-	non_state_culture_literacy = 0.07 #Chinese
+    oob = "/1861/TIB_oob.txt"
+    literacy = 0.04
+    non_state_culture_literacy = 0.07 #Chinese
 
-	#Military Reforms
-	foreign_weapons = yes_foreign_weapons
-	
-	#Technologies
-	muzzle_loaded_rifles = 1
+    #Military Reforms
+    foreign_weapons = yes_foreign_weapons
+
+    #Technologies
+    muzzle_loaded_rifles = 1
 }
 
 1914.1.1= {
@@ -218,7 +218,7 @@ scientific_revolution_tech = 1 #until this for 1700
 early_agricultural_reforms_tech = 1
 agricultural_revolution_tech = 1
 dawn_of_industrial_revolution_tech = 1 # Until this for 1800
-first_industrial_revolution_tech = 1 
+first_industrial_revolution_tech = 1
 
 late_medieval_warfare = 1
 early_military_revolution = 1
@@ -226,7 +226,7 @@ flintlock_muskets = 1 #Until this for 1700
 military_revolution = 1
 era_of_mass_armies = 1
 early_modern_warfare = 1 #Until this for 1800
-napoleonic_warfare = 1 
+napoleonic_warfare = 1
 
 late_renaissance = 1
 mannerism = 1
@@ -271,14 +271,14 @@ unemployment_subsidies = trinket_subsidies
 pensions = good_pensions
 school_reforms = good_schools
 
-	government = democracy
+    government = democracy
 ruling_party = TIB_conservative
 upper_house = {
-	fascist = 0
-	liberal = 10
-	conservative = 60
-	reactionary = 20
-	anarcho_liberal = 0
-	socialist = 10
-	communist = 0
-	}
+    fascist = 0
+    liberal = 10
+    conservative = 60
+    reactionary = 20
+    anarcho_liberal = 0
+    socialist = 10
+    communist = 0
+    }

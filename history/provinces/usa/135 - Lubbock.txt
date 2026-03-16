@@ -3,29 +3,29 @@ controller = CMC
 add_core = CMC
 
 1836.1.1 = {
-owner = TEX
-controller = TEX
-add_core = TEX
-add_core = MEX
-colonial = 0
-		}
+  owner = TEX
+  controller = TEX
+  add_core = TEX
+  add_core = MEX
+  colonial = 0
+}
 
 trade_goods = sulphur
 life_rating = 35
 1867.1.1 = {
-	owner = USA
-	controller = USA
-		}
+  owner = USA
+  controller = USA
+}
 2019.1.1 = {
-	owner = USA	
-	controller = USA
-	add_core = USA
-		}
+  owner = USA
+  controller = USA
+  add_core = USA
+}
 
 1861.1.1 = {
-	controller = CSA
-	owner = CSA
-	add_core = CSA
-	add_core = USA
-	remove_core = MEX
+  controller = CSA
+  owner = CSA
+  add_core = CSA
+  add_core = USA
+  remove_core = MEX
 }

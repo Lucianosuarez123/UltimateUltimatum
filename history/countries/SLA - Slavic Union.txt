@@ -32,11 +32,11 @@ school_reforms = acceptable_schools
 
 ruling_party = "Konservativnaya Partiya"
 upper_house = {
-        fascist = 5
-        liberal = 15
-        conservative = 30
-        reactionary = 2
-        anarcho_liberal = 1
-        socialist = 45
-        communist = 2
+  fascist = 5
+  liberal = 15
+  conservative = 30
+  reactionary = 2
+  anarcho_liberal = 1
+  socialist = 45
+  communist = 2
 }

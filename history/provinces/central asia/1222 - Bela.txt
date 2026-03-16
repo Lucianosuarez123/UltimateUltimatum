@@ -2,24 +2,24 @@ owner = MUG
 controller = MUG
 
 1818.1.1 = {
-owner = MAK
-controller = MAK
-		}
+  owner = MAK
+  controller = MAK
+}
 add_core = MAK
 1880.1.1 = {
-owner = ENG
-controller = ENG
-colonial = 2
-		}
+  owner = ENG
+  controller = ENG
+  colonial = 2
+}
 
 
 #Decolonisation
 1947.1.1 = {
-	owner = PAK
-	controller = PAK
-	add_core = PAK
-	colonial = 0
-		}
+  owner = PAK
+  controller = PAK
+  add_core = PAK
+  colonial = 0
+}
 
 
 add_core = HND

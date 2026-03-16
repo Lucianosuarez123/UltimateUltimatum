@@ -29,23 +29,23 @@ school_reforms = no_schools
 
 ruling_party = SLS_conservative_2
 upper_house = {
-	fascist = 0
-	liberal = 0
-	conservative = 85
-	reactionary = 15
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+  fascist = 0
+  liberal = 0
+  conservative = 85
+  reactionary = 15
+  anarcho_liberal = 0
+  socialist = 0
+  communist = 0
 }
 
 1648.1.1 = {
-upper_house = {
-	fascist = 0
-	liberal = 33
-	conservative = 57
-	reactionary = 10
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
-}
+  upper_house = {
+    fascist = 0
+    liberal = 33
+    conservative = 57
+    reactionary = 10
+    anarcho_liberal = 0
+    socialist = 0
+    communist = 0
+  }
 }

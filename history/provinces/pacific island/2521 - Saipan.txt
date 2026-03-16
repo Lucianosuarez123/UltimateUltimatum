@@ -5,12 +5,12 @@ trade_goods = fish
 life_rating = 30
 colonial = 2
 1910.1.1 = {
-	owner = JAP
-	controller = JAP
-	add_core = JAP
-		}
+  owner = JAP
+  controller = JAP
+  add_core = JAP
+}
 1945.1.1 = {
-	owner = USA
-	controller = USA
-	add_core = USA
-		}
+  owner = USA
+  controller = USA
+  add_core = USA
+}

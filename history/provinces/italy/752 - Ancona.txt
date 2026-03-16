@@ -5,20 +5,20 @@ add_core = ITA
 trade_goods = fruit
 life_rating = 35
 #state_building = {
-#	level = 1
-#	building = winery
-#	upgrade = yes
+#    level = 1
+#    building = winery
+#    upgrade = yes
 #}
-1809.1.1 = { 
-		controller = KNI
-		owner = KNI
-		}
-1815.1.1 = { 
-		controller = PAP
-		owner = PAP
-		}
+1809.1.1 = {
+  controller = KNI
+  owner = KNI
+}
+1815.1.1 = {
+  controller = PAP
+  owner = PAP
+}
 1861.1.1 = {
-	controller = ITA
-	owner = ITA
-	add_core = ITA
+  controller = ITA
+  owner = ITA
+  add_core = ITA
 }

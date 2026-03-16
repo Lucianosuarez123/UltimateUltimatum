@@ -1,4 +1,4 @@
-add_core=BNX
+add_core = BNX
 owner = NET
 controller = NET
 add_core = NET
@@ -8,29 +8,29 @@ naval_base = 2
 life_rating = 35
 
 #state_building = {
-#	level = 1
-#	building = fabric_factory
-#	upgrade = yes
+#    level = 1
+#    building = fabric_factory
+#    upgrade = yes
 #}
 #state_building = {
-#	level = 1
-#	building = ammunition_factory
-#	upgrade = yes
+#    level = 1
+#    building = ammunition_factory
+#    upgrade = yes
 #}
 1806.8.6 = { remove_core = REH }
 1810.7.9 = {
-owner = FRA
-controller = FRA
+  owner = FRA
+  controller = FRA
 }
 1813.10.19 = {
-owner = NET
-controller = NET
+  owner = NET
+  controller = NET
 }
 1861.1.1 = {
-railroad = 3
-state_building = {
-level = 1
-building = paper_mill
-upgrade = yes
-}
+  railroad = 3
+  state_building = {
+    level = 1
+    building = paper_mill
+    upgrade = yes
+  }
 }

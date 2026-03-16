@@ -3,13 +3,11 @@ controller = POR
 trade_goods = tobacco
 life_rating = 35
 colonial = 2
-	add_core = MOZ
+add_core = MOZ
 #Rubber discovered!
-1880.1.1 = {
-	trade_goods = rubber
-		}
+1880.1.1 = { trade_goods = rubber }
 1960.1.1 = {
-	owner = MOZ
-	controller = MOZ
-	colonial = 0
-		}
+  owner = MOZ
+  controller = MOZ
+  colonial = 0
+}

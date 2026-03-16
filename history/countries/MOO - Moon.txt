@@ -29,7 +29,7 @@ work_hours = no_work_hour_limit
 safety_regulations = trinket_safety
 health_care = trinket_health_care
 unemployment_subsidies = trinket_subsidies
-pensions = no_pensions 
+pensions = no_pensions
 school_reforms = low_schools
 
 # Technologies
@@ -180,7 +180,7 @@ scientific_revolution_tech = 1 #until this for 1700
 early_agricultural_reforms_tech = 1
 agricultural_revolution_tech = 1
 dawn_of_industrial_revolution_tech = 1 # Until this for 1800
-first_industrial_revolution_tech = 1 
+first_industrial_revolution_tech = 1
 
 late_medieval_warfare = 1
 early_military_revolution = 1
@@ -188,7 +188,7 @@ flintlock_muskets = 1 #Until this for 1700
 military_revolution = 1
 era_of_mass_armies = 1
 early_modern_warfare = 1 #Until this for 1800
-napoleonic_warfare = 1 
+napoleonic_warfare = 1
 
 late_renaissance = 1
 mannerism = 1

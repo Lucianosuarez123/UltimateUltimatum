@@ -1,17 +1,15 @@
-
-
 1903.1.1 = {
-		owner = ENG
-		controller = ENG
-		colonial = 2
-		}
+  owner = ENG
+  controller = ENG
+  colonial = 2
+}
 
 
 trade_goods = cattle
 life_rating = 15
 add_core = MWI
 1960.1.1 = {
-	owner = MWI
-	controller = MWI
-	colonial = 0
-		}
+  owner = MWI
+  controller = MWI
+  colonial = 0
+}

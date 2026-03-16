@@ -8,15 +8,15 @@ add_core = KNI
 trade_goods = cattle
 life_rating = 35
 1809.1.1 = {
-	owner = FRA
-	controller = FRA
-		}
+  owner = FRA
+  controller = FRA
+}
 1815.1.1 = {
-	owner = TUS
-	controller = TUS
-		}
+  owner = TUS
+  controller = TUS
+}
 1861.1.1 = {
-	controller = ITA
-	owner = ITA
-	add_core = ITA
+  controller = ITA
+  owner = ITA
+  add_core = ITA
 }

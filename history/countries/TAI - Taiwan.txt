@@ -28,11 +28,11 @@ school_reforms = no_schools
 
 ruling_party = TAI_conservative
 upper_house = {
-	fascist = 0
-	liberal = 5
-	conservative = 90
-	reactionary = 5
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+  fascist = 0
+  liberal = 5
+  conservative = 90
+  reactionary = 5
+  anarcho_liberal = 0
+  socialist = 0
+  communist = 0
 }

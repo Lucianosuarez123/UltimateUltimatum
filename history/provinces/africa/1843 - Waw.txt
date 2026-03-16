@@ -1,31 +1,30 @@
 trade_goods = grain
 life_rating = 15
-owner=TUR
-add_core=TUR
-controller=TUR
+owner = TUR
+add_core = TUR
+controller = TUR
 1830.1.1 = {
-		remove_core=TUR
-		add_core=EGY
-		controller=EGY
-		owner=EGY
-		}
+  remove_core = TUR
+  add_core = EGY
+  controller = EGY
+  owner = EGY
+}
 1903.1.1 = {
-		owner = ENG
-		controller = ENG
-	add_core = SUD
-		colonial = 2
-		}
+  owner = ENG
+  controller = ENG
+  add_core = SUD
+  colonial = 2
+}
 
 
 1956.1.1 = {
-	owner = SUD
-	controller = SUD
-	add_core = SSD
-	colonial = 0
-		}
+  owner = SUD
+  controller = SUD
+  add_core = SSD
+  colonial = 0
+}
 
 2011.1.1 = {
-		owner = SSD
-	controller = SSD
-			}
-
+  owner = SSD
+  controller = SSD
+}

@@ -1,16 +1,15 @@
 army = {
-	name = "Groﬂherzogliche Armee"
-	location = 2560
-	regiment = {
-		name= "1. Groﬂherzogliche Infanterie-Brigade"
-		type = infantry
-		home = 2560
-	}
-	
-	regiment = {
-		name= "2. Groﬂherzogliche Infanterie-Brigade"
-		type = infantry
-		home = 567
-	}
+  name = "Groﬂherzogliche Armee"
+  location = 2560
+  regiment = {
+    name = "1. Groﬂherzogliche Infanterie-Brigade"
+    type = infantry
+    home = 2560
+  }
 
+  regiment = {
+    name = "2. Groﬂherzogliche Infanterie-Brigade"
+    type = infantry
+    home = 567
+  }
 }

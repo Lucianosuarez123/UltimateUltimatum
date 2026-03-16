@@ -9,13 +9,13 @@ non_state_culture_literacy = 0.01
 
 ruling_party = HEJ_conservative
 upper_house = {
-	fascist = 0
-	liberal = 13
-	conservative = 68
-	reactionary = 19
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+  fascist = 0
+  liberal = 13
+  conservative = 68
+  reactionary = 19
+  anarcho_liberal = 0
+  socialist = 0
+  communist = 0
 }
 
 # Starting Consciousness
@@ -23,9 +23,7 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "HDJ_oob.txt"
-1861.1.1 = {
-	oob = "/1861/HDJ_oob.txt"
-}
+1861.1.1 = { oob = "/1861/HDJ_oob.txt" }
 
 slavery = no_slavery
 upper_house_composition = appointed
@@ -41,17 +39,17 @@ work_hours = no_work_hour_limit
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions 
+pensions = no_pensions
 school_reforms = no_schools
 
 1861.1.1 = {
-	oob = "/1861/HDJ_oob.txt"
-	literacy = 0.13
-	non_state_culture_literacy = 0.04
+  oob = "/1861/HDJ_oob.txt"
+  literacy = 0.13
+  non_state_culture_literacy = 0.04
 
-	#Military Reforms
-	foreign_weapons = yes_foreign_weapons
+  #Military Reforms
+  foreign_weapons = yes_foreign_weapons
 
-	#Technologies
-	muzzle_loaded_rifles = 1
+  #Technologies
+  muzzle_loaded_rifles = 1
 }

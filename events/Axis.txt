@@ -8,337 +8,411 @@
 
 # National Instability
 country_event = {
-	id = 100000
-	title = "EVTNAME100000"
-	desc = "EVTDESC100000"
-	picture = "Demonstration"
+  id = 100000
+  title = "EVTNAME100000"
+  desc = "EVTDESC100000"
+  picture = "Demonstration"
 
-	trigger = {
-		tag = GER
-		
-		is_ideology_enabled = fascist
+  trigger = {
+    tag = GER
 
-		OR = {
-			government = democracy
-			government = hms_government
-		}
+    is_ideology_enabled = fascist
 
-		# Conservative does not have majority of upper house
-		NOT = { upper_house = { ideology = conservative value = 0.60 } }
+    OR = {
+      government = democracy
+      government = hms_government
+    }
 
-		average_consciousness = 3
-		average_militancy     = 3
-	} #trigger
+    # Conservative does not have majority of upper house
+    NOT = {
+      upper_house = {
+        ideology = conservative
+        value = 0.60
+      }
+    }
 
-	fire_only_once = yes
+    average_consciousness = 3
+    average_militancy = 3
+  } #trigger
 
-	option = {
-		name = "EVTOPTA100000"
+  fire_only_once = yes
 
-		upper_house = { ideology = conservative value = 1 }
+  option = {
+    name = "EVTOPTA100000"
 
-		any_pop = {
-			limit = {
-				location = { is_colonial = no }
-			}
+    upper_house = {
+      ideology = conservative
+      value = 1
+    }
 
-			ideology = { factor = -0.05 value = anarcho_liberal }
-			ideology = { factor = -0.05 value = liberal }
+    any_pop = {
+      limit = {
+        location = { is_colonial = no }
+      }
 
-			consciousness = -2
-			militancy     = -2
-		}
+      ideology = {
+        factor = -0.05
+        value = anarcho_liberal
+      }
+      ideology = {
+        factor = -0.05
+        value = liberal
+      }
 
-		political_reform = none_voting
-		political_reform = party_appointed
-		political_reform = censored_press
-		political_reform = state_controlled
+      consciousness = -2
+      militancy = -2
+    }
 
-		country_event = 17600
+    political_reform = none_voting
+    political_reform = party_appointed
+    political_reform = censored_press
+    political_reform = state_controlled
 
-		set_country_flag = ger_emergency
-	} #OptionA
+    country_event = 17600
 
-	option = {
-		name = "EVTOPTB100000"
-		
-		set_country_flag = ger_instability
-	} #OptionB
+    set_country_flag = ger_emergency
+  } #OptionA
 
+  option = {
+    name = "EVTOPTB100000"
+
+    set_country_flag = ger_instability
+  } #OptionB
 } #country_event
 
 # Nazi Political Figure
 country_event = {
-	id = 100001
-	title = "EVTNAME100001"
-	desc = "EVTDESC100001"
-	picture = "NaziPoliticalFigure"
+  id = 100001
+  title = "EVTNAME100001"
+  desc = "EVTDESC100001"
+  picture = "NaziPoliticalFigure"
 
-	trigger = {
-		tag = GER
-		
-		NOT = {
-			government = proletarian_dictatorship
-		}
+  trigger = {
+    tag = GER
 
-		fascist = 10
-		
-		has_country_flag = ger_emergency
-	} #trigger
+    NOT = { government = proletarian_dictatorship }
 
-	fire_only_once = yes
+    fascist = 10
 
-	option = {
-		name = "EVTOPTA100001"
+    has_country_flag = ger_emergency
+  } #trigger
 
-		upper_house = { ideology = fascist value = 0.2 }
-		
-		any_pop = {
-			limit = { location = { is_colonial = no } }
-			
-			ideology = { value = fascist factor = 0.1 }
-		}
+  fire_only_once = yes
 
-		set_country_flag = nazipolitical
-		clr_country_flag = ger_emergency
-	} #OptionA
+  option = {
+    name = "EVTOPTA100001"
 
-	option = {
-		name = "EVTOPTB100001"
-		
-		any_pop = { scaled_militancy = { ideology = fascist factor = 10 } }
-	} #OptionB
+    upper_house = {
+      ideology = fascist
+      value = 0.2
+    }
+
+    any_pop = {
+      limit = {
+        location = { is_colonial = no }
+      }
+
+      ideology = {
+        value = fascist
+        factor = 0.1
+      }
+    }
+
+    set_country_flag = nazipolitical
+    clr_country_flag = ger_emergency
+  } #OptionA
+
+  option = {
+    name = "EVTOPTB100001"
+
+    any_pop = {
+      scaled_militancy = {
+        ideology = fascist
+        factor = 10
+      }
+    }
+  } #OptionB
 } #country_event
 
 # Reichstag Fire 1
 country_event = {
-	id = 100002
-	title = "EVTNAME100002"
-	desc = "EVTDESC100002"
-	picture = "ReichstagFire"
+  id = 100002
+  title = "EVTNAME100002"
+  desc = "EVTDESC100002"
+  picture = "ReichstagFire"
 
-	trigger = {
-		tag = GER
+  trigger = {
+    tag = GER
 
-		has_country_flag = nazipolitical
-		
-		NOT = {
-			government = proletarian_dictatorship
-		}
+    has_country_flag = nazipolitical
 
-		OR = {
-			average_consciousness = 5
-			average_militancy     = 5
-		}
-	} #trigger
+    NOT = { government = proletarian_dictatorship }
 
-	fire_only_once = yes
+    OR = {
+      average_consciousness = 5
+      average_militancy = 5
+    }
+  } #trigger
 
-	mean_time_to_happen = {
-		months = 12
+  fire_only_once = yes
 
-		modifier = {
-			factor = 0.9
+  mean_time_to_happen = {
+    months = 12
 
-			year = 1905
-		}
-		
-		modifier = {
-			factor = 0.8
+    modifier = {
+      factor = 0.9
 
-			year = 1910
-		}
-		
-		modifier = {
-			factor = 0.7
+      year = 1905
+    }
 
-			year = 1915
-		}	
+    modifier = {
+      factor = 0.8
 
-		modifier = {
-			factor = 0.5
+      year = 1910
+    }
 
-			year = 1920
-		}
+    modifier = {
+      factor = 0.7
 
-		modifier = {
-			factor = 0.25
+      year = 1915
+    }
 
-			year = 1925
-		}
-		
-		modifier = {
-			factor = 0.1
+    modifier = {
+      factor = 0.5
 
-			year = 1930
-		}
-	} #mean_time_to_happen
+      year = 1920
+    }
 
-	option = {
-		name = "EVTOPTA100002"
+    modifier = {
+      factor = 0.25
 
-		money = -10000
+      year = 1925
+    }
 
-		any_pop = {
-			limit = {
-				location = { is_colonial = no }
+    modifier = {
+      factor = 0.1
 
-				OR = {
-					is_primary_culture = yes
-					is_accepted_culture = yes
-				}
-				NOT = { has_pop_religion = jewish }
-			}
+      year = 1930
+    }
+  } #mean_time_to_happen
 
-			ideology = {
-				value = fascist
+  option = {
+    name = "EVTOPTA100002"
 
-				factor = 0.80
-			}
-		}
-		
-		any_pop = {
-			limit = { location = { is_colonial = no } }
-		
-			scaled_militancy = { ideology = anarcho_liberal factor = 5 }
-			scaled_militancy = { ideology = conservative factor = 5 }
-			scaled_militancy = { ideology = socialist factor = 5 }
-			scaled_militancy = { ideology = communist factor = 5 }
-			scaled_militancy = { ideology = liberal factor = 5 }
+    money = -10000
 
-			scaled_consciousness = { ideology = anarcho_liberal factor = 5 }
-			scaled_consciousness = { ideology = conservative factor = 5 }
-			scaled_consciousness = { ideology = socialist factor = 5 }
-			scaled_consciousness = { ideology = communist factor = 5 }
-			scaled_consciousness = { ideology = liberal factor = 5 }
-		}
+    any_pop = {
+      limit = {
+        location = { is_colonial = no }
 
-		clr_country_flag = ger_emergency
-		clr_country_flag = nazipolitical
+        OR = {
+          is_primary_culture = yes
+          is_accepted_culture = yes
+        }
+        NOT = { has_pop_religion = jewish }
+      }
 
-		government = fascist_dictatorship
-		
-		political_reform = none_voting
-		political_reform = party_appointed
-		political_reform = no_meeting
-		political_reform = state_press
-		political_reform = state_controlled
-		political_reform = underground_parties
-	} #optionA
+      ideology = {
+        value = fascist
+
+        factor = 0.80
+      }
+    }
+
+    any_pop = {
+      limit = {
+        location = { is_colonial = no }
+      }
+
+      scaled_militancy = {
+        ideology = anarcho_liberal
+        factor = 5
+      }
+      scaled_militancy = {
+        ideology = conservative
+        factor = 5
+      }
+      scaled_militancy = {
+        ideology = socialist
+        factor = 5
+      }
+      scaled_militancy = {
+        ideology = communist
+        factor = 5
+      }
+      scaled_militancy = {
+        ideology = liberal
+        factor = 5
+      }
+
+      scaled_consciousness = {
+        ideology = anarcho_liberal
+        factor = 5
+      }
+      scaled_consciousness = {
+        ideology = conservative
+        factor = 5
+      }
+      scaled_consciousness = {
+        ideology = socialist
+        factor = 5
+      }
+      scaled_consciousness = {
+        ideology = communist
+        factor = 5
+      }
+      scaled_consciousness = {
+        ideology = liberal
+        factor = 5
+      }
+    }
+
+    clr_country_flag = ger_emergency
+    clr_country_flag = nazipolitical
+
+    government = fascist_dictatorship
+
+    political_reform = none_voting
+    political_reform = party_appointed
+    political_reform = no_meeting
+    political_reform = state_press
+    political_reform = state_controlled
+    political_reform = underground_parties
+  } #optionA
 } #country_event
 
 # Reichstag Fire 2
 country_event = {
-	id = 100003
-	title = "EVTNAME100003"
-	desc = "EVTDESC100003"
-	picture = "ReichstagFire"
+  id = 100003
+  title = "EVTNAME100003"
+  desc = "EVTDESC100003"
+  picture = "ReichstagFire"
 
-	trigger = {
-		tag = GER
+  trigger = {
+    tag = GER
 
-		OR = {
-			has_country_flag = ger_instability
-			
-			AND = {
-				has_country_flag = nazipolitical
-				government = proletarian_dictatorship
-			}
-		}
+    OR = {
+      has_country_flag = ger_instability
 
-		OR = {
-			average_consciousness = 5
-			average_militancy     = 5
-		}
-	} #trigger
+      AND = {
+        has_country_flag = nazipolitical
+        government = proletarian_dictatorship
+      }
+    }
 
-	fire_only_once = yes
+    OR = {
+      average_consciousness = 5
+      average_militancy = 5
+    }
+  } #trigger
 
-	mean_time_to_happen = {
-		months = 12
+  fire_only_once = yes
 
-		modifier = {
-			factor = 0.9
+  mean_time_to_happen = {
+    months = 12
 
-			year = 1905
-		}
-		
-		modifier = {
-			factor = 0.8
+    modifier = {
+      factor = 0.9
 
-			year = 1910
-		}
-		
-		modifier = {
-			factor = 0.7
+      year = 1905
+    }
 
-			year = 1915
-		}	
+    modifier = {
+      factor = 0.8
 
-		modifier = {
-			factor = 0.5
+      year = 1910
+    }
 
-			year = 1920
-		}
+    modifier = {
+      factor = 0.7
 
-		modifier = {
-			factor = 0.25
+      year = 1915
+    }
 
-			year = 1925
-		}
-		
-		modifier = {
-			factor = 0.1
+    modifier = {
+      factor = 0.5
 
-			year = 1930
-		}
-	} #mean_time_to_happen
+      year = 1920
+    }
 
-	option = {
-		name = "EVTOPTA100003"
+    modifier = {
+      factor = 0.25
 
-		money = -10000
+      year = 1925
+    }
 
-		any_pop = {
-			limit = {
-				location = { is_colonial = no }
+    modifier = {
+      factor = 0.1
 
-				OR = {
-					is_primary_culture = yes
-					is_accepted_culture = yes
-				}
-				NOT = { has_pop_religion = jewish }
-			}
+      year = 1930
+    }
+  } #mean_time_to_happen
 
-			ideology = {
-				value = fascist
+  option = {
+    name = "EVTOPTA100003"
 
-				factor = 0.05
-			}
-		}
-		
-		clr_country_flag = ger_instability
-	} #optionA
+    money = -10000
 
-	option = {
-		name = "EVTOPTB100003"
+    any_pop = {
+      limit = {
+        location = { is_colonial = no }
 
-		money = -10000
+        OR = {
+          is_primary_culture = yes
+          is_accepted_culture = yes
+        }
+        NOT = { has_pop_religion = jewish }
+      }
 
-		any_pop = {
-			limit = { location = { is_colonial = no } }
+      ideology = {
+        value = fascist
 
-			scaled_militancy = { ideology = anarcho_liberal factor = -5 }
-			scaled_militancy = { ideology = conservative factor = -5 }
-			scaled_militancy = { ideology = liberal factor = -5 }
+        factor = 0.05
+      }
+    }
 
-			scaled_consciousness = { ideology = anarcho_liberal factor = -5 }
-			scaled_consciousness = { ideology = conservative factor = -5 }
-			scaled_consciousness = { ideology = liberal factor = -5 }
-		}
-		
-		clr_country_flag = ger_instability
-	} #optionB
+    clr_country_flag = ger_instability
+  } #optionA
+
+  option = {
+    name = "EVTOPTB100003"
+
+    money = -10000
+
+    any_pop = {
+      limit = {
+        location = { is_colonial = no }
+      }
+
+      scaled_militancy = {
+        ideology = anarcho_liberal
+        factor = -5
+      }
+      scaled_militancy = {
+        ideology = conservative
+        factor = -5
+      }
+      scaled_militancy = {
+        ideology = liberal
+        factor = -5
+      }
+
+      scaled_consciousness = {
+        ideology = anarcho_liberal
+        factor = -5
+      }
+      scaled_consciousness = {
+        ideology = conservative
+        factor = -5
+      }
+      scaled_consciousness = {
+        ideology = liberal
+        factor = -5
+      }
+    }
+
+    clr_country_flag = ger_instability
+  } #optionB
 } #country_event
 ###########################################################################
 #

@@ -1,21 +1,21 @@
 1720.1.1 = {
-	owner = QNG
-	controller = QNG
-		}
+  owner = QNG
+  controller = QNG
+}
 1836.1.1 = {
-	owner = TIB
-	controller = TIB
-		}
+  owner = TIB
+  controller = TIB
+}
 1914.1.1 = {
-	owner = ENG
-	controller = ENG
-	remove_core = TIB
-		}
+  owner = ENG
+  controller = ENG
+  remove_core = TIB
+}
 1950.1.1 = {
-	owner = HND
-	controller = HND
-	add_core = HND
-		}
+  owner = HND
+  controller = HND
+  add_core = HND
+}
 
 owner = TIB
 controller = TIB

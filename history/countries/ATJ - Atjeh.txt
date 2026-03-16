@@ -10,13 +10,13 @@ non_state_culture_literacy = 0.03
 
 ruling_party = ATJ_conservative
 upper_house = {
-	fascist = 0
-	liberal = 15
-	conservative = 70
-	reactionary = 15
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+  fascist = 0
+  liberal = 15
+  conservative = 70
+  reactionary = 15
+  anarcho_liberal = 0
+  socialist = 0
+  communist = 0
 }
 
 # Starting Consciousness
@@ -40,17 +40,17 @@ work_hours = no_work_hour_limit
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions 
+pensions = no_pensions
 school_reforms = no_schools
 
 1861.1.1 = {
-	oob = "/1861/ATJ_oob.txt"
-	literacy = 0.06
-	non_state_culture_literacy = 0.06
+  oob = "/1861/ATJ_oob.txt"
+  literacy = 0.06
+  non_state_culture_literacy = 0.06
 
-	#Military Reforms
-	foreign_weapons = yes_foreign_weapons
-	
-	#Technologies
-	muzzle_loaded_rifles = 1
+  #Military Reforms
+  foreign_weapons = yes_foreign_weapons
+
+  #Technologies
+  muzzle_loaded_rifles = 1
 }

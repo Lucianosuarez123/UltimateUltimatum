@@ -1,23 +1,22 @@
 trade_goods = wool
-owner=TUR
-add_core=TUR
-controller=TUR
+owner = TUR
+add_core = TUR
+controller = TUR
 life_rating = 30
 1830.1.1 = {
-	remove_core=TUR
-	owner = EGY
-	controller = EGY
-	add_core = EGY
-		}
+  remove_core = TUR
+  owner = EGY
+  controller = EGY
+  add_core = EGY
+}
 1903.1.1 = {
-	owner = ENG
-	controller = ENG
-	add_core = SUD
-		}
+  owner = ENG
+  controller = ENG
+  add_core = SUD
+}
 
 1956.1.1 = {
-	owner = SUD
-	controller = SUD
-	colonial = 0
-		}
-
+  owner = SUD
+  controller = SUD
+  colonial = 0
+}

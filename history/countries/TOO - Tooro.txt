@@ -10,13 +10,13 @@ oob = "TOO_oob.txt"
 
 ruling_party = TOO_conservative
 upper_house = {
-fascist = 0
-reactionary = 40
-conservative = 60
-socialist = 0
-communist = 0
-liberal = 0
-anarcho_liberal = 0
+  fascist = 0
+  reactionary = 40
+  conservative = 60
+  socialist = 0
+  communist = 0
+  liberal = 0
+  anarcho_liberal = 0
 }
 slavery = yes_slavery
 vote_franschise = none_voting

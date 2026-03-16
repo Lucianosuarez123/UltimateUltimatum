@@ -6,18 +6,16 @@ add_core = KUW
 
 
 1910.1.1 = {
-	owner = ENG
-	controller = ENG
-	remove_core = TUR
-		}
+  owner = ENG
+  controller = ENG
+  remove_core = TUR
+}
 trade_goods = fruit
 life_rating = 35
 1960.1.1 = {
-	owner = KUW
-	controller = KUW
-	remove_core = TUR
-	colonial = 0
-		}
-2020.1.1 = {
-	add_core = UAR
-		}
+  owner = KUW
+  controller = KUW
+  remove_core = TUR
+  colonial = 0
+}
+2020.1.1 = { add_core = UAR }

@@ -9,13 +9,13 @@ non_state_culture_literacy = 0.05
 
 ruling_party = JAS_conservative
 upper_house = {
-	fascist = 0
-	liberal = 15
-	conservative = 75
-	reactionary = 10
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+  fascist = 0
+  liberal = 15
+  conservative = 75
+  reactionary = 10
+  anarcho_liberal = 0
+  socialist = 0
+  communist = 0
 }
 
 # Starting Consciousness
@@ -39,20 +39,20 @@ safety_regulations = no_safety
 
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions 
+pensions = no_pensions
 school_reforms = no_schools
 
 1861.1.1 = {
-	oob = "/1861/JAS_oob.txt"
-	literacy = 0.10
-	non_state_culture_literacy = 0.10
+  oob = "/1861/JAS_oob.txt"
+  literacy = 0.10
+  non_state_culture_literacy = 0.10
 
-	#Military Reforms
-	foreign_training = yes_foreign_training
-	foreign_weapons = yes_foreign_weapons
-	foreign_officers = yes_foreign_officers
+  #Military Reforms
+  foreign_training = yes_foreign_training
+  foreign_weapons = yes_foreign_weapons
+  foreign_officers = yes_foreign_officers
 
-	#Technologies
-	muzzle_loaded_rifles = 1
-	military_plans = 1
+  #Technologies
+  muzzle_loaded_rifles = 1
+  military_plans = 1
 }

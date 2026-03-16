@@ -1,4 +1,4 @@
-add_core=BNX
+add_core = BNX
 owner = NET
 controller = NET
 add_core = NET
@@ -7,15 +7,15 @@ life_rating = 35
 
 1806.8.6 = { remove_core = REH }
 1810.7.9 = {
-owner = FRA
-controller = FRA
+  owner = FRA
+  controller = FRA
 }
 1813.10.19 = {
-owner = NET
-controller = NET
+  owner = NET
+  controller = NET
 }
 #state_building = {
-#	level = 1
-#	building = glass_factory
-#	upgrade = yes
+#    level = 1
+#    building = glass_factory
+#    upgrade = yes
 #}

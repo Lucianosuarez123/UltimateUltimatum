@@ -8,13 +8,13 @@ literacy = 0.02
 
 ruling_party = LAO_conservative
 upper_house = {
-	fascist = 0
-	liberal = 16
-	conservative = 49
-	reactionary = 35
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+    fascist = 0
+    liberal = 16
+    conservative = 49
+    reactionary = 35
+    anarcho_liberal = 0
+    socialist = 0
+    communist = 0
 }
 
 # Starting Consciousness
@@ -36,7 +36,7 @@ work_hours = no_work_hour_limit
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions 
+pensions = no_pensions
 school_reforms = no_schools
 
 1946.1.1 = {
@@ -60,7 +60,7 @@ work_hours = no_work_hour_limit
 safety_regulations = no_safety
 health_care = trinket_health_care
 unemployment_subsidies = trinket_subsidies
-pensions = no_pensions 
+pensions = no_pensions
 school_reforms = no_schools
 
 post_napoleonic_thought = 1
@@ -210,7 +210,7 @@ scientific_revolution_tech = 1 #until this for 1700
 early_agricultural_reforms_tech = 1
 agricultural_revolution_tech = 1
 dawn_of_industrial_revolution_tech = 1 # Until this for 1800
-first_industrial_revolution_tech = 1 
+first_industrial_revolution_tech = 1
 
 late_medieval_warfare = 1
 early_military_revolution = 1
@@ -218,7 +218,7 @@ flintlock_muskets = 1 #Until this for 1700
 military_revolution = 1
 era_of_mass_armies = 1
 early_modern_warfare = 1 #Until this for 1800
-napoleonic_warfare = 1 
+napoleonic_warfare = 1
 
 late_renaissance = 1
 mannerism = 1
@@ -245,7 +245,7 @@ revolutionary_ideas = 1
 early_romanticism = 1
 }
 1960.1.1 = {
-	government = proletarian_dictatorship
+    government = proletarian_dictatorship
 
 # Political reforms
 slavery = no_slavery
@@ -264,23 +264,23 @@ work_hours = twelve_hours
 safety_regulations = low_safety
 health_care = low_health_care
 unemployment_subsidies = low_subsidies
-pensions = low_pensions 
+pensions = low_pensions
 school_reforms = acceptable_schools
 }
 1990.1.1 = {
 upper_house = {
-	fascist = 0
-	liberal = 10
-	conservative = 0
-	reactionary = 0
-	anarcho_liberal = 0
-	socialist = 75
-	communist = 15
+    fascist = 0
+    liberal = 10
+    conservative = 0
+    reactionary = 0
+    anarcho_liberal = 0
+    socialist = 75
+    communist = 15
 }
 2000.1.1 = {
-	government = socialist_republic
-		computerisation = 1
-		globalisation = 1
+    government = socialist_republic
+        computerisation = 1
+        globalisation = 1
 }
 2023.1.1 = {
 slavery = no_slavery
@@ -300,14 +300,14 @@ health_care = good_health_care
 unemployment_subsidies = trinket_subsidies
 pensions = good_pensions
 school_reforms = good_schools
-	government = democracy
-	ruling_party = LAO_conservative
+    government = democracy
+    ruling_party = LAO_conservative
 upper_house = {
-	fascist = 0
-	liberal = 10
-	conservative = 70
-	reactionary = 0
-	anarcho_liberal = 0
-	socialist = 20
-	communist = 10
-	}
+    fascist = 0
+    liberal = 10
+    conservative = 70
+    reactionary = 0
+    anarcho_liberal = 0
+    socialist = 20
+    communist = 10
+    }

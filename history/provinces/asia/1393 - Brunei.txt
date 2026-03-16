@@ -5,15 +5,14 @@ trade_goods = timber
 life_rating = 30
 
 #There will be blood
-1882.1.1 = {
-	trade_goods = oil
-		}
+1882.1.1 = { trade_goods = oil }
 
 1910.1.1 = {
-	owner = ENG
-	controller = ENG
-	colonial = 2
-		}
+  owner = ENG
+  controller = ENG
+  colonial = 2
+}
 1960.1.1 = {
-owner = BRU
-controller = BRU }
+  owner = BRU
+  controller = BRU
+}

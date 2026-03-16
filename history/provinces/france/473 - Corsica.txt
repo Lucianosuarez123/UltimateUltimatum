@@ -4,17 +4,17 @@ life_rating = 35
 owner = GEN
 controller = GEN
 1755.1.1 = {
-owner = COR
-controller = COR
-		}
+  owner = COR
+  controller = COR
+}
 1770.1.1 = {
-owner = FRA
-controller = FRA
-add_core = FRA
-		}
+  owner = FRA
+  controller = FRA
+  add_core = FRA
+}
 
 #Corsican ISA Break off from France
 2018.1.1 = {
-owner = COR
-controller = COR
-		}
+  owner = COR
+  controller = COR
+}

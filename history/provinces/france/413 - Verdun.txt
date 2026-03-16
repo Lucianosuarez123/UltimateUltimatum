@@ -4,6 +4,4 @@ add_core = FRA
 trade_goods = grain
 life_rating = 32
 1861.1.1 = { railroad = 3 }
-1936.1.1 = {
-		fort = 6
-		}
+1936.1.1 = { fort = 6 }

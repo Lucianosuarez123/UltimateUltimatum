@@ -8,22 +8,20 @@ literacy = 0.04
 
 ruling_party = SXI_reactionary
 upper_house = {
-	fascist = 0
-	liberal = 10
-	conservative = 0
-	reactionary = 100
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+  fascist = 0
+  liberal = 10
+  conservative = 0
+  reactionary = 100
+  anarcho_liberal = 0
+  socialist = 0
+  communist = 0
 }
 
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
 government = fascist_dictatorship
-1939.9.1 = {
-	oob = "/1861/SXI_oob.txt"
-}
+1939.9.1 = { oob = "/1861/SXI_oob.txt" }
 
 slavery = no_slavery
 upper_house_composition = appointed
@@ -39,7 +37,7 @@ work_hours = fourteen_hours
 safety_regulations = trinket_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions 
+pensions = no_pensions
 school_reforms = no_schools
 
 civilized = yes
@@ -190,7 +188,7 @@ scientific_revolution_tech = 1 #until this for 1700
 early_agricultural_reforms_tech = 1
 agricultural_revolution_tech = 1
 dawn_of_industrial_revolution_tech = 1 # Until this for 1800
-first_industrial_revolution_tech = 1 
+first_industrial_revolution_tech = 1
 
 late_medieval_warfare = 1
 early_military_revolution = 1
@@ -198,7 +196,7 @@ flintlock_muskets = 1 #Until this for 1700
 military_revolution = 1
 era_of_mass_armies = 1
 early_modern_warfare = 1 #Until this for 1800
-napoleonic_warfare = 1 
+napoleonic_warfare = 1
 
 late_renaissance = 1
 mannerism = 1

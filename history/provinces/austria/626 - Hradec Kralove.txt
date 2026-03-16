@@ -4,39 +4,39 @@ add_core = BOH
 add_core = CZH
 add_core = REH
 1806.8.6 = {
-owner = AUS
-controller = AUS
-add_core= AUS
-remove_core = REH
+  owner = AUS
+  controller = AUS
+  add_core = AUS
+  remove_core = REH
 }
 1867.3.30 = {
-owner = KUK
-controller = KUK 
-add_core = KUK}
-1919.6.28 = { 
-		controller = CZH
-		owner = CZH
-		}
+  owner = KUK
+  controller = KUK
+  add_core = KUK
+}
+1919.6.28 = {
+  controller = CZH
+  owner = CZH
+}
 trade_goods = coal
 life_rating = 35
 1861.1.1 = { railroad = 3 }
-1939.1.1 = { 
-		controller = BOH
-		owner = BOH
-		}
+1939.1.1 = {
+  controller = BOH
+  owner = BOH
+}
 
 #End of WW2
 1945.5.1 = {
-	owner = CZH
-	controller = CZH
-		}
+  owner = CZH
+  controller = CZH
+}
 
 
 
 
 1968.1.1 = {
-	owner = CZR
-	controller = CZR
-	add_core = CZR
-		}
-
+  owner = CZR
+  controller = CZR
+  add_core = CZR
+}

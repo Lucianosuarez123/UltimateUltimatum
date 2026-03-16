@@ -8,13 +8,13 @@ literacy = 0.80
 
 ruling_party = HAW_conservative
 upper_house = {
-	fascist = 0
-	liberal = 28
-	conservative = 59
-	reactionary = 13
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+  fascist = 0
+  liberal = 28
+  conservative = 59
+  reactionary = 13
+  anarcho_liberal = 0
+  socialist = 0
+  communist = 0
 }
 
 # Starting Consciousness
@@ -37,21 +37,21 @@ work_hours = no_work_hour_limit
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions 
+pensions = no_pensions
 school_reforms = no_schools
 
 1861.1.1 = {
-	oob = "/1861/HAW_oob.txt"
-	literacy = 0.83
+  oob = "/1861/HAW_oob.txt"
+  literacy = 0.83
 
-	#Economic Reforms
-	land_reform = yes_land_reform
-	admin_reform = yes_admin_reform
-	
-	#Military Reforms
-	foreign_weapons = yes_foreign_weapons
+  #Economic Reforms
+  land_reform = yes_land_reform
+  admin_reform = yes_admin_reform
 
-	#Technologies
-	practical_steam_engine = 1
-	muzzle_loaded_rifles = 1
+  #Military Reforms
+  foreign_weapons = yes_foreign_weapons
+
+  #Technologies
+  practical_steam_engine = 1
+  muzzle_loaded_rifles = 1
 }

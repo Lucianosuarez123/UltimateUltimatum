@@ -1,49 +1,46 @@
-#Bermuda Region - 9000  
+#Bermuda Region - 9000
 #Ruled by Britain 1836
 #Bermuda (9000/2250 POPS)
 203 = {
+  slaves = {
+    culture = afro_caribbean
+    religion = animist
+    size = 1110
+  }
 
+  aristocrats = {
+    culture = english
+    religion = protestant
+    size = 25
+  }
 
-	slaves = {
-		culture = afro_caribbean
-		religion = animist
-		size = 1110
-	}
+  bureaucrats = {
+    culture = english
+    religion = protestant
+    size = 5
+  }
 
-	aristocrats = {
-		culture = english
-		religion = protestant
-		size = 25
-	}
+  clergymen = {
+    culture = english
+    religion = protestant
+    size = 25
+  }
 
-	bureaucrats = {
-		culture = english
-		religion = protestant
-		size = 5
-	}
+  artisans = {
+    culture = english
+    religion = protestant
+    size = 150
+  }
 
-	clergymen = {
-		culture = english
-		religion = protestant
-		size = 25
-	}
+  soldiers = {
+    culture = english
+    religion = protestant
+    size = 25
+  }
 
-	artisans = {
-		culture = english
-		religion = protestant
-		size = 150
-	}
-
-	soldiers = {
-		culture = english
-		religion = protestant
-		size = 25
-	}
-
-	farmers = {
-		culture = english
-		religion = protestant
-		size = 780
-	}
-
+  farmers = {
+    culture = english
+    religion = protestant
+    size = 780
+  }
 }

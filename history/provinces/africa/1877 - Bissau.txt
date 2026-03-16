@@ -7,7 +7,7 @@ colonial = 2
 
 add_core = GUB
 1960.1.1 = {
-	owner = GUB
-	controller = GUB
-	colonial = 0
-		}
+  owner = GUB
+  controller = GUB
+  colonial = 0
+}

@@ -30,19 +30,19 @@ work_hours = twelve_hours
 safety_regulations = good_safety
 health_care = good_health_care
 unemployment_subsidies = low_subsidies
-pensions = good_pensions 
+pensions = good_pensions
 school_reforms = no_schools
 
 
 ruling_party = GER_fascist
 upper_house = {
-        fascist = 100
-        liberal = 0
-        conservative = 0
-        reactionary = 0
-        anarcho_liberal = 0
-        socialist = 0
-        communist = 0
+  fascist = 100
+  liberal = 0
+  conservative = 0
+  reactionary = 0
+  anarcho_liberal = 0
+  socialist = 0
+  communist = 0
 }
 
 

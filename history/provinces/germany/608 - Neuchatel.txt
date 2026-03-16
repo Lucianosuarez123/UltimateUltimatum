@@ -8,6 +8,6 @@ life_rating = 40
 1814.9.12 = { add_core = SWI }
 1806.8.6 = { remove_core = REH }
 1857.1.1 = {
-owner = SWI
-controller = SWI
+  owner = SWI
+  controller = SWI
 }

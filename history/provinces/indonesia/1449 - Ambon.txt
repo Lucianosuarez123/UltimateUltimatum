@@ -1,13 +1,11 @@
 add_core = SLW
-1935.1.1 = {
-	add_core= IDO
-		}
+1935.1.1 = { add_core = IDO }
 1949.12.27 = {
-	owner = IDO
-	controller = IDO
-	add_core = IDO
-	colonial = 0
-		}
+  owner = IDO
+  controller = IDO
+  add_core = IDO
+  colonial = 0
+}
 
 owner = NET
 controller = NET

@@ -1,0 +1,82 @@
+{"url": "https://docs.google.com/document/d/1kBcpq7B3I843VvVF0F5TCTwZEaXpEA7w3TLAgEq850A/edit?usp=docslist_api", "resource_id": "document:1kBcpq7B3I843VvVF0F5TCTwZEaXpEA7w3TLAgEq850A"}
+
+
+party = {
+  name = "FRA_fascist_apocalipsis"
+  start_date = 1905.1.1
+  end_date = 99999.1.1
+
+
+  ideology = survivalism
+
+
+  economic_policy = settlement_control
+  trade_policy = resource_hoarding
+  religious_policy = pragmatism
+  citizenship_policy = closed_settlement
+  war_policy = eradication_doctrine
+}
+party = {
+  name = "FRA_reactionary_apocalipsis"
+  has_global_flag = zombie_outbreak
+  start_date = 1600.1.1
+  end_date = 99999.1.1
+
+
+  ideology = survivalism
+
+
+  economic_policy = settlement_control
+  trade_policy = resource_hoarding
+  religious_policy = pragmatism
+  citizenship_policy = closed_settlement
+  war_policy = eradication_doctrine
+}
+party = {
+  name = "FRA_conservative_apocalipsis"
+  has_global_flag = zombie_outbreak
+  start_date = 1600.1.1
+  end_date = 99999.1.1
+
+
+  ideology = survivalism
+
+
+  economic_policy = settlement_control
+  trade_policy = resource_hoarding
+  religious_policy = pragmatism
+  citizenship_policy = closed_settlement
+  war_policy = eradication_doctrine
+}
+party = {
+  name = "FRA_liberal_apocalipsis"
+  has_global_flag = zombie_outbreak
+  start_date = 1600.1.1
+  end_date = 99999.1.1
+
+
+  ideology = survivalism
+
+
+  economic_policy = settlement_control
+  trade_policy = resource_hoarding
+  religious_policy = pragmatism
+  citizenship_policy = closed_settlement
+  war_policy = eradication_doctrine
+}
+party = {
+  name = "FRA_socialist_apocalipsis"
+  has_global_flag = zombie_outbreak
+  start_date = 1848.1.1
+  end_date = 99999.1.1
+
+
+  ideology = survivalism
+
+
+  economic_policy = settlement_control
+  trade_policy = resource_hoarding
+  religious_policy = pragmatism
+  citizenship_policy = closed_settlement
+  war_policy = eradication_doctrine
+}

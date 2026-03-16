@@ -118799,7 +118799,7 @@
     }
 
     text_scale = 5.299997
-} 
+}
 # Kiritimati
 3249 = {
     text_position = {

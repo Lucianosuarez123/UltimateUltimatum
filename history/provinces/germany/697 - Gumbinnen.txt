@@ -5,14 +5,14 @@ add_core = PRU
 add_core = GER
 
 1870.1.1 = {
-owner = NGF
-controller = NGF
-add_core = NGF
+  owner = NGF
+  controller = NGF
+  add_core = NGF
 }
 1871.1.1 = {
-owner = GER
-controller = GER
-remove_core = NGF
+  owner = GER
+  controller = GER
+  remove_core = NGF
 }
 add_core = PLC
 trade_goods = grain
@@ -22,7 +22,7 @@ life_rating = 40
 
 #End of WW2
 1945.5.1 = {
-	owner = RUS
-	controller = RUS
-	remove_core = GER
-		}
+  owner = RUS
+  controller = RUS
+  remove_core = GER
+}

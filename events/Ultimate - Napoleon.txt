@@ -12,9 +12,9 @@ name = "Sacre Bleu!"
         government = prussian_constitutionalism
         leave_alliance = NET
         leave_alliance = SPA
-		leave_alliance = SWI
-		leave_alliance = PIE
-		leave_alliance = GEN
+        leave_alliance = SWI
+        leave_alliance = PIE
+        leave_alliance = GEN
         any_owned = {
                 limit = {
                         is_core = NET
@@ -46,7 +46,7 @@ name = "Sacre Bleu!"
                         inherit = CIS
                         }
                 SIC = {
-                        all_core = { 
+                        all_core = {
                                 remove_core = NAP
                                 }
                         }

@@ -6,7 +6,7 @@ colonial = 2
 
 add_core = CTD
 1960.1.1 = {
-	owner = CTD
-	controller = CTD
-	colonial = 0
-		}
+  owner = CTD
+  controller = CTD
+  colonial = 0
+}

@@ -1,25 +1,23 @@
 owner = POR
 controller = POR
 1700.1.1 = {
-owner = NET
-controller = NET
+  owner = NET
+  controller = NET
 }
 1800.1.1 = {
-owner = ENG
-controller = ENG
+  owner = ENG
+  controller = ENG
 }
 
 #Rubber discovered!
-1880.1.1 = {
-	trade_goods = rubber
-		}
+1880.1.1 = { trade_goods = rubber }
 
 #Decolonisation
 1947.1.1 = {
-	owner = HND
-	controller = HND
-	colonial = 0
-		}
+  owner = HND
+  controller = HND
+  colonial = 0
+}
 
 
 

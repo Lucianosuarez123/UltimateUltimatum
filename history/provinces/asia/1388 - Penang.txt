@@ -3,19 +3,17 @@ controller = JOH
 add_core = JOH
 
 1810.1.1 = {
-owner = ENG
-controller = ENG
-colonial = 2
-		}
+  owner = ENG
+  controller = ENG
+  colonial = 2
+}
 trade_goods = timber
 life_rating = 30
 
 
 1963.1.1 = {
-	owner = MAL
-	controller = MAL
-	add_core = MAL
-	colonial = 0
-		}
-
-
+  owner = MAL
+  controller = MAL
+  add_core = MAL
+  colonial = 0
+}

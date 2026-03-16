@@ -5,19 +5,19 @@ add_core = SCA
 trade_goods = grain
 life_rating = 35
 1830.1.1 = {
-	owner = SWN
-	controller = SWN
-	add_core = SWN
-		}
+  owner = SWN
+  controller = SWN
+  add_core = SWN
+}
 
-1905.1.1 = { 
-		controller = SWE
-		owner = SWE
-		add_core = SWE
-		remove_core = SWN
-		}
+1905.1.1 = {
+  controller = SWE
+  owner = SWE
+  add_core = SWE
+  remove_core = SWN
+}
 
 1700.1.1 = {
-	controller = SWE
-	owner = SWE
-		}
+  controller = SWE
+  owner = SWE
+}

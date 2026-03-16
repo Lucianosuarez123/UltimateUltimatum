@@ -1,21 +1,18 @@
-
 #Rubber discovered!
-1880.1.1 = {
-	trade_goods = rubber
-		}
+1880.1.1 = { trade_goods = rubber }
 
 1910.1.1 = {
-		owner = ENG
-		controller = ENG
-		colonial = 2
-		}
+  owner = ENG
+  controller = ENG
+  colonial = 2
+}
 
 1936.1.1 = {
-	owner = THA
-	controller = THA
-	add_core = THA
-	colonial = 0
-		}
+  owner = THA
+  controller = THA
+  add_core = THA
+  colonial = 0
+}
 
 owner = SIA
 controller = SIA

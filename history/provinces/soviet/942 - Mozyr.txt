@@ -2,10 +2,10 @@ owner = PLC
 controller = PLC
 
 1800.1.1 = {
-	add_core = RUS
-	owner = RUS
-	controller = RUS
-		}
+  add_core = RUS
+  owner = RUS
+  controller = RUS
+}
 add_core = BYE
 add_core = PLC
 trade_goods = cattle
@@ -14,9 +14,6 @@ life_rating = 35
 
 #Soviet Collapse
 1992.5.1 = {
-	owner = BYE
-	controller = BYE
-		}
-
-
-
+  owner = BYE
+  controller = BYE
+}

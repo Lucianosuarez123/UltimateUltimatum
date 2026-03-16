@@ -3,22 +3,22 @@ controller = SWE
 add_core = EST
 
 1720.1.1 = {
-	owner = RUS
-	controller = RUS
-	add_core = RUS
-		}
+  owner = RUS
+  controller = RUS
+  add_core = RUS
+}
 
 
 1939.1.1 = {
-	owner = RUS
-	controller = RUS
-		}
+  owner = RUS
+  controller = RUS
+}
 
 
-1919.6.28 = { 
-		controller = EST
-		owner = EST
-		}
+1919.6.28 = {
+  controller = EST
+  owner = EST
+}
 add_core = UBD
 trade_goods = grain
 life_rating = 35
@@ -27,10 +27,6 @@ naval_base = 2
 
 #Soviet Collapse
 1992.5.1 = {
-	owner = EST
-	controller = EST
-		}
-
-
-
-
+  owner = EST
+  controller = EST
+}

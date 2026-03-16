@@ -6,7 +6,7 @@ colonial = 2
 
 add_core = SNL
 1960.1.1 = {
-	owner = SNL
-	controller = SNL
-	colonial = 0
-		}
+  owner = SNL
+  controller = SNL
+  colonial = 0
+}

@@ -29,16 +29,16 @@ add_core = NCN
 
 
 1950.1.1 = {
-	owner = CHI
-	controller = CHI
-	naval_base = 4
-	state_building = {
-		level = 1
-		building = steamer_shipyard 
-		upgrade = yes
-		}
+    owner = CHI
+    controller = CHI
+    naval_base = 4
+    state_building = {
+        level = 1
+        building = steamer_shipyard
+        upgrade = yes
+        }
 
 fort = 1
-1861.1.1 = { 
-	naval_base = 1 
+1861.1.1 = {
+    naval_base = 1
 }

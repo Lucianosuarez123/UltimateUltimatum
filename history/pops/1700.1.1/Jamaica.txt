@@ -2,55 +2,53 @@
 #Ruled by Britain 1836
 #Jamaica (372000/93000 POPS)
 2217 = {
-	aristocrats = {
-		culture = spanish
-		religion = catholic
-		size = 100
-	}
+  aristocrats = {
+    culture = spanish
+    religion = catholic
+    size = 100
+  }
 
-	bureaucrats = {
-		culture = spanish
-		religion = catholic
-		size = 85
-	}
+  bureaucrats = {
+    culture = spanish
+    religion = catholic
+    size = 85
+  }
 
-	clergymen = {
-		culture = spanish
-		religion = catholic
-		size = 75
-	}
+  clergymen = {
+    culture = spanish
+    religion = catholic
+    size = 75
+  }
 
-	artisans = {
-		culture = spanish
-		religion = catholic
-		size = 2500
-	}
+  artisans = {
+    culture = spanish
+    religion = catholic
+    size = 2500
+  }
 
-	soldiers = {
-		culture = spanish
-		religion = catholic
-		size = 50
-	}
+  soldiers = {
+    culture = spanish
+    religion = catholic
+    size = 50
+  }
 
-	farmers = {
-		culture = spanish
-		religion = catholic
-		size = 2190
-	}
+  farmers = {
+    culture = spanish
+    religion = catholic
+    size = 2190
+  }
 
-	slaves = {
-		culture = afro_caribbean
-		religion = animist
-		size = 84375
-	}
+  slaves = {
+    culture = afro_caribbean
+    religion = animist
+    size = 84375
+  }
 }
 #Cayman Islands : (1200/300 POPS) #still a spanish Colony
 2218 = {
-
-	slaves = {
-		culture = afro_caribbean
-		religion = animist
-		size = 280
-	}
-
+  slaves = {
+    culture = afro_caribbean
+    religion = animist
+    size = 280
+  }
 }
