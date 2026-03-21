@@ -20,18 +20,18 @@ transport_plane = {
   can_build_overseas = yes
 
   #Building Costs
-  build_time = 90
+  build_time = 365
   build_cost = {
     aeroplanes = 15
     fuel = 10
-    canned_food = 10
   }
-  min_port_level = 6
+  min_port_level = 10
   limit_per_port = -1
   supply_consumption_score = 2
 
   supply_consumption = 1.0
   supply_cost = {
+    aeroplanes = 0.2
     fuel = 2
     canned_food = 0.2
   }

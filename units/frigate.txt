@@ -19,10 +19,10 @@ frigate = {
   can_build_overseas = yes
 
   #Building Costs
-  build_time = 180
+  build_time = 365
   build_cost = {
-    clipper_convoy = 3
-    artillery = 3
+    clipper_convoy = 1
+    artillery = 0.5
   }
   min_port_level = 0
   limit_per_port = -1
@@ -30,7 +30,8 @@ frigate = {
 
   supply_consumption = 1.0
   supply_cost = {
-    clipper_convoy = 0.16
+    lumber = 0.5
+    fabric = 0.5
     artillery = 0.04 #0.08
   }
 

@@ -16,13 +16,11 @@ bomber = {
 
 
   #Building Costs
-  build_time = 120
+  build_time = 180
   build_cost = {
     aeroplanes = 10
     explosives = 10
     canned_food = 10
-    wine = 10
-    fuel = 6
   }
 
   supply_consumption = 1.0

@@ -25,14 +25,13 @@ carrier = {
   #Building Costs
   build_time = 360
   build_cost = {
-    steamer_convoy = 100
-    artillery = 25
-    canned_food = 10
-    telephones = 10
-    fuel = 25
+    steamer_convoy = 15
+    artillery = 20
+    canned_food = 5
+    telephones = 5
     aeroplanes = 10
   }
-  min_port_level = 6
+  min_port_level = 10
   limit_per_port = -1
   supply_consumption_score = 60
 

@@ -607,7 +607,7 @@ social_reforms = {
       middle_luxury_needs = -0.10
       administrative_multiplier = 2
       global_immigrant_attract = 0.02
-      pop_militancy_modifier = -0.04
+      pop_militancy_modifier = -0.02
     }
     ten_hours = {
       factory_throughput = -0.15
@@ -615,7 +615,7 @@ social_reforms = {
       middle_luxury_needs = -0.15
       administrative_multiplier = 3
       global_immigrant_attract = 0.03
-      pop_militancy_modifier = -0.06
+      pop_militancy_modifier = -0.03
     }
     eight_hours = {
       factory_throughput = -0.20
@@ -623,7 +623,7 @@ social_reforms = {
       middle_luxury_needs = -0.20
       administrative_multiplier = 4
       global_immigrant_attract = 0.04
-      pop_militancy_modifier = -0.08
+      pop_militancy_modifier = -0.05
     }
   }
   safety_regulations = {
@@ -637,7 +637,6 @@ social_reforms = {
       poor_everyday_needs = -0.05
       administrative_multiplier = 1
       global_immigrant_attract = 0.01
-      pop_militancy_modifier = -0.01
     }
     low_safety = {
       factory_cost = 0.50
@@ -646,7 +645,7 @@ social_reforms = {
       poor_everyday_needs = -0.10
       administrative_multiplier = 2
       global_immigrant_attract = 0.02
-      pop_militancy_modifier = -0.03
+      pop_militancy_modifier = -0.01
       factory_maintenance = 0.1
     }
     acceptable_safety = {
@@ -656,7 +655,7 @@ social_reforms = {
       poor_everyday_needs = -0.15
       administrative_multiplier = 3
       global_immigrant_attract = 0.03
-      pop_militancy_modifier = -0.05
+      pop_militancy_modifier = -0.03
       factory_maintenance = 0.15
     }
     good_safety = {
@@ -666,7 +665,7 @@ social_reforms = {
       poor_everyday_needs = -0.20
       administrative_multiplier = 4
       global_immigrant_attract = 0.04
-      pop_militancy_modifier = -0.08
+      pop_militancy_modifier = -0.05
       factory_maintenance = 0.2
     }
   }
@@ -802,7 +801,7 @@ social_reforms = {
     illegal_child = {
       global_immigrant_attract = 0.01
       prestige = 0.05
-      global_population_growth = 0.0075
+      global_population_growth = 0.003
     }
   }
   women_reforms = {

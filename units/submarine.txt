@@ -21,23 +21,17 @@ submarine = {
 
 
   #Building Costs
-  build_time = 240
+  build_time = 365
   build_cost = {
-    steel = 100
-    steamer_convoy = 30
-    artillery = 6
-    canned_food = 4
-    fuel = 15
-    electric_gear = 15
-    telephones = 10
+    steamer_convoy = 0.5
+    artillery = 0.2
   }
-  min_port_level = 4
+  min_port_level = 8
   limit_per_port = -1
-  supply_consumption_score = 20
+  supply_consumption_score = 4
 
   supply_consumption = 1.0
   supply_cost = {
-    electric_gear = 0.1
     steamer_convoy = 0.16
     artillery = 0.1
     canned_food = 0.2

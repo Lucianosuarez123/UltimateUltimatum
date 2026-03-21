@@ -20,21 +20,20 @@ monitor = {
   weighted_value = 10.0
 
   #Building Costs
-  build_time = 360
+  build_time = 365
   build_cost = {
-    steamer_convoy = 20
-    artillery = 3
-    canned_food = 13
+    steamer_convoy = 1
+    artillery = 0.5
   }
-  min_port_level = 3
+  min_port_level = 5
   limit_per_port = -1
   supply_consumption_score = 3
 
   supply_consumption = 1.0
   supply_cost = {
-    steamer_convoy = 0.32
-    artillery = 0.076
-    canned_food = 0.8
+    steamer_convoy = 0.1
+    ammunition = 1
+    canned_food = 0.3
   }
 
   #Naval Abilties

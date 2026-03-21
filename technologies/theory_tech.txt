@@ -6,7 +6,6 @@ standing_army = {
   unciv_military = yes
   army_base = {
     default_organisation = 5
-    supply_consumption = 0.1
   }
 
   ai_chance = {
@@ -49,11 +48,9 @@ late_medieval_warfare = {
   cost = 4000
   irregular = {
     default_organisation = 1
-    supply_consumption = 0.05
   }
   cavalry = {
     default_organisation = 1
-    supply_consumption = 0.05
   }
 
   ai_chance = {
@@ -133,7 +130,6 @@ strict_military_doctrine = {
   cost = 4800
   unciv_military = yes
 
-  army_base = { supply_consumption = 0.10 }
   dig_in_cap = 1
 
   ai_chance = {
@@ -185,7 +181,6 @@ field_artillery = {
   unciv_military = yes
   artillery = {
     support = 0.15
-    supply_consumption = 0.1
   }
 
   ai_chance = {
@@ -268,11 +263,9 @@ early_military_revolution = {
   cuirassier = { supply_consumption = 1 }
   irregular = {
     default_organisation = 1
-    supply_consumption = 0.05
   }
   cavalry = {
     default_organisation = 1
-    supply_consumption = 0.05
   }
   ai_chance = {
     factor = 1.1
@@ -362,7 +355,6 @@ army_direct_command = {
   military_tactics = 0.15
 
   army_base = {
-    supply_consumption = 0.10
     discipline = 0.25
   }
 
@@ -395,7 +387,6 @@ army_direct_command = {
   unciv_military = yes
   factory_goods_output = { artillery = -0.2 }
   engineer = { support = 0.25 }
-  army_base = { supply_consumption = 0.10 }
   army_base = { default_organisation = 5 }
   dig_in_cap = 1
 
@@ -446,14 +437,12 @@ military_revolution = {
   year = 1615
   cost = 7600
   activate_unit = hussar
-  hussar = { supply_consumption = 1 }
+  hussar = { supply_consumption = 0.5 }
   irregular = {
     default_organisation = 2
-    supply_consumption = 0.05
   }
   cavalry = {
     default_organisation = 2
-    supply_consumption = 0.05
   }
   ai_chance = {
     factor = 1.1
@@ -493,7 +482,6 @@ early_century_plans = {
 
   army_base = {
     default_organisation = 5
-    supply_consumption = 0.10
   }
 
   ai_chance = {
@@ -538,7 +526,6 @@ enfilading_tactics = {
   artillery = {
     attack = 0.25
     support = 0.15
-    supply_consumption = 0.15
   }
 
   ai_chance = {
@@ -632,7 +619,6 @@ officer_corps = {
 
   military_tactics = 0.10
 
-  army_base = { supply_consumption = 0.10 }
   ai_chance = {
     factor = 1.1
     modifier = {
@@ -681,7 +667,6 @@ prussian_doctrine = {
   year = 1680
   cost = 19600
   unciv_military = yes
-  army_base = { supply_consumption = 0.10 }
   ai_chance = {
     factor = 1.01
     modifier = {

@@ -1,11 +1,10 @@
 Key;English;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;
-GIVE_UNIT_COMMANDTITLE;Command Units;;Kontrolliere Einheiten;;;;;;;;;;;
-GIVE_UNIT_COMMAND_DESC;While fighting a war together, a puppet's overlord may take command of their units.;;Während sie gemeinsam einen Krieg bestreiten, darf der Herrscher die Kontrolle über die Einheiten seiner Marionetten übernehmen.;;;;;;;;;;;
-GIVE_UNIT_COMMAND_OK;Ask your puppet to take back command over their own units.;;Frage deine Marionette, ob sie die Kontrolle über ihre Einheiten zurückerlangen will.;;;;;;;;;;;
-GIVE_UNIT_COMMAND_CANT_CONTROL;You can command units of your §Ypuppets§! only when you are fighting in a war together.;;Sie können die Einheiten Ihrer §YMarionetten§! nur dann kontrollieren, wenn Sie gemeinsam einen Krieg bestreiten.;;;;;;;;;;;
+GIVE_UNIT_COMMAND_BUTTON;Command Units;;Kontrolliere Einheiten;;;;;;;;x
+GIVE_UNIT_COMMAND_DESC;While fighting a war together, a puppet's overlord may take command of their units.;;Wï¿½hrend sie gemeinsam einen Krieg bestreiten, darf der Herrscher die Kontrolle ï¿½ber die Einheiten seiner Marionetten ï¿½bernehmen.;;;;;;;;;;;
+GIVE_UNIT_COMMAND_OK;Ask your puppet to take back command over their own units.;;Frage deine Marionette, ob sie die Kontrolle ï¿½ber ihre Einheiten zurï¿½ckerlangen will.;;;;;;;;;;;
+GIVE_UNIT_COMMAND_CANT_CONTROL;You can command units of your ï¿½Ypuppetsï¿½! only when you are fighting in a war together.;;Sie kï¿½nnen die Einheiten Ihrer ï¿½YMarionettenï¿½! nur dann kontrollieren, wenn Sie gemeinsam einen Krieg bestreiten.;;;;;;;;;;;
 GIVE_UNIT_COMMAND_ALREADY_CONTROL;You are already in command of their units.;;Sie kontrollieren schon ihre Einheiten.;;;;;;;;;;;
-CANCEL_UNIT_COMMAND_BUTTON;Give Back Units;;Einheiten zurückgeben;;;;;;;;;;;
-CANCEL_UNIT_COMMANDTITLE;Give Back Units;;Einheiten zurückgeben;;;;;;;;;;;
-CANCEL_UNIT_COMMAND_DESC;Give Back Units;;Einheiten zurückgeben;;;;;;;;;;;
-CANCEL_UNIT_COMMAND_OK;Give them back their units.;;Geben Sie ihnen ihre Einheiten zurück.;;;;;;;;;;;
+CANCEL_UNIT_COMMAND_BUTTON;Give Back Units;;Einheiten zurï¿½ckgeben;;;;;;;;;;;
+CANCEL_UNIT_COMMAND_DESC;Give Back Units;;Einheiten zurï¿½ckgeben;;;;;;;;;;;
+CANCEL_UNIT_COMMAND_OK;Give them back their units.;;Geben Sie ihnen ihre Einheiten zurï¿½ck.;;;;;;;;;;;
 CANCEL_UNIT_COMMAND_NOT_IN_CONTROL;You are not in command of this unit.;;Sie kontrollieren diese Einheit nicht.;;;;;;;;;;;
