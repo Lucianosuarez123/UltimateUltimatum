@@ -3545,7 +3545,7 @@ main_armament = {
 pre_modern_naval_directionism = {
   area = naval_science
   year = 1920
-  cost = 29600
+  cost = 296000
   unciv_military = yes
   supply_range = 0.10
   ai_chance = {
@@ -3588,7 +3588,7 @@ pre_modern_naval_directionism = {
 naval_design_bureaus = {
   area = naval_science
   year = 1922
-  cost = 30000
+  cost = 300000
   unciv_military = yes
   navy_base = { build_time = -10 }
   navy_base = { attack = 2.5 }
@@ -3678,7 +3678,7 @@ naval_design_bureaus = {
 high_sea_battle_fleet = {
   area = naval_science
   year = 1924
-  cost = 30400
+  cost = 304000
   unciv_military = yes
   colonial_points = 50
   max_naval_base = 1
@@ -3755,7 +3755,7 @@ high_sea_battle_fleet = {
 naval_nco_training = {
   area = naval_science
   year = 1926
-  cost = 30800
+  cost = 308000
   unciv_military = yes
   navy_base = { default_organisation = 5 }
   ai_chance = {
@@ -3835,7 +3835,7 @@ naval_nco_training = {
 advanced_naval_design = {
   area = naval_science
   year = 1928
-  cost = 31200
+  cost = 312000
   unciv_military = yes
   navy_base = { build_time = -10 }
   ai_chance = {
@@ -3920,7 +3920,7 @@ advanced_naval_design = {
 early_submarines = {
   area = naval_science
   year = 1930
-  cost = 31600
+  cost = 316000
   unciv_military = yes
   navy_base = { attack = 2 }
 
@@ -3998,7 +3998,7 @@ early_submarines = {
 pre_modern_naval_integration = {
   area = naval_science
   year = 1932
-  cost = 32000
+  cost = 320000
   unciv_military = yes
   supply_range = 0.10
   ai_chance = {
@@ -4049,7 +4049,7 @@ pre_modern_naval_integration = {
 modern_naval_doctrine = {
   area = naval_science
   year = 1934
-  cost = 32400
+  cost = 324000
   unciv_military = yes
   colonial_points = 50
   max_naval_base = 1
@@ -4125,7 +4125,7 @@ modern_naval_doctrine = {
 oil_driven_ships = {
   area = naval_science
   year = 1936
-  cost = 32800
+  cost = 328000
   unciv_military = yes
   navy_base = { maximum_speed = 2 }
   ai_chance = {
@@ -4202,7 +4202,7 @@ oil_driven_ships = {
 modern_naval_design = {
   area = naval_science
   year = 1938
-  cost = 33200
+  cost = 332000
   unciv_military = yes
   navy_base = { build_time = -10 }
   ai_chance = {
@@ -4282,7 +4282,7 @@ modern_naval_design = {
 modern_naval_decision_making = {
   area = naval_science
   year = 1940
-  cost = 33600
+  cost = 336000
   unciv_military = yes
   navy_base = { default_organisation = 5 }
   ai_chance = {
@@ -4364,7 +4364,7 @@ modern_naval_decision_making = {
 aircraft_carrier = {
   area = naval_science
   year = 1942
-  cost = 34000
+  cost = 340000
   unciv_military = yes
   navy_base = { maximum_speed = 2 }
   navy_base = { build_time = -10 }
@@ -4444,7 +4444,7 @@ aircraft_carrier = {
 modern_naval_professionalism = {
   area = naval_science
   year = 1944
-  cost = 34400
+  cost = 344000
   unciv_military = yes
   navy_base = { default_organisation = 5 }
   ai_chance = {
@@ -4526,7 +4526,7 @@ modern_naval_professionalism = {
 submersible_naval_assets = {
   area = naval_science
   year = 1946
-  cost = 34800
+  cost = 348000
   unciv_military = yes
   activate_unit = submarine
   navy_base = { maximum_speed = 2 }
@@ -4604,7 +4604,7 @@ submersible_naval_assets = {
 naval_statistics = {
   area = naval_science
   year = 1948
-  cost = 70800
+  cost = 708000
   unciv_military = yes
   supply_range = 0.10
   ai_chance = {
@@ -4648,7 +4648,7 @@ naval_statistics = {
 modern_naval_nco_training = {
   area = naval_leadership
   year = 1950
-  cost = 35600
+  cost = 356000
   unciv_military = yes
   navy_base = { default_organisation = 5 }
   ai_chance = {
@@ -4734,7 +4734,7 @@ modern_naval_nco_training = {
 battleship_battle_fleet = {
   area = naval_leadership
   year = 1953
-  cost = 36000
+  cost = 360000
   unciv_military = yes
   navy_base = { maximum_speed = 2 }
   max_naval_base = 1
@@ -4811,7 +4811,7 @@ battleship_battle_fleet = {
 submarine = {
   area = naval_leadership
   year = 1956
-  cost = 36400
+  cost = 364000
   unciv_military = yes
   navy_base = { maximum_speed = 2 }
   navy_base = { build_time = -10 }
@@ -4891,7 +4891,7 @@ submarine = {
 naval_power_projection = {
   area = naval_leadership
   year = 1959
-  cost = 36800
+  cost = 368000
   unciv_military = yes
   navy_base = { build_time = -10 }
   ai_chance = {
@@ -4971,7 +4971,7 @@ naval_power_projection = {
 naval_logistics = {
   area = naval_leadership
   year = 1962
-  cost = 37200
+  cost = 372000
   unciv_military = yes
   supply_range = 0.10
   ai_chance = {
@@ -5014,7 +5014,7 @@ naval_logistics = {
 remodelled_directorate = {
   area = naval_leadership
   year = 1965
-  cost = 37600
+  cost = 376000
   unciv_military = yes
   supply_range = 0.25
   navy_base = { default_organisation = 5 }
@@ -5099,7 +5099,7 @@ remodelled_directorate = {
 carrier_doctrine = {
   area = naval_leadership
   year = 1968
-  cost = 38000
+  cost = 380000
   unciv_military = yes
   navy_base = { default_organisation = 5 }
   max_naval_base = 1
@@ -5176,7 +5176,7 @@ carrier_doctrine = {
 nuclear_marine_propulsion = {
   area = naval_leadership
   year = 1971
-  cost = 38400
+  cost = 384000
   unciv_military = yes
   navy_base = { maximum_speed = 2 }
   navy_base = { build_time = -10 }
@@ -5255,7 +5255,7 @@ nuclear_marine_propulsion = {
 naval_directionism = {
   area = naval_leadership
   year = 1974
-  cost = 38800
+  cost = 388000
   unciv_military = yes
   supply_range = 0.10
   ai_chance = {
@@ -5298,7 +5298,7 @@ naval_directionism = {
 modern_naval_architect = {
   area = naval_leadership
   year = 1977
-  cost = 39200
+  cost = 392000
   unciv_military = yes
   navy_base = { build_time = -10 }
   navy_base = { attack = 2.5 }
@@ -5383,7 +5383,7 @@ modern_naval_architect = {
 modern_naval_training = {
   area = naval_leadership
   year = 1980
-  cost = 39600
+  cost = 396000
   unciv_military = yes
   navy_base = { default_organisation = 5 }
   ai_chance = {
@@ -5463,7 +5463,7 @@ modern_naval_training = {
 nuclear_powered_ships = {
   area = naval_leadership
   year = 1983
-  cost = 40000
+  cost = 400000
   unciv_military = yes
   navy_base = { maximum_speed = 5 }
   ai_chance = {
@@ -5540,7 +5540,7 @@ nuclear_powered_ships = {
 naval_integration = {
   area = naval_leadership
   year = 1986
-  cost = 40400
+  cost = 404000
   unciv_military = yes
   supply_range = 0.10
   ai_chance = {
@@ -5591,7 +5591,7 @@ naval_integration = {
 naval_superstructures = {
   area = naval_leadership
   year = 1990
-  cost = 40800
+  cost = 408000
   unciv_military = yes
   navy_base = { build_time = -10 }
   ai_chance = {
@@ -5671,7 +5671,7 @@ naval_superstructures = {
 satellite_communications = {
   area = naval_leadership
   year = 2000
-  cost = 41200
+  cost = 412000
   unciv_military = yes
   supply_range = 0.10
   ai_chance = {
@@ -5722,9 +5722,14 @@ satellite_communications = {
 automatized_ship_command = {
   area = naval_leadership
   year = 2090
-  cost = 41600
+  cost = 916000
   unciv_military = yes
-  navy_base = { default_organisation = 5 }
+  navy_base = { 
+  default_organisation = 10 
+  supply_consumption = -1
+  supply_range = 1
+  build_time = -100
+  }
   ai_chance = {
     factor = 1
     # Land-locked countries don't research this

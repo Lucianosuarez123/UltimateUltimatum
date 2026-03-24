@@ -1165,7 +1165,7 @@ revolution_n_counterrevolution = {
 psychoanalysis = {
   area = social_thought
   year = 1913
-  cost = 28000
+  cost = 280000
 
   regular_experience_level = 5
   reinforce_rate = 0.05
@@ -1194,7 +1194,7 @@ psychoanalysis = {
 phenomenology_n_hermeneutic = {
   area = social_thought
   year = 1916
-  cost = 28400
+  cost = 284000
 
   increase_research = 1.0
   ai_chance = {
@@ -1217,7 +1217,7 @@ phenomenology_n_hermeneutic = {
 social_science = {
   area = social_thought
   year = 1918
-  cost = 58000
+  cost = 580000
 
   colonial_migration = 0.05
   education_efficiency = 0.1
@@ -1239,7 +1239,7 @@ social_science = {
 mass_culture_n_the_avant_garde = {
   area = political_thought
   year = 1900
-  cost = 29200
+  cost = 292000
 
   prestige = 0.05
   activate_building = entertainment_industry
@@ -1272,7 +1272,7 @@ mass_culture_n_the_avant_garde = {
 mass_politics = {
   area = political_thought
   year = 1923
-  cost = 29600
+  cost = 296000
 
   max_national_focus = 3
   ai_chance = {
@@ -1295,7 +1295,7 @@ mass_politics = {
 behaviorism = {
   area = political_thought
   year = 1925
-  cost = 30000
+  cost = 300000
 
   regular_experience_level = 5
   reinforce_rate = 0.05
@@ -1324,7 +1324,7 @@ behaviorism = {
 anti__rationalism = {
   area = political_thought
   year = 1927
-  cost = 30400
+  cost = 304000
 
   increase_research = 1.0
   ai_chance = {
@@ -1347,7 +1347,7 @@ anti__rationalism = {
 social_alienation = {
   area = political_thought
   year = 1929
-  cost = 30800
+  cost = 308000
 
   colonial_migration = 0.05
   education_efficiency = 0.1
@@ -1371,7 +1371,7 @@ social_alienation = {
 post_modernism = {
   area = political_thought
   year = 1931
-  cost = 31200
+  cost = 312000
 
   prestige = 0.05
   ai_chance = {
@@ -1399,7 +1399,7 @@ post_modernism = {
 mass_state_media = {
   area = political_thought
   year = 1933
-  cost = 31600
+  cost = 316000
 
   max_national_focus = 3
   cb_creation_speed = 0.05
@@ -1434,7 +1434,7 @@ mass_state_media = {
 media_psychology = {
   area = political_thought
   year = 1935
-  cost = 32000
+  cost = 320000
 
   regular_experience_level = 5
   reinforce_rate = 0.05
@@ -1464,7 +1464,7 @@ media_psychology = {
 logical_positivism = {
   area = political_thought
   year = 1937
-  cost = 32400
+  cost = 324000
 
   increase_research = 0.50
   ai_chance = {
@@ -1491,7 +1491,7 @@ logical_positivism = {
 individualism = {
   area = political_thought
   year = 1939
-  cost = 32800
+  cost = 328000
 
   colonial_migration = 0.05
   education_efficiency = 0.25
@@ -1512,7 +1512,7 @@ individualism = {
 social_realism = {
   area = political_thought
   year = 1941
-  cost = 33200
+  cost = 332000
 
   prestige = 0.1
   assimilation_rate = 0.05
@@ -1542,7 +1542,7 @@ social_realism = {
 post_colonialism = {
   area = political_thought
   year = 1943
-  cost = 33600
+  cost = 336000
 
   max_national_focus = 3
   ai_chance = {
@@ -1565,7 +1565,7 @@ post_colonialism = {
 existentialism = {
   area = political_thought
   year = 1945
-  cost = 34000
+  cost = 340000
 
   regular_experience_level = 5
   reinforce_rate = 0.05
@@ -1595,7 +1595,7 @@ existentialism = {
 computational_logic = {
   area = political_thought
   year = 1947
-  cost = 34400
+  cost = 344000
 
   increase_research = 2.0
   ai_chance = {
@@ -1618,7 +1618,7 @@ computational_logic = {
 social_determinism = {
   area = political_thought
   year = 1949
-  cost = 34800
+  cost = 348000
 
   colonial_migration = 0.1
   education_efficiency = 0.25
@@ -1639,7 +1639,7 @@ social_determinism = {
 punk_era = {
   area = political_thought
   year = 1949
-  cost = 70800
+  cost = 708000
 
   prestige = 0.2
   assimilation_rate = 0.05
@@ -1671,7 +1671,7 @@ punk_era = {
 international_protocol = {
   area = psychology
   year = 1945
-  cost = 35600
+  cost = 356000
 
   max_national_focus = 3
   cb_creation_speed = 0.05
@@ -1716,7 +1716,7 @@ international_protocol = {
 cognitivism = {
   area = psychology
   year = 1958
-  cost = 36000
+  cost = 360000
 
   regular_experience_level = 5
   reinforce_rate = 0.05
@@ -1745,7 +1745,7 @@ cognitivism = {
 globalisation = {
   area = psychology
   year = 1962
-  cost = 36400
+  cost = 364000
 
   increase_research = 2.0
   ai_chance = {
@@ -1768,7 +1768,7 @@ globalisation = {
 interactionism = {
   area = psychology
   year = 1970
-  cost = 36800
+  cost = 368000
 
   colonial_migration = 0.1
   education_efficiency = 0.50
@@ -1789,7 +1789,7 @@ interactionism = {
 pop_generation = {
   area = psychology
   year = 1960
-  cost = 37200
+  cost = 372000
 
   prestige = 0.2
   assimilation_rate = 0.05
@@ -1819,7 +1819,7 @@ pop_generation = {
 cold_war_policy = {
   area = psychology
   year = 1974
-  cost = 37600
+  cost = 376000
 
   max_national_focus = 3
   cb_creation_speed = 0.05
@@ -1845,7 +1845,7 @@ cold_war_policy = {
 medication = {
   area = psychology
   year = 1978
-  cost = 38000
+  cost = 380000
 
   regular_experience_level = 5
   reinforce_rate = 0.05
@@ -1874,7 +1874,7 @@ medication = {
 post_structuralism = {
   area = psychology
   year = 1982
-  cost = 38400
+  cost = 384000
 
   increase_research = 2.5
   ai_chance = {
@@ -1897,7 +1897,7 @@ post_structuralism = {
 consensus_reality = {
   area = psychology
   year = 1986
-  cost = 38800
+  cost = 388000
 
   colonial_migration = 0.1
   education_efficiency = 1.50
@@ -1922,7 +1922,7 @@ consensus_reality = {
 modern_political_negotiations = {
   area = psychology
   year = 1990
-  cost = 39200
+  cost = 392000
 
   max_national_focus = 3
   cb_creation_speed = 0.5
@@ -1948,7 +1948,7 @@ modern_political_negotiations = {
 humanistic_psychology = {
   area = psychology
   year = 1994
-  cost = 39600
+  cost = 396000
 
   regular_experience_level = 5
   reinforce_rate = 0.05
@@ -1978,7 +1978,7 @@ humanistic_psychology = {
 neopragmatism = {
   area = psychology
   year = 1998
-  cost = 40000
+  cost = 400000
 
   increase_research = 2.5
   ai_chance = {
@@ -2001,10 +2001,10 @@ neopragmatism = {
 anti_necessitarian_soc_thought = {
   area = psychology
   year = 2002
-  cost = 40400
+  cost = 904000
 
   colonial_migration = 0.05
-  education_efficiency = 0.1
+  education_efficiency = 10
   ai_chance = {
     factor = 1.01
     modifier = {
@@ -2025,9 +2025,9 @@ anti_necessitarian_soc_thought = {
 utopianism = {
   area = psychology
   year = 2006
-  cost = 40800
+  cost = 908000
 
-  prestige = 0.05
+  prestige = 5.05
   ai_chance = {
     factor = 1.01
     modifier = {
@@ -2053,9 +2053,9 @@ utopianism = {
 commodity_narcissism = {
   area = psychology
   year = 2010
-  cost = 41200
+  cost = 312000
 
-  max_national_focus = 3
+  max_national_focus = 10
   ai_chance = {
     factor = 1.1
     modifier = {
@@ -2076,9 +2076,9 @@ commodity_narcissism = {
 professional_philosophy = {
   area = psychology
   year = 2014
-  cost = 41600
+  cost = 916000
 
-  increase_research = 3.75
+  increase_research = 10.75
   ai_chance = {
     factor = 51
     modifier = {

@@ -1706,7 +1706,7 @@ electric_furnace = {
 electrical_power_generation = {
   area = metallurgy
   year = 1915
-  cost = 28400
+  cost = 284000
 
   mine_rgo_eff = 0.15
   farm_rgo_eff = 0.15
@@ -1748,7 +1748,7 @@ electrical_power_generation = {
 integral_rail_system = {
   area = metallurgy
   year = 1918
-  cost = 58000
+  cost = 580000
 
   max_railroad = 1
   ai_chance = {
@@ -1774,7 +1774,7 @@ integral_rail_system = {
 synthetic_polymers = {
   area = tech_infrastructure
   year = 1919
-  cost = 29200
+  cost = 292000
 
   supply_limit = 0.50
   land_attrition = -0.05
@@ -1807,7 +1807,7 @@ synthetic_polymers = {
 advanced_metallurgy_&_glassblowing = {
   area = tech_infrastructure
   year = 1921
-  cost = 29600
+  cost = 296000
 
   rgo_goods_output = { iron = 0.5 }
   rgo_goods_output = { coal = 0.5 }
@@ -1857,7 +1857,7 @@ advanced_metallurgy_&_glassblowing = {
 advanced_integral_rail_system = {
   area = tech_infrastructure
   year = 1923
-  cost = 30000
+  cost = 300000
 
   max_railroad = 1
   ai_chance = {
@@ -1881,7 +1881,7 @@ advanced_integral_rail_system = {
 semi-automated_assembly_line = {
   area = tech_infrastructure
   year = 1925
-  cost = 30400
+  cost = 304000
 
   factory_throughput = 0.05
   rgo_throughput = 0.025
@@ -1919,7 +1919,7 @@ semi-automated_assembly_line = {
 hydropower = {
   area = tech_infrastructure
   year = 1927
-  cost = 30800
+  cost = 308000
 
   rgo_throughput = 0.05
   factory_throughput = 0.05
@@ -1965,7 +1965,7 @@ hydropower = {
 limited_access_roads = {
   area = tech_infrastructure
   year = 1929
-  cost = 31200
+  cost = 312000
 
   mobilisation_size = 0.05
   reinforce_rate = 0.025
@@ -1990,7 +1990,7 @@ limited_access_roads = {
 electrochemical_cell = {
   area = tech_infrastructure
   year = 1931
-  cost = 31600
+  cost = 316000
   soldier_to_pop_loss = 0.02
   land_attrition = -0.025
 
@@ -2026,7 +2026,7 @@ electrochemical_cell = {
 borosilicate_glass = {
   area = tech_infrastructure
   year = 1933
-  cost = 32000
+  cost = 320000
 
   rgo_goods_output = { coal = 0.25 }
   factory_goods_output = { glass = 0.25 }
@@ -2072,7 +2072,7 @@ borosilicate_glass = {
 advanced_limited_access_roads = {
   area = tech_infrastructure
   year = 1935
-  cost = 32400
+  cost = 324000
 
   mobilisation_size = 0.05
   reinforce_rate = 0.025
@@ -2096,7 +2096,7 @@ advanced_limited_access_roads = {
 natural_gas_power_station = {
   area = tech_infrastructure
   year = 1937
-  cost = 32800
+  cost = 328000
   rgo_throughput = 0.1
   factory_throughput = 0.1
   activate_building = gas_power_station
@@ -2141,7 +2141,7 @@ natural_gas_power_station = {
 electronic_circuit = {
   area = tech_infrastructure
   year = 1939
-  cost = 33200
+  cost = 332000
   soldier_to_pop_loss = 0.02
   land_attrition = -0.025
 
@@ -2177,7 +2177,7 @@ electronic_circuit = {
 advanced_sub-surface_mining = {
   area = tech_infrastructure
   year = 1941
-  cost = 33600
+  cost = 336000
   rgo_size = { iron = 0.25 }
   rgo_size = { coal = 0.25 }
   rgo_size = { sulphur = 0.25 }
@@ -2223,7 +2223,7 @@ advanced_sub-surface_mining = {
 street_road = {
   area = tech_infrastructure
   year = 1943
-  cost = 34000
+  cost = 340000
 
   mobilisation_size = 0.05
   reinforce_rate = 0.025
@@ -2249,7 +2249,7 @@ street_road = {
 secret_of_atom = {
   area = tech_infrastructure
   year = 1945
-  cost = 34400
+  cost = 344000
 
   factory_throughput = 0.3
 
@@ -2281,7 +2281,7 @@ secret_of_atom = {
 industrial_robotic_machinery = {
   area = tech_infrastructure
   year = 1947
-  cost = 34800
+  cost = 348000
   factory_throughput = 0.1
   rgo_throughput = 0.025
 
@@ -2309,7 +2309,7 @@ industrial_robotic_machinery = {
 advanced_surface_mining = {
   area = tech_infrastructure
   year = 1949
-  cost = 70800
+  cost = 708000
 
   rgo_size = { iron = 0.25 }
   rgo_size = { coal = 0.25 }
@@ -2358,7 +2358,7 @@ advanced_surface_mining = {
 semiconductor_device = {
   area = chemistry_and_electricity
   year = 1950
-  cost = 35600
+  cost = 356000
   soldier_to_pop_loss = 0.02
   land_attrition = -0.025
 
@@ -2398,7 +2398,7 @@ semiconductor_device = {
 autobahn = {
   area = chemistry_and_electricity
   year = 1957
-  cost = 36000
+  cost = 360000
   mobilisation_size = 0.05
   reinforce_rate = 0.025
   ai_chance = {
@@ -2422,7 +2422,7 @@ autobahn = {
 nuclear_reactor = {
   area = chemistry_and_electricity
   year = 1961
-  cost = 36400
+  cost = 364000
   rgo_throughput = 0.1
   factory_throughput = 0.1
   ai_chance = {
@@ -2466,7 +2466,7 @@ nuclear_reactor = {
 public_road_transit_system = {
   area = chemistry_and_electricity
   year = 1965
-  cost = 36800
+  cost = 368000
 
   mobilisation_size = 0.05
   reinforce_rate = 0.05
@@ -2492,7 +2492,7 @@ public_road_transit_system = {
 spaceflight_capability = {
   area = chemistry_and_electricity
   year = 1969
-  cost = 37200
+  cost = 372000
   soldier_to_pop_loss = 0.05
   land_attrition = -0.05
 
@@ -2520,7 +2520,7 @@ spaceflight_capability = {
 monorail = {
   area = chemistry_and_electricity
   year = 1973
-  cost = 37600
+  cost = 376000
 
   max_railroad = 1
 
@@ -2545,7 +2545,7 @@ monorail = {
 fully_automated_factories = {
   area = chemistry_and_electricity
   year = 1977
-  cost = 38000
+  cost = 380000
   factory_throughput = 0.25
   rgo_throughput = 0.025
 
@@ -2573,7 +2573,7 @@ fully_automated_factories = {
 macro_engineering = {
   area = chemistry_and_electricity
   year = 1981
-  cost = 38400
+  cost = 384000
 
   ai_chance = {
     factor = 2
@@ -2595,7 +2595,7 @@ macro_engineering = {
 modern_mining_&_glassblowing = {
   area = chemistry_and_electricity
   year = 1985
-  cost = 38800
+  cost = 388000
 
   rgo_goods_output = { iron = 0.5 }
   rgo_goods_output = { coal = 0.5 }
@@ -2647,7 +2647,7 @@ modern_mining_&_glassblowing = {
 superhighways = {
   area = chemistry_and_electricity
   year = 1989
-  cost = 39200
+  cost = 392000
   mobilisation_size = 0.05
   reinforce_rate = 0.05
 
@@ -2672,7 +2672,7 @@ superhighways = {
 renewable_energy = {
   area = chemistry_and_electricity
   year = 1993
-  cost = 39600
+  cost = 396000
   rgo_throughput = 0.1
   factory_throughput = 0.1
   ai_chance = {
@@ -2712,7 +2712,7 @@ renewable_energy = {
 quantum_physics = {
   area = chemistry_and_electricity
   year = 1997
-  cost = 40000
+  cost = 400000
 
   ai_chance = {
     factor = 1.1
@@ -2738,7 +2738,7 @@ quantum_physics = {
 robotics = {
   area = chemistry_and_electricity
   year = 2001
-  cost = 40400
+  cost = 404000
 
 
   rgo_output = 2.05
@@ -2767,9 +2767,9 @@ robotics = {
 high_speed_rail = {
   area = chemistry_and_electricity
   year = 2005
-  cost = 40800
+  cost = 708000
 
-  max_railroad = 1
+  max_railroad = 5
 
   ai_chance = {
     factor = 2
@@ -2791,7 +2791,7 @@ high_speed_rail = {
 synthetic_graphite = {
   area = chemistry_and_electricity
   year = 2009
-  cost = 41200
+  cost = 412000
 
   factory_goods_output = { steel = 1.05 }
   rgo_goods_output = { coal = 1.0 }
@@ -2837,7 +2837,7 @@ synthetic_graphite = {
 green_power = {
   area = chemistry_and_electricity
   year = 2013
-  cost = 41600
+  cost = 416000
   farm_rgo_eff = 1.15
   factory_throughput = 1.15
   ai_chance = {

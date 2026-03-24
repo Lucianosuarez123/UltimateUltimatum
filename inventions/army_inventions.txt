@@ -1404,6 +1404,7 @@ early_interwar_bombers = {
     bomber = {
       attack = 0.5
       support = 1
+      supply_consumption = 0.5
     }
   }
 }
@@ -1424,6 +1425,7 @@ late_interwar_bombers = {
     bomber = {
       attack = 0.5
       support = 1
+      supply_consumption = 0.5
     }
   }
 }
@@ -1441,6 +1443,7 @@ early_interwar_fighters = {
     plane = {
       attack = 0.25
       defence = 3
+      supply_consumption = 0.5
     }
   }
 }
@@ -1461,6 +1464,7 @@ late_interwar_fighters = {
     plane = {
       attack = 0.25
       defence = 3
+      supply_consumption = 0.5
     }
   }
 }

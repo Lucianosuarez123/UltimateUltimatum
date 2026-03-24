@@ -9,7 +9,7 @@ loyal_chain_of_command = {
 
   military_tactics = 0.15
 
-  army_base = { supply_consumption = 0.10 }
+  army_base = { supply_consumption = -0.10 }
   ai_chance = {
     factor = 1.1
     #        modifier = {
@@ -63,7 +63,7 @@ early_rifled_muskets = {
   year = 1710
   cost = 10400
   unciv_military = yes
-
+  infantry = { supply_consumption = 1 }
   combat_width = -1
   #colonial_life_rating = -10
   ai_chance = {
@@ -108,6 +108,7 @@ era_of_mass_armies = {
   year = 1720
   cost = 10800
   mobilisation_size = 0.10
+  irregular = { supply_consumption = -0.5 }
   ai_chance = {
     factor = 1.1
     modifier = {
@@ -190,7 +191,7 @@ prussian_military_leadership = {
   military_tactics = 0.25
 
   army_base = { supply_consumption = 0.20 }
-
+  cavalry = { supply_consumption = -0.5 }
   ai_chance = {
     factor = 1.1
     modifier = {
@@ -2165,7 +2166,7 @@ great_war_heavy_arms = {
 aeronautics = {
   area = heavy_armament
   year = 1917
-  cost = 58000
+  cost = 580000
   army_base = {
     default_organisation = 10
     supply_consumption = 0.20
@@ -2212,7 +2213,7 @@ aeronautics = {
 great_war_experience = {
   area = military_science
   year = 1919
-  cost = 29200
+  cost = 292000
   unciv_military = yes
   morale = 0.5
 
@@ -2260,7 +2261,7 @@ great_war_experience = {
 modern_army_doctrine = {
   area = military_science
   year = 1921
-  cost = 29600
+  cost = 296000
   unciv_military = yes
 
   army_base = { supply_consumption = -0.08 }
@@ -2302,7 +2303,7 @@ modern_army_doctrine = {
 modern_divisional_structure = {
   area = military_science
   year = 1923
-  cost = 30000
+  cost = 300000
   unciv_military = yes
 
   combat_width = -1
@@ -2344,7 +2345,7 @@ modern_divisional_structure = {
 heavy_armament_dunno = {
   area = military_science
   year = 1925
-  cost = 30400
+  cost = 304000
   unciv_military = yes
   artillery = {
     attack = 0.5
@@ -2389,7 +2390,7 @@ heavy_armament_dunno = {
 global_communications = {
   area = military_science
   year = 1927
-  cost = 30800
+  cost = 308000
   unciv_military = yes
   morale = 0.5
 
@@ -2432,7 +2433,7 @@ global_communications = {
 rocket_science = {
   area = military_science
   year = 1929
-  cost = 31200
+  cost = 312000
   unciv_military = yes
   army_base = {
     default_organisation = 10
@@ -2475,7 +2476,7 @@ rocket_science = {
 border_fortification = {
   area = military_science
   year = 1931
-  cost = 31600
+  cost = 316000
   unciv_military = yes
   army_base = {
     default_organisation = 2.5
@@ -2528,7 +2529,7 @@ border_fortification = {
 radar = {
   area = military_science
   year = 1933
-  cost = 32000
+  cost = 320000
   unciv_military = yes
 
   plane = {
@@ -2543,7 +2544,21 @@ radar = {
     default_organisation = 2.5
     supply_consumption = 0.10
   }
-
+  dreadnought ={
+    supply_consumption = 0.5
+  }
+  monitor = {
+    supply_consumption = 0.10
+  }
+  plane = {
+    supply_consumption = 0.3
+  }
+  submarine = {
+    supply_consumption = 0.4
+  }
+  battleship={
+    supply_consumption = 0.25
+  }
   ai_chance = {
     factor = 1.1
     modifier = {
@@ -2580,7 +2595,7 @@ radar = {
 combined_arms = {
   area = military_science
   year = 1935
-  cost = 32400
+  cost = 324000
   unciv_military = yes
   combat_width = -1
   army_base = {
@@ -2629,7 +2644,7 @@ combined_arms = {
 combined_arms_maneuver = {
   area = military_science
   year = 1937
-  cost = 32800
+  cost = 328000
   unciv_military = yes
 
   morale = 0.25
@@ -2685,7 +2700,7 @@ combined_arms_maneuver = {
 rocket_artillery = {
   area = military_science
   year = 1939
-  cost = 33200
+  cost = 332000
   unciv_military = yes
   artillery = {
     support = 0.25
@@ -2728,7 +2743,7 @@ rocket_artillery = {
 revamped_light_weaponry = {
   area = military_science
   year = 1941
-  cost = 33600
+  cost = 336000
   unciv_military = yes
   combat_width = -1
   army_base = {
@@ -2776,7 +2791,7 @@ revamped_light_weaponry = {
 main_field_operating_base = {
   area = military_science
   year = 1943
-  cost = 34000
+  cost = 340000
   unciv_military = yes
   engineer = { support = 0.25 }
   army_base = {
@@ -2830,7 +2845,7 @@ main_field_operating_base = {
 weaponry = {
   area = military_science
   year = 1945
-  cost = 34400
+  cost = 344000
   unciv_military = yes
   combat_width = -2
   dig_in_cap = 3
@@ -2872,7 +2887,7 @@ weaponry = {
 advanced_aerodynamics = {
   area = military_science
   year = 1947
-  cost = 34800
+  cost = 348000
   unciv_military = yes
   plane = {
     attack = 0.25
@@ -2920,7 +2935,7 @@ advanced_aerodynamics = {
 overhauled_military_education = {
   area = military_science
   year = 1949
-  cost = 70800
+  cost = 708000
   unciv_military = yes
 
   morale = 0.25
@@ -2979,7 +2994,7 @@ overhauled_military_education = {
 assymetric_warfare = {
   area = army_leadership
   year = 1950
-  cost = 35600
+  cost = 356000
   unciv_military = yes
 
   activate_unit = specops
@@ -3027,7 +3042,7 @@ assymetric_warfare = {
 redesigned_heavy_ordnance = {
   area = army_leadership
   year = 1953
-  cost = 36000
+  cost = 360000
   unciv_military = yes
   artillery = {
     support = 0.25
@@ -3074,7 +3089,7 @@ redesigned_heavy_ordnance = {
 modern_light_armament = {
   area = army_leadership
   year = 1955
-  cost = 36400
+  cost = 364000
   unciv_military = yes
 
   combat_width = -2
@@ -3119,7 +3134,7 @@ modern_light_armament = {
 fire_support_base = {
   area = army_leadership
   year = 1958
-  cost = 36800
+  cost = 368000
   unciv_military = yes
 
   engineer = { support = 0.25 }
@@ -3166,7 +3181,7 @@ fire_support_base = {
 modern_heavy_armament = {
   area = army_leadership
   year = 1961
-  cost = 37200
+  cost = 372000
   unciv_military = yes
   artillery = {
     support = 0.25
@@ -3213,7 +3228,7 @@ modern_heavy_armament = {
 modern_military_management = {
   area = army_leadership
   year = 1964
-  cost = 37600
+  cost = 376000
   unciv_military = yes
 
   morale = 0.25
@@ -3269,7 +3284,7 @@ modern_military_management = {
 cyber_integrated_training = {
   area = army_leadership
   year = 1967
-  cost = 38000
+  cost = 380000
   unciv_military = yes
 
   morale = 0.25
@@ -3316,7 +3331,7 @@ cyber_integrated_training = {
 modern_troop_heirarchy = {
   area = army_leadership
   year = 1970
-  cost = 38400
+  cost = 384000
   unciv_military = yes
 
   combat_width = -2.5
@@ -3361,7 +3376,7 @@ modern_troop_heirarchy = {
 heavy_arms_cyber_integration = {
   area = army_leadership
   year = 1973
-  cost = 38800
+  cost = 388000
   unciv_military = yes
   artillery = {
     support = 0.25
@@ -3408,7 +3423,7 @@ heavy_arms_cyber_integration = {
 battlespace_digitisation = {
   area = army_leadership
   year = 1976
-  cost = 39200
+  cost = 392000
   unciv_military = yes
   army_base = {
     maximum_speed = 1
@@ -3452,7 +3467,7 @@ battlespace_digitisation = {
 modern_army_base = {
   area = army_leadership
   year = 1979
-  cost = 39600
+  cost = 396000
   unciv_military = yes
 
   engineer = { support = 0.25 }
@@ -3499,7 +3514,7 @@ modern_army_base = {
 missile_defense_system = {
   area = army_leadership
   year = 1985
-  cost = 40000
+  cost = 400000
   unciv_military = yes
   army_base = {
     supply_consumption = 0.20
@@ -3542,7 +3557,7 @@ missile_defense_system = {
 precisision_guided_artillery = {
   area = army_leadership
   year = 1990
-  cost = 40400
+  cost = 404000
   unciv_military = yes
   artillery = {
     attack = 0.5
@@ -3587,7 +3602,7 @@ precisision_guided_artillery = {
 drone_warfare = {
   area = army_leadership
   year = 1995
-  cost = 40800
+  cost = 408000
   unciv_military = yes
   army_base = {
     default_organisation = 10
@@ -3630,7 +3645,7 @@ drone_warfare = {
 human_augmentation = {
   area = army_leadership
   year = 2060
-  cost = 41200
+  cost = 412000
   unciv_military = yes
   army_base = {
     supply_consumption = 0.20
@@ -3676,7 +3691,7 @@ human_augmentation = {
 AI_ground_leadership = {
   area = army_leadership
   year = 2080
-  cost = 41600
+  cost = 416000
   morale = 0.5
   military_tactics = 0.25
   army_base = { supply_consumption = -0.25 }

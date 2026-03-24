@@ -1369,7 +1369,7 @@ neoclassical_theory = {
 market_exchange_rates = {
   area = economic_thought_and_critique
   year = 1908
-  cost = 28000
+  cost = 280000
 
 
   administrative_efficiency = 0.05
@@ -1393,7 +1393,7 @@ market_exchange_rates = {
 organizational_development = {
   area = economic_thought_and_critique
   year = 1911
-  cost = 28400
+  cost = 284000
 
   factory_output = 0.01
   ai_chance = {
@@ -1420,7 +1420,7 @@ organizational_development = {
 bank_inspection_board = {
   area = economic_thought_and_critique
   year = 1914
-  cost = 58000
+  cost = 580000
 
   tax_eff = 2
   ai_chance = {
@@ -1453,7 +1453,7 @@ bank_inspection_board = {
 keynesian_economics = {
   area = market_functionality
   year = 1900
-  cost = 29200
+  cost = 292000
 
   factory_input = -0.01
   ai_chance = {
@@ -1488,7 +1488,7 @@ keynesian_economics = {
 government_interventionism = {
   area = market_functionality
   year = 1921
-  cost = 29600
+  cost = 296000
 
   influence = 0.2
   ai_chance = {
@@ -1515,7 +1515,7 @@ government_interventionism = {
 market_determined_exchange_rates = {
   area = market_functionality
   year = 1923
-  cost = 30000
+  cost = 300000
 
 
   administrative_efficiency = 0.05
@@ -1539,7 +1539,7 @@ market_determined_exchange_rates = {
 international_economics = {
   area = market_functionality
   year = 1925
-  cost = 30400
+  cost = 304000
 
   factory_input = -0.05
   factory_cost = -0.05
@@ -1571,7 +1571,7 @@ international_economics = {
 mutual_funds = {
   area = market_functionality
   year = 1927
-  cost = 30800
+  cost = 308000
 
   tax_eff = 3
   ai_chance = {
@@ -1594,7 +1594,7 @@ mutual_funds = {
 human_resource_management = {
   area = market_functionality
   year = 1929
-  cost = 31200
+  cost = 312000
 
   factory_output = 0.05
   factory_cost = -0.05
@@ -1635,7 +1635,7 @@ human_resource_management = {
 market_socialism = {
   area = market_functionality
   year = 1931
-  cost = 31600
+  cost = 316000
 
   influence = 0.25
   farm_rgo_eff = 0.10
@@ -1665,7 +1665,7 @@ market_socialism = {
 fractional_reserve_banking = {
   area = market_functionality
   year = 1933
-  cost = 32000
+  cost = 320000
 
   administrative_efficiency = 0.05
   tax_eff = 3
@@ -1691,7 +1691,7 @@ fractional_reserve_banking = {
 evolutionary_economics = {
   area = market_functionality
   year = 1935
-  cost = 32400
+  cost = 324000
 
   factory_input = -0.05
   factory_cost = -0.05
@@ -1723,7 +1723,7 @@ evolutionary_economics = {
 international_stock_exchange = {
   area = market_functionality
   year = 1937
-  cost = 32800
+  cost = 328000
 
   activate_building = international_stock_exchange
   tax_eff = 3
@@ -1758,7 +1758,7 @@ international_stock_exchange = {
 benchmarking = {
   area = market_functionality
   year = 1939
-  cost = 33200
+  cost = 332000
 
   factory_output = 0.05
   factory_cost = -0.05
@@ -1787,7 +1787,7 @@ benchmarking = {
 labour_laws = {
   area = market_functionality
   year = 1941
-  cost = 33600
+  cost = 336000
 
   influence = 0.25
   farm_rgo_eff = 0.10
@@ -1817,7 +1817,7 @@ labour_laws = {
 modern_cheque = {
   area = market_functionality
   year = 1943
-  cost = 34000
+  cost = 340000
 
   administrative_efficiency = 0.05
   tax_eff = 3
@@ -1843,7 +1843,7 @@ modern_cheque = {
 institutional_economics = {
   area = market_functionality
   year = 1945
-  cost = 34400
+  cost = 344000
 
   factory_input = -0.05
   factory_cost = -0.05
@@ -1875,7 +1875,7 @@ institutional_economics = {
 bond_market = {
   area = market_functionality
   year = 1947
-  cost = 34800
+  cost = 348000
 
   tax_eff = 3
   loan_interest = -0.025
@@ -1909,7 +1909,7 @@ bond_market = {
 globalized_economy = {
   area = market_functionality
   year = 1949
-  cost = 70800
+  cost = 708000
   farm_rgo_eff = 0.1
   mine_rgo_eff = 0.1
   influence = 0.2
@@ -1939,7 +1939,7 @@ globalized_economy = {
 multinationals = {
   area = tech_organization
   year = 1945
-  cost = 35600
+  cost = 356000
 
   tax_eff = 2
   ai_chance = {
@@ -1966,7 +1966,7 @@ multinationals = {
 oee_system = {
   area = tech_organization
   year = 1953
-  cost = 36000
+  cost = 360000
 
   factory_output = 0.05
   factory_cost = -0.05
@@ -1995,7 +1995,7 @@ oee_system = {
 credit_card = {
   area = tech_organization
   year = 1956
-  cost = 36400
+  cost = 364000
 
   administrative_efficiency = 0.02
   tax_eff = 2
@@ -2029,7 +2029,7 @@ credit_card = {
 monetarism = {
   area = tech_organization
   year = 1959
-  cost = 36800
+  cost = 368000
   factory_input = -0.01
   ai_chance = {
     factor = 1.01
@@ -2059,7 +2059,7 @@ monetarism = {
 contract_policy = {
   area = tech_organization
   year = 1962
-  cost = 37200
+  cost = 372000
 
   influence = 0.25
   farm_rgo_eff = 0.10
@@ -2089,7 +2089,7 @@ contract_policy = {
 derivatives_market = {
   area = tech_organization
   year = 1965
-  cost = 37600
+  cost = 376000
 
   tax_eff = 2
   loan_interest = -0.025
@@ -2123,7 +2123,7 @@ derivatives_market = {
 computerisation = {
   area = tech_organization
   year = 1968
-  cost = 38000
+  cost = 380000
 
   activate_building = radio_factory
   factory_output = 0.01
@@ -2151,7 +2151,7 @@ computerisation = {
 smart_card = {
   area = tech_organization
   year = 1971
-  cost = 38400
+  cost = 384000
 
 
   administrative_efficiency = 0.02
@@ -2178,7 +2178,7 @@ smart_card = {
 modern_institutional_economics = {
   area = tech_organization
   year = 1974
-  cost = 38800
+  cost = 388000
 
   factory_input = -0.10
   factory_cost = -0.05
@@ -2210,7 +2210,7 @@ modern_institutional_economics = {
 modern_competitive_policy = {
   area = tech_organization
   year = 1977
-  cost = 39200
+  cost = 392000
 
   influence = 0.25
   farm_rgo_eff = 0.10
@@ -2240,7 +2240,7 @@ modern_competitive_policy = {
 insurance_companies = {
   area = tech_organization
   year = 1980
-  cost = 39600
+  cost = 396000
 
   tax_eff = 2
   loan_interest = -0.025
@@ -2266,7 +2266,7 @@ insurance_companies = {
 modern_process_control = {
   area = tech_organization
   year = 1983
-  cost = 40000
+  cost = 400000
 
   factory_output = 0.05
   factory_cost = -0.05
@@ -2295,7 +2295,7 @@ modern_process_control = {
 digital_currency = {
   area = tech_organization
   year = 1986
-  cost = 40400
+  cost = 404000
 
 
   administrative_efficiency = 0.02
@@ -2319,7 +2319,7 @@ digital_currency = {
 new_keynesian_economics = {
   area = tech_organization
   year = 1989
-  cost = 40800
+  cost = 408000
   factory_input = -0.01
   ai_chance = {
     factor = 1.01
@@ -2349,7 +2349,7 @@ new_keynesian_economics = {
 robotisation = {
   area = tech_organization
   year = 1992
-  cost = 41200
+  cost = 412000
   factory_output = 0.10
   ai_chance = {
     factor = 1.05
@@ -2375,7 +2375,7 @@ robotisation = {
 external_debt = {
   area = tech_organization
   year = 1995
-  cost = 41600
+  cost = 416000
 
   administrative_efficiency = 0.02
   ai_chance = {
