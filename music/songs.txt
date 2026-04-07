@@ -1,0 +1,17 @@
+song = {
+name = "thecoronation_titletheme.mp3"
+chance = {
+    modifier ={
+        factor = -1
+    }
+}
+}
+song = {
+name = "victoria.mp3"
+chance = {
+    modifier ={
+        factor = -1
+        year = 99999
+    }
+}
+}
